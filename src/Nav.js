@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css";
-import logoBlack from "./images/beths-logo-b.jpg";
+import logoBlack from "./images/logo-b.jpg";
 
 
 export default function Nav() {
