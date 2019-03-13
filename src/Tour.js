@@ -1,6 +1,7 @@
 import React from "react";
 import "./Tour.css";
-import tourVid from "./images/tour-vid.mp4";
+import tourVid from "./images/tour-vid-e.mp4";
+// import gif from "./images/gif.gif";
 
 export default function Tour() {
   return (
@@ -10,12 +11,13 @@ export default function Tour() {
         <video
           className="tour__video--live"
           type="video/mp4"
-          height="300px"
+          width="100%"
           src={tourVid}
           autoplay="autoplay"
           loop
           muted
         />
+        {/* <img className="gif" src={gif}/> */}
       </div>
     </section>
   );
