@@ -8,8 +8,11 @@
     .nav__logo {
         width: 30vw;
         object-fit: contain;
+        position: absolute;
     }
 
     .nav__burger {
+        font-size: 3em;
+        margin: 0 20px 0 auto;
     }
 }

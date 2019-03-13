@@ -1,7 +1,7 @@
 import React from "react";
 import "./Carousel.css";
 
-export default function Carousel(props) {
+export default function Carousel(props) { 
   return (
     <div
       className={`carousel ${
@@ -9,8 +9,19 @@ export default function Carousel(props) {
       }`}
     >
       <div className="carousel__wrapper">
-        {props.photos.map((photo) => <div className="carousel__image" style={{backgroundImage: `url(${photo})`}}/>)}
+        {props.images.map(image => (
+          <CarouselImage src={image} />
+        ))}
       </div>
     </div>
+  );
+}
+
+function CarouselImage(props) {
+  return (
+    <div
+      className="carousel__image"
+      style={{ backgroundImage: `url(${props.src})` }}
+    />
   );
 }

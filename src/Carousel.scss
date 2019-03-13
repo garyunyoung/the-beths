@@ -1,24 +1,23 @@
 .carousel {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+
+  .carousel__wrapper {
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
+    height: 50vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
-    .carousel__wrapper {
-        display: flex;
-        height: 50vh;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
-    .carousel__image  { 
-        background-size: contain;
-        flex-shrink: 0;
-        height: 50vh;
-        width: 50vh;
-      }
+  .carousel__image {
+    background-size: contain;
+    flex-shrink: 0;
+    height: 50vh;
+    width: 50vh;
+  }
 }
 
 .carousel--small {
-
 }
