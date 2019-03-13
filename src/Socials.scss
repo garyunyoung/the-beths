@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 4vh;;
+  bottom: 3vh;;
   margin: auto;
   display: flex;
   flex-flow: column;
@@ -15,7 +15,7 @@
     align-content: center;
 
     .social__icon {
-      font-size: 6vw;
+      font-size: 7vw;
       color: white;
       margin: 3vw 3vw;
       cursor: pointer;
@@ -32,8 +32,8 @@
     .home__button {
       border: none;
       background: white;
-      width: 30vw;
-      height: 10vw;
+      width: 35vw;
+      height: 12vw;
       border-radius: 100px;
       padding: 0;
       cursor: pointer;
@@ -41,7 +41,7 @@
 
       .home__button--link {
         font-family: "Gaegu", cursive;
-        font-size: 3vw;;
+        font-size: 4vw;;
         text-decoration: none;
         color: #004f74;
       }

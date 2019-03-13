@@ -1,6 +1,5 @@
 .tour__section {
     font-family: "Gaegu", cursive;
-    height: 85vh;
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -12,7 +11,9 @@
 
     .tour__video {
         height: 20vh;
+        flex-shrink: 0;
         overflow: hidden;
+        opacity: 0.6;
     }
 
     .song-kick {

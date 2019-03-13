@@ -20,7 +20,7 @@ export default class Tour extends React.Component {
             type="video/mp4"
             width="100%"
             src={tourVid}
-            // autoPlay
+            autoPlay
             loop
             muted
           />

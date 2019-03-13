@@ -4,6 +4,7 @@ import Socials from "./Socials";
 import Merch from "./Merch";
 import Watch from "./Watch";
 import Tour from "./Tour";
+import Contact from "./Contact";
 import "./App.css";
 
 export default class App extends React.Component {
@@ -20,6 +21,9 @@ export default class App extends React.Component {
         </section>
         <section className="tour">
           <Tour />
+        </section>
+        <section className="contact">
+          <Contact />
         </section>
       </section>
     );
