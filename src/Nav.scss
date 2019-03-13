@@ -1,0 +1,15 @@
+.nav {
+    font-family: 'Gaegu', cursive;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav__logo {
+        width: 30vw;
+        object-fit: contain;
+    }
+
+    .nav__burger {
+    }
+}
