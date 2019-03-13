@@ -12,12 +12,21 @@
   }
 
   .carousel__image {
-    background-size: contain;
+    background-size: cover;
     flex-shrink: 0;
     height: 50vh;
-    width: 50vh;
+    width: 100vw;
   }
-}
 
-.carousel--small {
+  .carousel--small {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .carousel__image--small {
+      height: 10vh;
+      background-size: contain;
+    }
+
+  }
 }
