@@ -13,12 +13,15 @@
 
   .carousel__image {
     background-size: cover;
+    background-position: center;
     flex-shrink: 0;
     height: 50vh;
     width: 100vw;
   }
 
   .carousel--small {
+    margin: 0 auto;
+    width: 65%;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;

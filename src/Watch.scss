@@ -1,15 +1,137 @@
 .watch {
-    font-family: 'Gaegu', cursive;
-    height: 85vh;
-    display: flex;
-    flex-flow: column;
-    text-align: center;
+  font-family: "Gaegu", cursive;
+  height: 85vh;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
 
-    .watch__header {
-        font-size: 2em;
-        margin: 70px auto 0px;
-    }
-
+  .watch__header {
+    font-size: 2em;
+    margin: 70px auto 3vh;;
+  }
 }
 
+.watch__subsection {
+  height: 70vh;
+  position: relative;
 
+  .ld {
+    position: absolute;
+    cursor: pointer;
+    top: 2vw;
+    left: 10vw;
+    transform: rotate(-15deg);
+
+    .ld__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .utg {
+    position: absolute;
+    cursor: pointer;
+    top: 2vw;
+    right: 10vw;
+    transform: rotate(15deg);
+
+    .utg__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .fmhm {
+    position: absolute;
+    cursor: pointer;
+    top: 30vw;
+    left: 40vw;
+
+    .fmhm__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .huh {
+    position: absolute;
+    cursor: pointer;
+    top: 2vw;
+    left: 40vw;
+
+    .huh__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .gno {
+    position: absolute;
+    cursor: pointer;
+    top: 30vw;
+    right: 10vw;
+
+    .gno__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .lits {
+    position: absolute;
+    cursor: pointer;
+    top: 30vw;
+    left: 10vw;
+
+    .lits__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .ywlm {
+    position: absolute;
+    cursor: pointer;
+    top: 60vw;
+    left: 10vw;
+    transform: rotate(-15deg);
+
+
+    .ywlm__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .w {
+    position: absolute;
+    cursor: pointer;
+    top: 60vw;
+    right: 10vw;
+    transform: rotate(15deg);
+
+
+    .w__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+
+  .hyamlc {
+    position: absolute;
+    cursor: pointer;
+    top: 60vw;
+    left: 40vw;
+
+
+    .hyamlc__beth {
+      height: 20vw;
+      object-fit: contain;
+    }
+  }
+}
+
+.heading {
+  margin: 0;
+  font-size: 3vw;
+}
