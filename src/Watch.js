@@ -15,17 +15,57 @@ export default function Watch() {
       <h1 className="watch__header">watch</h1>
       <h2 className="watch__title">future me hates me</h2>
       <section className="watch__wrapper">
-        <Thumbnail title="uptpwn girl" image={ld} modifyer="utg" />
-        <Thumbnail title="happy unhappy" image={huh} modifier="huh" />
-        <Thumbnail title="little death" image={ld} modifier="ld" />
-        <Thumbnail title="great no one" image={gno} modifier="gno" />
-        <Thumbnail title="future me hates me" image={fmhm} modifier="fmhm" />
-        <Thumbnail title="you wouldn't like me" image={ywlm} modifier="ywlm" />
+        <Thumbnail
+          title="uptpwn girl"
+          image={ld}
+          modifyer="utg"
+          link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
+        />
+        <Thumbnail
+          title="happy unhappy"
+          image={huh}
+          modifier="huh"
+          link="https://www.youtube.com/watch?v=ct8AwQwlbNA"
+        />
+        <Thumbnail
+          title="little death"
+          image={ld}
+          modifier="ld"
+          link="https://www.youtube.com/watch?v=UuzlZWvTU2I"
+        />
+        <Thumbnail
+          title="great no one"
+          image={gno}
+          modifier="gno"
+          link="https://www.youtube.com/watch?v=qQYhM48H5zs"
+        />
+        <Thumbnail
+          title="future me hates me"
+          image={fmhm}
+          modifier="fmhm"
+          link="https://www.youtube.com/watch?v=iVImwSb4EYU"
+        />
+        <Thumbnail
+          title="you wouldn't like me"
+          image={ywlm}
+          modifier="ywlm"
+          link="https://www.youtube.com/watch?v=CV3Bjx-vPTg"
+        />
       </section>
       <h2 className="watch__title">whatever</h2>
       <section className="watch__wrapper">
-        <Thumbnail title="whatever" image={w} modifier="w" />
-        <Thumbnail title="lying in the sun" image={lits} modifier="lits" />
+        <Thumbnail
+          title="whatever"
+          image={w}
+          modifier="w"
+          link="https://www.youtube.com/watch?v=qtqX7rWtR8A"
+        />
+        <Thumbnail
+          title="lying in the sun"
+          image={lits}
+          modifier="lits"
+          link="https://www.youtube.com/watch?v=4Pz8qzMj-Bw"
+        />
       </section>
       <h2 className="watch__title">bonus</h2>
       <section className="watch__wrapper">
@@ -33,6 +73,7 @@ export default function Watch() {
           title="have yourself a merry litte christmas"
           image={hyamlc}
           modifier="hyamlc"
+          link="https://www.youtube.com/watch?v=Moz6XOAKK5U"
         />
       </section>
     </section>
@@ -47,7 +88,11 @@ function Thumbnail(props) {
       }`}
     >
       <img className="thumbnail__image" src={props.image} />
-      <p className="thumbnail__title">{props.title}</p>
+      <p className="thumbnail__title">
+        <a className="thumbnail__link" href={props.link}>
+          {props.title}
+        </a>
+      </p>
     </div>
   );
 }

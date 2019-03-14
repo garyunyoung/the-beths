@@ -11,6 +11,7 @@
 
   .watch__title {
     font-size: 5vw;
+
   }
   .watch__wrapper {
     display: flex;
@@ -20,7 +21,6 @@
 }
 
 .thumbnail {
-  cursor: pointer;
   top: 2vw;
   left: 10vw;
   margin: 5vw 3vw;
@@ -28,11 +28,18 @@
   .thumbnail__image {
     height: 20vw;
     object-fit: contain;
+    cursor: pointer;
+
   }
   .thumbnail__title {
     margin: 0;
     font-size: 4vw;
     max-width: 40vw;
+
+    .thumbnail__link  {
+      text-decoration: none;
+      color: black;
+    }
   }
 }
 
