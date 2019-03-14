@@ -1,36 +1,25 @@
 import React from "react";
 import "./Nav.css";
 
-
-
-
 export default function Nav() {
   const openNav = () => {
-    document.querySelector('.nav__wrapper').classList.toggle('visible');
+    document.querySelector('.nav__list').classList.toggle('nav__list--open');
+    let navIcon = document.querySelector('.nav__icon');
+        navIcon.textContent = navIcon.textContent === navIcon.dataset.textSwap ?
+          navIcon.dataset.textOriginal : 
+          navIcon.dataset.textSwap;
     };
   return (
     <div className="nav">
-      <p className="nav-icon" onClick={openNav}>
+      <p className="nav__icon" onClick={openNav} data-text-swap="x" data-text-original="=">
         =
       </p>
-      <div className="nav__wrapper">
         <ul className="nav__list">
           <li className="nav__tour">tour</li>
           <li className="nav__merch">merch</li>
           <li className="nav__watch">watch</li>
           <li className="nav__contact">contact</li>
         </ul>
-      </div>
     </div>
   );
 }
-
-
-
-  //  let toggleLiveSection = () => {
-  //     document.querySelector('.live').classList.toggle('visible');
-  //     let nav1 = document.querySelector('.nav-item__live');
-  //     nav1.textContent = nav1.textContent === nav1.dataset.textSwap ?
-  //       nav1.dataset.textOriginal : 
-  //       nav1.dataset.textSwap;
-  //   };

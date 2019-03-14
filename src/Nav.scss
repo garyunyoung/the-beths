@@ -1,32 +1,36 @@
-.nav-section {
+.nav {
   font-family: "Gaegu", cursive;
   position: absolute;
   text-align: right;
- 
+  align-content: center;
   top: 0;
   right: 0;
-  padding-right: 3vw;
   opacity: 0.9;
   z-index: 100;
 
-  .nav-icon {
+  .nav__icon {
     cursor: pointer;
-    font-size: 11vw;
+    height: 7vh;
+    font-size: 10vw;
     margin: 0;
-  }
-  .nav {
-      background-color: white;
-      width: 32vw;
-      height: 100vh;
-
-    .nav__list {
-      font-size: 8vw;
-      list-style: none;
-      text-align: right;
-    }
+    padding: 3vw 3vw 0 0;
   }
 }
 
-.visible {
+.nav__list {
   display: none;
+  background-color: white;
+  list-style: none;
+  text-decoration: none;
+  text-align: right;
+  margin: 0;
+  width: 32vw;
+  height: 90vh;
+  font-size: 8vw;
+  padding: 3vh 3vw 0 0;
+  z-index: 100;
+}
+.nav__list--open {
+  display: block;
+  
 }
