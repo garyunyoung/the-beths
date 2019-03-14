@@ -1,25 +1,29 @@
 .watch {
   font-family: "Gaegu", cursive;
-  height: 100vh;
   display: flex;
   flex-flow: column;
   text-align: center;
 
   .watch__header {
-    font-size: 2em;
+    font-size: 5vw;
     margin: 70px auto 3vh;
   }
-  .watch__subsection {
-    height: 100vh;
-    position: relative;
+
+  .watch__title {
+    font-size: 5vw;
+  }
+  .watch__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .thumbnail {
-  position: absolute;
   cursor: pointer;
   top: 2vw;
   left: 10vw;
+  margin: 5vw 3vw;
 
   .thumbnail__image {
     height: 20vw;
@@ -28,6 +32,7 @@
   .thumbnail__title {
     margin: 0;
     font-size: 4vw;
-    // max-width: suggested line break
+    max-width: 40vw;
   }
 }
+
