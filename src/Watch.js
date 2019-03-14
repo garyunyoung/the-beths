@@ -86,7 +86,9 @@ function Thumbnail(props) {
         props.modifier ? `thumbnail--${props.modifier}` : ""
       }`}
     >
-      <img className="thumbnail__image" src={props.image} />
+      <a className="thumbnail__link" href={props.link}>
+        <img className="thumbnail__image" src={props.image} />
+      </a>
       <p className="thumbnail__title">
         <a className="thumbnail__link" href={props.link}>
           {props.title}

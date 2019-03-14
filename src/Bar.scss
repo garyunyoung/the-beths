@@ -1,0 +1,12 @@
+.bar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .bar__logo {
+      width: 30vw;
+      position: absolute;
+      object-fit: contain;
+    }
+}
