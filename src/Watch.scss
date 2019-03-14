@@ -7,130 +7,27 @@
 
   .watch__header {
     font-size: 2em;
-    margin: 70px auto 3vh;;
+    margin: 70px auto 3vh;
+  }
+  .watch__subsection {
+    height: 100vh;
+    position: relative;
   }
 }
 
-.watch__subsection {
-  height: 100vh;
-  position: relative;
+.thumbnail {
+  position: absolute;
+  cursor: pointer;
+  top: 2vw;
+  left: 10vw;
 
-  .ld {
-    position: absolute;
-    cursor: pointer;
-    top: 2vw;
-    left: 10vw;
-    // transform: rotate(-15deg);
-
-    .ld__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
+  .thumbnail__image {
+    height: 20vw;
+    object-fit: contain;
   }
-
-  .utg {
-    position: absolute;
-    cursor: pointer;
-    top: 2vw;
-    right: 10vw;
-    // transform: rotate(15deg);
-
-    .utg__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
+  .thumbnail__title {
+    margin: 0;
+    font-size: 4vw;
+    // max-width: suggested line break
   }
-
-  .fmhm {
-    position: absolute;
-    cursor: pointer;
-    top: 30vw;
-    left: 40vw;
-
-    .fmhm__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .huh {
-    position: absolute;
-    cursor: pointer;
-    top: 2vw;
-    left: 40vw;
-
-    .huh__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .gno {
-    position: absolute;
-    cursor: pointer;
-    top: 30vw;
-    right: 10vw;
-
-    .gno__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .lits {
-    position: absolute;
-    cursor: pointer;
-    top: 30vw;
-    left: 10vw;
-
-    .lits__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .ywlm {
-    position: absolute;
-    cursor: pointer;
-    top: 60vw;
-    left: 10vw;
-    // transform: rotate(-15deg);
-
-
-    .ywlm__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .w {
-    position: absolute;
-    cursor: pointer;
-    top: 60vw;
-    right: 10vw;
-
-
-    .w__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-
-  .hyamlc {
-    position: absolute;
-    cursor: pointer;
-    top: 60vw;
-    left: 40vw;
-
-
-    .hyamlc__beth {
-      height: 20vw;
-      object-fit: contain;
-    }
-  }
-}
-
-.heading {
-  margin: 0;
-  font-size: 4vw;
 }
