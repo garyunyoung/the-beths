@@ -5,7 +5,6 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <section className="contact">
-      <h1 className="contact__header">contact</h1>
       <p className="contact__text">
         <strong>general manager</strong> <br />
         jacob@monstermanagement.com.au <br />

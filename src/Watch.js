@@ -12,7 +12,6 @@ import "./Watch.css";
 export default function Watch() {
   return (
     <section className="watch">
-      <h1 className="watch__header">watch</h1>
       <h2 className="watch__title">future me hates me</h2>
       <section className="watch__wrapper">
         <Thumbnail

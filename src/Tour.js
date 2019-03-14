@@ -4,7 +4,7 @@ import tourVid from "./images/tour-vid-e.mp4";
 
 export default class Tour extends React.Component {
   componentDidMount() {
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = "//widget.songkick.com/8923484/widget.js";
     script.async = true;
     document.body.appendChild(script);
@@ -12,8 +12,7 @@ export default class Tour extends React.Component {
 
   render() {
     return (
-      <section className="tour__section">
-        <h1 className="tour__header">tour</h1>
+      <section className="tour">
         <div className="tour__video">
           <video
             className="tour__video--live"

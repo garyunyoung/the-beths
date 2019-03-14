@@ -1,13 +1,9 @@
-.tour__section {
+.tour {
     font-family: "Gaegu", cursive;
     display: flex;
     flex-flow: column;
     text-align: center;
-  
-    .tour__header {
-      font-size: 2em;
-      margin: 70px auto 1vh;
-    }
+
 
     .tour__video {
         height: 20vh;

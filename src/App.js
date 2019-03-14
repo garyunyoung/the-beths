@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Header from "./Header";
 import Socials from "./Socials";
 import Merch from "./Merch";
 import Watch from "./Watch";
@@ -15,16 +16,14 @@ export default class App extends React.Component {
         <section className="home">
           <Socials />
         </section>
-        <Merch />
-        <section className="watch">
+        <Header heading="merch"/>
+          <Merch />
+        <Header heading="watch"/>
           <Watch />
-        </section>
-        <section className="tour">
+        <Header heading="tour"/>
           <Tour />
-        </section>
-        <section className="contact">
+        <Header heading="contact"/>
           <Contact />
-        </section>
       </section>
     );
   }
