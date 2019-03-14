@@ -1,36 +1,22 @@
 .nav {
   font-family: "Gaegu", cursive;
+  display: flex;
   position: absolute;
-  text-align: right;
-  align-content: center;
-  top: 0;
-  right: 0;
+  background-color: white;
+  height: 90vh;
   opacity: 0.9;
-  z-index: 100;
-
-  .nav__icon {
-    cursor: pointer;
-    height: 7vh;
-    font-size: 10vw;
-    margin: 0;
-    padding: 3vw 3vw 0 0;
-  }
 }
 
 .nav__list {
   display: none;
-  background-color: white;
   list-style: none;
   text-decoration: none;
-  text-align: right;
-  margin: 0;
-  width: 32vw;
-  height: 90vh;
-  font-size: 8vw;
-  padding: 3vh 3vw 0 0;
-  z-index: 100;
+  text-align: center;
+  width: 100vw;
+  margin: 5vh 0;
+  padding: 0;
+  font-size: 5vh;
 }
 .nav__list--open {
   display: block;
-  
 }

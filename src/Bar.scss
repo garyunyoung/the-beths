@@ -6,7 +6,15 @@
   
     .bar__logo {
       width: 30vw;
-      position: absolute;
       object-fit: contain;
+    }
+
+    .bar__nav-icon {
+      font-family: "Gaegu", cursive;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      font-size: 10vh;
+      margin: 0 3vw 0 0;
     }
 }
