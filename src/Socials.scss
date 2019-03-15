@@ -1,50 +1,44 @@
-.home__subsection {
+.social__wrapper {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 3vh;;
-  margin: auto;
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
-
-  .social__wrapper {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-    .social__icon {
-      font-size: 7vw;
-      color: white;
-      margin: 3vw 3vw;
-      cursor: pointer;
-
-    }
-
-    .social__icon--af {
-      width: 20vw;
-      object-fit: contain;
-      margin: 2vw 5vw;
-
-    }
-
-    .home__button {
-      border: none;
-      background: white;
-      width: 35vw;
-      height: 12vw;
-      border-radius: 100px;
-      padding: 0;
-      cursor: pointer;
+  align-content: center;
+  width: 70vw;
+  bottom: 2vh;
+  background-color: blue;
+  z-index: 0;
 
 
-      .home__button--link {
-        font-family: "Gaegu", cursive;
-        font-size: 4vw;;
-        text-decoration: none;
-        color: #004f74;
-      }
+  .social__icon {
+    font-size: 4vh;
+    color: white;
+    margin: 3vw 3vw;
+    cursor: pointer;
+  }
+
+  .social__icon--af {
+    width: 25vw;
+    margin-top: 0.5vh;
+  }
+
+  .home__button {
+    width: 40vw;
+    height: 7vh;
+    background: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+
+    .home__button--link {
+      font-family: "Gaegu", cursive;
+      font-size: 2.5vh;
+      text-decoration: none;
+      color: #004f74;
     }
   }
+}
+
+.social__wrapper--top {
+  z-index: 100;
 }
