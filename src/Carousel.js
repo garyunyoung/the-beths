@@ -1,6 +1,5 @@
 import React from "react";
 import "./Carousel.css";
-import { throws } from "assert";
 
 export default class Carousel extends React.Component {
   constructor(props) {
