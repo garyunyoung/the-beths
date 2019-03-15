@@ -5,8 +5,8 @@ import "./Nav.css";
 
 export default function Nav(props) {
   return (
-    <div className="nav">
-      <ul className={`nav__list ${props.open ? 'nav__list--open' : ""} `}>
+    <div className={`nav ${props.open ? 'nav--open' : ""} `}>
+      <ul className={`nav__list`}>
         <li className="nav__item nav__item--tour">
           <a className="nav__link" href="#tour">
             tour
