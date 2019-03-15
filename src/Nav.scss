@@ -10,12 +10,16 @@
 .nav__list {
   display: none;
   list-style: none;
-  text-decoration: none;
   text-align: center;
   width: 100vw;
   margin: 5vh 0;
   padding: 0;
   font-size: 5vh;
+
+  .nav__link {
+    text-decoration: none;
+    color: black;
+  }
 }
 .nav__list--open {
   display: block;
