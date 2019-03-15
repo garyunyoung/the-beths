@@ -4,7 +4,7 @@ import afLogo from "./images/af-logo.jpg";
 
 export default function Socials() {
   return (
-    <section className="social__wrapper social__wrapper--top">
+    <section className="social__wrapper">
       <a
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"

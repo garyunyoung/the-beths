@@ -1,6 +1,11 @@
 .heading {
   font-family: "Gaegu", cursive;
   text-align: center;
-  font-size: 6vw;
-  margin: 8vw auto 3vw;
+  font-size: 5vh;
+  margin: 8vh 0 0 0;
+}
+
+.heading--link {
+  margin: 0;
+  visibility: hidden;
 }

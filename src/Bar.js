@@ -13,7 +13,7 @@ export default function Bar() {
         : navIcon.dataset.textSwap;
   };
   return (
-    <div className="bar-sticky__wrapper">
+    <div className="bar-wrapper">
       <div className="bar">
         <img className="bar__logo" src={logoBlack} />
         <p
