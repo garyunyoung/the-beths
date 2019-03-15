@@ -12,7 +12,7 @@ import "./Watch.css";
 export default function Watch() {
   return (
     <section className="watch">
-      <h2 className="watch__title">future me hates me</h2>
+      <h2 className="watch__text">future me hates me</h2>
       <section className="watch__wrapper">
         <Thumbnail
           title="uptpwn girl"
@@ -51,7 +51,7 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=CV3Bjx-vPTg"
         />
       </section>
-      <h2 className="watch__title">whatever</h2>
+      <h2 className="watch__text">whatever</h2>
       <section className="watch__wrapper">
         <Thumbnail
           title="whatever"
@@ -66,7 +66,7 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=4Pz8qzMj-Bw"
         />
       </section>
-      <h2 className="watch__title">bonus</h2>
+      <h2 className="watch__text">bonus</h2>
       <section className="watch__wrapper">
         <Thumbnail
           title="have yourself a merry litte christmas"
