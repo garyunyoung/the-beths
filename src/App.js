@@ -11,7 +11,7 @@ import "./App.css";
 export default class App extends React.Component {
   render() {
     return (
-      <section>
+      <section id="home" className="page page--home">
         <Bar />
         <Home />
         <section id="merch" className="page page--merch">

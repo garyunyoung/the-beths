@@ -12,11 +12,12 @@
   }
 
   .carousel__image {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     flex-shrink: 0;
-    height: 80vw;
-    width: 80vw;
+    height: 70vw;
+    width: 100vw;
   }
 
   .carousel--small {
