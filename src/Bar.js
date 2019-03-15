@@ -13,7 +13,7 @@ export default function Bar() {
         : navIcon.dataset.textSwap;
   };
   return (
-    <React.Fragment>
+    <div className="bar-sticky__wrapper">
       <div className="bar">
         <img className="bar__logo" src={logoBlack} />
         <p
@@ -26,6 +26,6 @@ export default function Bar() {
         </p>
       </div>
       <Nav />
-    </React.Fragment>
+    </div>
   );
 }
