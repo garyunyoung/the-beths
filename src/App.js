@@ -14,14 +14,22 @@ export default class App extends React.Component {
       <section>
         <Bar />
         <Home />
-        <Header heading="merch" />
-        <Merch />
-        <Header heading="watch" />
-        <Watch />
-        <Header heading="tour" />
-        <Tour />
-        <Header heading="contact" />
-        <Contact />
+        <section id="merch" className="page page--merch">
+          <Header heading="merch" />
+          <Merch />
+        </section>
+        <section id="watch" className="page page--watch">
+          <Header heading="watch" />
+          <Watch />
+        </section>
+        <section id="tour" className="page page--tour">
+          <Header heading="tour" />
+          <Tour />
+        </section>
+        <section id="contact" className="page page--contact">
+          <Header heading="contact" />
+          <Contact />
+        </section>
       </section>
     );
   }
