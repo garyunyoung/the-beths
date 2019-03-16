@@ -9,3 +9,10 @@
 .header--merch {
   margin-bottom: 0;
 }
+
+
+@media (min-width: 1023px) {
+  .header {
+    margin-top: 10vh;
+  }
+}

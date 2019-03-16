@@ -11,3 +11,19 @@
     bottom: 0;
   }
 }
+
+@media (min-width: 1023px) {
+  .home__content {
+    background-image: url("./images/hp-2.jpg");
+    height: 100vh;
+
+    .home__wrapper {
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+      height: 90vh;
+      margin-bottom: 30vh;
+      width: 50vw;
+    }
+  }
+}

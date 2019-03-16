@@ -33,3 +33,13 @@
   margin-bottom: 9vh;
   padding: 10vh 3vw;
 }
+
+@media (min-width: 1023px) {
+  .carousel__wrapper {
+    
+    .carousel__image {
+      height: 60vh;
+      width: 60vh;
+    }
+  }
+}

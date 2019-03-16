@@ -52,7 +52,7 @@ function CarouselImage(props) {
   return (
     <React.Fragment>
       <div
-        className="carousel__image carousel__image--small"
+        className="carousel__image"
         style={{ backgroundImage: `url(${props.item.src})` }}
       />
       <p className="carousel__image--title">{props.item.title}</p>

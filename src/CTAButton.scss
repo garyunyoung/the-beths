@@ -1,18 +1,25 @@
 .button {
-    width: 100vw;
-    height: 8vh;
-    background: white;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    bottom: 0;
-    padding: 0;
+  width: 100vw;
+  height: 8vh;
+  background: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+  padding: 0;
 
-    
-    .button--link {
-      font-family: "Gaegu", cursive;
-      font-size: 3vh;
-      text-decoration: none;
-      color: #004f74;
-    }
+  .button--link {
+    font-family: "Gaegu", cursive;
+    font-size: 3vh;
+    text-decoration: none;
+    color: #004f74;
   }
+}
+
+@media (min-width: 1023px) {
+  .button {
+    width: 20vw;
+    height: 10vh;
+    border-radius: 100px;
+  }
+}

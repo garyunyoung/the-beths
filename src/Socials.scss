@@ -18,3 +18,19 @@
     margin-top: 0.5vh;
   }
 }
+
+@media (min-width: 1023px) {
+  .socials {
+    width: 30vw;
+    
+    .socials__icon {
+      font-size: 6vh;
+      margin: 2vw 1.5vw;
+    }
+    .socials__icon--af {
+      width: 10vw;
+      margin-top: 0;
+    }
+  }
+}
+

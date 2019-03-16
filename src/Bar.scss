@@ -13,7 +13,7 @@
     width: 30vw;
     object-fit: contain;
   }
-
+  
   .bar__nav-icon {
     font-family: "Gaegu", cursive;
     cursor: pointer;
@@ -22,5 +22,11 @@
     font-size: 10vh;
     line-height: 1em;
     margin: 0 3vw 0 0;
+  }
+}
+
+@media (min-width: 1023px) {
+  .bar {
+    display: none;
   }
 }

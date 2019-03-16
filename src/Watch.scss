@@ -7,6 +7,7 @@
   .watch__text {
     font-size: 3.5vh;
     font-weight: 300;
+    margin-top: 0;
   }
   .watch__wrapper {
     display: flex;
@@ -18,7 +19,7 @@
 .thumbnail {
   top: 2vw;
   left: 10vw;
-  padding: 5vw 4vw;
+  padding: 3vw 4vw;
 
   &:hover {
     transform: rotate(20deg);
@@ -39,5 +40,25 @@
   
   .thumbnail__text {
     max-width: 40vw;
+  }
+}
+
+
+@media (min-width: 1023px) {
+  .watch {
+    justify-content: center;
+
+    .watch__wrapper {
+      max-width: 80vw;
+      margin-left: 9vw;
+    }
+  }
+  
+  
+  .thumbnail {
+
+    .thumbnail__image {
+      height: 15vh;
+    }
   }
 }
