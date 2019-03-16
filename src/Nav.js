@@ -1,4 +1,5 @@
 import React from "react";
+import NavItem from "./NavItem";
 import hyamlc from "./images/hyamlc.png";
 import "./Nav.css";
 
@@ -6,26 +7,10 @@ export default function Nav(props) {
   return (
     <div className={`nav ${props.open ? "nav--open" : ""} `}>
       <ul className={`nav__list`}>
-        <li className="nav__item nav__item--tour">
-          <a className="nav__link" href="#tour" onClick={props.toggleNav}>
-            tour
-          </a>
-        </li>
-        <li className="nav__item nav__item--merch">
-          <a className="nav__link" href="#merch" onClick={props.toggleNav}>
-            merch
-          </a>
-        </li>
-        <li className="nav__item nav__item--watch">
-          <a className="nav__link" href="#watch" onClick={props.toggleNav}>
-            watch
-          </a>
-        </li>
-        <li className="nav__item nav__item--contact">
-          <a className="nav__link" href="#contact" onClick={props.toggleNav}>
-            contact
-          </a>
-        </li>
+        <NavItem item="tour" toggleNav={props.toggleNav}/>
+        <NavItem item="merch" toggleNav={props.toggleNav}/>
+        <NavItem item="watch" toggleNav={props.toggleNav}/>
+        <NavItem item="contact" toggleNav={props.toggleNav}/>
         <li className="nav__social">
           <a
             className="nav__social--link"

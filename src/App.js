@@ -17,19 +17,19 @@ export default class App extends React.Component {
           <Home />
         </section>
         <section id="merch" className="page page--merch">
-          <Header heading="merch" />
+          <Header header="merch" />
           <Merch />
         </section>
         <section id="watch" className="page page--watch">
-          <Header heading="watch" />
+          <Header header="watch" />
           <Watch />
         </section>
         <section id="tour" className="page page--tour">
-          <Header heading="tour" />
+          <Header header="tour" />
           <Tour />
         </section>
         <section id="contact" className="page page--contact">
-          <Header heading="contact" />
+          <Header header="contact" />
           <Contact />
         </section>
       </React.Fragment>
