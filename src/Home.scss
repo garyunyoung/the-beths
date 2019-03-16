@@ -1,9 +1,13 @@
-.background-image {
-  display: flex;
-  justify-content: center;
+.home__content {
   height: 90vh;
   width: 100vw;
   background-image: url("./images/hp-1.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+
+  .home__wrapper {
+    position: absolute;
+    bottom: 0;
+  }
 }

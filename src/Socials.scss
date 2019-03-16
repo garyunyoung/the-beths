@@ -1,41 +1,20 @@
-.social__wrapper {
-  position: absolute;
+.socials {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   width: 70vw;
-  bottom: 2vh;
+  padding: 0 15vw;
 
-  .social__icon {
+  .socials__icon {
     font-size: 4vh;
     color: white;
     margin: 3vw 3vw;
     cursor: pointer;
   }
 
-  .social__icon--af {
+  .socials__icon--af {
     width: 25vw;
     margin-top: 0.5vh;
   }
-
-  .home__button {
-    width: 40vw;
-    height: 7vh;
-    background: white;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-
-    .home__button--link {
-      font-family: "Gaegu", cursive;
-      font-size: 2.5vh;
-      text-decoration: none;
-      color: #004f74;
-    }
-  }
-}
-
-.social__wrapper--top {
-  z-index: 100;
 }

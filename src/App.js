@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./Home";
 import Bar from "./Bar";
+import Home from "./Home";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
@@ -11,9 +11,11 @@ import "./App.css";
 export default class App extends React.Component {
   render() {
     return (
-      <section id="home" className="page page--home">
+      <React.Fragment>
         <Bar />
-        <Home />
+        <section id="home" className="page page--home">
+          <Home />
+        </section>
         <section id="merch" className="page page--merch">
           <Header heading="merch" />
           <Merch />
@@ -30,7 +32,7 @@ export default class App extends React.Component {
           <Header heading="contact" />
           <Contact />
         </section>
-      </section>
+      </React.Fragment>
     );
   }
 }

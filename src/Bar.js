@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Sticky from "./Sticky";
 import "./Bar.css";
 import logoBlack from "./images/logo-b.jpg";
 
@@ -19,7 +20,7 @@ export default class Bar extends React.Component {
 
   render() {
     return (
-      <div className="bar-wrapper">
+      <Sticky>
         <div className="bar">
           <img className="bar__logo" src={logoBlack} />
           <p
@@ -32,7 +33,7 @@ export default class Bar extends React.Component {
           </p>
         </div>
         <Nav open={this.state.isOpen} />
-      </div>
+      </Sticky>
     );
   }
 }

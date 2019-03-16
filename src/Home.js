@@ -1,13 +1,16 @@
 import React from "react";
-import Bar from "./Bar";
 import Socials from "./Socials";
+import CTAButton from "./CTAButton";
 import "./Home.css";
 
 export default function Home() {
   return (
     <section className="home">
-      <section className="background-image">
+      <section className="home__content">
+      <section className="home__wrapper">
         <Socials />
+        <CTAButton/>
+        </section>
       </section>
     </section>
   );

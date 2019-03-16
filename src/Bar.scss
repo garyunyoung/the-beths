@@ -1,32 +1,26 @@
-.bar-wrapper {
+.bar {
+  height: 10vh;
+  background-color: white;
   top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: sticky;
+  border-bottom: 1px solid lightgrey;
   z-index: 1;
-  
-  .bar {
-    height: 10vh;
-    background-color: white;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    border-bottom: 1px solid lightgrey;
-    z-index: 1;
-    
-    .bar__logo {
-      width: 30vw;
-      object-fit: contain;
-    }
-    
-    .bar__nav-icon {
-      font-family: "Gaegu", cursive;
-      cursor: pointer;
-      position: absolute;
-      right: 0;
-      font-size: 10vh;
-      line-height: 1em;
-      margin: 0 3vw 0 0;
-    }
+
+  .bar__logo {
+    width: 30vw;
+    object-fit: contain;
+  }
+
+  .bar__nav-icon {
+    font-family: "Gaegu", cursive;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    font-size: 10vh;
+    line-height: 1em;
+    margin: 0 3vw 0 0;
   }
 }

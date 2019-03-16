@@ -11,7 +11,7 @@ export default function Merch() {
     <section className="merch">
         <Carousel images={images} />
         <h2 className="merch__text merch__text--store">
-        <a className="merch__text--store--link"
+        <a className="merch__text merch__text--store--link"
         href="https://thebethsnz.bandcamp.com/merch"
         target="_blank"
         rel="noopener noreferrer"
