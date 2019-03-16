@@ -25,25 +25,27 @@ export default class Carousel extends React.Component {
           this.props.modifier ? `carousel--${this.props.modifier}` : ""
         }`}
       >
-        <div
-          className="carousel__wrapper"
-          onClick={() => {
-            this.handleClick(1);
-          }}
-        >
-          <CarouselImage item={this.props.merch[this.state.currentSlide]} />
-        </div>
-        <div className="carousel__button">
+        <div className="carousel__wrapper">
           <p
             className="carousel__button carousel__button--left"
             onClick={() => {
-              this.handleClick(-1);
+              this.handleClick(1);
             }}
           >{`<`}</p>
+          <a
+            className="carousel__image__title--link"
+            href="https://thebethsnz.bandcamp.com/merch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="carousel-image__wrapper">
+              <CarouselImage item={this.props.merch[this.state.currentSlide]} />
+            </div>
+          </a>
           <p
             className="carousel__button carousel__button--right"
             onClick={() => {
-              this.handleClick(1);
+              this.handleClick(-1);
             }}
           >{`>`}</p>
         </div>

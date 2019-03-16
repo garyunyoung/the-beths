@@ -5,32 +5,44 @@
   text-align: center;
 
   .carousel__wrapper {
-    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .carousel-image__wrapper {
+    overflow: hidden;
   }
 
   .carousel__image {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
     flex-shrink: 0;
-    height: 85vw;
-    width: 100vw;
+    height: 80vw;
+    width: 80vw;
   }
 
-  .carousel__image__title {
+  .carousel__image__title--link {
     font-family: "Gaegu", cursive;
     font-size: 3vh;
     font-weight: 300;
     margin-top: 4vh;
+    text-decoration: none;
+    color: black;
 
   }
 
   .carousel__button {
-    display: flex;
-    justify-content: space-around;
     font-family: "Gaegu", cursive;
     font-size: 3vh;
     font-weight: 800;
+    margin: 0;
+    padding: 20vh 3vw;
   }
 
   .carousel--small {
