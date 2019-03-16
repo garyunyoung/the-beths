@@ -1,18 +1,23 @@
 .tour {
-    font-family: "Gaegu", cursive;
+  font-family: "Gaegu", cursive;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+  .tour__video {
     display: flex;
-    flex-flow: column;
-    text-align: center;
+    overflow: hidden;
+    height: 15vh;
 
-
-    .tour__video {
-        height: 20vh;
-        flex-shrink: 0;
-        overflow: hidden;
-        opacity: .5;
-    }
-
-    .song-kick {
-      padding: 0 5vw; 
+    .tour__video--live {
+      width: 100vw;
+      height: 20vh;
+      object-fit: contain;
+      opacity: .9;
     }
   }
+
+  .song-kick {
+    padding: 0 5vw;
+  }
+}

@@ -7,6 +7,7 @@ import ywlm from "./images/ywlm.png";
 import fmhm from "./images/fmhm.png";
 import gno from "./images/gno.png";
 import w from "./images/w.png";
+import utg from "./images/utg.png";
 import "./Watch.css";
 
 export default function Watch() {
@@ -15,8 +16,8 @@ export default function Watch() {
       <h2 className="watch__text">future me hates me</h2>
       <section className="watch__wrapper">
         <Thumbnail
-          title="uptpwn girl"
-          image={ld}
+          title="uptown girl"
+          image={utg}
           modifyer="utg"
           link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
         />

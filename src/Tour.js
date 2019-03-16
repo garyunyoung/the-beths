@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tour.css";
-import tourVid from "./images/watch.mov";
+import tourVid from "./images/watch-480.mov";
 
 export default class Tour extends React.Component {
   componentDidMount() {
@@ -27,12 +27,14 @@ export default class Tour extends React.Component {
         <div className="song-kick">
           <a
             href="https://www.songkick.com/artists/8923484"
-            className="songkick-widget"
+            class="songkick-widget"
             data-theme="light"
             data-track-button="on"
             data-detect-style="true"
             data-background-color="transparent"
-          />
+          >
+            come gig! 
+          </a>
         </div>
       </section>
     );

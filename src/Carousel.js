@@ -20,11 +20,7 @@ export default class Carousel extends React.Component {
 
   render() {
     return (
-      <div
-        className={`carousel ${
-          this.props.modifier ? `carousel--${this.props.modifier}` : ""
-        }`}
-      >
+      <div className="carousel">
         <div className="carousel__wrapper">
           <p
             className="carousel__button carousel__button--left"
@@ -33,14 +29,12 @@ export default class Carousel extends React.Component {
             }}
           >{`<`}</p>
           <a
-            className="carousel__image__title--link"
+            className="carousel__wrapper--link"
             href="https://thebethsnz.bandcamp.com/merch"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="carousel-image__wrapper">
-              <CarouselImage item={this.props.merch[this.state.currentSlide]} />
-            </div>
+            <CarouselImage item={this.props.merch[this.state.currentSlide]} />
           </a>
           <p
             className="carousel__button carousel__button--right"
@@ -61,7 +55,7 @@ function CarouselImage(props) {
         className="carousel__image carousel__image--small"
         style={{ backgroundImage: `url(${props.item.src})` }}
       />
-      <p className="carousel__image__title">{props.item.title}</p>
+      <p className="carousel__image--title">{props.item.title}</p>
     </React.Fragment>
   );
 }

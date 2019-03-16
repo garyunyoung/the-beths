@@ -1,62 +1,35 @@
-.carousel {
+.carousel__wrapper {
   display: flex;
-  flex-flow: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+}
 
-  .carousel__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.carousel__image {
+  display: flex;
+  background-size: contain;
+  justify-content: space-around;
+  height: 80vw;
+  width: 80vw;
+}
 
+.carousel__wrapper--link {
+  font-family: "Gaegu", cursive;
+  font-size: 3vh;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3vh;
+}
 
-  .carousel-image__wrapper {
-    overflow: hidden;
-  }
+.carousel__image--title {
+  margin: 0 10vw;
+}
 
-  .carousel__image {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-shrink: 0;
-    height: 80vw;
-    width: 80vw;
-  }
-
-  .carousel__image__title--link {
-    font-family: "Gaegu", cursive;
-    font-size: 3vh;
-    font-weight: 300;
-    margin-top: 4vh;
-    text-decoration: none;
-    color: black;
-
-  }
-
-  .carousel__button {
-    font-family: "Gaegu", cursive;
-    font-size: 3vh;
-    font-weight: 800;
-    margin: 0;
-    padding: 20vh 3vw;
-  }
-
-  .carousel--small {
-    margin: 0 auto;
-    width: 65%;
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-    .carousel__image--small {
-      height: 20vw;
-      width: 20vw;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
+.carousel__button {
+  font-family: "Gaegu", cursive;
+  font-size: 3vh;
+  font-weight: 800;
+  margin-bottom: 9vh;
+  padding: 10vh 3vw;
 }
