@@ -18,7 +18,7 @@ export default function Watch() {
         <Thumbnail
           title="uptown girl"
           image={utg}
-          modifyer="utg"
+          modifier="utg"
           link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
         />
         <Thumbnail
@@ -87,14 +87,15 @@ function Thumbnail(props) {
         props.modifier ? `thumbnail--${props.modifier}` : ""
       }`}
     >
-      <a className="thumbnail__link" href={props.link}>
+      <a
+        className="thumbnail__link"
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img className="thumbnail__image" src={props.image} />
+        <p className="thumbnail__text">{props.title}</p>
       </a>
-      <p className="thumbnail__title">
-        <a className="thumbnail__link" href={props.link}>
-          {props.title}
-        </a>
-      </p>
     </div>
   );
 }

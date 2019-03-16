@@ -27,7 +27,7 @@ export default class Tour extends React.Component {
         <div className="song-kick">
           <a
             href="https://www.songkick.com/artists/8923484"
-            class="songkick-widget"
+            className="songkick-widget"
             data-theme="light"
             data-track-button="on"
             data-detect-style="true"
