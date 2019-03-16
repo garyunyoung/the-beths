@@ -13,21 +13,24 @@
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
-    height: 80vw;
+    height: 85vw;
     width: 100vw;
   }
-  
+
   .carousel__image__title {
     font-family: "Gaegu", cursive;
-    font-size: 2vh;
+    font-size: 3vh;
+    font-weight: 300;
+    margin-top: 4vh;
 
   }
 
-  .button--right {
+  .carousel__button {
+    display: flex;
+    justify-content: space-around;
     font-family: "Gaegu", cursive;
     font-size: 3vh;
     font-weight: 800;
-    margin-bottom: 0;
   }
 
   .carousel--small {

@@ -9,15 +9,20 @@ export default class Carousel extends React.Component {
     };
   }
 
-  handleClick() {
+  handleClick(indexChange) {
     this.setState((prevState, props) => {
-      if (prevState.currentSlide < props.merch.length - 1) {
+      let newIndex = prevState.currentSlide + indexChange;
+      if (newIndex >= props.merch.length) {
         return {
-          currentSlide: prevState.currentSlide + 1
+          currentSlide: 0
+        };
+      } else if (newIndex < 0) {
+        return {
+          currentSlide: props.merch.length - 1
         };
       } else {
         return {
-          currentSlide: 0
+          currentSlide: newIndex
         };
       }
     });
@@ -33,17 +38,25 @@ export default class Carousel extends React.Component {
         <div
           className="carousel__wrapper"
           onClick={() => {
-            this.handleClick();
+            this.handleClick(1);
           }}
         >
           <CarouselImage item={this.props.merch[this.state.currentSlide]} />
         </div>
-        <p
-          className="button--right"
-          onClick={() => {
-            this.handleClick();
-          }}
-        >{`>`}</p>
+        <div className="carousel__button">
+          <p
+            className="carousel__button carousel__button--left"
+            onClick={() => {
+              this.handleClick(-1);
+            }}
+          >{`<`}</p>
+          <p
+            className="carousel__button carousel__button--right"
+            onClick={() => {
+              this.handleClick(1);
+            }}
+          >{`>`}</p>
+        </div>
       </div>
     );
   }
@@ -52,11 +65,10 @@ export default class Carousel extends React.Component {
 function CarouselImage(props) {
   return (
     <React.Fragment>
-    <div
-      className="carousel__image carousel__image--small"
-      style={{ backgroundImage: `url(${props.item.src})` }}
-    >
-    </div>
+      <div
+        className="carousel__image carousel__image--small"
+        style={{ backgroundImage: `url(${props.item.src})` }}
+      />
       <p className="carousel__image__title">{props.item.title}</p>
     </React.Fragment>
   );
