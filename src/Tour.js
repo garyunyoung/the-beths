@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tour.css";
-import tourVid from "./images/tour-vid-e.mp4";
+import tourVid from "./images/watch.mov";
 
 export default class Tour extends React.Component {
   componentDidMount() {

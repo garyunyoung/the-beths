@@ -6,16 +6,41 @@ import w from "./images/w.png";
 import "./Merch.css";
 
 export default function Merch() {
-  const images = [merch1, ld, w, merch1];
+  const merch = [
+    { title: "future me hates me", src: merch1 },
+    { title: "little death", src: ld },
+    { title: "whatever", src: w }
+  ];
+
   return (
     <section className="merch">
-        <Carousel images={images} />
-        <h2 className="merch__text merch__text--store">
-        <a className="merch__text merch__text--store--link"
-        href="https://thebethsnz.bandcamp.com/merch"
-        target="_blank"
-        rel="noopener noreferrer"
-      >visit store</a></h2>
+      <Carousel merch={merch} />
+      <h2 className="merch__text merch__text--store">
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          visit store
+        </a>
+      </h2>
     </section>
   );
 }
+
+// export default function Merch() {
+//   const images = [merch1, ld, w, merch1];
+
+//   return (
+//     <section className="merch">
+//         <Carousel images={images} />
+//         <h2 className="merch__text merch__text--store">
+//         <a className="merch__text merch__text--store--link"
+//         href="https://thebethsnz.bandcamp.com/merch"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >visit store</a></h2>
+//     </section>
+//   );
+// }

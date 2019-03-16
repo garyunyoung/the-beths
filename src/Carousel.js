@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
 
   handleClick() {
     this.setState((prevState, props) => {
-      if (prevState.currentSlide < props.images.length - 1) {
+      if (prevState.currentSlide < props.merch.length - 1) {
         return {
           currentSlide: prevState.currentSlide + 1
         };
@@ -36,9 +36,14 @@ export default class Carousel extends React.Component {
             this.handleClick();
           }}
         >
-          <CarouselImage src={this.props.images[this.state.currentSlide]} />
+          <CarouselImage item={this.props.merch[this.state.currentSlide]} />
         </div>
-          <p className="button--right" onClick={() => {this.handleClick()}}>{`>`}</p>
+        <p
+          className="button--right"
+          onClick={() => {
+            this.handleClick();
+          }}
+        >{`>`}</p>
       </div>
     );
   }
@@ -46,10 +51,14 @@ export default class Carousel extends React.Component {
 
 function CarouselImage(props) {
   return (
+    <React.Fragment>
     <div
       className="carousel__image carousel__image--small"
-      style={{ backgroundImage: `url(${props.src})` }}
-    />
+      style={{ backgroundImage: `url(${props.item.src})` }}
+    >
+    </div>
+      <p className="carousel__image__title">{props.item.title}</p>
+    </React.Fragment>
   );
 }
 

@@ -5,13 +5,9 @@
   text-align: center;
 
   .carousel__wrapper {
-    display: flex;
-    height: 80vw;
     overflow-x: scroll;
-    overflow-y: hidden;
-
   }
-  
+
   .carousel__image {
     background-size: contain;
     background-position: center;
@@ -21,12 +17,17 @@
     width: 100vw;
   }
   
+  .carousel__image__title {
+    font-family: "Gaegu", cursive;
+    font-size: 2vh;
+
+  }
+
   .button--right {
     font-family: "Gaegu", cursive;
     font-size: 3vh;
     font-weight: 800;
-    margin: 0;
-
+    margin-bottom: 0;
   }
 
   .carousel--small {
@@ -42,6 +43,5 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
-
   }
 }
