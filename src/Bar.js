@@ -32,8 +32,10 @@ export default class Bar extends React.Component {
             {this.state.isOpen ? "x" : "="}
           </p>
         </div>
-        <Nav open={this.state.isOpen} />
+        <Nav open={this.state.isOpen} toggleNav={() => this.toggleNav()}/>
       </Sticky>
     );
   }
 }
+
+

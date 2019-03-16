@@ -2,28 +2,27 @@ import React from "react";
 import hyamlc from "./images/hyamlc.png";
 import "./Nav.css";
 
-
 export default function Nav(props) {
   return (
-    <div className={`nav ${props.open ? 'nav--open' : ""} `}>
+    <div className={`nav ${props.open ? "nav--open" : ""} `}>
       <ul className={`nav__list`}>
         <li className="nav__item nav__item--tour">
-          <a className="nav__link" href="#tour">
+          <a className="nav__link" href="#tour" onClick={props.toggleNav}>
             tour
           </a>
         </li>
         <li className="nav__item nav__item--merch">
-          <a className="nav__link" href="#merch">
+          <a className="nav__link" href="#merch" onClick={props.toggleNav}>
             merch
           </a>
         </li>
         <li className="nav__item nav__item--watch">
-          <a className="nav__link" href="#watch">
+          <a className="nav__link" href="#watch" onClick={props.toggleNav}>
             watch
           </a>
         </li>
         <li className="nav__item nav__item--contact">
-          <a className="nav__link" href="#contact">
+          <a className="nav__link" href="#contact" onClick={props.toggleNav}>
             contact
           </a>
         </li>
@@ -69,7 +68,9 @@ export default function Nav(props) {
             <i className="nav__social--link--bandcamp fab fa-bandcamp" />
           </a>
         </li>
-        <li><img className="nav__dag" src={hyamlc}/></li>
+        <li>
+          <img className="nav__dag" src={hyamlc} />
+        </li>
       </ul>
     </div>
   );
