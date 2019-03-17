@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
 
   handleClick(indexChange) {
     this.setState((prevState, props) => {
-      let newIndex = prevState.currentSlide + indexChange;
+      const newIndex = prevState.currentSlide + indexChange;
       return {
         currentSlide: (newIndex + props.merch.length) % props.merch.length
       };
