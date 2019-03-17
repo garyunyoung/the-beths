@@ -5,10 +5,18 @@
   text-align: center;
 }
 
-.carousel__image {
-  display: flex;
+.carousel-image {
+  position: absolute;
+  opacity: 0;
+}
+
+.carousel-image--visible {
+  position: relative;
+  opacity: 1;
+}
+
+.carousel-image__image {
   background-size: contain;
-  justify-content: space-around;
   height: 80vw;
   width: 80vw;
 }
@@ -19,24 +27,24 @@
   font-weight: 300;
   text-decoration: none;
   color: black;
-  margin-bottom: 3vh;
+  // margin-bottom: 3vh;
 }
 
 .carousel__image--title {
-  margin: 0 10vw;
+  width: 70vw;
+  margin: auto;
 }
 
 .carousel__button {
   font-family: "Gaegu", cursive;
   font-size: 3vh;
   font-weight: 800;
-  margin-bottom: 9vh;
   padding: 10vh 3vw;
+  margin-bottom: 9vh;
 }
 
 @media (min-width: 1023px) {
   .carousel__wrapper {
-    
     .carousel__image {
       height: 60vh;
       width: 60vh;

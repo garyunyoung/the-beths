@@ -23,7 +23,7 @@ export default class Carousel extends React.Component {
       <div className="carousel">
         <div className="carousel__wrapper">
           <p
-            className="carousel__button carousel__button--left"
+            className="carousel__button"
             onClick={() => {
               this.handleClick(1);
             }}
@@ -34,10 +34,16 @@ export default class Carousel extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <CarouselImage item={this.props.merch[this.state.currentSlide]} />
+            {this.props.merch.map((item, i) => (
+              <CarouselImage
+                item={item}
+                key={i}
+                visible={i === this.state.currentSlide}
+              />
+            ))}
           </a>
           <p
-            className="carousel__button carousel__button--right"
+            className="carousel__button"
             onClick={() => {
               this.handleClick(-1);
             }}
@@ -50,17 +56,16 @@ export default class Carousel extends React.Component {
 
 function CarouselImage(props) {
   return (
-    <React.Fragment>
+    <div
+      className={`carousel-image ${
+        props.visible ? "carousel-image--visible" : ""
+      }`}
+    >
       <div
-        className="carousel__image"
+        className="carousel-image__image"
         style={{ backgroundImage: `url(${props.item.src})` }}
       />
       <p className="carousel__image--title">{props.item.title}</p>
-    </React.Fragment>
+    </div>
   );
 }
-
-// Note --
-// setState is an async function. React may batch a bunch of setStates together.
-// So the value of this.state.count is the value at the time you make the request.
-// A better solutions to call a function that gets evaluated at the time the setState gets executed.
