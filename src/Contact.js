@@ -1,6 +1,6 @@
 import React from "react";
 import cpLogo from "./images/cp-logo.jpg";
-import "./Contact.css";
+import "./Contact.scss";
 
 export default function Contact() {
   return (

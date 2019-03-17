@@ -1,5 +1,5 @@
 import React from "react";
-import "./CTAButton.css";
+import "./CTAButton.scss";
 
 export default function CTAButton() {
   return (

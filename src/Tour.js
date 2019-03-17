@@ -1,5 +1,5 @@
 import React from "react";
-import "./Tour.css";
+import "./Tour.scss";
 import tourVid from "./images/watch-480.mov";
 
 export default class Tour extends React.Component {

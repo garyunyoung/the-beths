@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
 import hyamlc from "./images/hyamlc.png";
-import "./Nav.css";
+import "./Nav.scss";
 
 export default function Nav(props) {
   return (

@@ -4,7 +4,7 @@ import merch1 from "./images/fmhm-yellow-600.jpg";
 import merch2 from "./images/fmhm-orange-600.jpg";
 import merch3 from "./images/fmhm-green-600.jpg";
 import merch4 from "./images/fmhm-aqua-600.jpg";
-import "./Merch.css";
+import "./Merch.scss";
 
 export default function Merch() {
   const merch = [

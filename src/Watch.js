@@ -8,7 +8,7 @@ import fmhm from "./images/fmhm.png";
 import gno from "./images/gno.png";
 import w from "./images/w.png";
 import utg from "./images/utg.png";
-import "./Watch.css";
+import "./Watch.scss";
 
 export default function Watch() {
   return (

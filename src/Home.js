@@ -1,7 +1,7 @@
 import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
-import "./Home.css";
+import "./Home.scss";
 
 export default function Home() {
   return (

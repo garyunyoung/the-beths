@@ -6,7 +6,7 @@ import Merch from "./Merch";
 import Watch from "./Watch";
 import Tour from "./Tour";
 import Contact from "./Contact";
-import "./App.css";
+import "./App.scss";
 
 export default class App extends React.Component {
   render() {

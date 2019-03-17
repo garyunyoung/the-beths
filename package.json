@@ -2,7 +2,12 @@
   "name": "the_beths_v2",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.1"
+  },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "ramda": "^0.26.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
