@@ -12,6 +12,7 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <a href="top"/>
         <Bar />
         <section id="home" className="page page--home">
           <Home />

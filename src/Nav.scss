@@ -4,17 +4,21 @@
   position: absolute;
   display: flex;
   height: 90vh;
-  opacity: .9;
+  opacity: 0.9;
   transform: translateY(-100vh);
-  transition: transform .53s;
+  transition: transform .5s;
 
   .nav__list {
     list-style: none;
     text-align: center;
-    width: 100vw;
-    margin: 10vh 0;
-    padding: 0;
     font-size: 5vh;
+    width: 100vw;
+    padding: 0;
+    margin-top: 10vh;
+  }
+
+  .nav__item {
+    margin-bottom: 2vh;
   }
 
   .nav__link {
@@ -27,7 +31,7 @@
   }
 
   .nav__social {
-    margin-top: 3vh;
+    margin: 4vh 0;
 
     &--link {
       color: black;
@@ -45,13 +49,4 @@
 
 .nav--open {
   transform: translateY(0);
-
-  .nav__link {
-    text-decoration: none;
-
-    &:hover {
-      font-weight: 800;
-    }
-  }
 }
-
