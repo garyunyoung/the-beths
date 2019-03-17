@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tour.scss";
-import tourVid from "./images/watch-480.mov";
+import w from "./images/w.png";
 
 export default class Tour extends React.Component {
   componentDidMount() {
@@ -13,7 +13,13 @@ export default class Tour extends React.Component {
   render() {
     return (
       <section className="tour">
-        <div className="tour__video">
+        <section className="tour-pics">
+          <img className="tour-pics--w" src={w} />
+          <img className="tour-pics--w" src={w} />
+          <img className="tour-pics--w" src={w} />
+          <img className="tour-pics--w" src={w} />
+        </section>
+        {/* <div className="tour__video">
           <video
             className="tour__video--live"
             type="video/mp4"
@@ -23,7 +29,7 @@ export default class Tour extends React.Component {
             loop
             muted
           />
-        </div>
+        </div> */}
         <div className="song-kick">
           <a
             href="https://www.songkick.com/artists/8923484"
@@ -33,7 +39,7 @@ export default class Tour extends React.Component {
             data-detect-style="true"
             data-background-color="transparent"
           >
-            come gig! 
+            come gig!
           </a>
         </div>
       </section>

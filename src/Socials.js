@@ -1,6 +1,6 @@
 import React from "react";
 import "./Socials.scss";
-import afLogo from "./images/af-logo.jpg";
+import afLogo from "./images/af-logo.png";
 
 export default function Socials() {
   return (

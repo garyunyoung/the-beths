@@ -3,19 +3,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 70vw;
-  padding: 0 15vw;
+  width: 90vw;
 
   .socials__icon {
-    font-size: 4vh;
+    font-size: 5vh;
     color: white;
-    margin: 3vw 3vw;
+    margin: 3vw 4vw;
     cursor: pointer;
   }
 
   .socials__icon--af {
-    width: 25vw;
+    width: 30vw;
     margin-top: 0.5vh;
+    margin-left: 0;
   }
 }
 

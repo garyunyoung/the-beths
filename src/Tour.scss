@@ -3,22 +3,34 @@
   display: flex;
   flex-flow: column;
   text-align: center;
-
-  .tour__video {
+  
+  .tour-pics {
     display: flex;
-    overflow: hidden;
-    height: 15vh;
+    justify-content: center;
 
-    .tour__video--live {
-      width: 100vw;
-      height: 20vh;
+    
+    .tour-pics--w {
+      width: 5vh;
+      height: 5vh;
       object-fit: contain;
-      opacity: 0.9;
+      margin: 2vh 0;
     }
   }
+
+  // .tour__video {
+  //   display: flex;
+  //   overflow: hidden;
+  //   height: 15vh;
+
+  //   .tour__video--live {
+  //     width: 100vw;
+  //     height: 20vh;
+  //     object-fit: contain;
+  //     opacity: 0.9;
+  //   }
+  // }
 
   .song-kick {
     padding: 0 5vw;
   }
 }
-

@@ -9,9 +9,9 @@ export default function Home() {
       <section className="home__content">
       <section className="home__wrapper">
         <Socials />
-        <CTAButton/>
         </section>
       </section>
+        <CTAButton/>
     </section>
   );
 }

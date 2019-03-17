@@ -7,9 +7,10 @@ export default function Nav(props) {
   return (
     <div className={`nav ${props.open ? "nav--open" : ""} `}>
       <ul className={`nav__list`}>
+        <NavItem item="home" toggleNav={props.toggleNav}/>
         <NavItem item="merch" toggleNav={props.toggleNav}/>
-        <NavItem item="tour" toggleNav={props.toggleNav}/>
         <NavItem item="watch" toggleNav={props.toggleNav}/>
+        <NavItem item="tour" toggleNav={props.toggleNav}/>
         <NavItem item="contact" toggleNav={props.toggleNav}/>
         <li className="nav__social">
           <a

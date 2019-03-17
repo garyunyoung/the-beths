@@ -16,7 +16,7 @@ export default function Merch() {
 
   return (
     <section className="merch">
-    <h2 className="merch__text">new LP out now!</h2>
+      <h2 className="merch__text">new LP out now!</h2>
       <Carousel merch={merch} />
       <h2 className="merch__text merch__text--store">
         <a

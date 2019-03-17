@@ -1,14 +1,16 @@
 .home__content {
-  height: 90vh;
+  height: 72vh;
   width: 100vw;
   background-image: url("./images/hp-1.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
 
   .home__wrapper {
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -19,7 +21,6 @@
 
     .home__wrapper {
       display: flex;
-      flex-flow: column-reverse;
       align-items: center;
       height: 90vh;
       margin-bottom: 30vh;
