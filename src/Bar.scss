@@ -13,8 +13,8 @@
     width: 30vw;
     object-fit: contain;
   }
-  
-  .bar__nav-icon {
+
+  .bar__nav--icon {
     font-family: "Gaegu", cursive;
     position: absolute;
     right: 3vw;
@@ -26,6 +26,16 @@
 
 @media (min-width: 1023px) {
   .bar {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+    border-bottom: none;
+  }
+
+  .bar__logo {
     display: none;
   }
 }

@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <section className="home">
       <section className="home__content">
-      <section className="home__wrapper">
-        <Socials />
+        <section className="home__wrapper">
+          <Socials />
         </section>
       </section>
-        <CTAButton/>
+      <CTAButton />
     </section>
   );
 }

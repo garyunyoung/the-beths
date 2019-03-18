@@ -23,19 +23,23 @@ export default class Bar extends React.Component {
       <Sticky>
         <div className="bar">
           <img className="bar__logo" src={logoBlack} />
-          <p
-            className="bar__nav-icon"
-            onClick={() => {
-              this.toggleNav();
-            }}
-          >
-            {this.state.isOpen ? "x" : "="}
-          </p>
+          <HamburgerButton open={this.state.isOpen} toggleNav={() => this.toggleNav()}/>
         </div>
         <Nav open={this.state.isOpen} toggleNav={() => this.toggleNav()}/>
       </Sticky>
     );
   }
+}
+
+function HamburgerButton(props) {
+  return (
+    <p
+      className="bar__nav--icon"
+      onClick={props.toggleNav}
+    >
+      {props.open ? "x" : "="}
+    </p>
+  );
 }
 
 
