@@ -5,9 +5,9 @@
   text-align: center;
 
   .watch__text {
-    font-size: 3.5vh;
+    font-size: 3.8vh;
     font-weight: 300;
-    margin-top: 0;
+    margin-bottom: 3vh;
   }
   .watch__wrapper {
     display: flex;
@@ -20,6 +20,7 @@
   top: 2vw;
   left: 10vw;
   padding: 3vw 4vw;
+  margin-bottom: 3vh;
 
   &:hover {
     transform: rotate(20deg);

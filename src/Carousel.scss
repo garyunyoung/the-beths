@@ -11,13 +11,13 @@
 }
 
 .carousel-image--visible {
-  position: relative;
+  position: static;
   opacity: 1;
 }
 
 .carousel-image__image {
   background-size: contain;
-  height: 80vw;
+  height: 75vw;
   width: 80vw;
 }
 
@@ -27,7 +27,7 @@
   font-weight: 300;
   text-decoration: none;
   color: black;
-  // margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
 
 .carousel__image--title {

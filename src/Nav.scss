@@ -13,12 +13,15 @@
     text-align: center;
     font-size: 5vh;
     width: 100vw;
-    padding: 0;
     margin-top: 10vh;
   }
 
   .nav__item {
-    margin-bottom: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .nav__item--contact {
+    margin-bottom: 1vh;
   }
 
   .nav__link {
@@ -31,7 +34,7 @@
   }
 
   .nav__social {
-    margin: 4vh 0;
+    margin-bottom: 3vh;
 
     &--link {
       color: black;
@@ -42,8 +45,8 @@
   }
 
   .nav__dag {
-    margin-top: 2vh;
-    width: 20vw;
+    width: 10vw;
+    margin-bottom: 1vh;
   }
 }
 

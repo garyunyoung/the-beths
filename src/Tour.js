@@ -13,23 +13,12 @@ export default class Tour extends React.Component {
   render() {
     return (
       <section className="tour">
-        <section className="tour-pics">
+        <div className="tour-pics">
           <img className="tour-pics--w" src={w} />
           <img className="tour-pics--w" src={w} />
           <img className="tour-pics--w" src={w} />
           <img className="tour-pics--w" src={w} />
-        </section>
-        {/* <div className="tour__video">
-          <video
-            className="tour__video--live"
-            type="video/mp4"
-            width="100%"
-            src={tourVid}
-            autoPlay
-            loop
-            muted
-          />
-        </div> */}
+        </div>
         <div className="song-kick">
           <a
             href="https://www.songkick.com/artists/8923484"
