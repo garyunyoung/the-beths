@@ -1,6 +1,6 @@
 import React from "react";
 import "./Tour.scss";
-import w from "./images/w.png";
+import tourPic from "./images/tour-pic.jpg";
 
 export default class Tour extends React.Component {
   componentDidMount() {
@@ -13,11 +13,8 @@ export default class Tour extends React.Component {
   render() {
     return (
       <section className="tour">
-        <div className="tour-pics">
-          <img className="tour-pics--w" src={w} />
-          <img className="tour-pics--w" src={w} />
-          <img className="tour-pics--w" src={w} />
-          <img className="tour-pics--w" src={w} />
+        <div className="tour-pic">
+          <img className="tour-pic--main" src={tourPic} />
         </div>
         <div className="song-kick">
           <a

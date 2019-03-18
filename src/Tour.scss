@@ -2,18 +2,14 @@
   font-family: "Gaegu", cursive;
   display: flex;
   flex-flow: column;
-  text-align: center;
   
-  .tour-pics {
-    display: flex;
-    justify-content: center;
+  .tour-pic {
+    margin: 0 auto;
 
     
-    .tour-pics--w {
-      width: 5vh;
-      height: 5vh;
+    .tour-pic--main {
+      height: 15vh;
       object-fit: contain;
-      margin: 2vh 0;
     }
   }
 
