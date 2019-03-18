@@ -18,7 +18,7 @@
   display: none;
 }
 
-@media (min-width: 760px) and (max-width: 1024px) {
+@media (min-width: 415px) and (max-width: 1024px) {
   .home__content {
     background-image: url("./images/hp-2.jpg");
     height: 80vh;
@@ -31,7 +31,7 @@
 @media (min-width: 1025px) {
   .home__content {
     background-image: url("./images/hp-3.jpg");
-    background-size: cover;
+    background-size: 120%;
     height: 100vh;
     width: 100vw;
   
@@ -47,7 +47,8 @@
 
   .logo--w {
     position: absolute;
-    top: 120px;
-    left: 12vw;
+    width: 25vw;
+    top: 140px;
+    left: 10vw;
   }
 }

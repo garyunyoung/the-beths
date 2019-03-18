@@ -18,9 +18,9 @@
   }
 }
 
-@media (min-width: 760px) and (max-width: 1024px) {
+@media (min-width: 415px) and (max-width: 1024px) {
   .socials {
-    width: 70vw;
+    width: 65vw;
 
     .socials__icon {
       font-size: 4vh;
@@ -37,7 +37,7 @@
 @media (min-width: 1025px) {
   .socials {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 70px;
     width: 500px;
 
     .socials__icon {
