@@ -18,12 +18,28 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
+  .socials {
+    width: 70vw;
+
+    .socials__icon {
+      font-size: 4vh;
+      margin: 2vw 3vw;
+    }
+
+    .socials__icon--af {
+      width: 20vw;
+      margin-bottom: 2vh;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
   .socials {
     position: absolute;
     margin-top: 150px;
     width: 500px;
-    
+
     .socials__icon {
       font-size: 6vh;
       margin: 2vw 1.5vw;
@@ -34,4 +50,3 @@
     }
   }
 }
-

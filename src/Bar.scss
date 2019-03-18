@@ -24,7 +24,20 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
+  .bar {
+    height: 7vh;
+    .bar__logo {
+      width: 17vw;
+    }
+
+    .bar__nav--icon {
+      font-size: 7vh;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
   .bar {
     height: 10vh;
     width: 100vw;
