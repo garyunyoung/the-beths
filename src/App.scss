@@ -7,7 +7,7 @@
   min-height: 90vh;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .page--merch {
       min-height: 100vh;
   }
@@ -15,4 +15,10 @@
     .page--contact {
     min-height: 100vh;
   }
+
+  .page--home {
+    overflow: hidden;
+  }
+
+
 }

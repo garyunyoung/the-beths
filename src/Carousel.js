@@ -65,7 +65,7 @@ function CarouselImage(props) {
         className="carousel-image__image"
         style={{ backgroundImage: `url(${props.item.src})` }}
       />
-      <p className="carousel__image--title">{props.item.title}</p>
+      <p className="carousel-image--title">{props.item.title}</p>
     </div>
   );
 }

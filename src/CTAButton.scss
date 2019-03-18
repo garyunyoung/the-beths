@@ -16,8 +16,11 @@
 
 @media (min-width: 1023px) {
   .button {
-    width: 20vw;
-    height: 10vh;
+    position: absolute;
+    width: 250px;
+    height: 70px;
     border-radius: 100px;
+    top: 260px;
+    left: 15vw;
   }
 }

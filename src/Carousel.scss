@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.carousel__button {
+  font-family: "Gaegu", cursive;
+  cursor: pointer;
+  font-size: 3vh;
+  font-weight: 800;
+  padding: 10vh 3vw;
+  margin-bottom: 9vh;
+}
 .carousel-image {
   position: absolute;
   opacity: 0;
@@ -30,24 +38,24 @@
   margin-bottom: 4vh;
 }
 
-.carousel__image--title {
+.carousel-image--title {
   width: 70vw;
   margin: auto;
 }
 
-.carousel__button {
-  font-family: "Gaegu", cursive;
-  font-size: 3vh;
-  font-weight: 800;
-  padding: 10vh 3vw;
-  margin-bottom: 9vh;
-}
-
 @media (min-width: 1023px) {
-  .carousel__wrapper {
-    .carousel__image {
-      height: 60vh;
-      width: 60vh;
-    }
+
+  .carousel-image__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vw;
+    width: 70vw;
+
+  }
+
+  .carousel-image--title {
+    width: 70vw;
+    margin: auto auto 2vh;
   }
 }

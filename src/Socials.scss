@@ -18,9 +18,11 @@
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .socials {
-    width: 30vw;
+    position: absolute;
+    margin-top: 150px;
+    width: 500px;
     
     .socials__icon {
       font-size: 6vh;

@@ -1,6 +1,7 @@
 import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
+import logoW from "./images/logo-w.png";
 import "./Home.scss";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         </section>
       </section>
       <CTAButton />
+      <img className="logo--w" src={logoW}/>
     </section>
   );
 }
