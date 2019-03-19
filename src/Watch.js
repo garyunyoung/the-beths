@@ -93,7 +93,7 @@ function Thumbnail(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="thumbnail__image" src={props.image} />
+        <img className="thumbnail__image" src={props.image} alt={`${props.title} thumbnail`}/>
         <p className="thumbnail__text">{props.title}</p>
       </a>
     </div>

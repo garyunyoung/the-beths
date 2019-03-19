@@ -13,7 +13,7 @@ export default function Home() {
         </section>
       </section>
       <CTAButton />
-      <img className="logo--w" src={logoW}/>
+      <img className="logo--w" src={logoW} alt="the beths logo"/>
     </section>
   );
 }

@@ -54,7 +54,7 @@ export default function Nav(props) {
             <i className="nav__social--link--bandcamp fab fa-bandcamp" />
           </a>
         </div>
-          <img className="nav__dag" src={hyamlc} />
+          <img className="nav__dag" src={hyamlc} alt="beths dog thumbnail"/>
         <NavItem text="^" link="top" toggleNav={props.toggleNav} />
       </ul>
     </div>

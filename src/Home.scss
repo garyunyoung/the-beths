@@ -20,18 +20,18 @@
 
 @media (min-width: 415px) and (max-width: 1024px) {
   .home__content {
-    background-image: url("./images/hp-2.jpg");
+    background-image: url("./images/hp-m.jpg");
     height: 80vh;
-    background-size: cover;
-
+    background-size: 114%;
+    background-position: top;
   }
 }
 
 
 @media (min-width: 1025px) {
   .home__content {
-    background-image: url("./images/hp-3.jpg");
-    background-size: 120%;
+    background-image: url("./images/hp-3-w.jpg");
+    background-size: cover ;
     height: 100vh;
     width: 100vw;
   

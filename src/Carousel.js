@@ -62,7 +62,7 @@ function CarouselImage(props) {
       }`}
     >
       <div
-        className="carousel-image__image"
+        className="carousel-image__image" alt={`merch: ${props.item.title}`}
         style={{ backgroundImage: `url(${props.item.src})` }}
       />
       <p className="carousel-image--title">{props.item.title}</p>

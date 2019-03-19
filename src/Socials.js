@@ -45,7 +45,7 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="socials__icon socials__icon--af" src={afLogo} />
+        <img className="socials__icon socials__icon--af" src={afLogo} alt="artist first logo"/>
       </a>
     </section>
   );

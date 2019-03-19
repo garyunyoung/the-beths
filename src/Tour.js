@@ -14,7 +14,7 @@ export default class Tour extends React.Component {
     return (
       <section className="tour">
         <div className="tour-pic">
-          <img className="tour-pic--main" src={tourPic} />
+          <img className="tour-pic--main" src={tourPic} alt="collage of tour pictures"/>
         </div>
         <div className="song-kick">
           <a

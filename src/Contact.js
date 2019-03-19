@@ -19,7 +19,7 @@ export default function Contact() {
         <br />
         <strong>record label</strong><br/>
         carpark records<br/>
-        <img className="cp-logo" src={cpLogo}/>
+        <img className="cp-logo" src={cpLogo} alt="carpark records logo"/>
       </p>
     </section>
   );
