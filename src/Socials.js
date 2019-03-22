@@ -47,6 +47,7 @@ export default function Socials() {
       >
         <img className="socials__icon socials__icon--af" src={afLogo} alt="artist first logo"/>
       </a>
+      <p className="socials__text">future me hates me out now</p>
     </section>
   );
 }

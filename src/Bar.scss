@@ -21,10 +21,11 @@
     font-size: 10vh;
     line-height: 1em;
     cursor: pointer;
+    color: white;
   }
 }
 
-@media (min-width: 415px) and (max-width: 1024px) {
+@media (min-width: 415px) and (max-width: 1023px) {
   .bar {
     height: 7vh;
     .bar__logo {
@@ -37,7 +38,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .bar {
     height: 10vh;
     width: 100vw;
@@ -46,9 +47,14 @@
     background-color: transparent;
     z-index: 1;
     border-bottom: none;
+    display: none;
   }
 
   .bar__logo {
     display: none;
+  }
+
+  .bar__nav--icon {
+    color: white;
   }
 }

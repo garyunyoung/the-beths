@@ -1,0 +1,46 @@
+.landing {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+
+  .landing__bar {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-bottom: 1px solid lightgrey;
+    display: none;
+
+    .landing__logo {
+      width: 30vw;
+      object-fit: contain;
+    }
+  }
+
+  .landing__image {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .landing__text {
+    font-family: "Gaegu", cursive;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+  }
+  
+  .landing__text--purchase {
+      margin-top: 6vh;
+  }
+  .landing__text--outnow {  
+    margin-top: 4vh;
+  }
+
+  .landing__text--enter {
+    text-transform: lowercase;
+    position: absolute;
+    display: block;
+    bottom: 10vh;
+    margin-left: 38vw;
+  }
+}

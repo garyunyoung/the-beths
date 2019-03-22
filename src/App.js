@@ -1,5 +1,7 @@
 import React from "react";
 import Bar from "./Bar";
+import NavDesktop from "./NavDesktop";
+import LandingPage from "./LandingPage";
 import Home from "./Home";
 import Header from "./Header";
 import Merch from "./Merch";
@@ -12,8 +14,12 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <a href="top"/>
         <Bar />
+        <a href="top" />
+        <section className="page page--landing">
+          <LandingPage />
+        </section>
+        <NavDesktop />
         <section id="home" className="page page--home">
           <Home />
         </section>

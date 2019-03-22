@@ -10,7 +10,7 @@ export default function CTAButton() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        New LP out now!
+        future me hates me out now!
       </a>
     </button>
   );

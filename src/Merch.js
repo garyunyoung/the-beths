@@ -9,8 +9,8 @@ import "./Merch.scss";
 
 export default function Merch() {
   const merch = [
-    { title: "warm blood EP - LP - pink (PRE-ORDER)", src: wbP },
     { title: "future me hates me - LP - orange", src: fmhmO },
+    { title: "warm blood EP - LP - pink (PRE-ORDER)", src: wbP },
     { title: "future me hates me - LP - tangy yellow", src: fmhmY },
     { title: "future me hates me - LP - translucent green", src: fmhmG },
     { title: "future me hates me - LP - transparent aqua", src: fmhmA }
@@ -18,7 +18,6 @@ export default function Merch() {
 
   return (
     <section className="merch">
-      <h2 className="merch__text">new LP out now!</h2>
       <Carousel merch={merch} />
       <h2 className="merch__text merch__text--store">
         <a
@@ -27,9 +26,16 @@ export default function Merch() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          visit store
+          visit stores
         </a>
       </h2>
+      <div className="merch__stores">
+        <p>Europe</p>
+        <p>US</p>
+        <p>AUS</p>
+        <p>NZ</p>
+        <p>UK</p>
+      </div>
     </section>
   );
 }

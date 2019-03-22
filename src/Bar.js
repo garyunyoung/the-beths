@@ -8,13 +8,15 @@ export default class Bar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      fontColor: 'black'
     };
   }
 
   toggleNav() {
     this.setState((prevState, _props) => ({
-      isOpen: !prevState.isOpen
+      isOpen: !prevState.isOpen,
+      fontColor: 'black'
     }));
   }
 
@@ -23,7 +25,7 @@ export default class Bar extends React.Component {
       <Sticky>
         <div className="bar">
           <img className="bar__logo" src={logoBlack} alt="the beths logo"/>
-          <HamburgerButton open={this.state.isOpen} toggleNav={() => this.toggleNav()}/>
+          <HamburgerButton open={this.state.isOpen} toggleNav={() => this.toggleNav()} color={this.state.fontColor}/>
         </div>
         <Nav open={this.state.isOpen} toggleNav={() => this.toggleNav()}/>
       </Sticky>
@@ -36,6 +38,7 @@ function HamburgerButton(props) {
     <p
       className="bar__nav--icon"
       onClick={props.toggleNav}
+      style={{color: props.fontColor}}
     >
       {props.open ? "x" : "="}
     </p>

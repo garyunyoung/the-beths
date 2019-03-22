@@ -25,8 +25,8 @@
 
 .carousel-image__image {
   background-size: contain;
-  height: 75vw;
-  width: 80vw;
+  height: 70vw;
+  width: 70vw;
 }
 
 .carousel__wrapper--link {
@@ -35,7 +35,7 @@
   font-weight: 300;
   text-decoration: none;
   color: black;
-  margin-bottom: 4vh;
+  margin-bottom: 7vh;
 }
 
 .carousel-image--title {
@@ -43,7 +43,7 @@
   margin: auto;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
   .carousel-image__image {
     background-size: contain;

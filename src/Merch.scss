@@ -2,7 +2,7 @@
     font-family: "Gaegu", cursive;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 5vh;
     
     &--store--link {
         text-decoration: none;
@@ -14,4 +14,15 @@
             font-weight: 800;
         }
     }
+}
+
+
+.merch__stores {
+    font-family: "Gaegu", cursive;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    text-decoration: underline;  
+    margin-bottom: 7vh;
+
 }

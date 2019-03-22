@@ -25,7 +25,7 @@ export default class Carousel extends React.Component {
           <p
             className="carousel__button"
             onClick={() => {
-              this.handleClick(1);
+              this.handleClick(-1);
             }}
           >{`<`}</p>
           <a
@@ -45,7 +45,7 @@ export default class Carousel extends React.Component {
           <p
             className="carousel__button"
             onClick={() => {
-              this.handleClick(-1);
+              this.handleClick(1);
             }}
           >{`>`}</p>
         </div>
