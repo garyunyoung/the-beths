@@ -1,5 +1,5 @@
 import React from "react";
-import hyamlc from "./images/hyamlc.png";
+import tui from "./images/tui.png";
 import "./Nav.scss";
 
 export default function Nav(props) {
@@ -54,8 +54,8 @@ export default function Nav(props) {
             <i className="nav__social--link--bandcamp fab fa-bandcamp" />
           </a>
         </div>
-          <img className="nav__dag" src={hyamlc} alt="beths dog thumbnail"/>
-        <NavItem text="^" link="top" toggleNav={props.toggleNav} />
+          <img className="nav__dag" src={tui} alt="beths dog thumbnail"/>
+        <NavItem text="^" link="home" toggleNav={props.toggleNav} />
       </ul>
     </div>
   );

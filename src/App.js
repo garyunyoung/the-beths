@@ -15,12 +15,11 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <Bar />
-        <a href="top" />
         <section className="page page--landing">
           <LandingPage />
         </section>
         <NavDesktop />
-        <section id="home" className="page page--home">
+        <section  className="page page--home">        
           <Home />
         </section>
         <section id="merch" className="page page--merch">

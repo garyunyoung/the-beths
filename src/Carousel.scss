@@ -11,7 +11,7 @@
   font-size: 3vh;
   font-weight: 800;
   padding: 10vh 3vw;
-  margin-bottom: 9vh;
+  margin-bottom: 12vh;
 }
 .carousel-image {
   position: absolute;
@@ -25,7 +25,9 @@
 
 .carousel-image__image {
   background-size: contain;
-  height: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vw;
   width: 70vw;
 }
 
@@ -35,7 +37,7 @@
   font-weight: 300;
   text-decoration: none;
   color: black;
-  margin-bottom: 7vh;
+  margin-bottom: 8vh;
 }
 
 .carousel-image--title {

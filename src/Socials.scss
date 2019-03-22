@@ -4,13 +4,13 @@
   justify-content: center;
   align-content: center;
   position: absolute;
-  bottom: 5vh;
+  bottom: 4vh;
   width: 90vw;
 
   .socials__icon {
     font-size: 5vh;
     color: white;
-    margin: 8vw 4vw;
+    margin: 3vh 4vw;
     cursor: pointer;
   }
 
@@ -19,11 +19,16 @@
     margin-top: 0.5vh;
     display: none;
   }
+  .socials__icon--twitter{
+    margin-right: 1.5vw;
+    margin-left: 1.8vw;
+  }
 
   .socials__text {
     font-family: "Gaegu", cursive;
     font-size: 4vh;
     color: white;
+    display: none;
   }
 }
 

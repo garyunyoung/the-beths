@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "./Carousel";
-import fmhmY from "./images/fmhm-yellow-600.jpg";
-import fmhmO from "./images/fmhm-orange-600.jpg";
+import fmhmY from "./images/fmhm-y-600x400.jpg";
+import fmhmO from "./images/fmhm-o-600x400.jpg";
 import fmhmG from "./images/fmhm-green-600.jpg";
 import fmhmA from "./images/fmhm-aqua-600.jpg";
-import wbP from "./images/wb-pink-600.jpg";
+import wbP from "./images/wb-p-600x400.jpg";
 import "./Merch.scss";
 
 export default function Merch() {
