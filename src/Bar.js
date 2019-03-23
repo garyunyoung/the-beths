@@ -23,7 +23,7 @@ export default class Bar extends React.Component {
   render() {
     return (
       <Sticky>
-        <div className="bar">
+        <div id='home' className="bar">
           <img className="bar__logo" src={logoBlack} alt="the beths logo"/>
           <HamburgerButton open={this.state.isOpen} toggleNav={() => this.toggleNav()} color={this.state.fontColor}/>
         </div>

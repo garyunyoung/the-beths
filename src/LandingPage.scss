@@ -4,13 +4,13 @@
   justify-content: center;
   text-align: center;
 
+
   .landing__bar {
     height: 10vh;
     display: flex;
     justify-content: center;
-    margin-bottom: 4vh;
-    border-bottom: 1px solid lightgrey;
-    display: none;
+    margin-bottom: 2vh;
+    position: sticky;
 
     .landing__logo {
       width: 30vw;
@@ -21,15 +21,15 @@
   .landing__image {
     width: 60vw;
     margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    box-shadow: 2px 2px black;
+    // border: 1px solid #ddd;
+    // border-radius: 4px;
+    // padding: 5px;
   }
 
   .landing__text {
     text-transform: uppercase;
     font-family: "Gaegu", cursive;
-    margin-top: 5vh;
     margin-bottom: 3vh;
   }
 
@@ -39,24 +39,31 @@
   }
 
   .landing__text--outnow {
-    margin-top: 4vh;
-    margin-bottom: 3vh;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
   }
+
+  .landing__text__bottom {
+    margin-bottom: 4vh;
+
+    .landing__text__bottom--link {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
 
   .landing__text--link {
     text-decoration: none;
-    color: black;
-  }
-
-  .landing__text--enter {
     text-transform: lowercase;
-    display: block;
+    color: black;
   }
 
   .landing__dog {
     position: absolute;
-    bottom: 20vh;
-    right: -25vw;
-    width: 60vw;
+    bottom: 10vh;
+    right: -20vw;
+    width: 40vw;
+    // display: none;
   }
 }

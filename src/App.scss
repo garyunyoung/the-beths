@@ -3,15 +3,25 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
+  background-image: url('./images/landing-background-c.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+
 }
 
 .page--home {
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 }
 
 .page--contact {
-  min-height: 90vh;
+  min-height: 80vh;
+  background-image: url('./images/landing-background-a.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
 }
 
 @media (min-width: 415px) and (max-width: 1023px) {
