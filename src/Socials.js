@@ -1,6 +1,5 @@
 import React from "react";
 import "./Socials.scss";
-import afLogo from "./images/af-logo.png";
 
 export default function Socials() {
   return (
@@ -39,13 +38,6 @@ export default function Socials() {
         rel="noopener noreferrer"
       >
         <i className="socials__icon socials__icon--bandcamp fab fa-bandcamp" />
-      </a>
-      <a
-        href="https://artistfirst.com.au/collections/the-beths"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img className="socials__icon socials__icon--af" src={afLogo} alt="artist first logo"/>
       </a>
       <p className="socials__text">future me hates me out now!</p>
     </section>

@@ -5,7 +5,6 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  // display: none;
 
   .button--link {
     font-family: "Gaegu", cursive;
@@ -17,19 +16,6 @@
 
 @media (min-width: 1024px) {
   .button {
-    position: absolute;
-    width: 250px;
-    height: 70px;
-    border-radius: 100px;
-    top: 255px;
-    left: 15vw;
-    background: transparent;
-    
-    .button--link {
-      font-size: 5vh;
-      color:white;
-      font-weight: 400;
-    }
-
+    display: none;
   }
 }

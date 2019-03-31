@@ -8,9 +8,9 @@
   display: flex;
   justify-content: flex-end;
   flex-flow: column nowrap;
-  position: relative;
   overflow: hidden;
-
+  position: relative;
+  
   .home__wrapper {
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
   .logo--w {
     position: absolute;
     width: 25vw;
-    top: 110px;
+    bottom: -30vh;
     left: 10vw;
   }
 }

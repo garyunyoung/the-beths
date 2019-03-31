@@ -4,7 +4,6 @@
   justify-content: center;
   text-align: center;
 
-
   .landing__bar {
     height: 10vh;
     display: flex;
@@ -21,10 +20,9 @@
   .landing__image {
     width: 60vw;
     margin: 0 auto;
-    box-shadow: 2px 2px black;
-    // border: 1px solid #ddd;
-    // border-radius: 4px;
-    // padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
   }
 
   .landing__text {
@@ -52,7 +50,6 @@
     }
   }
 
-
   .landing__text--link {
     text-decoration: none;
     text-transform: lowercase;
@@ -64,6 +61,32 @@
     bottom: 10vh;
     right: -20vw;
     width: 40vw;
-    // display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing {
+    .landing__bar {
+      height: 20vh;
+
+      .landing__logo {
+        width: 15vw;
+        object-fit: contain;
+      }
+    }
+
+    .landing__text {
+      font-size: 1.5em;
+    }
+    .landing__image {
+      width: 20vw;
+    }
+    
+    .landing__dog {
+      position: absolute;
+      bottom: 0;
+      right: -10vw;
+      width: 30vw;
+    }
   }
 }

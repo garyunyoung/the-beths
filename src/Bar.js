@@ -9,14 +9,12 @@ export default class Bar extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
-      fontColor: 'black'
     };
   }
 
   toggleNav() {
     this.setState((prevState, _props) => ({
       isOpen: !prevState.isOpen,
-      fontColor: 'black'
     }));
   }
 
