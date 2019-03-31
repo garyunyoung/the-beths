@@ -24,19 +24,25 @@ export default function LandingPage() {
         </a>
       </h1>
       <img className="landing__image" src={fmhm} />
-
-      <h1 className="landing__text landing__text--outnow">
-        future me hates me <br />
-        out now!
-      </h1>
+      <a
+        className="landing__text landing__text--outnow"
+        href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h1>
+          future me hates me <br />
+          out now!
+        </h1>
+      </a>
       <h1 className="landing__text landing__text__bottom">
         <a href="#merch" className="landing__text__bottom--link">
-          merch
-        </a>{" "}
+          merch{' '}
+        </a>
         /{" "}
         <a href="#tour" className="landing__text__bottom--link">
-          tour
-        </a>{" "}
+          tour{' '}
+        </a>
         /{" "}
         <a href="#contact" className="landing__text__bottom--link">
           contact
