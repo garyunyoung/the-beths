@@ -19,19 +19,10 @@ export default function Merch() {
   return (
     <section className="merch">
       <Carousel merch={merch} />
-      <h2 className="merch__text merch__text--store">
+      <h2 className="merch__visit">visit stores</h2>
+      <div className="merch__store">
         <a
-          className="merch__text merch__text--store--link"
-          href="https://thebethsnz.bandcamp.com/merch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          visit stores
-        </a>
-      </h2>
-      <div className="merch__stores">
-        <a
-          className="merch__text merch__text--store--link"
+          className="merch__store__link"
           href="https://thebethsnz.bandcamp.com/merch"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,31 +30,31 @@ export default function Merch() {
           Europe
         </a>
         <a
-          className="merch__text merch__text--store--link"
-          href="https://thebethsnz.bandcamp.com/merch"
+          className="merch__store__link"
+          href="http://store.carparkrecords.com/categories/the-beths"
           target="_blank"
           rel="noopener noreferrer"
         >
           US
         </a>
         <a
-          className="merch__text merch__text--store--link"
-          href="https://thebethsnz.bandcamp.com/merch"
+          className="merch__store__link"
+          href="https://artistfirst.com.au/collections/the-beths"
           target="_blank"
           rel="noopener noreferrer"
         >
           AUS
         </a>
         <a
-          className="merch__text merch__text--store--link"
-          href="https://thebethsnz.bandcamp.com/merch"
+          className="merch__store__link"
+          href="https://flyingout.co.nz/collections/types?q=BETHS%2C%20THE"
           target="_blank"
           rel="noopener noreferrer"
         >
           NZ
         </a>
         <a
-          className="merch__text merch__text--store--link"
+          className="merch__store__link"
           href="https://thebethsnz.bandcamp.com/merch"
           target="_blank"
           rel="noopener noreferrer"
