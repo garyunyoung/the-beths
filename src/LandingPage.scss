@@ -50,10 +50,15 @@
     }
   }
 
-  .landing__text--link {
+  .landing__text__link {
+    font-family: "Gaegu", cursive;
     text-decoration: none;
     text-transform: lowercase;
     color: black;
+  }
+
+  .landing__text__link--desktop {
+    display: none;
   }
 
   .landing__dog {
@@ -67,7 +72,7 @@
 @media (min-width: 1024px) {
   .landing {
     .landing__bar {
-      height: 20vh;
+      height: 17vh;
 
       .landing__logo {
         width: 15vw;
@@ -77,8 +82,21 @@
 
     .landing__text {
       font-size: 1.5em;
-      margin-bottom: 0;
+      margin-bottom: 1vh;
     }
+
+
+    .landing__text__link--desktop {
+      font-size: 1.5em;
+      margin-top: 4vh;
+      display: block;
+    }
+
+
+    .landing__text__link--mobile {
+      display: none;
+    }
+
     .landing__image {
       width: 20vw;
     }

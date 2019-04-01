@@ -55,7 +55,17 @@ export default function LandingPage() {
           contact
         </a>
       </h1>
-      <a className="landing__text landing__text--link" href="#home">
+      <a
+        className="landing__text__link landing__text__link--mobile"
+        href="#home"
+      >
+        <p className="landing__text--enter">enter</p>
+        <p className="landing__text--enter">V</p>
+      </a>
+      <a
+        className="landing__text__link landing__text__link--desktop"
+        href="#home-desktop"
+      >
         <p className="landing__text--enter">enter</p>
         <p className="landing__text--enter">V</p>
       </a>

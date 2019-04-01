@@ -1,13 +1,15 @@
-.page--landing {
-  height: 100vh;
+.page {
   width: 100vw;
   overflow: hidden;
+}
+
+.page--landing {
+  height: 100vh;
   position: relative;
-  background-image: url('./images/landing-background-c.jpg');
+  background-image: url("./images/landing-background-c.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-
 }
 
 .page--home {
@@ -17,24 +19,21 @@
 
 .page--contact {
   min-height: 90vh;
-  background-image: url('./images/landing-background-a.png');
+  background-image: url("./images/landing-background-a.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-
 }
 
 @media (min-width: 415px) and (max-width: 1023px) {
-.page--home {
-  height: 100vh;
-}
-
-
+  .page--home {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 1024px) {
   .page--merch {
-    min-height: 100vh;
+    max-height: 100vh;
   }
   .page--home {
     min-height: 100vh;

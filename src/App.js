@@ -14,12 +14,12 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="page page--landing">
+        <section id="top" className="page page--landing">
           <LandingPage />
         </section>
         <NavDesktop />
         <Bar />
-        <section  className="page page--home">        
+        <section className="page page--home">
           <Home />
         </section>
         <section id="merch" className="page page--merch">

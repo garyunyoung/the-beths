@@ -10,13 +10,20 @@
     top: 3vh;
     right: 5vw;
     list-style: none;
+    display: none;
 
     .nav-desktop__item {
       font-family: "Gaegu", cursive;
-      font-size: 4vh;
+      font-size: 2em;
       text-align: right;
-      color: white;
+      color: black;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
+
+
   }
 }

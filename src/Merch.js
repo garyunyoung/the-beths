@@ -30,11 +30,46 @@ export default function Merch() {
         </a>
       </h2>
       <div className="merch__stores">
-        <p>Europe</p>
-        <p>US</p>
-        <p>AUS</p>
-        <p>NZ</p>
-        <p>UK</p>
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Europe
+        </a>
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          US
+        </a>
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AUS
+        </a>
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NZ
+        </a>
+        <a
+          className="merch__text merch__text--store--link"
+          href="https://thebethsnz.bandcamp.com/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UK
+        </a>
       </div>
     </section>
   );

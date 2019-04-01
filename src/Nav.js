@@ -55,7 +55,7 @@ export default function Nav(props) {
           </a>
         </div>
           <img className="nav__dag" src={tui} alt="beths dog thumbnail"/>
-        <NavItem text="^" link="home" toggleNav={props.toggleNav} />
+        <NavItem text="^" link="top" toggleNav={props.toggleNav} />
       </ul>
     </div>
   );

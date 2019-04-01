@@ -5,7 +5,7 @@ import "./NavDesktop.scss";
 export default function NavDesktop() {
   return (
     <Sticky>
-      <ul className="nav-desktop">
+      <ul id="home-desktop" className="nav-desktop">
         <a className="nav-desktop__item" href="#merch">
           <li>merch</li>
         </a>
@@ -18,7 +18,7 @@ export default function NavDesktop() {
         <a className="nav-desktop__item" href="#contact">
           <li>contact</li>
         </a>
-        <a className="nav-desktop__item" href="#home">
+        <a className="nav-desktop__item" href="#home-desktop">
           <li>^</li>
         </a>
       </ul>
