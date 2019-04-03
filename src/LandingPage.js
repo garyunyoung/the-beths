@@ -64,7 +64,7 @@ export default function LandingPage() {
       </a>
       <a
         className="landing__text__link landing__text__link--desktop"
-        href="#home-desktop"
+        href="#home"
       >
         <p className="landing__text--enter">enter</p>
         <p className="landing__text--enter">V</p>

@@ -9,11 +9,19 @@ export default function Home() {
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
+          <img className="logo--w" src={logoW} alt="the beths logo" />
+          <a
+            className="button--desktop--link"
+            href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="button--desktop">future me hates me out now!</div>
+          </a>
           <Socials />
         </section>
       </section>
       <CTAButton />
-      <img className="logo--w" src={logoW} alt="the beths logo"/>
     </section>
   );
 }

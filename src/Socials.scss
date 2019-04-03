@@ -40,9 +40,7 @@
 
 @media (min-width: 1024px) {
   .socials {
-    position: absolute;
-    top: 0;
-    left: 13vw;
+    position: static;
     width: 30vw;
 
     .socials__icon {
