@@ -15,6 +15,7 @@
 }
 .carousel-image {
   position: absolute;
+  left: -200vw;
   opacity: 0;
 }
 
@@ -46,14 +47,12 @@
 }
 
 @media (min-width: 1024px) {
-
   .carousel-image__image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 30vw;
-    width: 70vw;
-
+    width: 42vw;
   }
 
   .carousel__wrapper--link {
@@ -63,5 +62,8 @@
   .carousel-image--title {
     max-width: 22vw;
     margin: auto auto 2vh;
+  }
+
+  .carousel__button {
   }
 }

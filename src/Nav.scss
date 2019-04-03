@@ -47,6 +47,7 @@
   .nav__dag {
     width: 10vw;
     margin-bottom: 1vh;
+    display: none;
   }
 
   .fa-dog {
@@ -66,6 +67,7 @@
     opacity: 0.9;
     top: 0;
     right: 0;
+    
 
     .nav__list {
       .nav__social {
@@ -106,9 +108,8 @@
   .nav__dag {
     object-fit: contain;
     height: 4vw;
-    margin-top: 8vh;
-    position: absolute;
-    display: none;
+    margin-left: 12vw;
+
   }
 }
 

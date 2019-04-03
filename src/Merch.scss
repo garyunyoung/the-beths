@@ -14,14 +14,33 @@
     .merch__store__link {
       text-decoration: none;
       color: black;
-      &:hover {
-        text-decoration: underline;
-      }
+
     }
   }
 }
 @media (min-width: 1024px) {
-  .merch__store__link {
-    font-size: 1em;
+  .merch__visit {
+    margin-top: 3vh;
+    font-size: 1.5em;
+    font-weight: 300;
+    cursor: default;
   }
+
+  .merch__store{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    width: 55vw;
+
+  
+  .merch__store__link {
+    margin-top: 3vh;
+    font-size: 1.2em;
+    font-weight: 300;
+
+    &:hover {
+
+    }
+  }
+}
 }

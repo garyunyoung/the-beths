@@ -83,20 +83,13 @@
     .landing__text {
       font-size: 1.5em;
       margin-bottom: 1vh;
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-
-      }
     }
-
 
     .landing__text__link--desktop {
       font-size: 1.5em;
       margin-top: 4vh;
       display: block;
     }
-
 
     .landing__text__link--mobile {
       display: none;
@@ -108,7 +101,7 @@
 
     .landing__text__bottom {
       margin-top: 4vh;
-      margin-bottom: 2vh;  
+      margin-bottom: 2vh;
     }
     .landing__dog {
       position: absolute;

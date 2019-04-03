@@ -19,7 +19,7 @@ export default function Merch() {
   return (
     <section className="merch">
       <Carousel merch={merch} />
-      <h2 className="merch__visit">visit stores</h2>
+      <h1 className="merch__visit">visit stores </h1>
       <div className="merch__store">
         <a
           className="merch__store__link"
@@ -27,7 +27,7 @@ export default function Merch() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Europe
+          EU
         </a>
         <a
           className="merch__store__link"
