@@ -10,13 +10,13 @@
     top: 3vh;
     right: 5vw;
     list-style: none;
-    display: none;
+    // display: none;
 
     .nav-desktop__item {
       font-family: "Gaegu", cursive;
       font-size: 2em;
       text-align: right;
-      color: black;
+      color: white;
       text-decoration: none;
 
       &:hover {
