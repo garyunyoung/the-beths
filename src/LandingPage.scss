@@ -3,6 +3,10 @@
   flex-flow: column;
   justify-content: center;
   text-align: center;
+  background-image: url("./images/landing-background-c.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 
   .landing__bar {
     height: 10vh;
@@ -71,6 +75,10 @@
 
 @media (min-width: 1024px) {
   .landing {
+    height: 100vh;
+    background-image: url("./images/landing-background-d.png");
+    background-size: cover;
+
     .landing__bar {
       height: 17vh;
 
