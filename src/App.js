@@ -14,9 +14,6 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section id="top" className="page page--landing">
-          <LandingPage />
-        </section>
         <NavDesktop />
         <Bar />
         <section className="page page--home">
