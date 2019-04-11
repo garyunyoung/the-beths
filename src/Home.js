@@ -2,6 +2,7 @@ import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import logoW from "./images/logo-w.png";
+import fmhm from "./images/fmhm.jpg";
 import "./Home.scss";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
+          <img className="fmhm" src={fmhm} />
           <img className="logo--w" src={logoW} alt="the beths logo" />
           <a
             className="button--desktop--link"

@@ -1,7 +1,7 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("./images/home-mobile.jpg");
+  background-image: url("./images/fmhm.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +22,10 @@
       display: none;
     }
   }
+
+  .fmhm {
+    display:none;
+  }
 }
 
 .nav__desktop {
@@ -30,7 +34,7 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
-    background-image: url("./images/home-tablet.jpg");
+    background-image: url("./images/fmhm.jpg");
     height: 80vh;
     background-size: 114%;
     background-position: top;
@@ -39,9 +43,9 @@
 
 @media (min-width: 1024px) {
   .home__content {
-    background-image: url("./images/home-desktop.jpg");
+    background-image: url("./images/test-a.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: bottom right;
     height: 100vh;
     width: 100vw;
 
@@ -74,6 +78,13 @@
         width: 20vw;
 
       }
+    }
+
+    .fmhm {
+      display: block;
+      width: 20vw;
+      box-shadow: 2px 2px 2px white;
+      display: none;
     }
   }
 }
