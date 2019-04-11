@@ -6,32 +6,32 @@ export default function Contact() {
   return (
     <section className="contact">
       <p className="contact__text">general manager</p>
-      <a className="contact__link" href="mailto:someone@yoursite.com">
+      <a className="contact__link" href="mailto:jacob@monstermanagement.com.au">
         jacob@monstermanagement.com.au
       </a>
       <br />
       <p className="contact__text">booking agent</p>
       <p className="contact__text">
         nz:{" "}
-        <a className="contact__link" href="anthony@onehundredpercent.nz">
+        <a className="contact__link" href="mailto:anthony@onehundredpercent.nz">
           anthony@onehundredpercent.nz
         </a>
       </p>
       <p className="contact__text">
         aus:{" "}
-        <a className="contact__link" href="casey@selectmusic.com.au">
+        <a className="contact__link" href="mailto:casey@selectmusic.com.au">
           casey@selectmusic.com.au
         </a>
       </p>
       <p className="contact__text">
         nth us:{" "}
-        <a className="contact__link" href="bswanson@paradigmagency.com">
+        <a className="contact__link" href="mailto:bswanson@paradigmagency.com">
           bswanson@paradigmagency.com
         </a>
       </p>
       <p className="contact__text">
         eu/uk:{" "}
-        <a className="contact__link" href="joren@thelullabyefactory.com">
+        <a className="contact__link" href="mailto:joren@thelullabyefactory.com">
           joren@thelullabyefactory.com
         </a>
       </p>
