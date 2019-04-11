@@ -1,5 +1,6 @@
 import React from "react";
 import Bar from "./Bar";
+import BarDesktop from './BarDesktop';
 import NavDesktop from "./NavDesktop";
 import LandingPage from "./LandingPage";
 import Home from "./Home";
@@ -15,6 +16,7 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <NavDesktop />
+        <BarDesktop/>
         <Bar />
         <section className="page page--home">
           <Home />

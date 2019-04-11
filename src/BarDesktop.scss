@@ -1,0 +1,42 @@
+.barDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .barDesktop {
+    height: 9vh;
+    background-color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    z-index: 1;
+
+    .barDesktop__logo {
+      width: 10vw;
+      object-fit: contain;
+    }
+  }
+
+  .barDesktop__socials {
+    width: 15vw;
+
+    .socials__icon {
+      font-size: 2vh;
+      margin: 2vw 1vw;
+      color: black;
+    }
+  }
+
+  .barDesktop__nav {
+    width: 15vw;
+    display: flex;
+
+    .nav__item {
+      font-family: "Gaegu", cursive;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

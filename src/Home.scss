@@ -1,7 +1,7 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("./images/fmhm.jpg");
+  background-image: url("./images/home-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
-    background-image: url("./images/fmhm.jpg");
+    background-image: url("./images/home-tablet.jpg");
     height: 80vh;
     background-size: 114%;
     background-position: top;
@@ -39,8 +39,9 @@
 
 @media (min-width: 1024px) {
   .home__content {
-    background-image: url("./images/fmhm.jpg");
+    background-image: url("./images/home-desktop.jpg");
     background-size: cover;
+    background-position: top;
     height: 100vh;
     width: 100vw;
 
