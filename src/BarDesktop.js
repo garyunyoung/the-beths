@@ -1,7 +1,7 @@
 import React from "react";
 import Sticky from "./Sticky";
-import "./BarDesktop.scss";
 import logoBlack from "./images/logo-b.png";
+import "./BarDesktop.scss";
 
 export default function BarDesktop() {
   return (
