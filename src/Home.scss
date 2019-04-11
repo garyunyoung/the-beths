@@ -1,7 +1,7 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("./images/fmhm.jpg");
+  background-image: url("./images/fmhm-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
-    background-image: url("./images/fmhm.jpg");
+    background-image: url("./images/fmhm-mobile.jpg");
     height: 80vh;
     background-size: 114%;
     background-position: top;
@@ -52,7 +52,7 @@
 
 @media (min-width: 1024px) {
   .home__content {
-    background-image: url("./images/test-a.jpg");
+    background-image: url("./images/fmhm-desktop.jpg");
     background-position: right;
     height: 92vh;
 

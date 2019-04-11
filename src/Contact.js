@@ -1,5 +1,5 @@
 import React from "react";
-import cpLogo from "./images/cp-logo.jpg";
+import cpLogo from "./images/cp-logo-bw.jpg";
 import "./Contact.scss";
 
 export default function Contact() {
