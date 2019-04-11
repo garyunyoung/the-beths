@@ -44,11 +44,13 @@ export default function BarDesktop() {
             <i className="socials__icon socials__icon--bandcamp fab fa-bandcamp" />
           </a>
         </section>
+        <a className="nav__item" href="#">
         <img
           className="barDesktop__logo"
           src={logoBlack}
           alt="the beths logo"
         />
+        </a>
         <section className="barDesktop__nav">
           <a className="nav__item" href="#merch">
             <p>merch</p>
