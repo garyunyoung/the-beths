@@ -18,6 +18,9 @@
 
 @media (min-width: 1024px) {
   .contact {
+    .contact__text {
+      cursor: default;
+    }
     .cp-logo {
       margin: 2vw;
       width: 3vh;

@@ -12,6 +12,7 @@
   font-weight: 800;
   padding: 10vh 3vw;
   margin-bottom: 12vh;
+
 }
 .carousel-image {
   position: absolute;
@@ -52,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 25vw;
-    width: 35vw;
+    width: 40vw;
   }
 
   .carousel__wrapper--link {
@@ -62,8 +63,14 @@
   .carousel-image--title {
     max-width: 22vw;
     margin: auto auto 2vh;
+    &:hover {
+      color: #fdd73f;
+    }
   }
 
   .carousel__button {
+    &:hover {
+      color: #fdd73f;
+    }
   }
 }

@@ -10,35 +10,31 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid lightgrey;
-    z-index: 1;
-
-
-
 
     .barDesktop__logo {
       width: 10vw;
-      object-fit: contain;
     }
   }
 
   .barDesktop__socials {
-      margin-left: 5vw;
     width: 20vw;
-
+    margin-left: 6vw;
 
     .socials__icon {
       font-size: 2.5vh;
       margin: 2vw 1vw;
       color: black;
+
+      &:hover {
+        color: #fdd73f;
+      }
     }
   }
 
   .barDesktop__nav {
     display: flex;
     width: 20vw;
-    margin-right: 5vw;
-
-
+    margin-right: 6vw;
 
     .nav__item {
       font-size: 2.5vh;
@@ -48,6 +44,10 @@
       font-family: "Gaegu", cursive;
       text-decoration: none;
       color: black;
+
+      &:hover {
+        color: #fdd73f;
+      }
     }
   }
 }

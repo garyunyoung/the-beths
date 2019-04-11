@@ -34,7 +34,6 @@
   .thumbnail__link {
     text-decoration: none;
     color: black;
-    font-size: 2.5vh;
     font-weight: 300;
     margin: 0;
   }
@@ -48,10 +47,15 @@
 
 @media (min-width: 1024px) {
   .watch {
+    .watch__text {
+      font-size: 1.5em;
+      cursor: default;
+    }
 
     .watch__wrapper {
       margin: 0 auto;
-      max-width: 75vw;
+      max-width: 70vw;
+
     }
   }
   
@@ -60,6 +64,14 @@
 
     .thumbnail__image {
       height: 15vh;
+
+    }
+
+    .thumbnail__text {
+      font-size: 1.2em;
+      &:hover {
+        color: #fdd73f;
+      }
     }
   }
 }

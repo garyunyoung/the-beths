@@ -14,34 +14,33 @@
     .merch__store__link {
       text-decoration: none;
       color: black;
-
     }
   }
 }
 @media (min-width: 1024px) {
   .merch__visit {
+    width: 15vw;
+    margin: 0 auto;
     margin-top: 3vh;
     font-size: 1.5em;
-    font-weight: 600;
     cursor: default;
   }
 
-  .merch__store{
+  .merch__store {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
     width: 55vw;
 
+    .merch__store__link {
+      margin-top: 3vh;
+      font-size: 1.2em;
+      font-weight: 300;
+      padding: 0 1vw;
 
-  
-  .merch__store__link {
-    margin-top: 3vh;
-    font-size: 1.2em;
-    font-weight: 300;
-
-    &:hover {
-
+      &:hover {
+        color: #fdd73f;
+      }
     }
   }
-}
 }
