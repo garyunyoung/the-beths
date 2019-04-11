@@ -1,8 +1,9 @@
 import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
-import logoW from "./images/logo-w.png";
-import fmhm from "./images/fmhm.jpg";
+import title from "./images/fmhm-title.png";
+import outNow from './images/out-now.png';
+import cpY from './images/cp-logo-y.jpg';
 import "./Home.scss";
 
 export default function Home() {
@@ -10,15 +11,25 @@ export default function Home() {
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
-          <img className="fmhm" src={fmhm} />
-          <img className="logo--w" src={logoW} alt="the beths logo" />
+          <img className="title" src={title} />
+          <img className="outNow" src={outNow} />
+          <img className="cpY" src={cpY} />
+
           <a
-            className="button--desktop--link"
+            className="cta__link"
             href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="button--desktop">future me hates me out now!</div>
+          <h1 className='cta'>purchase</h1>
+          </a>
+          <a
+            className="cta__link"
+            href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <h1 className='cta'>stream</h1>
           </a>
           <Socials />
         </section>

@@ -14,17 +14,22 @@
   .home__wrapper {
     display: flex;
     justify-content: center;
-
-    .logo--w {
-      display: none;
-    }
-    .button--desktop {
-      display: none;
-    }
   }
 
-  .fmhm {
-    display:none;
+  .title {
+    display: none;
+  }
+
+  .outNow {
+    display: none;
+  }
+
+  .cpY {
+    display: none;
+  }
+
+  .cta {
+    display: none;
   }
 }
 
@@ -53,38 +58,41 @@
       display: flex;
       flex-flow: column;
       align-items: center;
-      height: 90vh;
-      margin-bottom: 35vh;
+      justify-content: flex-start;
+      height: 85vh;
       width: 50vw;
-
-      .logo--w {
-        display: block;
-        width: 25vw;
-        margin-bottom: 3vh;
-        display: none;
-      }
-      .button--desktop--link {
-        font-family: "Gaegu", cursive;
-        color: white;
-        text-decoration: none;
-        font-size: 2em;
-        display: none;
-      }
-
-      .button--desktop {
-        display: block;
-        text-align: center;
-        margin-bottom: 3vh;
-        width: 20vw;
-
-      }
     }
 
-    .fmhm {
+    .title {
       display: block;
-      width: 20vw;
-      box-shadow: 2px 2px 2px white;
-      display: none;
+      width: 38.5vw;
+      margin-bottom: 2vh;
+    }
+
+    .outNow {
+      display: block;
+      margin-bottom: 2vh;
+    }
+
+    .cpY {
+      display: block;
+      margin-bottom: 8vh;
+    }
+
+    .cta {
+      border: 2px solid white;
+      display: block;
+      margin-bottom: 3vh;
+      padding: 1vw;
+    }
+    
+    .cta__link {
+      font-family: "Gaegu", cursive;
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-decoration: none;
     }
   }
 }
