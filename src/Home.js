@@ -2,8 +2,7 @@ import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import title from "./images/fmhm-title.png";
-import outNow from './images/out-now.png';
-import cpY from './images/cp-logo-y.jpg';
+import cpY from './images/cp-logo-y.png';
 import "./Home.scss";
 
 export default function Home() {
@@ -12,7 +11,8 @@ export default function Home() {
       <section className="home__content">
         <section className="home__wrapper">
           <img className="title" src={title} />
-          <img className="outNow" src={outNow} />
+          <h1 className='titleText'>future me hates me</h1>
+          <h1 className='outNow'>out now</h1>
           <img className="cpY" src={cpY} />
 
           <a

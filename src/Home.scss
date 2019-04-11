@@ -15,14 +15,18 @@
     display: flex;
     justify-content: center;
   }
-
   .title {
     display: none;
+  }
+
+  .titleText {
+    display: none
   }
 
   .outNow {
     display: none;
   }
+
 
   .cpY {
     display: none;
@@ -57,23 +61,44 @@
       flex-flow: column;
       align-items: center;
       justify-content: flex-start;
-      height: 85vh;
+      height: 80vh;
       width: 50vw;
     }
 
     .title {
       display: block;
-      width: 38.5vw;
-      margin-bottom: 2vh;
+      width: 15vw;
+      margin: 0;
+    }
+
+    .titleText {
+      display: block;
+      text-transform: uppercase;
+      font-size: 2.9em;
+      line-height: .5em;
+      letter-spacing: 1px;
+      font-weight: 800;
+      color: #fdd73f;
+      margin-bottom: 3vh;
+      margin-top: 0;
+
     }
 
     .outNow {
       display: block;
+      text-transform: capitalize;
+      color: white;
+      font-weight: 300;
       margin-bottom: 3vh;
+      font-size: 3vh;
+      letter-spacing: 2px;
+      cursor: default;
+
     }
 
     .cpY {
       display: block;
+      width: 2vw;
       margin-bottom: 5vh;
     }
 
@@ -81,13 +106,13 @@
       border: 3px solid white;
       display: block;
       margin-bottom: 3vh;
-      padding: 1.5vw;
+      padding: 1.2vw;
 
       &:hover {
         border: 3px solid #fedb4e;
       }
     }
-    
+
     .cta__link {
       font-family: "Gaegu", cursive;
       color: white;
@@ -95,6 +120,7 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       text-decoration: none;
+
     }
   }
 }
