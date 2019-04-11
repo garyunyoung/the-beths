@@ -105,13 +105,13 @@
     }
 
     .cta {
-      border: 3px solid white;
+      border: 2px solid white;
       display: block;
       margin-bottom: 3vh;
-      padding: 1.2vw;
+      padding: 1vw 1.5vw;
 
       &:hover {
-        border: 3px solid #fedb4e;
+        border: 2px solid #fedb4e;
         // color: #fedb4e;
       }
     }

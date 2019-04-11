@@ -31,7 +31,7 @@ export default function Home() {
           </a>
           <a
             className="cta__link"
-            href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
+            href="https://lnk.to/TheBethsFMHM"
             target="_blank"
             rel="noopener noreferrer"
           >
