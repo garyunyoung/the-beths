@@ -5,21 +5,55 @@ import "./Contact.scss";
 export default function Contact() {
   return (
     <section className="contact">
+      <p className="contact__text">general manager</p>
+      <a className="contact__link" href="mailto:someone@yoursite.com">
+        jacob@monstermanagement.com.au
+      </a>
+      <br />
+      <p className="contact__text">booking agent</p>
       <p className="contact__text">
-        <strong>general manager</strong> <br />
-        jacob@monstermanagement.com.au <br />
-        <br />
-        <strong>booking agent </strong>
-        <br />
-        <strong>nz:</strong> anthony@onehundredpercent.nz <br />
-        <strong>aus: </strong>casey@selectmusic.com.au <br />
-        <strong>nth us: </strong>
-        bswanson@paradigmagency.com <br />
-        <strong>eu/uk: </strong>joren@thelullabyefactory.com <br />
-        <br />
-        <strong>record label</strong><br/>
-        carpark records<br/>
-        <img className="cp-logo" src={cpLogo} alt="carpark records logo"/>
+        nz:{" "}
+        <a className="contact__link" href="anthony@onehundredpercent.nz">
+          anthony@onehundredpercent.nz
+        </a>
+      </p>
+      <p className="contact__text">
+        aus:{" "}
+        <a className="contact__link" href="casey@selectmusic.com.au">
+          casey@selectmusic.com.au
+        </a>
+      </p>
+      <p className="contact__text">
+        nth us:{" "}
+        <a className="contact__link" href="bswanson@paradigmagency.com">
+          bswanson@paradigmagency.com
+        </a>
+      </p>
+      <p className="contact__text">
+        eu/uk:{" "}
+        <a className="contact__link" href="joren@thelullabyefactory.com">
+          joren@thelullabyefactory.com
+        </a>
+      </p>
+      <br />
+      <p className="contact__text">record label</p>
+      <a
+        className="contact__link"
+        href="http://carparkrecords.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        carpark records
+      </a>
+      <p>
+        <a
+          className="contact__link"
+          href="http://carparkrecords.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="cp-logo" src={cpLogo} alt="carpark records logo" />
+        </a>
       </p>
     </section>
   );
