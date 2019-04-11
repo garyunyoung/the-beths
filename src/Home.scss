@@ -49,8 +49,7 @@
 @media (min-width: 1024px) {
   .home__content {
     background-image: url("./images/test-a.jpg");
-    background-size: cover;
-    background-position: bottom right;
+    background-position: right;
     height: 100vh;
     width: 100vw;
 
@@ -71,27 +70,31 @@
 
     .outNow {
       display: block;
-      margin-bottom: 2vh;
+      margin-bottom: 3vh;
     }
 
     .cpY {
       display: block;
-      margin-bottom: 8vh;
+      margin-bottom: 5vh;
     }
 
     .cta {
-      border: 2px solid white;
+      border: 3px solid white;
       display: block;
       margin-bottom: 3vh;
-      padding: 1vw;
+      padding: 1.5vw;
+
+      &:hover {
+        border: 3px solid #fedb4e;
+      }
     }
     
     .cta__link {
       font-family: "Gaegu", cursive;
       color: white;
-      font-size: 2em;
+      font-size: 2.2em;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       text-decoration: none;
     }
   }
