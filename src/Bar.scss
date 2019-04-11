@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 415px) and (max-width: 1023px) {
+@media (min-width: 415px) and (max-width: 1022px) {
   .bar {
     height: 7vh;
     .bar__logo {
@@ -36,24 +36,8 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .bar {
-    height: 10vh;
-    width: 100vw;
-    position: absolute;
-    right: 0;
-    background-color: transparent;
-    z-index: 1;
-    border-bottom: none;
     display: none;
-  }
-
-  .bar__logo {
-    display: none;
-  }
-
-  .bar__nav--icon {
-    padding-top: 5vh;
-    color: black;
   }
 }

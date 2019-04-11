@@ -1,8 +1,6 @@
 import React from "react";
 import Bar from "./Bar";
-import BarDesktop from './BarDesktop';
-import NavDesktop from "./NavDesktop";
-import LandingPage from "./LandingPage";
+import BarDesktop from "./BarDesktop";
 import Home from "./Home";
 import Header from "./Header";
 import Merch from "./Merch";
@@ -15,9 +13,9 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <BarDesktop/>
-        <Bar />
         <section className="page page--home">
+          <BarDesktop />
+          <Bar />
           <Home />
         </section>
         <section id="merch" className="page page--merch">

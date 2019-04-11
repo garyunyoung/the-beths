@@ -5,14 +5,12 @@
 @media (min-width: 1024px) {
   .barDesktop {
     height: 8vh;
-    width: 100%;
     background-color: white;
-    top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid lightgrey;
-    z-index: 1;
+
 
     .barDesktop__logo {
       width: 10vw;
