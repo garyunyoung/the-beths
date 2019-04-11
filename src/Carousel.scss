@@ -6,12 +6,12 @@
 }
 
 .carousel__button {
-  font-family: "Gaegu", cursive;
-  cursor: pointer;
   font-size: 3vh;
   font-weight: 800;
   padding: 10vh 3vw;
   margin-bottom: 12vh;
+  cursor: pointer;
+
 }
 .carousel-image {
   position: absolute;
@@ -33,7 +33,6 @@
 }
 
 .carousel__wrapper--link {
-  font-family: "Gaegu", cursive;
   font-size: 3vh;
   font-weight: 300;
   text-decoration: none;
@@ -48,11 +47,8 @@
 
 @media (min-width: 1024px) {
   .carousel-image__image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30vw;
-    width: 42vw;
+    height: 25vw;
+    width: 40vw;
   }
 
   .carousel__wrapper--link {
@@ -62,8 +58,14 @@
   .carousel-image--title {
     max-width: 22vw;
     margin: auto auto 2vh;
+    &:hover {
+      color: #c45827;
+    }
   }
 
   .carousel__button {
+    &:hover {
+      color: #c45827;
+    }
   }
 }

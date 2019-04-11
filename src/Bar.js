@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
 import Sticky from "./Sticky";
-import "./Bar.scss";
 import logoBlack from "./images/logo-b.png";
+import "./Bar.scss";
 
 export default class Bar extends React.Component {
   constructor(props) {

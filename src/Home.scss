@@ -1,26 +1,35 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("./images/home-mobile.jpg");
+  background-image: url("./images/fmhm-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  flex-flow: column nowrap;
-  overflow: hidden;
   position: relative;
 
   .home__wrapper {
     display: flex;
     justify-content: center;
+  }
 
-    .logo--w {
-      display: none;
-    }
-    .button--desktop {
-      display: none;
-    }
+  .title {
+    display: none;
+  }
+
+  .titleText {
+    display: none;
+  }
+
+  .outNow {
+    display: none;
+  }
+
+  .cpY {
+    display: none;
+  }
+
+  .cta {
+    display: none;
   }
 }
 
@@ -30,7 +39,7 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
-    background-image: url("./images/home-tablet.jpg");
+    background-image: url("./images/fmhm-mobile.jpg");
     height: 80vh;
     background-size: 114%;
     background-position: top;
@@ -39,39 +48,72 @@
 
 @media (min-width: 1024px) {
   .home__content {
-    background-image: url("./images/home-desktop.jpg");
-    background-size: cover;
-    background-position: top;
-    height: 100vh;
-    width: 100vw;
+    background-image: url("./images/fmhm-desktop.jpg");
+    background-position: right;
+    height: 92vh;
 
     .home__wrapper {
-      display: flex;
       flex-flow: column;
       align-items: center;
-      height: 90vh;
-      margin-bottom: 35vh;
-      width: 50vw;
+      height: 80vh;
+      width: 54vw;
+    }
 
-      .logo--w {
-        display: block;
-        width: 25vw;
-        margin-bottom: 3vh;
-      }
-      .button--desktop--link {
-        font-family: "Gaegu", cursive;
-        color: white;
-        text-decoration: none;
-        font-size: 2em;
-      }
+    .title {
+      display: block;
+      width: 15vw;
+      margin: 0;
+    }
 
-      .button--desktop {
-        display: block;
-        text-align: center;
-        margin-bottom: 3vh;
-        width: 20vw;
+    .titleText {
+      font-family: "Open Sans", sans-serif;
+      display: block;
+      text-transform: uppercase;
+      font-size: 2.9em;
+      line-height: 0.5em;
+      letter-spacing: 1px;
+      font-weight: 800;
+      color: #fdd73f;
+      margin-bottom: 4vh;
+      margin-top: 0;
+      cursor: default;
+    }
 
+    .outNow {
+      font-family: "Open Sans", sans-serif;
+      display: block;
+      text-transform: capitalize;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 4vh;
+      font-size: 3vh;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+
+    .cpY {
+      display: block;
+      width: 2vw;
+      margin-bottom: 5vh;
+    }
+
+    .cta {
+      border: 2px solid white;
+      display: block;
+      margin-bottom: 3vh;
+      padding: 1vw 1.5vw;
+
+      &:hover {
+        border: 2px solid #fedb4e;
       }
+    }
+
+    .cta__link {
+      color: white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-decoration: none;
     }
   }
 }

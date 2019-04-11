@@ -29,6 +29,13 @@ code {
 
 @media (max-width: 414px) {
   body {
+    font-family: "Gaegu", cursive;
     font-size: 2.5vh;
+  }
+}
+
+@media (min-width: 414px) {
+  body {
+    font-family: "Gaegu", cursive;
   }
 }

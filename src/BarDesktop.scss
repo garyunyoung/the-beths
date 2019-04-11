@@ -1,0 +1,49 @@
+.barDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .barDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    height: 8vh;
+    padding: 0 7vw;
+
+    .barDesktop__logo {
+      width: 10vw;
+    }
+  }
+
+  .barDesktop__socials {
+    width: 20vw;
+
+    .socials__icon {
+      font-size: 2.5vh;
+      margin: 2vw 1vw;
+      color: black;
+
+      &:hover {
+        color: #c45827;
+      }
+    }
+  }
+
+  .barDesktop__nav {
+    display: flex;
+    width: 20vw;
+
+    .nav__item {
+      font-size: 2.5vh;
+      margin: 2vw 1vw;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: #c45827;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ export default function CTAButton() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        future me hates me out now!
+        purchase / stream
       </a>
     </button>
   );

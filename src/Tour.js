@@ -1,6 +1,6 @@
 import React from "react";
-import "./Tour.scss";
 import tourPic from "./images/tour-pic.jpg";
+import "./Tour.scss";
 
 export default class Tour extends React.Component {
   componentDidMount() {
