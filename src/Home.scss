@@ -5,28 +5,24 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  flex-flow: column nowrap;
-  overflow: hidden;
   position: relative;
 
   .home__wrapper {
     display: flex;
     justify-content: center;
   }
+
   .title {
     display: none;
   }
 
   .titleText {
-    display: none
+    display: none;
   }
 
   .outNow {
     display: none;
   }
-
 
   .cpY {
     display: none;
@@ -57,12 +53,10 @@
     height: 92vh;
 
     .home__wrapper {
-      display: flex;
       flex-flow: column;
       align-items: center;
-      justify-content: flex-start;
       height: 80vh;
-      width: 50vw;
+      width: 54vw;
     }
 
     .title {
@@ -72,21 +66,21 @@
     }
 
     .titleText {
+      font-family: "Open Sans", sans-serif;
       display: block;
       text-transform: uppercase;
       font-size: 2.9em;
-      line-height: .5em;
+      line-height: 0.5em;
       letter-spacing: 1px;
       font-weight: 800;
       color: #fdd73f;
       margin-bottom: 4vh;
       margin-top: 0;
       cursor: default;
-
-
     }
 
     .outNow {
+      font-family: "Open Sans", sans-serif;
       display: block;
       text-transform: capitalize;
       color: white;
@@ -95,7 +89,6 @@
       font-size: 3vh;
       letter-spacing: 2px;
       cursor: default;
-
     }
 
     .cpY {
@@ -112,18 +105,15 @@
 
       &:hover {
         border: 2px solid #fedb4e;
-        // color: #fedb4e;
       }
     }
 
     .cta__link {
-      font-family: "Gaegu", cursive;
       color: white;
       font-size: 1.5em;
       text-transform: uppercase;
       letter-spacing: 3px;
       text-decoration: none;
-
     }
   }
 }

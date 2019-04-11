@@ -10,7 +10,6 @@ export default function Nav(props) {
         <NavItem text="watch" link="watch" toggleNav={props.toggleNav} />
         <NavItem text="tour" link="tour" toggleNav={props.toggleNav} />
         <NavItem text="contact" link="contact" toggleNav={props.toggleNav} />
-        <NavItem text={<i className="nav__link fas fa-dog" />} link="home" toggleNav={props.toggleNav} />
         
         <div className="nav__social">
           <a
@@ -54,7 +53,7 @@ export default function Nav(props) {
             <i className="nav__social--link--bandcamp fab fa-bandcamp" />
           </a>
         </div>
-          <img className="nav__dag" src={tui} alt="beths dog thumbnail"/>
+          <img className="nav__tui" src={tui} alt="tui bird"/>
         <NavItem text="^" link="top" toggleNav={props.toggleNav} />
       </ul>
     </div>

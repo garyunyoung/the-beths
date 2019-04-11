@@ -6,12 +6,11 @@
 }
 
 .carousel__button {
-  font-family: "Gaegu", cursive;
-  cursor: pointer;
   font-size: 3vh;
   font-weight: 800;
   padding: 10vh 3vw;
   margin-bottom: 12vh;
+  cursor: pointer;
 
 }
 .carousel-image {
@@ -34,7 +33,6 @@
 }
 
 .carousel__wrapper--link {
-  font-family: "Gaegu", cursive;
   font-size: 3vh;
   font-weight: 300;
   text-decoration: none;
@@ -49,9 +47,6 @@
 
 @media (min-width: 1024px) {
   .carousel-image__image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 25vw;
     width: 40vw;
   }

@@ -1,20 +1,20 @@
 .contact {
-  font-family: "Gaegu", cursive;
   display: flex;
   flex-flow: column;
   text-align: center;
+  
 
   .contact__text {
     font-size: 2.5vh;
     font-weight: 600;
-
   }
 
   .contact__link {
     text-decoration: none;
     font-weight: 300;
     color: black;
-    }
+  }
+
   .cp-logo {
     margin: 3vw;
     width: 6vw;

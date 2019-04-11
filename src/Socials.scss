@@ -1,6 +1,5 @@
 .socials {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   position: absolute;
@@ -14,17 +13,11 @@
     cursor: pointer;
   }
 
-  .socials__icon--twitter{
+  .socials__icon--twitter {
     margin-right: 1.5vw;
     margin-left: 1.8vw;
   }
 
-  .socials__text {
-    font-family: "Gaegu", cursive;
-    font-size: 4vh;
-    color: white;
-    display: none;
-  }
 }
 
 @media (min-width: 415px) and (max-width: 1023px) {
@@ -40,13 +33,6 @@
 
 @media (min-width: 1024px) {
   .socials {
-    position: static;
-    width: 30vw;
     display: none;
-
-    .socials__icon {
-      font-size: 5vh;
-      margin: 2vw 1vw;
-    }
   }
 }

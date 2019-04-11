@@ -1,17 +1,10 @@
-.page {
-  width: 100vw;
-  overflow: hidden;
-
-}
-
 .page--home {
   height: 90vh;
-  overflow: hidden;
 }
 
 .page--contact {
   min-height: 90vh;
-  background-image: url("./images/landing-background-a.png");
+  background-image: url("./images/contact-background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -24,13 +17,6 @@
 }
 
 @media (min-width: 1024px) {
-  .page--merch {
-    min-height: 100vh;
-  }
-  .page--home {
-    min-height: 100vh;
-  }
-
   .page--contact {
     background-size: cover;
     min-height: 100vh;

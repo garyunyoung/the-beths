@@ -1,9 +1,8 @@
 .nav {
-  font-family: "Gaegu", cursive;
   background-color: white;
   position: absolute;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   opacity: 0.9;
   transform: translateY(-200vh);
   transition: transform 0.5s;
@@ -27,10 +26,6 @@
   .nav__link {
     text-decoration: none;
     color: black;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .nav__social {
@@ -44,13 +39,9 @@
     }
   }
 
-  .nav__dag {
+  .nav__tui {
     width: 10vw;
     margin-bottom: 1vh;
-  }
-
-  .fa-dog {
-    display: none;
   }
 }
 

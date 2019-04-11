@@ -39,7 +39,6 @@ export default function Socials() {
       >
         <i className="socials__icon socials__icon--bandcamp fab fa-bandcamp" />
       </a>
-      <p className="socials__text">future me hates me out now!</p>
     </section>
   );
 }
