@@ -3,15 +3,37 @@ import "./CTAButton.scss";
 
 export default function CTAButton() {
   return (
-    <button className="button">
-      <a
-        className="button--link"
-        href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        purchase / stream
-      </a>
-    </button>
+    <div className="button__wrapper">
+      <div className="button">
+        <a
+          className="button--link"
+          href="http://smarturl.it/TheBethsFMHM-Digital"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          digital
+        </a>
+      </div>
+      <div className="button">
+        <a
+          className="button--link"
+          href="http://smarturl.it/TheBethsFMHM-VinylCD"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          vinyl / cd
+        </a>
+      </div>
+      <div className="button">
+        <a
+          className="button--link"
+          href="http://smarturl.it/TheBeths-Merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          merch
+        </a>
+      </div>
+    </div>
   );
 }
