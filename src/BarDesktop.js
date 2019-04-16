@@ -1,6 +1,7 @@
 import React from "react";
 import Sticky from "./Sticky";
 import logoBlack from "./images/logo-b.png";
+import tui from "./images/tui.png";
 import "./BarDesktop.scss";
 
 export default function BarDesktop() {
@@ -64,6 +65,7 @@ export default function BarDesktop() {
           <a className="nav__item" href="#contact">
             <p>contact</p>
           </a>
+          {/* <img className="nav__tui" src={tui} alt="tui bird"/> */}
         </section>
       </div>
     </Sticky>

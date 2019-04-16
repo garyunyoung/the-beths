@@ -42,7 +42,8 @@
 
 .carousel-image--title {
   width: 70vw;
-  margin: auto;
+  margin: 3vh auto;
+  height: 2em;
 }
 
 @media (min-width: 1024px) {
@@ -52,12 +53,12 @@
   }
 
   .carousel__wrapper--link {
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
   }
 
   .carousel-image--title {
-    max-width: 22vw;
-    margin: auto auto 2vh;
+    max-width: 30vw;
+    margin: auto auto 5vh auto;
     &:hover {
       color: #c45827;
     }

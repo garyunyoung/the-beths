@@ -28,20 +28,13 @@ export default class Carousel extends React.Component {
               this.handleClick(-1);
             }}
           >{`<`}</p>
-          <a
-            className="carousel__wrapper--link"
-            href="https://thebethsnz.bandcamp.com/merch"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {this.props.merch.map((item, i) => (
-              <CarouselImage
-                item={item}
-                key={i}
-                visible={i === this.state.currentSlide}
-              />
-            ))}
-          </a>
+          {this.props.merch.map((item, i) => (
+            <CarouselImage
+              item={item}
+              key={i}
+              visible={i === this.state.currentSlide}
+            />
+          ))}
           <p
             className="carousel__button"
             onClick={() => {
@@ -61,11 +54,19 @@ function CarouselImage(props) {
         props.visible ? "carousel-image--visible" : ""
       }`}
     >
-      <div
-        className="carousel-image__image" alt={`merch: ${props.item.title}`}
-        style={{ backgroundImage: `url(${props.item.src})` }}
-      />
-      <p className="carousel-image--title">{props.item.title}</p>
+      <a
+        className="carousel__wrapper--link"
+        href={props.item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          className="carousel-image__image"
+          alt={`merch: ${props.item.title}`}
+          style={{ backgroundImage: `url(${props.item.src})` }}
+        />
+        <p className="carousel-image--title">{props.item.title}</p>
+      </a>
     </div>
   );
 }

@@ -3,7 +3,10 @@
 
   .merch__visit {
     font-size: 1.5em;
-    margin-bottom: 5vh;
+    margin: 3vh;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
   }
 
   .merch__store {
@@ -13,6 +16,7 @@
     .merch__store__link {
       text-decoration: none;
       color: black;
+      display: none;
     }
   }
 }
@@ -20,9 +24,10 @@
   .merch__visit {
     width: 15vw;
     margin: 0 auto;
-    margin-top: 3vh;
-    font-size: 1.5em;
     cursor: default;
+    &:hover {
+      color: #c45827;
+    }
   }
 
   .merch__store {
@@ -36,7 +41,6 @@
       font-size: 1.2em;
       font-weight: 300;
       padding: 0 1vw;
-
       &:hover {
         color: #c45827;
       }
