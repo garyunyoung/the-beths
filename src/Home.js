@@ -43,7 +43,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">merch</h1>
+            <h1 className="cta">play</h1>
           </a>
 
           <Socials />
