@@ -65,6 +65,7 @@ export default function BarDesktop() {
           <a className="nav__item" href="#contact">
             <p>contact</p>
           </a>
+          {/* <p className='nav__play'>play</p> */}
           <a className="nav__item" href="#">
           <img className="nav__tui" src={tui} alt="tui bird"/>
             {/* <p>play</p> */}

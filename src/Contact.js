@@ -24,7 +24,7 @@ export default function Contact() {
         </a>
       </p>
       <p className="contact__text">
-        nth us:{" "}
+        us/can:{" "}
         <a className="contact__link" href="mailto:bswanson@paradigmagency.com">
           bswanson@paradigmagency.com
         </a>

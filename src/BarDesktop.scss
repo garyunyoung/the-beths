@@ -18,7 +18,7 @@
   }
 
   .barDesktop__socials {
-    width: 22vw;
+    width: 21.5vw;
 
     .socials__icon {
       font-size: 2.5vh;
@@ -33,7 +33,7 @@
 
   .barDesktop__nav {
     display: flex;
-    width: 22vw;
+    width: 21.5vw;
 
     .nav__item {
       font-size: 2.5vh;
@@ -46,8 +46,27 @@
       }
     }
   }
+
+  // .nav__play {
+  //   position: absolute;
+  //   margin-left: 20.5vw;
+  //   margin-top: 1.5vh;
+  //   transform: rotate(40deg);
+  //   opacity: 0;
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
+
   .nav__tui {
     position: absolute;
     width: 1.5vw;
+    transform: rotate(-7deg);
+    opacity: 0.2;
+    &:hover {
+      opacity: 1;
+      transform: rotate(-20deg);
+      width: 1.8vw;
+    }
   }
 }
