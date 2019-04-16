@@ -23,20 +23,29 @@ export default function Home() {
 
           <a
             className="cta__link"
-            href="https://thebethsnz.bandcamp.com/album/future-me-hates-me"
+            href="http://smarturl.it/TheBethsFMHM-Digital"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">purchase</h1>
+            <h1 className="cta">digital</h1>
           </a>
           <a
             className="cta__link"
-            href="https://lnk.to/TheBethsFMHM"
+            href="http://smarturl.it/TheBethsFMHM-VinylCD"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">stream</h1>
+            <h1 className="cta">vinyl / cd</h1>
           </a>
+          <a
+            className="cta__link"
+            href="http://smarturl.it/TheBeths-Merch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="cta">merch</h1>
+          </a>
+
           <Socials />
         </section>
       </section>
