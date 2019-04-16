@@ -18,7 +18,7 @@
   }
 
   .barDesktop__socials {
-    width: 20vw;
+    width: 22vw;
 
     .socials__icon {
       font-size: 2.5vh;
@@ -33,7 +33,7 @@
 
   .barDesktop__nav {
     display: flex;
-    width: 20vw;
+    width: 22vw;
 
     .nav__item {
       font-size: 2.5vh;
@@ -47,7 +47,7 @@
     }
   }
   .nav__tui {
-    width: 2vw;
-    object-fit: contain;
+    position: absolute;
+    width: 1.5vw;
   }
 }

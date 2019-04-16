@@ -37,14 +37,14 @@ export default function Home() {
           >
             <h1 className="cta">vinyl / cd</h1>
           </a>
-          <a
+          {/* <a
             className="cta__link"
             href="http://smarturl.it/TheBeths-Merch"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">play</h1>
-          </a>
+            <h1 className="cta">merch</h1>
+          </a> */}
 
           <Socials />
         </section>
