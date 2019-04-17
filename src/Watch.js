@@ -52,7 +52,7 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=CV3Bjx-vPTg"
         />
       </section>
-      <h2 className="watch__text">whatever</h2>
+      <h2 className="watch__text">warm blood EP</h2>
       <section className="watch__wrapper">
         <Thumbnail
           title="whatever"

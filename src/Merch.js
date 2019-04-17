@@ -23,7 +23,7 @@ export default function Merch() {
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
-      title: "warm blood - LP - pink",
+      title: "warm blood - EP - LP - pink",
       src: wbP,
       link: "http://smarturl.it/TheBethsWB-Vinyl"
     },
