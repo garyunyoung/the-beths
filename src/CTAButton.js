@@ -24,7 +24,7 @@ export default function CTAButton() {
           vinyl / cd
         </a>
       </div>
-      <div className="button">
+      {/* <div className="button">
         <a
           className="button--link"
           href="http://smarturl.it/TheBeths-Merch"
@@ -33,7 +33,7 @@ export default function CTAButton() {
         >
           merch
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
