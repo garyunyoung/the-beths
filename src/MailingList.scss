@@ -1,0 +1,48 @@
+.mailingList {
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+  margin-top: 3vh;
+
+  .mailingList__dag {
+    height: 5vh;
+    width: 20vw;
+    transform: translateY(3vh);
+    margin-right: 2vw;
+  }
+
+  .mailingList__wrapper {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 70vw;
+
+    .mailingList__input {
+      border: 1px dashed black;
+      margin-top: 1vh;
+      height: 1.7em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .mailingList {
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    width: 40vw;
+
+    .mailingList__dag {
+      width: 8vw;
+    }
+
+    .mailingList__wrapper {
+      width: 20vw;
+
+      .mailingList__input {
+        background-color: white;
+        opacity: .8;
+      }
+    }
+  }
+}

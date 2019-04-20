@@ -13,27 +13,27 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-          <BarDesktop />
-          <Bar />
-          <section className="page page--home">
-            <Home />
-          </section>
-          <section id="merch" className="page page--merch">
-            <Header header="merch" />
-            <Merch />
-          </section>
-          <section id="watch" className="page page--watch">
-            <Header header="watch" />
-            <Watch />
-          </section>
-          <section id="tour" className="page page--tour">
-            <Header header="tour" />
-            <Tour />
-          </section>
-          <section id="contact" className="page page--contact">
-            <Header header="contact" />
-            <Contact />
-          </section>
+        <BarDesktop />
+        <Bar />
+        <section className="page page--home">
+          <Home />
+        </section>
+        <section id="merch" className="page page--merch">
+          <Header header="merch" />
+          <Merch />
+        </section>
+        <section id="watch" className="page page--watch">
+          <Header header="watch" />
+          <Watch />
+        </section>
+        <section id="tour" className="page page--tour">
+          <Header header="tour" />
+          <Tour />
+        </section>
+        <section id="contact" className="page page--contact">
+          <Header header="contact" />
+          <Contact />
+        </section>
       </React.Fragment>
     );
   }

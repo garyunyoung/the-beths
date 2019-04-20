@@ -1,6 +1,8 @@
 import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
+import MailingList from './MailingList';
+
 import title from "./images/fmhm-title.png";
 import cpY from "./images/cp-logo-y.png";
 import "./Home.scss";
@@ -41,6 +43,7 @@ export default function Home() {
         </section>
       </section>
       <CTAButton />
+      <MailingList/>
     </section>
   );
 }
