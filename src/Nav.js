@@ -55,9 +55,7 @@ export default function Nav(props) {
             </a>
           </div>
 
-          <a
-          onClick={props.toggleGame}
-          >
+          <a onClick={props.toggleGame}>
             <img className="nav__tui" src={tui} alt="tui bird" />
           </a>
 

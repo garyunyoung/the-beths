@@ -24,8 +24,13 @@ export default class Bar extends React.Component {
     this.setState((prevState, _props) => ({
       gameIsOpen: !prevState.gameIsOpen
     }));
+  }
 
-    console.log('this worked')
+  closeAll() {
+    this.toggleNav();
+    this.setState((_props) => ({
+      gameIsOpen: false
+    }))
   }
 
   render() {
@@ -35,12 +40,11 @@ export default class Bar extends React.Component {
           <img className="bar__logo" src={logoBlack} alt="the beths logo" />
           <HamburgerButton
             open={this.state.isOpen}
-            toggleNav={() => this.toggleNav()}
-            color={this.state.fontColor}
+            closeAll={() => this.closeAll()}
           />
         </div>
         <Nav open={this.state.isOpen} toggleNav={() => this.toggleNav()} toggleGame={() => this.toggleGame()}/>
-        <Game open={this.state.gameIsOpen} toggleGame={() => this.toggleGame()}/>
+        <Game open={this.state.gameIsOpen}/>
       </Sticky>
     );
   }
@@ -50,8 +54,7 @@ function HamburgerButton(props) {
   return (
     <p
       className="bar__nav--icon"
-      onClick={props.toggleNav}
-      style={{ color: props.fontColor }}
+      onClick={props.closeAll}
     >
       {props.open ? "x" : "="}
     </p>
