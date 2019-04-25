@@ -6,6 +6,7 @@
   opacity: 0.9;
   transform: translateY(-200vh);
   transition: transform 0.5s;
+  z-index: 2;
 
   .nav__list {
     list-style: none;
