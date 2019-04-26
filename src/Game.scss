@@ -10,17 +10,24 @@
 .game--open {
   height: 100vh;
   width: 100vw;
-  padding: 5vh 12vw;
+  padding: 5vh 12.5vw;
   background-color: white;
   opacity: 1;
   z-index: 2;
   overflow: hidden;
   transition: all 1s linear 0s;
+
 }
 
 @media (min-width: 1024px) {
+  $transition-speed: 70ms;
+  $animation-speed: 600ms;
   .game--open {
     padding: 5vh 32.5vw;
+  }
+
+  .game-area {
+    width: 35vw;
   }
 }
 
@@ -61,7 +68,7 @@ $social-icon-color: #e9f4eb;
 
 $new-game-color: #8f7a66;
 
-$transition-speed: 70ms;
+$transition-speed: .5s;
 $animation-speed: 600ms;
 
 @mixin button_style($margin_size) {
@@ -87,14 +94,10 @@ $animation-speed: 600ms;
 ) {
   html,
   body {
-    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
     background: $background-color;
-    color: $text-color;
 
     margin: 0;
     padding: 0;
-
-    font-size: $default-font-size;
   }
 
   body {
@@ -184,19 +187,6 @@ $animation-speed: 600ms;
     float: right;
   }
 
-  p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    line-height: 1.65;
-  }
-
-  a {
-    color: $text-color;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
   strong {
     &.important {
       text-transform: uppercase;
@@ -212,7 +202,13 @@ $animation-speed: 600ms;
     color: $text-color;
     opacity: 0.8;
     text-align: center;
-    font-size: .7em;
+    font-size: 0.7em;
+
+    & a {
+      color: $text-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   @include keyframes(fade-in) {
@@ -247,7 +243,6 @@ $animation-speed: 600ms;
     background: $game-container-background;
     padding: $grid-spacing;
     border-radius: $tile-border-radius;
-    width: 35vw;
 
     .game-message-container {
       display: none;
@@ -386,8 +381,9 @@ $animation-speed: 600ms;
 
     $background-images: "images/gifs/JONWINK.gif", "images/gifs/BENRAIN.gif",
       "images/gifs/LIZGOOGLY.gif", "images/gifs/IVAN.gif", "images/gifs/BEN.gif",
-      "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif", "images/gifs/IVANDOG.gif",
-      "images/gifs/JONCRICKET.gif", "images/gifs/LIZRAINBOW.gif", "images/gifs/IVANMILKY.gif",
+      "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif",
+      "images/gifs/IVANDOG.gif", "images/gifs/JONCRICKET.gif",
+      "images/gifs/LIZRAINBOW.gif", "images/gifs/IVANMILKY.gif",
       "images/gifs/BENBREAD.gif", "images/gifs/DANCINGSMALL.gif";
 
     // Build tile colors
@@ -450,6 +446,10 @@ $animation-speed: 600ms;
   .game-explanation {
     margin-top: $grid-spacing;
     text-align: center;
+    color: $text-color;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+    line-height: 1.65;
   }
 }
 

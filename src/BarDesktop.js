@@ -19,6 +19,12 @@ export default class BarDesktop extends React.Component {
     }));
   }
 
+  closeGame() {
+    this.setState(_props => ({
+      gameIsOpen: false
+    }));
+  }
+
   render() {
     return (
       <Sticky>
@@ -60,7 +66,7 @@ export default class BarDesktop extends React.Component {
               <i className="socials__icon socials__icon--bandcamp fab fa-bandcamp" />
             </a>
           </section>
-          <a className="nav__item" href="#">
+          <a className="nav__item" href="#" onClick={() => this.closeGame()}>
             <img
               className="barDesktop__logo"
               src={logoBlack}
@@ -68,16 +74,32 @@ export default class BarDesktop extends React.Component {
             />
           </a>
           <section className="barDesktop__nav">
-            <a className="nav__item" href="#merch">
+            <a
+              className="nav__item"
+              href="#merch"
+              onClick={() => this.closeGame()}
+            >
               <p>merch</p>
             </a>
-            <a className="nav__item" href="#watch">
+            <a
+              className="nav__item"
+              href="#watch"
+              onClick={() => this.closeGame()}
+            >
               <p>watch</p>
             </a>
-            <a className="nav__item" href="#tour">
+            <a
+              className="nav__item"
+              href="#tour"
+              onClick={() => this.closeGame()}
+            >
               <p>tour</p>
             </a>
-            <a className="nav__item" href="#contact">
+            <a
+              className="nav__item"
+              href="#contact"
+              onClick={() => this.closeGame()}
+            >
               <p>contact</p>
             </a>
 
