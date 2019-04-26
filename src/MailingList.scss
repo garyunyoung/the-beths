@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 5vh;
   justify-content: center;
+  overflow: hidden;
 
   .mailingList__dag {
     object-fit: contain;
@@ -38,6 +39,7 @@
 #mc_embed_signup label {
   width: 63vw;
   font-weight: 400;
+  cursor: pointer;
 }
 
 #mc_embed_signup input.email {
@@ -46,17 +48,19 @@
   opacity: 0.8;
   margin-top: 1vh;
   height: 1.7em;
-  // margin-left: 5vw;
 }
 
 #mc_embed_signup .button {
-  background-color: #19121200;
+  background-color: transparent;
   color: black;
   font-family: "Gaegu", cursive;
   padding: 0;
   width: 10vw;
   font-weight: 600;
-
+  &:hover {
+    background-color: transparent;
+    transition: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -68,13 +72,15 @@
 @media (min-width: 1024px) {
   .mailingList {
     position: absolute;
-    bottom: 0;
-    right: 9vw;
-    transform: translateY(11vh);
+    bottom: 1vh;
+    // right: 9vw;
+    left: 6.5vw;
+    transform: translateY(10.5vh);
 
     .mailingList__dag {
       width: 6vw;
       margin-right: 1.5vw;
+      transform: translateY(-2.5vh);
     }
   }
 
@@ -86,21 +92,34 @@
     width: 30vw;
   }
 
+  #mc_embed_signup input.email {
+    width: 30vw;
+    // border: 1px dashed white;
+
+  }
+
   #mc_embed_signup label {
+    color: white;
     width: 25vw;
     padding: 0;
     &:hover {
-      color: #c45827;
+      // color: #c45827;
+      color: #fdd83e;
       // transition: all 0.23s ease-in-out 0s
     }
   }
   #mc_embed_signup .button {
+    color: white;
     width: 4vw;
     height: 2em;
     &:hover {
-      background-color: transparent;
       color: #c45827;
-      transition: none;
+      color: #fdd83e;
+      //
     }
+  }
+
+  input:focus {
+    outline: none;
   }
 }
