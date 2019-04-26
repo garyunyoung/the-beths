@@ -10,9 +10,462 @@
 .game--open {
   height: 100vh;
   width: 100vw;
+  padding: 5vh 12vw;
   background-color: white;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 2;
   overflow: hidden;
-  transition: all 0.23s linear 0s;
+  transition: all 1s linear 0s;
+}
+
+@media (min-width: 1024px) {
+  .game--open {
+    padding: 5vh 32.5vw;
+  }
+}
+
+@import "gameHelpers.scss";
+
+$grid-row-cells: 4;
+
+$tile-border-radius: 10px;
+
+$field-width-desktop: 500px;
+$field-width-mobile: 280px !global;
+
+$grid-spacing-desktop: 15px;
+$grid-spacing-mobile: 10px !global;
+
+$tile-size-desktop: (
+    $field-width-desktop - $grid-spacing-desktop * ($grid-row-cells + 1)
+  ) / $grid-row-cells;
+$tile-size-mobile: (
+    $field-width-mobile - $grid-spacing-mobile * ($grid-row-cells + 1)
+  ) / $grid-row-cells !global;
+
+$mobile-threshold: $field-width-desktop + 20px;
+
+$text-color: rgb(65, 32, 32);
+$logo-color: rgb(137, 132, 207);
+$bright-text-color: #f9f6f2;
+$highlight-text-color: rgb(234, 207, 0);
+$preorder-color: #ddc124;
+
+$tile-color: #bfc8ff;
+
+$background-color: white;
+$button-color: #585858;
+// $game-container-background: #3d484f;
+$game-container-background: #bbada0;
+$social-icon-color: #e9f4eb;
+
+$new-game-color: #8f7a66;
+
+$transition-speed: 70ms;
+$animation-speed: 600ms;
+
+@mixin button_style($margin_size) {
+  display: block;
+  background: $button-color;
+
+  padding: $margin_size $margin_size;
+  height: 100%;
+
+  border-radius: $tile-border-radius;
+  border: 1px solid white;
+
+  color: $bright-text-color;
+  text-decoration: none;
+}
+
+@mixin page_style(
+  $score-container-height,
+  $default-font-size,
+  $field-width,
+  $grid-spacing,
+  $tile-size
+) {
+  html,
+  body {
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    background: $background-color;
+    color: $text-color;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: $default-font-size;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+
+  .heading {
+    @include clearfix;
+    width: 100%;
+    border-radius: 0 0 $tile-border-radius $tile-border-radius;
+  }
+
+  @include keyframes(move-up) {
+    0% {
+      top: 25px;
+      opacity: 1;
+    }
+
+    100% {
+      top: -50px;
+      opacity: 0;
+    }
+  }
+
+  .tile-stack {
+    position: absolute;
+    left: -999em;
+  }
+
+  .link-icon {
+    color: $social-icon-color;
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scores-container {
+    text-align: left;
+    margin-bottom: $grid-spacing;
+  }
+
+  .score-container,
+  .best-container {
+    position: relative;
+    display: inline-block;
+    background-color: #8f7a66;
+
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+    border-radius: $tile-border-radius;
+    border: 1px solid white;
+
+    padding: 5px;
+    min-width: 4em;
+
+    .score-label {
+      color: white;
+      font-size: 13px;
+    }
+
+    .score-addition {
+      font-weight: bold;
+      position: absolute;
+      right: 30px;
+      font-size: $score-container-height;
+      line-height: $score-container-height;
+      color: $highlight-text-color;
+      z-index: 100;
+      @include animation(move-up $animation-speed ease-in);
+      @include animation-fill-mode(both);
+    }
+  }
+
+  // Styles for buttons
+
+  .restart-button {
+    @include button_style($grid-spacing);
+
+    background-color: $new-game-color;
+
+    display: block;
+    text-align: center;
+    float: right;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.65;
+  }
+
+  a {
+    color: $text-color;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  strong {
+    &.important {
+      text-transform: uppercase;
+    }
+  }
+
+  .container {
+    width: $field-width;
+    margin: 0 auto;
+  }
+
+  .credits {
+    color: $text-color;
+    opacity: 0.8;
+    text-align: center;
+    font-size: .7em;
+  }
+
+  @include keyframes(fade-in) {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .game-curtain {
+    display: none;
+    @include stretch-to-parent;
+    background: rgba($game-container-background, 0.7);
+    border-radius: $tile-border-radius;
+
+    z-index: 100;
+
+    @include animation(fade-in $animation-speed ease $transition-speed * 12);
+    @include animation-fill-mode(both);
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .game-area {
+    position: relative;
+
+    background: $game-container-background;
+    padding: $grid-spacing;
+    border-radius: $tile-border-radius;
+    width: 35vw;
+
+    .game-message-container {
+      display: none;
+      @include stretch-to-parent;
+
+      font-weight: bold;
+      color: $bright-text-color;
+
+      z-index: 101;
+      text-align: center;
+
+      .game-message {
+        font-size: $default-font-size * 3;
+        height: $default-font-size;
+        line-height: $default-font-size;
+        margin-top: $default-font-size * 3;
+      }
+
+      .lower {
+        display: block;
+        margin-top: 30px;
+      }
+
+      a {
+        @include button_style($grid-spacing);
+
+        &.keep-playing-button {
+          display: none;
+        }
+      }
+
+      &.game-won {
+        color: $highlight-text-color;
+
+        a.keep-playing-button {
+          display: inline-block;
+        }
+
+        a.retry-button {
+          display: none;
+        }
+      }
+
+      &.game-won,
+      &.game-over {
+        display: block;
+      }
+
+      @include animation(fade-in $animation-speed ease $transition-speed * 12);
+      @include animation-fill-mode(both);
+    }
+  }
+
+  .game-container {
+    position: relative;
+
+    cursor: default;
+
+    @include user-select(none);
+    @include touch-action(none);
+    @include touch-callout(none);
+    @include box-sizing(border-box);
+
+    height: $field-width - 2 * $grid-spacing;
+  }
+
+  .grid-container {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .grid-row {
+    margin-bottom: $grid-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include clearfix;
+  }
+
+  .grid-cell {
+    width: $tile-size;
+    height: $tile-size;
+    float: left;
+
+    border-radius: $tile-border-radius;
+    background: rgba(238, 228, 218, 0.35);
+
+    margin-right: $grid-spacing;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .tile-container {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .tile {
+    // @include clip-path(ellipse());
+    position: absolute; // Makes transforms relative to the top-left corner
+
+    // Build position classes
+    @for $x from 1 through $grid-row-cells {
+      @for $y from 1 through $grid-row-cells {
+        &.tile-position-#{$x}-#{$y} {
+          $xPos: floor(($tile-size + $grid-spacing) * ($x - 1));
+          $yPos: floor(($tile-size + $grid-spacing) * ($y - 1));
+          @include transform(translate($xPos, $yPos));
+        }
+      }
+    }
+
+    &,
+    .tile-inner {
+      width: ceil($tile-size);
+      height: ceil($tile-size);
+      line-height: ceil($tile-size);
+    }
+
+    .tile-inner {
+      border-radius: $tile-border-radius;
+      background: $tile-color;
+      z-index: 10;
+    }
+
+    // Movement transition
+    @include transition($transition-speed ease-in-out);
+    @include transition-property(transform);
+
+    $base: 2;
+    $exponent: 1;
+    $limit: 13;
+
+    $background-images: "images/gifs/JONWINK.gif", "images/gifs/BENRAIN.gif",
+      "images/gifs/LIZGOOGLY.gif", "images/gifs/IVAN.gif", "images/gifs/BEN.gif",
+      "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif", "images/gifs/IVANDOG.gif",
+      "images/gifs/JONCRICKET.gif", "images/gifs/LIZRAINBOW.gif", "images/gifs/IVANMILKY.gif",
+      "images/gifs/BENBREAD.gif", "images/gifs/DANCINGSMALL.gif";
+
+    // Build tile colors
+    @while $exponent <= $limit {
+      $power: pow($base, $exponent);
+
+      &.tile-#{$power} .tile-inner {
+        // Set background
+        $image: nth($background-images, $exponent);
+        background-image: url($image);
+        background-size: cover;
+        color: rgba(0, 0, 0, 0);
+      }
+
+      $exponent: $exponent + 1;
+    }
+  }
+
+  @include keyframes(appear) {
+    0% {
+      opacity: 0;
+      @include transform(scale(0));
+    }
+
+    100% {
+      opacity: 1;
+      @include transform(scale(1));
+    }
+  }
+
+  .tile-new .tile-inner {
+    @include animation(appear $animation-speed ease $transition-speed);
+    @include animation-fill-mode(backwards);
+  }
+
+  @include keyframes(pop) {
+    0% {
+      @include transform(scale(0));
+    }
+
+    50% {
+      @include transform(scale(1.2));
+    }
+
+    100% {
+      @include transform(scale(1));
+    }
+  }
+
+  .tile-merged .tile-inner {
+    z-index: 20;
+    @include animation(pop $animation-speed ease $transition-speed);
+    @include animation-fill-mode(backwards);
+  }
+
+  .above-game {
+    @include clearfix;
+  }
+
+  .game-explanation {
+    margin-top: $grid-spacing;
+    text-align: center;
+  }
+}
+
+@include page_style(
+  25px,
+  18px,
+  $field-width-desktop,
+  $grid-spacing-desktop,
+  $tile-size-desktop
+);
+@include smaller($mobile-threshold) {
+  @include page_style(
+    15px,
+    15px,
+    $field-width-mobile,
+    $grid-spacing-mobile,
+    $tile-size-mobile
+  );
 }

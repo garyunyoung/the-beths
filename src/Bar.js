@@ -33,9 +33,10 @@ export default class Bar extends React.Component {
     }));
   }
 
-  closeNav() {
+  closeAllHard() {
     this.setState(_props => ({
-      isOpen: false
+      isOpen: false,
+      gameIsOpen: false
     }))
   }
 
@@ -43,7 +44,7 @@ export default class Bar extends React.Component {
     return (
       <Sticky>
         <div id="home" className="bar">
-          <a className="nav__item" href="#" onClick={() => this.closeNav()}>
+          <a className="nav__item" href="#" onClick={() => this.closeAllHard()}>
             <img className="bar__logo" src={logoBlack} alt="the beths logo" />
           </a>
           <HamburgerButton
