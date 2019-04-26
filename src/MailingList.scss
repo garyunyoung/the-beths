@@ -1,14 +1,13 @@
 .mailingList {
   display: flex;
+  margin-top: 5vh;
   justify-content: center;
-  height: 8vh;
-  margin-top: 3vh;
 
   .mailingList__dag {
-    height: 5vh;
-    width: 20vw;
-    transform: translateY(3vh);
-    margin-right: 2vw;
+    object-fit: contain;
+    width: 17vw;
+    margin-right: 5vw;
+    transform: translateY(-4vh);
   }
 
   .mailingList__wrapper {
@@ -25,24 +24,83 @@
   }
 }
 
+.input-wrapper {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+}
+
+.aria {
+  position: absolute;
+  left: -5000px;
+}
+
+#mc_embed_signup label {
+  width: 63vw;
+  font-weight: 400;
+}
+
+#mc_embed_signup input.email {
+  font-family: "Gaegu", cursive;
+  border: 1px dashed black;
+  opacity: 0.8;
+  margin-top: 1vh;
+  height: 1.7em;
+  // margin-left: 5vw;
+}
+
+#mc_embed_signup .button {
+  background-color: #19121200;
+  color: black;
+  font-family: "Gaegu", cursive;
+  padding: 0;
+  width: 10vw;
+  font-weight: 600;
+
+}
+
+@media (max-width: 768px) {
+  #mc_embed_signup .clear {
+    width: 20vw;
+  }
+}
+
 @media (min-width: 1024px) {
   .mailingList {
     position: absolute;
     bottom: 0;
-    right: 10vw;
-    width: 40vw;
+    right: 9vw;
+    transform: translateY(11vh);
 
     .mailingList__dag {
-      width: 8vw;
+      width: 6vw;
+      margin-right: 1.5vw;
     }
+  }
 
-    .mailingList__wrapper {
-      width: 20vw;
+  .input-wrapper {
+    width: 30vw;
+  }
 
-      .mailingList__input {
-        background-color: white;
-        opacity: .8;
-      }
+  #mc_embed_signup__scroll {
+    width: 30vw;
+  }
+
+  #mc_embed_signup label {
+    width: 25vw;
+    padding: 0;
+    &:hover {
+      color: #c45827;
+      // transition: all 0.23s ease-in-out 0s
+    }
+  }
+  #mc_embed_signup .button {
+    width: 4vw;
+    height: 2em;
+    &:hover {
+      background-color: transparent;
+      color: #c45827;
+      transition: none;
     }
   }
 }
