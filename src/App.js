@@ -5,6 +5,7 @@ import Home from "./Home";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
+import Game from './Game';
 import Tour from "./Tour";
 import Contact from "./Contact";
 import "./App.scss";
@@ -25,6 +26,10 @@ export default class App extends React.Component {
         <section id="watch" className="page page--watch">
           <Header header="watch" />
           <Watch />
+        </section>
+        <section id="game" className="page page--game">
+          <Header header="game" />
+            <Game />
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />

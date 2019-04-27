@@ -235,8 +235,40 @@ export default class GameManager {
     };
   }
 
+  
   movesAvailable() {
+    this.debugTiles()
+    
     return this.grid.cellsAvailable() || this.tileMatchesAvailable();
+  }
+
+  debugTiles() {
+    console.log('')
+    console.log('NEW MOVE')
+    var tile;
+    let foundMove = false;
+
+    for (var x = 0; x < this.size; x++) {
+      for (var y = 0; y < this.size; y++) {
+        tile = this.grid.cellContent({ x: x, y: y });
+        tile && console.log(tile)
+
+        if (tile) {
+          for (var direction = 0; direction < 4; direction++) {
+            var vector = this.getVector(direction);
+            var cell = { x: x + vector.x, y: y + vector.y };
+
+            var other = this.grid.cellContent(cell);
+
+            if (other && other.value === tile.value) {
+              // foundMove = foundMove || true; // These two tiles can be merged
+            }
+          }
+        }
+      }
+    }
+
+    // return foundMove;
   }
 
   // Check for available matches between tiles (more expensive check)

@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import Game from "./Game";
 import Sticky from "./Sticky";
 import logoBlack from "./images/logo-b.png";
 import "./Bar.scss";
@@ -57,7 +56,6 @@ export default class Bar extends React.Component {
           toggleNav={() => this.toggleNav()}
           toggleGame={() => this.toggleGame()}
         />
-        <Game open={this.state.gameIsOpen} />
       </Sticky>
     );
   }
