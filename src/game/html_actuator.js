@@ -1,9 +1,10 @@
 export default class HTMLActuator {
   constructor() {
     this.tileContainer = document.querySelector(".tile-container");
-    this.scoreContainer = document.querySelector(".score-container");
-    this.bestContainer = document.querySelector(".best-container");
-    this.messageContainer = document.querySelector(".game-message");
+    this.scoreContainer = document.querySelector(".score");
+    this.bestContainer = document.querySelector(".best");
+    this.messageContainer = document.querySelector(".game-message-container");
+    this.gameCurtain = document.querySelector(".game-curtain");
 
     this.score = 0;
   }
@@ -125,12 +126,16 @@ export default class HTMLActuator {
     var message = won ? "You win!" : "Game over!";
 
     this.messageContainer.classList.add(type);
+    this.gameCurtain.classList.add("visible");
     this.messageContainer.getElementsByTagName("p")[0].textContent = message;
+    
   }
 
   clearMessage() {
     // IE only takes one value to remove at a time.
     this.messageContainer.classList.remove("game-won");
     this.messageContainer.classList.remove("game-over");
+    this.gameCurtain.classList.remove("visible");
+
   }
 }

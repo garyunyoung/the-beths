@@ -27,7 +27,7 @@ export default class Game extends React.Component {
               </div>
               <div className="best-container">
                 <div className="score-label">BEST</div>
-                <div className="score">0</div>
+                <div className="best">0</div>
               </div>
               <a className="restart-button">New Game</a>
             </div>

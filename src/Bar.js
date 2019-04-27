@@ -57,7 +57,7 @@ export default class Bar extends React.Component {
           toggleNav={() => this.toggleNav()}
           toggleGame={() => this.toggleGame()}
         />
-        {/* <Game open={this.state.gameIsOpen} /> */}
+        <Game open={this.state.gameIsOpen} />
       </Sticky>
     );
   }

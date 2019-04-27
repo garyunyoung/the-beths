@@ -4,13 +4,11 @@
   position: absolute;
   opacity: 0;
   overflow: hidden;
-  // pointer-events: none;
 }
 
 .game--open {
   height: 100vh;
   width: 100vw;
-  padding: 5vh 12.5vw;
   background-color: white;
   opacity: 1;
   z-index: 2;
@@ -19,17 +17,17 @@
 
 }
 
-@media (min-width: 1024px) {
-  $transition-speed: 70ms;
-  $animation-speed: 600ms;
-  .game--open {
-    padding: 5vh 32.5vw;
-  }
+// @media (min-width: 1024px) {
+//   $transition-speed: 1ms;
+//   $animation-speed: 1ms;
+//   .game--open {
+//     padding: 5vh 32.5vw;
+//   }
 
-  .game-area {
-    width: 35vw;
-  }
-}
+//   .game-area {
+//     width: 35vw;
+//   }
+// }
 
 @import "gameHelpers.scss";
 
@@ -68,7 +66,7 @@ $social-icon-color: #e9f4eb;
 
 $new-game-color: #8f7a66;
 
-$transition-speed: .5s;
+$transition-speed: 70ms;
 $animation-speed: 600ms;
 
 @mixin button_style($margin_size) {
@@ -239,6 +237,7 @@ $animation-speed: 600ms;
 
   .game-area {
     position: relative;
+    width: 4*$tile-size + 5*$grid-spacing;
 
     background: $game-container-background;
     padding: $grid-spacing;
