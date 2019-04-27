@@ -8,8 +8,7 @@ export default class Bar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
-      gameIsOpen: false
+      isOpen: false
     };
   }
 
@@ -19,42 +18,28 @@ export default class Bar extends React.Component {
     }));
   }
 
-  toggleGame() {
-    this.setState((prevState, _props) => ({
-      gameIsOpen: !prevState.gameIsOpen
-    }));
-  }
 
-  closeAll() {
-    this.toggleNav();
-    this.setState(_props => ({
-      gameIsOpen: false
-    }));
-  }
-
-  closeAllHard() {
-    this.setState(_props => ({
-      isOpen: false,
-      gameIsOpen: false
-    }));
+  activateGame() {
+    this.toggleNav()
+    this.props.toggleGame()
   }
 
   render() {
     return (
       <Sticky>
         <div id="home" className="bar">
-          <a className="nav__item" href="#" onClick={() => this.closeAllHard()}>
+          <a className="nav__item" href="#" onClick={() => this.toggleNav()}>
             <img className="bar__logo" src={logoBlack} alt="the beths logo" />
           </a>
           <HamburgerButton
             open={this.state.isOpen}
-            closeAll={() => this.closeAll()}
+            toggleNav={() => this.toggleNav()}
           />
         </div>
         <Nav
           open={this.state.isOpen}
           toggleNav={() => this.toggleNav()}
-          toggleGame={() => this.toggleGame()}
+          toggleGame={() => this.activateGame()}
         />
       </Sticky>
     );
@@ -63,7 +48,7 @@ export default class Bar extends React.Component {
 
 function HamburgerButton(props) {
   return (
-    <p className="bar__nav--icon" onClick={props.closeAll}>
+    <p className="bar__nav--icon" onClick={props.toggleNav}>
       {props.open ? "x" : "="}
     </p>
   );

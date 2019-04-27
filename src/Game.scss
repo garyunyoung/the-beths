@@ -1,33 +1,33 @@
 .game {
-  height: 100vh;
+  height: 0;
   width: 100vw;
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
+
+  .game-area {
+    display: none;
+  }
+
+  .game-explanation {
+    display: none;
+  }
+  .credits {
+    display: none;
+  }
 }
 
 .game--open {
   height: 100vh;
   width: 100vw;
-  background-color: white;
-  opacity: 1;
-  z-index: 2;
-  overflow: hidden;
-  transition: all 1s linear 0s;
 
+  .game-area {
+    display: block;
+  }
+  .game-explanation {
+    display: block;
+  }
+  .credits {
+    display: block;
+  }
 }
-
-// @media (min-width: 1024px) {
-//   $transition-speed: 1ms;
-//   $animation-speed: 1ms;
-//   .game--open {
-//     padding: 5vh 32.5vw;
-//   }
-
-//   .game-area {
-//     width: 35vw;
-//   }
-// }
 
 @import "gameHelpers.scss";
 
@@ -237,7 +237,7 @@ $animation-speed: 600ms;
 
   .game-area {
     position: relative;
-    width: 4*$tile-size + 5*$grid-spacing;
+    width: 4 * $tile-size + 5 * $grid-spacing;
 
     background: $game-container-background;
     padding: $grid-spacing;
