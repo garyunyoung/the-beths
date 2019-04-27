@@ -48,48 +48,6 @@ export default function Merch() {
       >
         <h1>visit store</h1>
       </a>
-      {/* <div className="merch__store">
-        <a
-          className="merch__store__link"
-          href="https://thebethsnz.bandcamp.com/merch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          EU
-        </a>
-        <a
-          className="merch__store__link"
-          href="http://store.carparkrecords.com/categories/the-beths"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          US
-        </a>
-        <a
-          className="merch__store__link"
-          href="https://artistfirst.com.au/collections/the-beths"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          AUS
-        </a>
-        <a
-          className="merch__store__link"
-          href="https://flyingout.co.nz/collections/types?q=BETHS%2C%20THE"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          NZ
-        </a>
-        <a
-          className="merch__store__link"
-          href="https://thebethsnz.bandcamp.com/merch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          UK
-        </a>
-      </div> */}
     </section>
   );
 }

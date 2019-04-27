@@ -37,7 +37,7 @@ export default class Bar extends React.Component {
     this.setState(_props => ({
       isOpen: false,
       gameIsOpen: false
-    }))
+    }));
   }
 
   render() {

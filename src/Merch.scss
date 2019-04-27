@@ -8,17 +8,6 @@
     color: black;
     cursor: pointer;
   }
-
-  .merch__store {
-    display: flex;
-    justify-content: space-evenly;
-
-    .merch__store__link {
-      text-decoration: none;
-      color: black;
-      display: none;
-    }
-  }
 }
 @media (min-width: 1024px) {
   .merch__visit {
@@ -27,23 +16,6 @@
     cursor: default;
     &:hover {
       color: #c45827;
-    }
-  }
-
-  .merch__store {
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    width: 55vw;
-
-    .merch__store__link {
-      margin-top: 3vh;
-      font-size: 1.2em;
-      font-weight: 300;
-      padding: 0 1vw;
-      &:hover {
-        color: #c45827;
-      }
     }
   }
 }
