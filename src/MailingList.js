@@ -22,7 +22,7 @@ export default class MailingList extends React.Component {
             name="mc-embedded-subscribe-form"
             className="validate"
             target="_blank"
-            novalidate
+            noValidate
           >
             <div id="mc_embed_signup_scroll">
               <label htmlFor="mce-EMAIL">join the mailing list!</label>
@@ -43,8 +43,9 @@ export default class MailingList extends React.Component {
                   <input
                     type="text"
                     name="b_0bfa27c5341eacbfd10d85a43_05cac296b0"
-                    tabindex="-1"
+                    tabIndex="-1"
                     value=""
+                    readOnly
                   />
                 </div>
                 <div className="clear">
