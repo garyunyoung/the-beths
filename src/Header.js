@@ -8,7 +8,7 @@ export default function Header(props) {
         props.open ? "header header--game--open" : ""
       } `}
     >
-      {props.header}
+      {props.open ? 'GAME UNLOCKED' : props.header}
     </h1>
   );
 }

@@ -1,6 +1,8 @@
 .game {
   height: 0;
   width: 100vw;
+  overflow: hidden;
+
 
   .game-area {
     display: none;
@@ -8,6 +10,7 @@
 
   .game-explanation {
     display: none;
+
   }
   .credits {
     display: none;
@@ -15,11 +18,17 @@
 }
 
 .game--open {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   height: 100vh;
-  width: 100vw;
+  transition: height 9s ease-in-out;
+
 
   .game-area {
     display: block;
+
+
   }
   .game-explanation {
     display: block;
@@ -448,7 +457,8 @@ $animation-speed: 600ms;
     color: $text-color;
     margin-top: 2vh;
     margin-bottom: 10px;
-    line-height: 1.65;
+    line-height: 1.25;
+    width: 4 * $tile-size + 5 * $grid-spacing;
   }
 }
 

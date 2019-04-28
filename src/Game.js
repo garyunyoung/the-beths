@@ -73,11 +73,16 @@ export default class Game extends React.Component {
         </div>
 
         <p className="game-explanation">
+          <strong className="important">How to play: </strong>
+          Swipe to join similar Beths and get to the final tile!
+        </p>
+
+        {/* <p className="game-explanation">
           <strong className="important">How to play: </strong> Use your
           <strong> arrow keys</strong> to move the tiles. When two tiles with
           the same picture touch, they
           <strong> merge into one!</strong>
-        </p>
+        </p> */}
 
         <div className="credits">
           Based on{" "}
