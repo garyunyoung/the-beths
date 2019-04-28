@@ -11,14 +11,14 @@ import "./Merch.scss";
 export default function Merch() {
   const merch = [
     {
-      title: "dogs dogs dogs shirt - black",
-      src: shirtB,
-      link: "http://smarturl.it/TheBeths-ShirtB"
-    },
-    {
       title: "dogs dogs dogs shirt - white",
       src: shirtW,
       link: "http://smarturl.it/TheBeths-ShirtW"
+    },
+    {
+      title: "dogs dogs dogs shirt - black",
+      src: shirtB,
+      link: "http://smarturl.it/TheBeths-ShirtB"
     },
     {
       title: "warm blood - EP - LP - pink",
