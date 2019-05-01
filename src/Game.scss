@@ -33,7 +33,7 @@
   flex-flow: column;
   align-items: center;
   height: 70vh;
-  transition: height 6s ease-in;
+  transition: height 3s ease-in;
   // animation-name: rotater;
   // animation-duration: 1s;
   // animation-iteration-count: 1;
@@ -166,6 +166,7 @@ $animation-speed: 600ms;
   .scores-container {
     text-align: left;
     margin-bottom: $grid-spacing;
+    cursor: default;
   }
 
   .score-container,
@@ -212,6 +213,7 @@ $animation-speed: 600ms;
     display: block;
     text-align: center;
     float: right;
+    cursor: pointer;
   }
 
   strong {
