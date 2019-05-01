@@ -1,9 +1,10 @@
 .page {
-  overflow: hidden;
+  // overflow-x: hidden;
 }
 
 .page--home {
   height: 90vh;
+  position: relative;
 }
 
 .page--contact {

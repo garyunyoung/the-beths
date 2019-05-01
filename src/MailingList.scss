@@ -1,8 +1,6 @@
 .mailingList {
   display: flex;
-  margin-top: 5vh;
   justify-content: center;
-  overflow: hidden;
 
   .mailingList__dag {
     object-fit: contain;
@@ -71,17 +69,24 @@
 
 @media (min-width: 1024px) {
   .mailingList {
-    position: absolute;
-    bottom: 1vh;
-    // right: 9vw;
-    left: 6.5vw;
-    transform: translateY(10.5vh);
+    position: absolute !important;
+    bottom: 0;
+    left: 5vw;
+    transform: translateY(0);
+
 
     .mailingList__dag {
-      width: 6vw;
+      width: auto;
+      height: 8vh;
       margin-right: 1.5vw;
-      transform: translateY(-2.5vh);
+      transform: translateY(0);
     }
+  }
+
+  .mailingList__wrapper {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
   }
 
   .input-wrapper {
@@ -90,6 +95,10 @@
 
   #mc_embed_signup__scroll {
     width: 30vw;
+  }
+
+  #mc_embed_signup form {
+    padding: 0;
   }
 
   #mc_embed_signup input.email {
@@ -123,3 +132,4 @@
     outline: none;
   }
 }
+
