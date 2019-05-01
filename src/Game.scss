@@ -21,7 +21,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   transition: height 9s ease-in-out;
 
 
@@ -35,6 +35,13 @@
   }
   .credits {
     display: block;
+  }
+}
+
+
+@media (min-width: 1024px) { 
+  .game--open {
+    height: 90vh;
   }
 }
 

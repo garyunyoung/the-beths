@@ -25,7 +25,6 @@
 
 .input-wrapper {
   display: flex;
-  width: 80vw;
   align-items: center;
 }
 
@@ -61,10 +60,9 @@
   }
 }
 
-@media (max-width: 768px) {
-  #mc_embed_signup .clear {
-    width: 20vw;
-  }
+#mc_embed_signup .clear {
+  width: 8vw;
+  margin-left: 2vw;
 }
 
 @media (min-width: 1024px) {
@@ -73,7 +71,6 @@
     bottom: 0;
     left: 5vw;
     transform: translateY(0);
-
 
     .mailingList__dag {
       width: auto;
@@ -104,7 +101,6 @@
   #mc_embed_signup input.email {
     width: 30vw;
     // border: 1px dashed white;
-
   }
 
   #mc_embed_signup label {
@@ -112,9 +108,7 @@
     width: 25vw;
     padding: 0;
     &:hover {
-      // color: #c45827;
       color: #fdd83e;
-      // transition: all 0.23s ease-in-out 0s
     }
   }
   #mc_embed_signup .button {
@@ -124,12 +118,15 @@
     &:hover {
       color: #c45827;
       color: #fdd83e;
-      //
     }
+  }
+
+  #mc_embed_signup .clear {
+    margin-left: 0;
+    margin-top: .5vh;
   }
 
   input:focus {
     outline: none;
   }
 }
-
