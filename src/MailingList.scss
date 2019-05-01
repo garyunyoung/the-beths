@@ -67,7 +67,7 @@
 
 @media (min-width: 1024px) {
   .mailingList {
-    position: absolute !important;
+    position: absolute;
     bottom: 0;
     left: 5vw;
     transform: translateY(0);
@@ -100,7 +100,8 @@
 
   #mc_embed_signup input.email {
     width: 30vw;
-    // border: 1px dashed white;
+    margin-left: 1vw;
+    border: 1px dashed white;
   }
 
   #mc_embed_signup label {
