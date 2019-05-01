@@ -3,31 +3,45 @@
   width: 100vw;
   overflow: hidden;
 
-
   .game-area {
     display: none;
   }
 
   .game-explanation {
     display: none;
-
   }
   .credits {
     display: none;
   }
 }
+
+
+// @keyframes rotater {
+//   0% {
+//     transform: scale(0);
+//   }
+//   95% {
+//     transform: scale(2);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
 
 .game--open {
   display: flex;
   flex-flow: column;
   align-items: center;
   height: 70vh;
-  transition: height 9s ease-in-out;
+  transition: height 6s ease-in;
+  // animation-name: rotater;
+  // animation-duration: 1s;
+  // animation-iteration-count: 1;
+  // animation-timing-function: ease-out;
 
 
   .game-area {
     display: block;
-
 
   }
   .game-explanation {
@@ -38,8 +52,7 @@
   }
 }
 
-
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
   .game--open {
     height: 90vh;
   }
@@ -251,7 +264,8 @@ $animation-speed: 600ms;
     }
   }
 
-  .game-area {
+
+  .game-area-open {
     position: relative;
     width: 4 * $tile-size + 5 * $grid-spacing;
 
