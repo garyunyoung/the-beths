@@ -35,7 +35,7 @@ export default class MailingList extends React.Component {
                       this.setState({ emailValue: e.target.value });
                     }}
                     name="EMAIL"
-                    class="email"
+                    className="email"
                     id="mce-EMAIL"
                     placeholder="email address"
                     required

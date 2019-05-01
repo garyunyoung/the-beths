@@ -243,15 +243,12 @@ export default class GameManager {
   }
 
   debugTiles() {
-    console.log('')
-    console.log('NEW MOVE')
     var tile;
     let foundMove = false;
 
     for (var x = 0; x < this.size; x++) {
       for (var y = 0; y < this.size; y++) {
         tile = this.grid.cellContent({ x: x, y: y });
-        tile && console.log(tile)
 
         if (tile) {
           for (var direction = 0; direction < 4; direction++) {

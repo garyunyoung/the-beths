@@ -52,6 +52,12 @@ export default class KeyboardInputManager {
 
     // Respond to direction keys
     document.addEventListener("keydown", event => {
+
+      // Stop key presses from interfering with mailing list'
+      if (document.activeElement.tagName == "INPUT") {
+        return;
+      }
+
       var modifiers =
         event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
       var mapped = map[event.which];
