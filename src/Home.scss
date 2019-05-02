@@ -1,7 +1,7 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("https://res.cloudinary.com/garyou/image/upload/v1556808502/the-beths/home-mobile.jpg");
+  background-image: url("https://res.cloudinary.com/garyou/image/upload/q_auto/dpr_auto/w_auto/v1556808502/the-beths/home-mobile.jpg ");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
-    background-image: url("https://res.cloudinary.com/garyou/image/upload/v1556808502/the-beths/home-mobile.jpg");
+    background-image: url("https://res.cloudinary.com/garyou/image/upload/q_auto/dpr_auto/w_auto/v1556808502/the-beths/home-mobile.jpg");
     height: 80vh;
     background-size: 114%;
     background-position: top;
@@ -49,7 +49,7 @@
 
 @media (min-width: 1024px) {
   .home__content {
-    background-image: url("https://res.cloudinary.com/garyou/image/upload/v1556808507/the-beths/home-desktop.jpg");
+    background-image: url("https://res.cloudinary.com/garyou/image/upload/q_auto/dpr_auto/w_auto/v1556808507/the-beths/home-desktop.jpg");
     background-position: right;
     height: 93vh;
 

@@ -69,7 +69,7 @@ export default function BarDesktop(props) {
             href="#game"
             onClick={props.toggleGame}
           >
-            <img className="nav__tui" src='https://res.cloudinary.com/garyou/image/upload/v1556808503/the-beths/tui.png' alt="tui bird" />
+            <img className="nav__tui" src='https://res.cloudinary.com/garyou/image/upload/q_auto/dpr_auto/w_auto/v1556808503/the-beths/tui.png' alt="tui bird" />
           </a>
         </section>
       </div>

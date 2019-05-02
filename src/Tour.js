@@ -13,7 +13,7 @@ export default class Tour extends React.Component {
     return (
       <section className="tour">
         <div className="tour-pic">
-          <img className="tour-pic--main" src='https://res.cloudinary.com/garyou/image/upload/v1556808503/the-beths/tour.jpg' alt="collage of tour pictures"/>
+          <img className="tour-pic--main" src='https://res.cloudinary.com/garyou/image/upload/q_auto/dpr_auto/w_auto/v1556808503/the-beths/tour.jpg' alt="collage of tour pictures"/>
         </div>
         <div className="song-kick">
           <a
