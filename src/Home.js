@@ -19,7 +19,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="cpY" src={cpY} />
+            <img className="cpY" src={'https://res.cloudinary.com/garyou/image/upload/v1556808496/the-beths/cp-y.png'} alt='carpark records logo' />
           </a>
 
           <a

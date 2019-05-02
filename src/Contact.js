@@ -52,7 +52,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="cp-logo" src={cpBW} alt="carpark records logo" />
+          <img className="cp-logo" src={'https://res.cloudinary.com/garyou/image/upload/v1556808496/the-beths/cp-bw.jpg'} alt="carpark records logo" />
         </a>
       </p>
     </section>
