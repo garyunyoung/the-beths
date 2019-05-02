@@ -1,10 +1,5 @@
 import React from "react";
 import Carousel from "./Carousel";
-// import fmhmO from "./images/fmhm-o.jpg";
-// import fmhmA from "./images/fmhm-a.jpg";
-// import wbP from "./images/wb-p.jpg";
-// import shirtB from "./images/shirt-b.jpg";
-// import shirtW from "./images/shirt-w.jpg";
 
 import "./Merch.scss";
 

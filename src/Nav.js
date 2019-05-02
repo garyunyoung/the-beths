@@ -1,5 +1,4 @@
 import React from "react";
-import tui from "./images/tui.png";
 import "./Nav.scss";
 
 export default function Nav(props) {
@@ -56,7 +55,7 @@ export default function Nav(props) {
           </div>
 
           <a href="#game" onClick={props.toggleGame}>
-            <img className="nav__tui" src={tui} alt="tui bird" />
+            <img className="nav__tui" src='https://res.cloudinary.com/garyou/image/upload/v1556808503/the-beths/tui.png' alt="tui bird" />
           </a>
 
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />

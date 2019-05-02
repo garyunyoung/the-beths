@@ -2,8 +2,6 @@ import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import MailingList from './MailingList';
-import title from "./images/fmhm-title.png";
-import cpY from "./images/cp-y.png";
 import "./Home.scss";
 
 export default function Home() {
@@ -11,7 +9,7 @@ export default function Home() {
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
-          <img className="title" src={title} />
+          <img className="title" src='https://res.cloudinary.com/garyou/image/upload/v1556808499/the-beths/fmhm-title.png' />
           <h1 className="titleText">future me hates me</h1>
           <h1 className="outNow">out now</h1>
           <a
@@ -19,7 +17,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="cpY" src={'https://res.cloudinary.com/garyou/image/upload/v1556808496/the-beths/cp-y.png'} alt='carpark records logo' />
+            <img className="cpY" src='https://res.cloudinary.com/garyou/image/upload/v1556808496/the-beths/cp-y.png' alt='carpark records logo' />
           </a>
 
           <a

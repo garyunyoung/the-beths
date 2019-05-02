@@ -1,7 +1,5 @@
 import React from "react";
 import Sticky from "./Sticky";
-import logo from "./images/logo.png";
-import tui from "./images/tui.png";
 import "./BarDesktop.scss";
 
 export default function BarDesktop(props) {
@@ -71,7 +69,7 @@ export default function BarDesktop(props) {
             href="#game"
             onClick={props.toggleGame}
           >
-            <img className="nav__tui" src={'https://res.cloudinary.com/garyou/image/upload/v1556808503/the-beths/tui.png'} alt="tui bird" />
+            <img className="nav__tui" src='https://res.cloudinary.com/garyou/image/upload/v1556808503/the-beths/tui.png' alt="tui bird" />
           </a>
         </section>
       </div>
