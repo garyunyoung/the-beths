@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "./Carousel";
 import fmhmO from "./images/fmhm-orange-600x400.jpg";
 import fmhmA from "./images/fmhm-aqua-600.jpg";
+import fmhmCD from './images/fmhm-cd-600x400.jpg';
 import wbP from "./images/wb-pink-600x400.jpg";
 import shirtB from "./images/TB-shirt-b-600x600.jpg";
 import shirtW from "./images/TB-shirt-w-600x600.jpg";
@@ -10,6 +11,21 @@ import "./Merch.scss";
 
 export default function Merch() {
   const merch = [
+    {
+      title: "future me hates me - LP - orange",
+      src: fmhmO,
+      link: "http://smarturl.it/TheBethsFMHM-Vinyl"
+    },
+    {
+      title: "future me hates me - LP - transparent aqua",
+      src: fmhmA,
+      link: "http://smarturl.it/TheBethsFMHM-Vinyl"
+    },
+    {
+      title: "warm blood - EP - LP - pink",
+      src: wbP,
+      link: "http://smarturl.it/TheBethsWB-Vinyl"
+    },
     {
       title: "dogs dogs dogs shirt - white",
       src: shirtW,
@@ -21,20 +37,10 @@ export default function Merch() {
       link: "http://smarturl.it/TheBeths-ShirtB"
     },
     {
-      title: "warm blood - EP - LP - pink",
-      src: wbP,
-      link: "http://smarturl.it/TheBethsWB-Vinyl"
-    },
-    {
-      title: "future me hates me - LP - orange",
-      src: fmhmO,
+      title: "future me hates me - CD",
+      src: fmhmCD,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
-    {
-      title: "future me hates me - LP - transparent aqua",
-      src: fmhmA,
-      link: "http://smarturl.it/TheBethsFMHM-Vinyl"
-    }
   ];
 
   return (

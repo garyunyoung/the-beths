@@ -32,7 +32,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 70vh;
+  height: 70%;
   transition: height 3s ease-in;
   // animation-name: rotater;
   // animation-duration: 1s;
@@ -64,6 +64,7 @@ $grid-row-cells: 4;
 
 $tile-border-radius: 10px;
 
+
 $field-width-desktop: 500px;
 $field-width-mobile: 280px !global;
 
@@ -78,6 +79,8 @@ $tile-size-mobile: (
   ) / $grid-row-cells !global;
 
 $mobile-threshold: $field-width-desktop + 20px;
+$bigger-threshold: $field-width-desktop + (20 * 3px);
+
 
 $text-color: rgb(65, 32, 32);
 $logo-color: rgb(137, 132, 207);
@@ -267,7 +270,8 @@ $animation-speed: 600ms;
   }
 
 
-  .game-area-open {
+  .game-area {
+    display: block;
     position: relative;
     width: 4 * $tile-size + 5 * $grid-spacing;
 
