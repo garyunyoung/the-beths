@@ -48,7 +48,7 @@ export default function BarDesktop(props) {
         <a className="nav__item" href="#">
           <img
             className="barDesktop__logo"
-            src={logo}
+            src={'https://res.cloudinary.com/garyou/image/upload/v1556808500/the-beths/logo.png'}
             alt="the beths logo"
           />
         </a>
