@@ -20,7 +20,6 @@
   left: 10vw;
   padding: 3vw 4vw;
   margin-bottom: 3vh;
-
   &:hover {
     transform: rotate(20deg);
   }
@@ -30,19 +29,20 @@
     object-fit: contain;
     cursor: pointer;
   }
+
   .thumbnail__link {
     text-decoration: none;
     color: black;
     font-weight: 300;
     margin: 0;
+   
   }
-  
+
   .thumbnail__text {
     font-size: 2.5vh;
     max-width: 40vw;
   }
 }
-
 
 @media (min-width: 1024px) {
   .watch {
@@ -54,16 +54,12 @@
     .watch__wrapper {
       margin: 0 auto;
       max-width: 70vw;
-
     }
   }
-  
-  
-  .thumbnail {
 
+  .thumbnail {
     .thumbnail__image {
       height: 15vh;
-
     }
 
     .thumbnail__text {
