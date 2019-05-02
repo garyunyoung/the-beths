@@ -1,5 +1,5 @@
 import React from "react";
-import cpLogo from "./images/cp-logo-bw.jpg";
+import cpBW from "./images/cp-bw.jpg";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -52,7 +52,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="cp-logo" src={cpLogo} alt="carpark records logo" />
+          <img className="cp-logo" src={cpBW} alt="carpark records logo" />
         </a>
       </p>
     </section>

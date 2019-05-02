@@ -1,5 +1,5 @@
 import React from "react";
-import tourPic from "./images/tour-pic.jpg";
+import tour from "./images/tour.jpg";
 import "./Tour.scss";
 
 export default class Tour extends React.Component {
@@ -14,7 +14,7 @@ export default class Tour extends React.Component {
     return (
       <section className="tour">
         <div className="tour-pic">
-          <img className="tour-pic--main" src={tourPic} alt="collage of tour pictures"/>
+          <img className="tour-pic--main" src={tour} alt="collage of tour pictures"/>
         </div>
         <div className="song-kick">
           <a

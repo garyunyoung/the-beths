@@ -77,13 +77,6 @@ export default class Game extends React.Component {
           Swipe to join similar Beths and get to the final tile!
         </p>
 
-        {/* <p className="game-explanation">
-          <strong className="important">How to play: </strong> Use your
-          <strong> arrow keys</strong> to move the tiles. When two tiles with
-          the same picture touch, they
-          <strong> merge into one!</strong>
-        </p> */}
-
         <div className="credits">
           Based on{" "}
           <a href="http://gabrielecirulli.github.io/2048/" target="_blank">

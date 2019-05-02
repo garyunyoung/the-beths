@@ -24,16 +24,6 @@ export default function CTAButton() {
           vinyl / cd
         </a>
       </div>
-      {/* <div className="button">
-        <a
-          className="button--link"
-          href="http://smarturl.it/TheBeths-Merch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          merch
-        </a>
-      </div> */}
     </div>
   );
 }

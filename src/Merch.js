@@ -1,11 +1,10 @@
 import React from "react";
 import Carousel from "./Carousel";
-import fmhmO from "./images/fmhm-orange-600x400.jpg";
-import fmhmA from "./images/fmhm-aqua-600.jpg";
-// import fmhmCD from './images/fmhm-cd-600x400.jpg';
-import wbP from "./images/wb-pink-600x400.jpg";
-import shirtB from "./images/TB-shirt-b-600x600.jpg";
-import shirtW from "./images/TB-shirt-w-600x600.jpg";
+import fmhmO from "./images/fmhm-o.jpg";
+import fmhmA from "./images/fmhm-a.jpg";
+import wbP from "./images/wb-p.jpg";
+import shirtB from "./images/shirt-b.jpg";
+import shirtW from "./images/shirt-w.jpg";
 
 import "./Merch.scss";
 
@@ -36,11 +35,6 @@ export default function Merch() {
       src: shirtB,
       link: "http://smarturl.it/TheBeths-ShirtB"
     },
-    // {
-    //   title: "future me hates me - CD",
-    //   src: fmhmCD,
-    //   link: "http://smarturl.it/TheBethsFMHM-Vinyl"
-    // },
   ];
 
   return (

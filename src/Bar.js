@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Sticky from "./Sticky";
-import logoBlack from "./images/logo-b.png";
+import logo from "./images/logo.png";
 import "./Bar.scss";
 
 export default class Bar extends React.Component {
@@ -29,7 +29,7 @@ export default class Bar extends React.Component {
       <Sticky>
         <div id="home" className="bar">
           <a className="nav__item" href="#" onClick={() => this.toggleNav()}>
-            <img className="bar__logo" src={logoBlack} alt="the beths logo" />
+            <img className="bar__logo" src={logo} alt="the beths logo" />
           </a>
           <HamburgerButton
             open={this.state.isOpen}

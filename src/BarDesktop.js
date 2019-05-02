@@ -1,6 +1,6 @@
 import React from "react";
 import Sticky from "./Sticky";
-import logoBlack from "./images/logo-b.png";
+import logo from "./images/logo.png";
 import tui from "./images/tui.png";
 import "./BarDesktop.scss";
 
@@ -48,7 +48,7 @@ export default function BarDesktop(props) {
         <a className="nav__item" href="#">
           <img
             className="barDesktop__logo"
-            src={logoBlack}
+            src={logo}
             alt="the beths logo"
           />
         </a>
