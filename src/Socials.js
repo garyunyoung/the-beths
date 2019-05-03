@@ -3,7 +3,7 @@ import "./Socials.scss";
 
 export default function Socials(props) {
   return (
-    <section className={`socials ${props.test}`}>
+    <section className={`socials ${props.className}`}>
       <a
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"

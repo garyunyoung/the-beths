@@ -18,7 +18,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 2vh !important;
 }
 
 code {
@@ -26,6 +25,13 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #c45827;
+}
 
 @media (max-width: 414px) {
   body {

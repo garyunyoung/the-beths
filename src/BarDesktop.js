@@ -1,6 +1,7 @@
 import React from "react";
 import Sticky from "./Sticky";
 import Socials from "./Socials";
+import { NavItem, NavItemGame } from "./Nav";
 import "./BarDesktop.scss";
 
 export default function BarDesktop(props) {
@@ -8,7 +9,7 @@ export default function BarDesktop(props) {
     <Sticky>
       <nav className="barDesktop">
         <section className="barDesktop__socials">
-          <Socials test="brDesktop__socials--icons" />
+          <Socials className="brDesktop__socials--icons" />
         </section>
         <a className="nav__item" href="#">
           <img
@@ -18,26 +19,11 @@ export default function BarDesktop(props) {
           />
         </a>
         <nav className="barDesktop__nav">
-          <a className="nav__item" href="#merch">
-            merch
-          </a>
-          <a className="nav__item" href="#watch">
-            watch
-          </a>
-          <a className="nav__item" href="#tour">
-            tour
-          </a>
-          <a className="nav__item" href="#contact">
-            contact
-          </a>
-
-          <a className="nav__item" href="#game" onClick={props.toggleGame}>
-            <img
-              className="nav__tui cld-responsive"
-              src={`${props.img}tui.png`}
-              alt="tui bird"
-            />
-          </a>
+          <NavItem className="nav__item" text="merch" link="merch" />
+          <NavItem className="nav__item" text="watch" link="watch" />
+          <NavItem className="nav__item" text="tour" link="tour" />
+          <NavItem className="nav__item" text="contact" link="contact" />
+          <NavItemGame class='desk__nav__tui' img={props.img} toggleGame={props.toggleGame}/>
         </nav>
       </nav>
     </Sticky>
