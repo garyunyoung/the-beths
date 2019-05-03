@@ -84,7 +84,7 @@ function Thumbnail(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="thumbnail__image cld-responsive" src={props.image} alt={`${props.title} thumbnail`}/>
+        <img className="thumbnail__image cld-responsive" src={props.image} alt={`${props.title} thumbnail`}></img>
         <p className="thumbnail__text">{props.title}</p>
       </a>
     </div>

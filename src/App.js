@@ -26,11 +26,12 @@ export default class App extends React.Component {
   }
 
   render() {
+    const cld =
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/the-beths/";
+
     let cl = cloudinary.Cloudinary.new({ cloud_name: "<Cloud Name>" });
     cl.responsive();
 
-    const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/the-beths/";
     return (
       <React.Fragment>
         <BarDesktop img={cld} toggleGame={() => this.toggleGame()} />
