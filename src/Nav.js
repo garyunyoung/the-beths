@@ -4,7 +4,7 @@ import "./Nav.scss";
 export default function Nav(props) {
   return (
     <React.Fragment>
-      <div className={`nav ${props.open ? "nav--open" : ""} `}>
+      <nav className={`nav ${props.open ? "nav--open" : ""} `}>
         <ul className={`nav__list`}>
           <NavItem text="merch" link="merch" toggleNav={props.toggleNav} />
           <NavItem text="watch" link="watch" toggleNav={props.toggleNav} />
@@ -60,7 +60,7 @@ export default function Nav(props) {
 
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />
         </ul>
-      </div>
+      </nav>
     </React.Fragment>
   );
 }

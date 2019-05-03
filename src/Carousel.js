@@ -22,12 +22,12 @@ export default class Carousel extends React.Component {
     return (
       <div className="carousel">
         <div className="carousel__wrapper">
-          <p
+          <a
             className="carousel__button"
             onClick={() => {
               this.handleClick(-1);
             }}
-          >{`<`}</p>
+          >{`<`}</a>
           {this.props.merch.map((item, i) => (
             <CarouselImage
               item={item}
@@ -35,12 +35,12 @@ export default class Carousel extends React.Component {
               visible={i === this.state.currentSlide}
             />
           ))}
-          <p
+          <a
             className="carousel__button"
             onClick={() => {
               this.handleClick(1);
             }}
-          >{`>`}</p>
+          >{`>`}</a>
         </div>
       </div>
     );

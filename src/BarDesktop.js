@@ -5,7 +5,7 @@ import "./BarDesktop.scss";
 export default function BarDesktop(props) {
   return (
     <Sticky>
-      <div className="barDesktop">
+      <nav className="barDesktop">
         <section className="barDesktop__socials">
           <a
             href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
@@ -46,33 +46,33 @@ export default function BarDesktop(props) {
         <a className="nav__item" href="#">
           <img
             className="barDesktop__logo"
-            src={'https://res.cloudinary.com/garyou/image/upload/v1556808500/the-beths/logo.png'}
+            src={`${props.img}logo.png`}
             alt="the beths logo"
           />
         </a>
-        <section className="barDesktop__nav">
+        <nav className="barDesktop__nav">
           <a className="nav__item" href="#merch">
-            <p>merch</p>
+            merch
           </a>
           <a className="nav__item" href="#watch">
-            <p>watch</p>
+            watch
           </a>
           <a className="nav__item" href="#tour">
-            <p>tour</p>
+            tour
           </a>
           <a className="nav__item" href="#contact">
-            <p>contact</p>
+            contact
           </a>
 
-          <a
-            className="nav__item"
-            href="#game"
-            onClick={props.toggleGame}
-          >
-            <img className="nav__tui cld-responsive" src={`${props.img}tui.png`} alt="tui bird" />
+          <a className="nav__item" href="#game" onClick={props.toggleGame}>
+            <img
+              className="nav__tui cld-responsive"
+              src={`${props.img}tui.png`}
+              alt="tui bird"
+            />
           </a>
-        </section>
-      </div>
+        </nav>
+      </nav>
     </Sticky>
   );
 }

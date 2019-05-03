@@ -41,7 +41,7 @@ export default function Merch(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h1>visit store</h1>
+        <h2>visit store</h2>
       </a>
     </section>
   );
