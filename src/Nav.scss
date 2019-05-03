@@ -4,7 +4,7 @@
   display: flex;
   height: 100vh;
   opacity: 0.9;
-  transform: translateY(-200vh);
+  transform: translateY(-110vh);
   transition: transform 0.5s;
   z-index: 1000;
 
@@ -21,7 +21,7 @@
   }
 
   .nav__item--contact {
-    margin-bottom: 1vh;
+    padding-bottom: 1vh;;
   }
 
   .nav__link {
@@ -30,13 +30,12 @@
   }
 
   .nav__social {
-    margin-bottom: 3vh;
+    display: inline-block;
+    position: static;
+    padding-bottom: 1vh;;
 
-    &--link {
+    .socials__icon {
       color: black;
-      text-decoration: none;
-      cursor: pointer;
-      margin: 4vw;
     }
   }
 
@@ -44,7 +43,6 @@
     width: 10vw;
     margin-bottom: 1vh;
     transform: rotate(-20deg);
-
   }
 }
 
