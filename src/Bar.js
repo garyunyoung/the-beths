@@ -26,13 +26,7 @@ export default class Bar extends React.Component {
     return (
       <Sticky>
         <nav id="home" className="bar">
-          <a className="nav__item" href="#" onClick={() => this.toggleNav()}>
-            <img
-              className="bar__logo cld-responsive"
-              src={`${this.props.img}logo.png`}
-              alt="the beths logo"
-            />
-          </a>
+          <Logo img={this.props.img} />
           <HamburgerButton
             open={this.state.isOpen}
             toggleNav={() => this.toggleNav()}
@@ -53,6 +47,18 @@ function HamburgerButton(props) {
   return (
     <a className="bar__nav--icon" onClick={props.toggleNav}>
       {props.open ? "x" : "="}
+    </a>
+  );
+}
+
+export function Logo(props) {
+  return (
+    <a className="nav__item" href="#">
+      <img
+        className={`${props.className} bar__logo cld-responsive`}
+        src={`${props.img}logo.png`}
+        alt="the beths logo"
+      />
     </a>
   );
 }

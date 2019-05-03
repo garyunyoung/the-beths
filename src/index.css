@@ -33,6 +33,10 @@ a:hover {
   color: #c45827;
 }
 
+li {
+  list-style: none;
+}
+
 @media (max-width: 414px) {
   body {
     font-family: "Gaegu", cursive;
