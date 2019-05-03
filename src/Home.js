@@ -48,7 +48,7 @@ export default function Home(props) {
         </section>
       </section>
       <CTAButton />
-      <MailingList />
+      <MailingList img={props.img}/>
     </section>
   );
 }
