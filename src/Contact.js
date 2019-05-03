@@ -1,9 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 
-export default function Contact() {
-  const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
+export default function Contact(props) {
   return (
     <section className="contact">
       <p className="contact__text">general manager</p>
@@ -53,7 +51,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="cp-logo" src={`${cld}cp-bw.jpg`} alt="carpark records logo" />
+          <img className="cp-logo" src={`${props.img}cp-bw.jpg`} alt="carpark records logo" />
         </a>
       </p>
     </section>

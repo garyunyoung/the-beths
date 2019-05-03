@@ -10,11 +10,9 @@ export default class MailingList extends React.Component {
   }
 
   render() {
-    const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
     return (
       <section className="mailingList">
-        <img className="mailingList__dag" src={`${cld}fmhm-dog.png`} alt='dag'/>
+        <img className="mailingList__dag" src={`${this.props.img}fmhm-dog.png`} alt='dag'/>
         <div className="mailingList__wrapper">
           <div id="mc_embed_signup">
             <form

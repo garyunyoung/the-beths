@@ -10,12 +10,10 @@ export default class Tour extends React.Component {
   }
 
   render() {
-    const cld =
-    "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808503/the-beths/";
     return (
       <section className="tour">
         <div className="tour-pic">
-          <img className="tour-pic--main" src={`${cld}tour.jpg`} alt="collage of tour pictures"/>
+          <img className="tour-pic--main" src={`${this.props.img}tour.jpg`} alt="collage of tour pictures"/>
         </div>
         <div className="song-kick">
           <a

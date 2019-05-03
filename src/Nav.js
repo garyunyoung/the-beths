@@ -2,8 +2,6 @@ import React from "react";
 import "./Nav.scss";
 
 export default function Nav(props) {
-  const cld =
-    "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808503/the-beths/";
   return (
     <React.Fragment>
       <div className={`nav ${props.open ? "nav--open" : ""} `}>
@@ -57,7 +55,7 @@ export default function Nav(props) {
           </div>
 
           <a href="#game" onClick={props.toggleGame}>
-            <img className="nav__tui" src={`${cld}tui.png`} alt="tui bird" />
+            <img className="nav__tui" src={`${props.img}tui.png`} alt="tui bird" />
           </a>
 
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />

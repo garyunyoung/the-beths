@@ -3,33 +3,31 @@ import Carousel from "./Carousel";
 
 import "./Merch.scss";
 
-export default function Merch() {
-  const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
+export default function Merch(props) {
   const merch = [
     {
       title: "future me hates me - LP - orange",
-      src: `${cld}fmhm-o.jpg`,
+      src: `${props.img}fmhm-o.jpg`,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
       title: "future me hates me - LP - transparent aqua",
-      src: `${cld}fmhm-a.jpg`,
+      src: `${props.img}fmhm-a.jpg`,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
       title: "warm blood - EP - LP - pink",
-      src: `${cld}wb-p.jpg`,
+      src: `${props.img}wb-p.jpg`,
       link: "http://smarturl.it/TheBethsWB-Vinyl"
     },
     {
       title: "dogs dogs dogs shirt - white",
-      src: `${cld}shirt-w.jpg`,
+      src: `${props.img}shirt-w.jpg`,
       link: "http://smarturl.it/TheBeths-ShirtW"
     },
     {
       title: "dogs dogs dogs shirt - black",
-      src: `${cld}shirt-b.jpg`,
+      src: `${props.img}shirt-b.jpg`,
       link: "http://smarturl.it/TheBeths-ShirtB"
     },
   ];

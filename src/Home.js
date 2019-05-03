@@ -4,16 +4,14 @@ import CTAButton from "./CTAButton";
 import MailingList from "./MailingList";
 import "./Home.scss";
 
-export default function Home() {
-  const cld =
-    "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
+export default function Home(props) {
   return (
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
           <img
             className="title cld-responsive"
-            src={`${cld}fmhm-title.png`}
+            src={`${props.img}fmhm-title.png`}
             alt="future me hates me title"
           />
           <h1 className="titleText">future me hates me</h1>
@@ -25,7 +23,7 @@ export default function Home() {
           >
             <img
               className="cpY cld-responsive"
-              src={`${cld}cp-y.png`}
+              src={`${props.img}cp-y.png`}
               alt="carpark records logo"
             />
           </a>

@@ -25,32 +25,34 @@ export default class App extends React.Component {
   }
 
   render() {
+    const cld =
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/the-beths/";
     return (
       <React.Fragment>
-        <BarDesktop toggleGame={() => this.toggleGame()} />
-        <Bar toggleGame={() => this.toggleGame()}/>
+        <BarDesktop img={cld} toggleGame={() => this.toggleGame()} />
+        <Bar img={cld} toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
-          <Home />
+          <Home img={cld} />
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch />
+          <Merch img={cld} />
         </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch />
+          <Watch img={cld} />
         </section>
         <section id="game" className="page page--game">
-          <Header header="game" open={this.state.gameIsOpen}/>
-          <Game open={this.state.gameIsOpen}/>
+          <Header header="game" open={this.state.gameIsOpen} />
+          <Game open={this.state.gameIsOpen} />
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />
-          <Tour />
+          <Tour img={cld} />
         </section>
         <section id="contact" className="page page--contact">
           <Header header="contact" />
-          <Contact />
+          <Contact img={cld} />
         </section>
       </React.Fragment>
     );
