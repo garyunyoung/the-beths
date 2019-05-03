@@ -7,6 +7,7 @@
     "node": "10.15.1"
   },
   "dependencies": {
+    "cloudinary-core": "^2.6.3",
     "node-sass": "^4.11.0",
     "ramda": "^0.26.1",
     "react": "^16.8.4",

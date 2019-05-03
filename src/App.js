@@ -1,4 +1,5 @@
 import React from "react";
+import cloudinary from "cloudinary-core";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
@@ -25,8 +26,11 @@ export default class App extends React.Component {
   }
 
   render() {
+    let cl = cloudinary.Cloudinary.new({ cloud_name: "<Cloud Name>" });
+    cl.responsive();
+
     const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/the-beths/";
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/the-beths/";
     return (
       <React.Fragment>
         <BarDesktop img={cld} toggleGame={() => this.toggleGame()} />
