@@ -3,6 +3,8 @@ import Sticky from "./Sticky";
 import "./BarDesktop.scss";
 
 export default function BarDesktop(props) {
+  const cld =
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
   return (
     <Sticky>
       <div className="barDesktop">
@@ -69,7 +71,7 @@ export default function BarDesktop(props) {
             href="#game"
             onClick={props.toggleGame}
           >
-            <img className="nav__tui" src='https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808503/the-beths/tui.png' alt="tui bird" />
+            <img className="nav__tui cld-responsive" src={`${cld}tui.png`} alt="tui bird" />
           </a>
         </section>
       </div>

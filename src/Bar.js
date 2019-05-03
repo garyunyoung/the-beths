@@ -17,18 +17,23 @@ export default class Bar extends React.Component {
     }));
   }
 
-
   activateGame() {
-    this.toggleNav()
-    this.props.toggleGame()
+    this.toggleNav();
+    this.props.toggleGame();
   }
 
   render() {
+    const cld =
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
     return (
       <Sticky>
         <div id="home" className="bar">
           <a className="nav__item" href="#" onClick={() => this.toggleNav()}>
-            <img className="bar__logo" src='https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808500/the-beths/logo.png' alt="the beths logo" />
+            <img
+              className="bar__logo cld-responsive"
+              src={`${cld}logo.png`}
+              alt="the beths logo"
+            />
           </a>
           <HamburgerButton
             open={this.state.isOpen}

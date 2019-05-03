@@ -1,15 +1,21 @@
 import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
-import MailingList from './MailingList';
+import MailingList from "./MailingList";
 import "./Home.scss";
 
 export default function Home() {
+  const cld =
+    "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/";
   return (
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
-          <img className="title" src='https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808499/the-beths/fmhm-title.png' />
+          <img
+            className="title cld-responsive"
+            src={`${cld}fmhm-title.png`}
+            alt="future me hates me title"
+          />
           <h1 className="titleText">future me hates me</h1>
           <h1 className="outNow">out now</h1>
           <a
@@ -17,7 +23,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="cpY" src='https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808496/the-beths/cp-y.png' alt='carpark records logo' />
+            <img
+              className="cpY cld-responsive"
+              src={`${cld}cp-y.png`}
+              alt="carpark records logo"
+            />
           </a>
 
           <a
@@ -40,7 +50,7 @@ export default function Home() {
         </section>
       </section>
       <CTAButton />
-      <MailingList/>
+      <MailingList />
     </section>
   );
 }
