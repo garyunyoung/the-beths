@@ -18,7 +18,7 @@ export default function BarDesktop(props) {
           <NavItem className="nav__item" text="watch" link="watch" />
           <NavItem className="nav__item" text="tour" link="tour" />
           <NavItem className="nav__item" text="contact" link="contact" />
-          <NavItemGame class='desk__nav__tui' img={props.img} toggleGame={props.toggleGame}/>
+          <NavItemGame class='nav__tui' img={props.img} toggleGame={props.toggleGame}/>
         </nav>
       </nav>
     </Sticky>

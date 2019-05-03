@@ -3,18 +3,9 @@
   margin-bottom: 5vh;
   
   .button {
-    text-align: center;
     margin: 3vh auto;
-    border: none;
-    cursor: pointer;
-
-    .button--link {
-      font-family: "Gaegu", cursive;
-      font-size: 3vh;
-      text-decoration: none;
-      color: black;
-      text-transform: uppercase;
-    }
+    font-size: 3vh;
+    text-transform: uppercase;
   }
 }
 @media (min-width: 1024px) {

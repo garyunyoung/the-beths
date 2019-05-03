@@ -10,9 +10,10 @@
 
   .bar__logo {
     width: 30vw;
+    vertical-align: bottom;
   }
 
-  .bar__nav--icon {
+  .hamburger__btn {
     font-size: 10vh;
     line-height: 6vh;
     right: 3vw;

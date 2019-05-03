@@ -1,11 +1,9 @@
 .watch {
-  display: flex;
-  flex-flow: column;
   text-align: center;
 
   .watch__text {
-    font-size: 3.8vh;
-    font-weight: 300;
+    font-size: 1.5em;
+    font-weight: lighter;
     margin-bottom: 3vh;
   }
   .watch__wrapper {
@@ -20,26 +18,14 @@
   left: 10vw;
   padding: 3vw 4vw;
   margin-bottom: 3vh;
-  &:hover {
-    transform: rotate(20deg);
-  }
 
   .thumbnail__image {
     height: 20vw;
     object-fit: contain;
-    cursor: pointer;
-  }
-
-  .thumbnail__link {
-    text-decoration: none;
-    color: black;
-    font-weight: 300;
-    margin: 0;
-   
   }
 
   .thumbnail__text {
-    font-size: 2.5vh;
+    font-size: 1em;
     max-width: 40vw;
   }
 }
@@ -58,8 +44,14 @@
   }
 
   .thumbnail {
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(20deg);
+    }
+
     .thumbnail__image {
-      height: 15vh;
+      height: 8vw;
     }
 
     .thumbnail__text {

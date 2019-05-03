@@ -10,9 +10,6 @@
   }
 
   .mailingList__wrapper {
-    text-align: center;
-    display: flex;
-    flex-flow: column;
     width: 70vw;
 
     .mailingList__input {
@@ -26,21 +23,23 @@
 .input-wrapper {
   display: flex;
   align-items: center;
+  .aria {
+    display: none;
+  }
 }
 
-.aria {
-  position: absolute;
-  left: -5000px;
+#mc_embed_signup input.email,
+.button {
+  font-family: "Gaegu", cursive;
 }
 
 #mc_embed_signup label {
   width: 63vw;
-  font-weight: 400;
+  font-weight: normal;
   cursor: pointer;
 }
 
 #mc_embed_signup input.email {
-  font-family: "Gaegu", cursive;
   border: 1px dashed black;
   opacity: 0.8;
   margin-top: 1vh;
@@ -49,11 +48,9 @@
 
 #mc_embed_signup .button {
   background-color: transparent;
-  color: black;
-  font-family: "Gaegu", cursive;
+  font-weight: bolder;
   padding: 0;
   width: 10vw;
-  font-weight: 600;
   &:hover {
     background-color: transparent;
     transition: none;
@@ -65,13 +62,12 @@
   margin-left: 2vw;
 }
 
-
 @media (min-width: 1024px) {
   .mailingList {
     position: absolute;
     bottom: 0;
     left: 5vw;
-    transform: translateY(0);
+    width: 40vw;
 
     .mailingList__dag {
       width: auto;
@@ -79,20 +75,10 @@
       margin-right: 1.5vw;
       transform: translateY(0);
     }
-  }
 
-  .mailingList__wrapper {
-    display: flex;
-    justify-content: center;
-    height: 5vh;
-  }
-
-  .input-wrapper {
-    width: 30vw;
-  }
-
-  #mc_embed_signup__scroll {
-    width: 30vw;
+    .input-wrapper {
+      width: 30vw;
+    }
   }
 
   #mc_embed_signup form {
@@ -100,16 +86,15 @@
   }
 
   #mc_embed_signup input.email {
-    width: 30vw;
     margin-left: 1vw;
     border: 1px dashed white;
   }
 
   #mc_embed_signup label {
+    font-size: 1em;
     color: white;
     width: 25vw;
     padding: 0;
-    font-size: 1em;
     &:hover {
       color: #fdd83e;
     }
@@ -119,14 +104,12 @@
     width: 4vw;
     height: 2em;
     &:hover {
-      color: #c45827;
       color: #fdd83e;
     }
   }
 
   #mc_embed_signup .clear {
-    margin-left: 0;
-    margin-top: .5vh;
+    margin: 0.5vh auto auto 0;
   }
 
   input:focus {

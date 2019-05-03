@@ -7,36 +7,11 @@
   background-repeat: no-repeat;
   position: relative;
 
-  .home__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .title {
-    display: none;
-  }
-
-  .titleText {
-    display: none;
-  }
-
-  .outNow {
-    display: none;
-  }
-
-  .cpY {
-    display: none;
-  }
-
-  .cta {
+  .home__wrapper,
+  .nav__desktop {
     display: none;
   }
 }
-
-.nav__desktop {
-  display: none;
-}
-
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .home__content {
@@ -50,70 +25,62 @@
   .home__content {
     background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808507/the-beths/home-desktop.jpg");
     background-position: right;
-    height: 93vh;
+    height: 92.5vh;
 
     .home__wrapper {
+      font-family: "Open Sans", sans-serif;
+      display: flex;
       flex-flow: column;
+      justify-content: center;
       align-items: center;
       height: 80vh;
       width: 54vw;
     }
 
     .title {
-      display: block;
       width: 15vw;
       margin: 0;
     }
 
     .titleText {
-      font-family: "Open Sans", sans-serif;
-      display: block;
-      text-transform: uppercase;
       font-size: 2.9em;
       line-height: 0.5em;
       letter-spacing: 1px;
-      font-weight: 800;
+      text-transform: uppercase;
       color: #fdd73f;
-      margin-bottom: 4vh;
-      margin-top: 0;
+      margin: 0 0 4vh 0;
       cursor: default;
     }
 
     .outNow {
-      font-family: "Open Sans", sans-serif;
-      display: block;
-      text-transform: capitalize;
-      color: white;
-      font-weight: 300;
-      margin-bottom: 4vh;
       font-size: 3vh;
       letter-spacing: 2px;
+      text-transform: capitalize;
+      font-weight: lighter;
+      color: white;
+      margin-bottom: 4vh;
       cursor: default;
     }
 
     .cpY {
-      display: block;
       width: 2vw;
       margin-bottom: 5vh;
     }
 
     .cta {
       border: 2px solid white;
-      display: block;
       margin-bottom: 3vh;
       padding: 1vw 1.5vw;
-
       &:hover {
         border: 2px solid #fedb4e;
       }
     }
 
     .cta__link {
-      color: white;
       font-size: 1.5em;
-      text-transform: uppercase;
       letter-spacing: 3px;
-      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
     }
   }
 }

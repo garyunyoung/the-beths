@@ -3,13 +3,8 @@
   width: 100vw;
   overflow: hidden;
 
-  .game-area {
-    display: none;
-  }
-
-  .game-explanation {
-    display: none;
-  }
+  .game-area,
+  .game-explanation,
   .credits {
     display: none;
   }
@@ -23,13 +18,8 @@
   height: 70%;
   transition: height 3s ease-in;
 
-  .game-area {
-    display: block;
-
-  }
-  .game-explanation {
-    display: block;
-  }
+  .game-area, 
+  .game-explanation,
   .credits {
     display: block;
   }

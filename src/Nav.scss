@@ -1,7 +1,6 @@
 .nav {
   background-color: white;
   position: absolute;
-  display: flex;
   height: 100vh;
   opacity: 0.9;
   transform: translateY(-110vh);
@@ -9,9 +8,8 @@
   z-index: 1000;
 
   .nav__list {
-    list-style: none;
     text-align: center;
-    font-size: 5vh;
+    font-size: 2em;
     width: 100vw;
     margin-top: 10vh;
   }
@@ -20,19 +18,10 @@
     padding-bottom: 2vh;
   }
 
-  .nav__item--contact {
-    padding-bottom: 1vh;
-  }
-
-  .nav__link {
-    text-decoration: none;
-    color: black;
-  }
-
   .nav__social {
     display: inline-block;
     position: static;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
   }
 
   .socials__icon {

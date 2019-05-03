@@ -44,11 +44,11 @@ export default function Home(props) {
           >
             <h1 className="cta">vinyl / cd</h1>
           </a>
-          <Socials />
         </section>
+        <Socials />
       </section>
       <CTAButton />
-      <MailingList img={props.img}/>
+      <MailingList img={props.img} />
     </section>
   );
 }

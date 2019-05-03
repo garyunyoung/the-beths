@@ -1,35 +1,28 @@
 .tour {
-  font-family: "Gaegu", cursive;
   display: flex;
   flex-flow: column;
-  
+
   .tour-pic {
     margin: 0 auto;
 
-    
     .tour-pic--main {
       height: 15vh;
-      object-fit: contain;
     }
   }
 
   .song-kick {
     padding: 0 2vw;
-    
   }
 }
 
 @media (min-width: 415px) and (max-width: 1023) {
   .song-kick {
     margin: 0 8vw;
-    
   }
 }
-
 
 @media (min-width: 1024px) {
   .song-kick {
     margin: 0 13vw;
-    
   }
 }

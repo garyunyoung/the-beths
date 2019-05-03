@@ -1,10 +1,9 @@
 .socials {
+  position: absolute;
   display: flex;
   justify-content: center;
-  align-content: center;
-  position: absolute;
   bottom: 0;
-  width: 90vw;
+  width: 100vw;
 
   .socials__icon {
     font-size: 5vh;

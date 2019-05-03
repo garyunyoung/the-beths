@@ -45,7 +45,7 @@ export default class Bar extends React.Component {
 
 function HamburgerButton(props) {
   return (
-    <a className="bar__nav--icon" onClick={props.toggleNav}>
+    <a className="hamburger__btn" onClick={props.toggleNav}>
       {props.open ? "x" : "="}
     </a>
   );

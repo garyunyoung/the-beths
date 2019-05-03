@@ -14,7 +14,6 @@
 
     .barDesktop__logo {
       width: 9vw;
-      vertical-align: bottom;
     }
   }
 
@@ -22,11 +21,11 @@
     width: 20vw;
 
     .brDesktop__socials--icons {
-      width: 20vw;
-      height: 7.5vh;
       display: flex;
       justify-content: left;
       align-items: center;
+      width: 20vw;
+      height: 7.5vh;
 
       .socials__icon {
         font-size: 2.5vh;
@@ -45,28 +44,21 @@
     width: 20vw;
 
     .nav__item {
-      list-style: none;
       font-size: 2.5vh;
-      margin: auto 0.7vw;
-      text-decoration: none;
-      color: black;
-
-      &:hover {
-        color: #c45827;
-      }
+      margin: auto 1vw;
     }
   }
 
-  .desk__nav__tui {
-    width: 1.7vw;
+  .nav__tui {
+    width: 1.5vw;
     transform: rotate(-10deg);
     opacity: 0.2;
-    margin: 1vh 0 0 1vw;
+    margin: 1.5vh 0 0 1vw;
     cursor: pointer;
     &:hover {
+      width: 2vw;
+      transform: rotate(-25deg);
       opacity: 1;
-      transform: rotate(-20deg);
-      width: 1.8vw;
     }
   }
 }

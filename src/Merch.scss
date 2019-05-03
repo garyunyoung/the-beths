@@ -1,21 +1,6 @@
-.merch {
+.merch__visit {
   text-align: center;
-
-  .merch__visit {
-    font-size: 1.5em;
-    margin: 3vh;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-  }
-}
-@media (min-width: 1024px) {
-  .merch__visit {
-    width: 15vw;
-    margin: 0 auto;
-    cursor: default;
-    &:hover {
-      color: #c45827;
-    }
-  }
+  font-size: 1.5em;
+  margin: 3vh;
+  cursor: pointer;
 }
