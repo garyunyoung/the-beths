@@ -1,9 +1,9 @@
 import React from "react";
 import "./Socials.scss";
 
-export default function Socials() {
+export default function Socials(props) {
   return (
-    <section className="socials">
+    <section className={`socials ${props.test}`}>
       <a
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"

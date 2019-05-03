@@ -21,13 +21,20 @@
   .barDesktop__socials {
     width: 21.5vw;
 
-    .socials__icon {
-      font-size: 2.5vh;
-      margin: 2vw 1vw;
-      color: black;
+    .brDesktop__socials--icons {
+      height: 7.5vh;
+      display: flex;
+      justify-content: left;
+      align-items: center;
 
-      &:hover {
-        color: #c45827;
+      .socials__icon {
+        font-size: 2.5vh;
+        margin: auto 1vw;
+        color: black;
+
+        &:hover {
+          color: #c45827;
+        }
       }
     }
   }
@@ -35,6 +42,7 @@
   .barDesktop__nav {
     display: flex;
     width: 21.5vw;
+    background-color: blue;
 
     .nav__item {
       font-size: 2.5vh;
