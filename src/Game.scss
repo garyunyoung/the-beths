@@ -10,7 +10,6 @@
   }
 }
 
-
 .game--open {
   display: flex;
   flex-flow: column;
@@ -18,7 +17,7 @@
   height: 70%;
   transition: height 3s ease-in;
 
-  .game-area, 
+  .game-area,
   .game-explanation,
   .credits {
     display: block;
@@ -37,7 +36,6 @@ $grid-row-cells: 4;
 
 $tile-border-radius: 10px;
 
-
 $field-width-desktop: 500px;
 $field-width-mobile: 280px !global;
 
@@ -53,7 +51,6 @@ $tile-size-mobile: (
 
 $mobile-threshold: $field-width-desktop + 20px;
 $bigger-threshold: $field-width-desktop + (20 * 3px);
-
 
 $text-color: rgb(65, 32, 32);
 $logo-color: rgb(137, 132, 207);
@@ -242,7 +239,6 @@ $animation-speed: 600ms;
     }
   }
 
-
   .game-area {
     display: block;
     position: relative;
@@ -388,11 +384,12 @@ $animation-speed: 600ms;
     $limit: 13;
 
     $background-images: "images/gifs/JONWINK.gif", "images/gifs/BENRAIN.gif",
-      "images/gifs/LIZGOOGLY.gif", "images/gifs/IVAN.gif", "images/gifs/BEN.gif",
+      "images/gifs/LIZGOOGLY.gif", "images/gifs/BEN.gif",
+      "images/gifs/LIZSPACE.gif", "images/gifs/BENPLANE.gif",
       "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif",
-      "images/gifs/IVANDOG.gif", "images/gifs/JONCRICKET.gif",
-      "images/gifs/LIZRAINBOW.gif", "images/gifs/IVANMILKY.gif",
-      "images/gifs/BENBREAD.gif", "images/gifs/DANCINGSMALL.gif";
+      "images/gifs/JONTUI.gif", "images/gifs/LIZRAINBOW.gif",
+      "images/gifs/JONCRICKET.gif", "images/gifs/BENBREAD.gif",
+      "images/gifs/DAG.gif";
 
     // Build tile colors
     @while $exponent <= $limit {
