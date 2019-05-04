@@ -24,7 +24,7 @@ export default class MailingList extends React.Component {
               target="_blank"
             >
               <div id="mc_embed_signup_scroll">
-                <label htmlFor="mce-EMAIL">join the mailing list!</label>
+                <label htmlFor="mce-EMAIL">join our mailing list!</label>
                 <div className="input-wrapper">
                   <input
                     type="email"
