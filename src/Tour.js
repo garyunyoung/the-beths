@@ -18,8 +18,12 @@ export default class Tour extends React.Component {
   render() {
     if (!this.props.consent) {
       return (
-        <div>
-          <p>you need consent soz</p>
+        <div style={{ textAlign: "center" }}>
+          <p>
+            our songkick widget requires analytics to run, please accept our
+            cookies to see what shows we have lined up
+          </p>
+          <button onClick={() => this.props.allowTracking()}>ok!</button>
         </div>
       );
     } else {

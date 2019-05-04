@@ -1,38 +1,25 @@
 import React from "react";
-import { docCookies } from "./cookies";
 import "./ConsentBanner.scss";
 
-const cookieName = "beths-EU-consent";
 
 export default class ConsentBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      wasDismissed: false
     };
   }
 
-  componentDidMount() {
-    const cookie = docCookies.getItem(cookieName);
-    if (cookie === null) {
-      this.setState({ isOpen: true });
-    } else {
-      this.props.loadAnalytics();
-    }
-  }
-
   close() {
-    this.setState({ isOpen: false });
+    this.setState({ wasDismissed: true });
   }
 
   accept() {
-    docCookies.setItem(cookieName, "accepted");
-    this.setState({ isOpen: false });
-    this.props.loadAnalytics();
+    this.props.allowTracking()
   }
 
   render() {
-    if (!this.state.isOpen) {
+    if (this.state.wasDismissed || this.props.consent) {
       return null;
     }
     return (
