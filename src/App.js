@@ -27,7 +27,18 @@ export default class App extends React.Component {
   }
 
   loadAnalytics() {
-    console.log("load analytics");
+    let script = document.createElement("script"); // create a script DOM node
+    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
+
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-128211149-2");
   }
 
   render() {
@@ -43,7 +54,7 @@ export default class App extends React.Component {
         <Bar img={cld} toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home img={cld} />
-          <ConsentBanner loadAnalytics={() => this.loadAnalytics()}/>
+          <ConsentBanner loadAnalytics={() => this.loadAnalytics()} />
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
