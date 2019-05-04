@@ -3,7 +3,7 @@ import cloudinary from "cloudinary-core";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
-import ConsentBanner from './ConsentBanner';
+import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
@@ -26,6 +26,10 @@ export default class App extends React.Component {
     }));
   }
 
+  loadAnalytics() {
+    console.log("load analytics");
+  }
+
   render() {
     const cld =
       "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/the-beths/";
@@ -39,7 +43,7 @@ export default class App extends React.Component {
         <Bar img={cld} toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home img={cld} />
-          <ConsentBanner/>
+          <ConsentBanner loadAnalytics={() => this.loadAnalytics()}/>
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />

@@ -1,12 +1,24 @@
 import React from "react";
+import { docCookies } from "./cookies";
 import "./ConsentBanner.scss";
+
+const cookieName = "beths-EU-consent";
 
 export default class ConsentBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: true
+      isOpen: false
     };
+  }
+
+  componentDidMount() {
+    const cookie = docCookies.getItem(cookieName);
+    if (cookie === null) {
+      this.setState({ isOpen: true });
+    } else {
+      this.props.loadAnalytics();
+    }
   }
 
   close() {
@@ -14,7 +26,9 @@ export default class ConsentBanner extends React.Component {
   }
 
   accept() {
+    docCookies.setItem(cookieName, "accepted");
     this.setState({ isOpen: false });
+    this.props.loadAnalytics();
   }
 
   render() {
@@ -23,9 +37,13 @@ export default class ConsentBanner extends React.Component {
     }
     return (
       <div className="banner">
-        <button className='btn' onClick={() => this.close()}>x</button>
+        <button className="btn" onClick={() => this.close()}>
+          x
+        </button>
         <p>this is the banner for cookie consent</p>
-        <button className='btn' onClick={() => this.accept()}>accept</button>
+        <button className="btn" onClick={() => this.accept()}>
+          accept
+        </button>
       </div>
     );
   }
