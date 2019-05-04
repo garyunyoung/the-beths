@@ -3,6 +3,7 @@ import cloudinary from "cloudinary-core";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
+import ConsentBanner from './ConsentBanner';
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
@@ -38,6 +39,7 @@ export default class App extends React.Component {
         <Bar img={cld} toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home img={cld} />
+          <ConsentBanner/>
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
