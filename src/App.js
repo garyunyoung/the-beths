@@ -16,7 +16,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      gameIsOpen: false
+      gameIsOpen: false,
+      hasConsent: false
     };
   }
 
@@ -27,18 +28,20 @@ export default class App extends React.Component {
   }
 
   loadAnalytics() {
-    let script = document.createElement("script"); // create a script DOM node
-    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
+    // let script = document.createElement("script"); // create a script DOM node
+    // script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
 
-    document.head.appendChild(script);
+    // document.head.appendChild(script);
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag() {
+    //   window.dataLayer.push(arguments);
+    // }
+    // gtag("js", new Date());
 
-    gtag("config", "UA-128211149-2");
+    // gtag("config", "UA-128211149-2");
+
+    this.setState({ hasConsent: true });
   }
 
   render() {
@@ -70,7 +73,7 @@ export default class App extends React.Component {
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />
-          <Tour img={cld} />
+          <Tour img={cld} consent={this.state.hasConsent}/>
         </section>
         <section id="contact" className="page page--contact">
           <Header header="contact" />

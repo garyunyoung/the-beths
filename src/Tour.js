@@ -2,32 +2,50 @@ import React from "react";
 import "./Tour.scss";
 
 export default class Tour extends React.Component {
-  componentDidMount() {
+  loadSongkick() {
     const script = document.createElement("script");
     script.src = "//widget.songkick.com/8923484/widget.js";
     script.async = true;
     document.body.appendChild(script);
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.consent !== prevProps.consent && this.props.consent) {
+      this.loadSongkick();
+    }
+  }
+
   render() {
-    return (
-      <section className="tour">
-        <div className="tour-pic">
-          <img className="tour-pic--main" src={`${this.props.img}tour.jpg`} alt="collage of tour pictures"/>
+    if (!this.props.consent) {
+      return (
+        <div>
+          <p>you need consent soz</p>
         </div>
-        <div className="song-kick">
-          <a
-            href="https://www.songkick.com/artists/8923484"
-            className="songkick-widget"
-            data-theme="light"
-            data-track-button="on"
-            data-detect-style="true"
-            data-background-color="transparent"
-          >
-            come gig!
-          </a>
-        </div>
-      </section>
-    );
+      );
+    } else {
+      return (
+        <section className="tour">
+          <div className="tour-pic">
+            <img
+              className="tour-pic--main"
+              src={`${this.props.img}tour.jpg`}
+              alt="collage of tour pictures"
+            />
+          </div>
+          <div className="song-kick">
+            <a
+              href="https://www.songkick.com/artists/8923484"
+              className="songkick-widget"
+              data-theme="light"
+              data-track-button="on"
+              data-detect-style="true"
+              data-background-color="transparent"
+            >
+              come gig!
+            </a>
+          </div>
+        </section>
+      );
+    }
   }
 }

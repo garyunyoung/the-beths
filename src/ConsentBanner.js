@@ -37,11 +37,11 @@ export default class ConsentBanner extends React.Component {
     }
     return (
       <div className="banner">
-        <button className="btn" onClick={() => this.close()}>
+        <button className="btn btn--x" onClick={() => this.close()}>
           x
         </button>
-        <p>this is the banner for cookie consent</p>
-        <button className="btn" onClick={() => this.accept()}>
+        <p className='banner__text'>this is the banner for cookie consent</p>
+        <button className="btn btn--a" onClick={() => this.accept()}>
           accept
         </button>
       </div>
