@@ -14,18 +14,21 @@
 
     .barDesktop__logo {
       width: 9vw;
+      position: absolute;
+      top: 1vh;
     }
   }
 
   .barDesktop__socials {
-    width: 20vw;
+    width: auto;
 
     .brDesktop__socials--icons {
       display: flex;
       justify-content: left;
       align-items: center;
-      width: 20vw;
+      width: auto;
       height: 7.5vh;
+      position: static;
 
       .socials__icon {
         font-size: 2.5vh;
@@ -41,7 +44,7 @@
 
   .barDesktop__nav {
     display: flex;
-    width: 20vw;
+    width: auto;
 
     .nav__item {
       font-size: 2.5vh;
