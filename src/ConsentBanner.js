@@ -1,7 +1,6 @@
 import React from "react";
 import "./ConsentBanner.scss";
 
-
 export default class ConsentBanner extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +14,7 @@ export default class ConsentBanner extends React.Component {
   }
 
   accept() {
-    this.props.allowTracking()
+    this.props.allowTracking();
   }
 
   render() {
@@ -27,9 +26,14 @@ export default class ConsentBanner extends React.Component {
         <button className="btn btn--x" onClick={() => this.close()}>
           x
         </button>
-        <p className='banner__text'>this is the banner for cookie consent</p>
+        <p className="banner__text">
+          hey! some of the features on our site require analytics to run. you can use the site without these features, but it's better with them! 
+        </p>
+        <button className="btn btn--d" onClick={() => this.close()}>
+          decline
+        </button>
         <button className="btn btn--a" onClick={() => this.accept()}>
-          accept
+          accept 🍪
         </button>
       </div>
     );

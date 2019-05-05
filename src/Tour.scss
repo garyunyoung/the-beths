@@ -15,6 +15,27 @@
   }
 }
 
+.consent-banner {
+  text-align: center;
+  background-color: gold;
+  padding: 1em;
+
+
+  .consent-banner__text {
+    padding: 1em;
+  }
+
+  .btn {
+    font-family: "Gaegu", cursive;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: .5em 1em;
+    font-size: 1em;
+
+
+  }
+}
+
 @media (min-width: 415px) and (max-width: 1023) {
   .song-kick {
     margin: 0 8vw;
