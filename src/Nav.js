@@ -14,7 +14,7 @@ export default function Nav(props) {
           <li>
             <Socials className="nav__social" />
           </li>
-          <NavItemGame img={props.img} toggleGame={props.toggleGame}/>
+          <NavItemGame img={props.img} toggleGame={props.toggleGame} />
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />
         </ul>
       </nav>
@@ -38,9 +38,13 @@ export function NavItem(props) {
 
 export function NavItemGame(props) {
   return (
-    <li>
+    <li className="nav__item">
       <a href="#game" onClick={props.toggleGame}>
-        <img className={`${props.class} nav__tui`} src={`${props.img}tui.png`} alt="tui bird" />
+        <img
+          className={`${props.class} nav__tui`}
+          src={`${props.img}tui.png`}
+          alt="tui bird"
+        />
       </a>
     </li>
   );
