@@ -1,11 +1,15 @@
 .button__wrapper {
   display: flex;
   margin-bottom: 5vh;
-  
+
   .button {
     margin: 3vh auto;
     font-size: 3vh;
     text-transform: uppercase;
+
+    .button--link {
+      font-weight: 400;
+    }
   }
 }
 @media (min-width: 1024px) {
