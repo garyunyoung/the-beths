@@ -20,7 +20,6 @@
   background-color: gold;
   padding: 1em;
 
-
   .consent-banner__text {
     padding: 1em;
   }
@@ -29,10 +28,11 @@
     font-family: "Gaegu", cursive;
     background-color: transparent;
     border: 1px solid black;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     font-size: 1em;
-
-
+    &:hover {
+      box-shadow: 1px 1px 1px black;
+    }
   }
 }
 
