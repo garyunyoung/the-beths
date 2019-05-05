@@ -59,12 +59,13 @@ export default function Watch(props) {
         />
       </section>
       <h2 className="watch__text">bonus</h2>
-      <section className="watch__wrapper">
+      <section className="watch__wrapper watch__wrapper--xmas">
         <Thumbnail
           title="have yourself a merry litte christmas"
           image={`${props.img}hyamlc.png`}
           modifier="hyamlc"
           link="https://www.youtube.com/watch?v=Moz6XOAKK5U"
+          class='thumbnail___image--xmas'
         />
       </section>
     </section>
@@ -84,7 +85,7 @@ function Thumbnail(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className="thumbnail__image cld-responsive" src={props.image} alt={`${props.title} thumbnail`}></img>
+        <img className={`thumbnail__image ${props.class} cld-responsive`} src={props.image} alt={`${props.title} thumbnail`}></img>
         <p className="thumbnail__text">{props.title}</p>
       </a>
     </div>

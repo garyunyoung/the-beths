@@ -32,12 +32,13 @@ export default class Tour extends React.Component {
       return (
         <section className="tour">
           <div className="tour-pic">
-            <img
+            {/* <img
               className="tour-pic--main"
-              src={`${this.props.img}tour.jpg`}
-              alt="collage of tour pictures"
-            />
+              src={tour}
+              alt="collage of tour pictures" */}
+            {/* /> */}
           </div>
+          <p style={{textAlign: 'center', margin: '1em 0 0 0'}}>come gig!</p>
           <div className="song-kick">
             <a
               href="https://www.songkick.com/artists/8923484"
@@ -47,7 +48,6 @@ export default class Tour extends React.Component {
               data-detect-style="true"
               data-background-color="transparent"
             >
-              come gig!
             </a>
           </div>
         </section>

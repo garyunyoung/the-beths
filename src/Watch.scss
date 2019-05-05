@@ -24,6 +24,10 @@
     object-fit: contain;
   }
 
+  .thumbnail___image--xmas {
+    height: 17vw;
+  }
+
   .thumbnail__text {
     font-size: 1em;
     max-width: 40vw;
@@ -41,6 +45,10 @@
       margin: 0 auto;
       max-width: 70vw;
     }
+
+    .watch__wrapper--xmas {
+      max-width: 30vw;
+    }
   }
 
   .thumbnail {
@@ -52,6 +60,10 @@
 
     .thumbnail__image {
       height: 8vw;
+    }
+
+    .thumbnail___image--xmas {
+      height: 7vw;
     }
 
     .thumbnail__text {
