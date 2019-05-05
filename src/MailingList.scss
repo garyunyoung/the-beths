@@ -69,11 +69,13 @@
     bottom: 0;
     left: 5vw;
     width: 40vw;
+    height: 10vh;
+
+    .mailingList__wrapper {
+      transform: translateX(-7vw);
+    }
 
     .mailingList__dag {
-      width: auto;
-      height: 8vh;
-      margin-right: 1.5vw;
       transform: translateY(0);
     }
 
@@ -84,6 +86,7 @@
 
   #mc_embed_signup form {
     padding: 0;
+    margin-bottom: 2vh;
   }
 
   #mc_embed_signup input.email {
@@ -92,12 +95,13 @@
   }
 
   #mc_embed_signup label {
+    transform: translateX(-1vw);
     font-size: 1em;
     color: white;
-    width: 25vw;
+    width: auto;
     padding: 0;
     &:hover {
-      color: #fdd83e;
+      font-weight: bold;
     }
   }
   #mc_embed_signup .button {
@@ -105,16 +109,18 @@
     width: 4vw;
     height: 2em;
     &:hover {
-      color: #fdd83e;
+      text-emphasis: bold;
     }
   }
 
   #mc_embed_signup .clear {
-    margin: 0.5vh auto auto 0;
+    display: flex;
+    margin: 0;
+    width: auto;
   }
 
   input:focus {
-    outline: none;
+    // outline: none;
   }
 }
 
