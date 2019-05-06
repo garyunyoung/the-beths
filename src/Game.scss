@@ -187,8 +187,9 @@ $animation-speed: 600ms;
     text-align: center;
     float: right;
     cursor: pointer;
+    font-weight: 600;
     &:hover {
-      font-weight: 400;
+      text-shadow: .2px .2px white;
       color: white;
     }
   }
