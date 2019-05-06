@@ -42,6 +42,18 @@
   transform: translateY(0);
 }
 
+@media (min-width: 415px) and (max-width: 1023px) {
+  .nav {
+    .nav__list {
+      font-size: 2.5em;
+    }
+
+    .nav__tui {
+      width: 6vw;
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   .nav {
     display: none;
