@@ -109,8 +109,7 @@
     width: 4vw;
     height: 2em;
     &:hover {
-      text-shadow: .5px .2px white;
-    
+      text-shadow: 0.5px 0.2px white;
     }
   }
 
@@ -125,11 +124,33 @@
   }
 }
 
-@media (min-width: 2560px) {
-  #mc_embed_signup input.email {
-    font-size: 1em;
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .mailingList {
+    position: static;
+    width: auto;
+
+    .mailingList__wrapper {
+      transform: translateX(0vw);
+    }
+
+    .input-wrapper {
+      width: auto;
+    }
   }
+
+  #mc_embed_signup label {
+    color: black;
+    transform: translateX(-10vw);
+  }
+
+  #mc_embed_signup input.email {
+    border: 1px dashed black;
+    width: 60vw;
+    margin-top: 2.5vh;
+  }
+
   #mc_embed_signup .button {
-    font-size: 1em;
+    color: black;
+    margin-left: 5vw;
   }
 }

@@ -20,11 +20,11 @@
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .socials {
-    width: 65vw;
+    width: 100vw;
 
     .socials__icon {
       font-size: 4vh;
-      margin: 1vw 3vw;
+      margin: 3vw 3vw;
     }
   }
 }
@@ -34,4 +34,11 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .socials {
+    display: flex;
+  }
+}
+
 
