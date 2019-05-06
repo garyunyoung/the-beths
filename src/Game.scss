@@ -189,7 +189,7 @@ $animation-speed: 600ms;
     cursor: pointer;
     font-weight: 600;
     &:hover {
-      text-shadow: .2px .2px white;
+      text-shadow: 0.2px 0.2px white;
       color: white;
     }
   }
@@ -389,12 +389,11 @@ $animation-speed: 600ms;
     $limit: 13;
 
     $background-images: "images/gifs/JONWINK.gif", "images/gifs/BENRAIN.gif",
-      "images/gifs/LIZGOOGLY.gif", "images/gifs/BEN.gif",
-      "images/gifs/LIZSPACE.gif", "images/gifs/BENPLANE.gif",
-      "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif",
-      "images/gifs/JONTUI.gif", "images/gifs/LIZRAINBOW.gif",
-      "images/gifs/JONCRICKET.gif", "images/gifs/BENBREAD.gif",
-      "images/gifs/DAG.gif";
+      "images/gifs/LIZGOOGLY.gif", "images/gifs/LIZSPACE.gif",
+      "images/gifs/BEN.gif", "images/gifs/PIZZAJON.gif", "images/gifs/LIZ.gif",
+      "images/gifs/BENPLANE.gif", "images/gifs/JONTUI.gif",
+      "images/gifs/LIZRAINBOW.gif", "images/gifs/JONCRICKET.gif",
+      "images/gifs/BENBREAD.gif", "images/gifs/DAG.gif";
 
     // Build tile colors
     @while $exponent <= $limit {
