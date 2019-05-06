@@ -11,6 +11,10 @@
     background-repeat: no-repeat;
   }
 
+  .tour-text {
+    text-align: center;
+    margin: 1em 0 0 0;
+  }
   .song-kick {
     padding: 0 2vw;
   }
@@ -54,5 +58,11 @@
       margin: 0 15vw;
       background-size: contain;
     }
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .tour-text {
+    font-size: 2em;
   }
 }

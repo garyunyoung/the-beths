@@ -74,3 +74,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 2560px) {
+
+  .watch {
+    .watch__text {
+      font-size: 2em;
+    }
+  }
+  .thumbnail {
+    .thumbnail__text {
+      font-size: 1.5em;
+    }
+  }
+}

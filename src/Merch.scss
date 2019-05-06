@@ -4,3 +4,9 @@
   margin: 3vh;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 2560px) {
+  .merch__visit {
+    font-size: 2em;
+  }
+}
