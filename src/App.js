@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import cloudinary from "cloudinary-core";
 import { docCookies } from "./cookies";
 import Bar from "./Bar";
@@ -7,11 +7,12 @@ import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
-import Watch from "./Watch";
-import Game from "./Game";
 import Tour from "./Tour";
-import Contact from "./Contact";
 import "./App.scss";
+
+const Game = lazy(() => import("./Game"));
+const Watch = lazy(() => import("./Watch"));
+const Contact = lazy(() => import("./Contact"));
 
 const cookieName = "beths-EU-consent";
 
@@ -74,11 +75,15 @@ export default class App extends React.Component {
         </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch />
+          <Suspense fallback={<div>loading...</div>}>
+            <Watch />
+          </Suspense>
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />
-          <Game open={this.state.gameIsOpen} />
+          <Suspense fallback={<div>loading...</div>}>
+            <Game open={this.state.gameIsOpen} />
+          </Suspense>
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />
@@ -89,7 +94,9 @@ export default class App extends React.Component {
         </section>
         <section id="contact" className="page page--contact">
           <Header header="contact" />
-          <Contact />
+          <Suspense fallback={<div>loading...</div>}>
+            <Contact />
+          </Suspense>
         </section>
       </React.Fragment>
     );
