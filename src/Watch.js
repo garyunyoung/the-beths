@@ -1,6 +1,6 @@
 import React from "react";
 import "./Watch.scss";
-import { utg,huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from './cloudinary';
+import { utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
 
 export default function Watch(props) {
   return (
@@ -66,7 +66,7 @@ export default function Watch(props) {
           image={hyamlc}
           modifier="hyamlc"
           link="https://www.youtube.com/watch?v=Moz6XOAKK5U"
-          class='thumbnail___image--xmas'
+          class="thumbnail___image--xmas"
         />
       </section>
     </section>
@@ -86,7 +86,12 @@ function Thumbnail(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img className={`thumbnail__image ${props.class} cld-responsive`} src={props.image} alt={`${props.title} thumbnail`}></img>
+        <img
+          className={`thumbnail__image ${props.class} cld-responsive`}
+          src={props.image}
+          alt={`${props.title} thumbnail`}
+          loading="lazy"
+        />
         <p className="thumbnail__text">{props.title}</p>
       </a>
     </div>
