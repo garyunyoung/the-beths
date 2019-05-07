@@ -13,7 +13,7 @@ export const cpY = `${cld}v1556808496/the-beths/cp-y.png`;
 export const dag = `${cld}v1556808498/the-beths/fmhm-dog.png`;
 
 // Merch //
-export const fmhmO = `${cld}v1556808499/the-beths/fmhm-o.jpg`;
+export const fmhmM = `${cld}v1557241561/the-beths/fmhm-m.jpg`;
 export const fmhmA = `${cld}v1556808497/the-beths/fmhm-a.jpg`;
 export const wbP = `${cld}v1556808503/the-beths/wb-p.jpg`;
 export const shirtW = `${cld}v1556808502/the-beths/shirt-w.jpg`;
