@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Sticky from "./Sticky";
+import { logo } from "./cloudinary";
 import "./Bar.scss";
 
 export default class Bar extends React.Component {
@@ -26,7 +27,7 @@ export default class Bar extends React.Component {
     return (
       <Sticky>
         <nav id="home" className="bar">
-          <Logo img={this.props.img} />
+          <Logo />
           <HamburgerButton
             open={this.state.isOpen}
             toggleNav={() => this.toggleNav()}
@@ -36,7 +37,6 @@ export default class Bar extends React.Component {
           open={this.state.isOpen}
           toggleNav={() => this.toggleNav()}
           toggleGame={() => this.activateGame()}
-          img={this.props.img}
         />
       </Sticky>
     );
@@ -56,7 +56,7 @@ export function Logo(props) {
     <a className="nav__item" href="#">
       <img
         className={`${props.className} bar__logo cld-responsive`}
-        src={`${props.img}logo.png`}
+        src={logo}
         alt="the beths logo"
       />
     </a>

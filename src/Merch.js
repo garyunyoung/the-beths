@@ -1,33 +1,35 @@
 import React from "react";
 import Carousel from "./Carousel";
+import { fmhmO, fmhmA, wbP, shirtW, shirtB } from './cloudinary';
+
 
 import "./Merch.scss";
 
-export default function Merch(props) {
+export default function Merch() {
   const merch = [
     {
       title: "future me hates me - LP - orange",
-      src: `${props.img}fmhm-o.jpg`,
+      src: fmhmO,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
       title: "future me hates me - LP - transparent aqua",
-      src: `${props.img}fmhm-a.jpg`,
+      src: fmhmA,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
       title: "warm blood - EP - LP - pink",
-      src: `${props.img}wb-p.jpg`,
+      src: wbP,
       link: "http://smarturl.it/TheBethsWB-Vinyl"
     },
     {
       title: "dogs dogs dogs shirt - white",
-      src: `${props.img}shirt-w.jpg`,
+      src: shirtW,
       link: "http://smarturl.it/TheBeths-ShirtW"
     },
     {
       title: "dogs dogs dogs shirt - black",
-      src: `${props.img}shirt-b.jpg`,
+      src: shirtB,
       link: "http://smarturl.it/TheBeths-ShirtB"
     },
   ];

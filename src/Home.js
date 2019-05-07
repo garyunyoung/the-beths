@@ -2,16 +2,17 @@ import React from "react";
 import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import MailingList from "./MailingList";
+import { fmhmT, cpY } from "./cloudinary";
 import "./Home.scss";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
           <img
             className="title cld-responsive"
-            src={`${props.img}fmhm-title.png`}
+            src={fmhmT}
             alt="future me hates me title"
           />
           <h1 className="titleText">future me hates me</h1>
@@ -23,7 +24,7 @@ export default function Home(props) {
           >
             <img
               className="cpY cld-responsive"
-              src={`${props.img}cp-y.png`}
+              src={cpY}
               alt="carpark records logo"
             />
           </a>
@@ -48,7 +49,7 @@ export default function Home(props) {
         <Socials />
       </section>
       <CTAButton />
-      <MailingList img={props.img} />
+      <MailingList />
     </section>
   );
 }

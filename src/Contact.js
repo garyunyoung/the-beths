@@ -1,9 +1,10 @@
 import React from "react";
+import { contact, cpB } from './cloudinary';
 import "./Contact.scss";
 
-export default function Contact(props) {
+export default function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" style={{ backgroundImage: 'url(' + contact + ')' }}>
       <p className="contact__text">general manager</p>
       <a className="contact__link" href="mailto:jacob@monstermanagement.com.au">
         jacob@monstermanagement.com.au
@@ -51,7 +52,7 @@ export default function Contact(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="cp-logo" src={`${props.img}cp-bw.jpg`} alt="carpark records logo" />
+          <img className="cp-logo" src={cpB} alt="carpark records logo" />
         </a>
       </p>
     </section>

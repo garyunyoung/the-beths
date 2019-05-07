@@ -1,4 +1,5 @@
 import React from "react";
+import { dag } from './cloudinary';
 import "./MailingList.scss";
 
 export default class MailingList extends React.Component {
@@ -12,7 +13,7 @@ export default class MailingList extends React.Component {
   render() {
     return (
       <section className="mailingList">
-        <img className="mailingList__dag" src={`${this.props.img}fmhm-dog.png`} alt='dag'/>
+        <img className="mailingList__dag" src={dag} alt='dag'/>
         <div className="mailingList__wrapper">
           <div id="mc_embed_signup">
             <form

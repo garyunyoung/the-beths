@@ -42,33 +42,27 @@ export default class App extends React.Component {
     this.setState({ hasConsent: true });
     // let script = document.createElement("script"); // create a script DOM node
     // script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
-
     // document.head.appendChild(script);
-
     // window.dataLayer = window.dataLayer || [];
     // function gtag() {
     //   window.dataLayer.push(arguments);
     // }
     // gtag("js", new Date());
-
     // gtag("config", "UA-128211149-2");
-
     this.setState({ hasConsent: true });
   }
 
   render() {
-    const cld =
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/the-beths/";
-
-    let cl = cloudinary.Cloudinary.new({ cloud_name: "<Cloud Name>" });
+    
+    let cl = cloudinary.Cloudinary.new({ cloud_name: "garyou" });
     cl.responsive();
 
     return (
       <React.Fragment>
-        <BarDesktop img={cld} toggleGame={() => this.toggleGame()} />
-        <Bar img={cld} toggleGame={() => this.toggleGame()} />
+        <BarDesktop toggleGame={() => this.toggleGame()} />
+        <Bar toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
-          <Home img={cld} />
+          <Home />
           <ConsentBanner
             consent={this.state.hasConsent}
             loadAnalytics={() => this.loadAnalytics()}
@@ -77,11 +71,11 @@ export default class App extends React.Component {
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch img={cld} />
+          <Merch />
         </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch img={cld} />
+          <Watch />
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />
@@ -90,14 +84,13 @@ export default class App extends React.Component {
         <section id="tour" className="page page--tour">
           <Header header="tour" />
           <Tour
-            img={cld}
             consent={this.state.hasConsent}
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
         <section id="contact" className="page page--contact">
           <Header header="contact" />
-          <Contact img={cld} />
+          <Contact />
         </section>
       </React.Fragment>
     );

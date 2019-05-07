@@ -1,5 +1,6 @@
 import React from "react";
 import Socials from "./Socials";
+import { tui } from "./cloudinary";
 import "./Nav.scss";
 
 export default function Nav(props) {
@@ -14,7 +15,7 @@ export default function Nav(props) {
           <li>
             <Socials className="nav__social" />
           </li>
-          <NavItemGame img={props.img} toggleGame={props.toggleGame} />
+          <NavItemGame toggleGame={props.toggleGame} />
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />
         </ul>
       </nav>
@@ -40,11 +41,7 @@ export function NavItemGame(props) {
   return (
     <li className="nav__item">
       <a href="#game" onClick={props.toggleGame}>
-        <img
-          className={`${props.class} nav__tui`}
-          src={`${props.img}tui.png`}
-          alt="tui bird"
-        />
+        <img className={`${props.class} nav__tui`} src={tui} alt="tui bird" />
       </a>
     </li>
   );

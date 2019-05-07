@@ -1,5 +1,6 @@
 import React from "react";
 import "./Watch.scss";
+import { utg,huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from './cloudinary';
 
 export default function Watch(props) {
   return (
@@ -8,37 +9,37 @@ export default function Watch(props) {
       <section className="watch__wrapper">
         <Thumbnail
           title="uptown girl"
-          image={`${props.img}utg.png`}
+          image={utg}
           modifier="utg"
           link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
         />
         <Thumbnail
           title="happy unhappy"
-          image={`${props.img}huh.png`}
+          image={huh}
           modifier="huh"
           link="https://www.youtube.com/watch?v=ct8AwQwlbNA"
         />
         <Thumbnail
           title="little death"
-          image={`${props.img}ld.png`}
+          image={ld}
           modifier="ld"
           link="https://www.youtube.com/watch?v=UuzlZWvTU2I"
         />
         <Thumbnail
           title="great no one"
-          image={`${props.img}gno.png`}
+          image={gno}
           modifier="gno"
           link="https://www.youtube.com/watch?v=qQYhM48H5zs"
         />
         <Thumbnail
           title="future me hates me"
-          image={`${props.img}fmhm.png`}
+          image={fmhm}
           modifier="fmhm"
           link="https://www.youtube.com/watch?v=iVImwSb4EYU"
         />
         <Thumbnail
           title="you wouldn't like me"
-          image={`${props.img}ywlm.png`}
+          image={ywlm}
           modifier="ywlm"
           link="https://www.youtube.com/watch?v=CV3Bjx-vPTg"
         />
@@ -47,13 +48,13 @@ export default function Watch(props) {
       <section className="watch__wrapper">
         <Thumbnail
           title="whatever"
-          image={`${props.img}w.png`}
+          image={w}
           modifier="w"
           link="https://www.youtube.com/watch?v=qtqX7rWtR8A"
         />
         <Thumbnail
           title="lying in the sun"
-          image={`${props.img}lits.png`}
+          image={lits}
           modifier="lits"
           link="https://www.youtube.com/watch?v=4Pz8qzMj-Bw"
         />
@@ -62,7 +63,7 @@ export default function Watch(props) {
       <section className="watch__wrapper watch__wrapper--xmas">
         <Thumbnail
           title="have yourself a merry litte christmas"
-          image={`${props.img}hyamlc.png`}
+          image={hyamlc}
           modifier="hyamlc"
           link="https://www.youtube.com/watch?v=Moz6XOAKK5U"
           class='thumbnail___image--xmas'
