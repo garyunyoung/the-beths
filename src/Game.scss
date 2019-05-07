@@ -403,12 +403,13 @@ $animation-speed: 600ms;
     $exponent: 1;
     $limit: 13;
 
-    $background-images: "game/images/JONWINK.mp4", "game/images/BENRAIN.mp4",
-      "game/images/LIZGOOGLY.mp4", "game/images/LIZSPACE.mp4",
-      "game/images/BEN.mp4", "game/images/PIZZAJON.mp4", "game/images/LIZ.mp4",
-      "game/images/BENPLANE.mp4", "game/images/JONTUI.mp4",
-      "game/images/LIZRAINBOW.mp4", "game/images/JONCRICKET.mp4",
-      "game/images/BENBREAD.mp4", "game/images/DAG.mp4";
+
+    $background-images: "./images/JONWINK.mp4", "./images/BENRAIN.mp4",
+      "./images/LIZGOOGLY.mp4", "./images/LIZSPACE.mp4",
+      "./images/BEN.mp4", "./images/PIZZAJON.mp4", "./images/LIZ.mp4",
+      "./images/BENPLANE.mp4", "./images/JONTUI.mp4",
+      "./images/LIZRAINBOW.mp4", "./images/JONCRICKET.mp4",
+      "./images/BENBREAD.mp4", "./images/DAG.mp4";
 
     // Build tile colors
     @while $exponent <= $limit {

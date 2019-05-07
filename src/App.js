@@ -7,10 +7,11 @@ import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
+import Game from './Game';
 import Tour from "./Tour";
 import "./App.scss";
 
-const Game = lazy(() => import("./Game"));
+// const Game = lazy(() => import("./Game"));
 const Watch = lazy(() => import("./Watch"));
 const Contact = lazy(() => import("./Contact"));
 
@@ -81,9 +82,9 @@ export default class App extends React.Component {
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />
-          <Suspense fallback={<div>loading...</div>}>
+          {/* <Suspense fallback={<div>loading...</div>}> */}
             <Game open={this.state.gameIsOpen} />
-          </Suspense>
+          {/* </Suspense> */}
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />
