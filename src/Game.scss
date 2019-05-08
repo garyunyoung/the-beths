@@ -15,6 +15,7 @@
   flex-flow: column;
   align-items: center;
   height: 70%;
+  width: 99vw;
   transition: height 3s ease-in;
 
   .game-area,
@@ -404,12 +405,12 @@ $animation-speed: 600ms;
     $limit: 13;
 
 
-    $background-images: "./images/JONWINK.mp4", "./images/BENRAIN.mp4",
-      "./images/LIZGOOGLY.mp4", "./images/LIZSPACE.mp4",
-      "./images/BEN.mp4", "./images/PIZZAJON.mp4", "./images/LIZ.mp4",
-      "./images/BENPLANE.mp4", "./images/JONTUI.mp4",
-      "./images/LIZRAINBOW.mp4", "./images/JONCRICKET.mp4",
-      "./images/BENBREAD.mp4", "./images/DAG.mp4";
+    $background-images: "./images/gifs/JONWINK.gif", "./images/gifs/BENRAIN.gif",
+      "./images/gifs/LIZGOOGLY.gif", "./images/gifs/LIZSPACE.gif",
+      "./images/gifs/BEN.gif", "./images/gifs/PIZZAJON.gif", "./images/gifs/LIZ.gif",
+      "./images/gifs/BENPLANE.gif", "./images/gifs/JONTUI.gif",
+      "./images/gifs/LIZRAINBOW.gif", "./images/gifs/JONCRICKET.gif",
+      "./images/gifs/BENBREAD.gif", "./images/gifs/DAG.gif";
 
     // Build tile colors
     @while $exponent <= $limit {
