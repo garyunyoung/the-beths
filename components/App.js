@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 // import cloudinary from "cloudinary-core";
 import { docCookies } from "./cookies";
 import Bar from "./Bar";
