@@ -7,7 +7,7 @@ import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
-import Game from './Game';
+import Game from "./Game";
 import Tour from "./Tour";
 import "./App.scss";
 
@@ -60,45 +60,45 @@ export default class App extends React.Component {
 
     return (
       <React.Fragment>
-        <BarDesktop toggleGame={() => this.toggleGame()} />
-        <Bar toggleGame={() => this.toggleGame()} />
-        <section className="page page--home">
-          <Home />
-          <ConsentBanner
-            consent={this.state.hasConsent}
-            loadAnalytics={() => this.loadAnalytics()}
-            allowTracking={() => this.loadAnalytics()}
-          />
-        </section>
-        <section id="merch" className="page page--merch">
-          <Header header="merch" />
-          <Merch />
-        </section>
-        <section id="watch" className="page page--watch">
-          <Header header="watch" />
-          <Suspense fallback={<div>loading...</div>}>
-            <Watch />
-          </Suspense>
-        </section>
-        <section id="game" className="page page--game">
-          <Header header="game" open={this.state.gameIsOpen} />
-          {/* <Suspense fallback={<div>loading...</div>}> */}
-            <Game open={this.state.gameIsOpen} />
-          {/* </Suspense> */}
-        </section>
-        <section id="tour" className="page page--tour">
-          <Header header="tour" />
-          <Tour
-            consent={this.state.hasConsent}
-            allowTracking={() => this.loadAnalytics()}
-          />
-        </section>
-        <section id="contact" className="page page--contact">
-          <Header header="contact" />
-          <Suspense fallback={<div>loading...</div>}>
-            <Contact />
-          </Suspense>
-        </section>
+          <BarDesktop toggleGame={() => this.toggleGame()} />
+          <Bar toggleGame={() => this.toggleGame()} />
+          <section className="page page--home">
+            <Home />
+            <ConsentBanner
+              consent={this.state.hasConsent}
+              loadAnalytics={() => this.loadAnalytics()}
+              allowTracking={() => this.loadAnalytics()}
+            />
+          </section>
+          <section id="merch" className="page page--merch">
+            <Header header="merch" />
+            <Merch />
+          </section>
+          <section id="watch" className="page page--watch">
+            <Header header="watch" />
+            <Suspense fallback={<div>loading...</div>}>
+              <Watch />
+            </Suspense>
+          </section>
+          <section id="game" className="page page--game">
+            <Header header="game" open={this.state.gameIsOpen} />
+            <Suspense fallback={<div>loading...</div>}>
+              <Game open={this.state.gameIsOpen} />
+            </Suspense>
+          </section>
+          <section id="tour" className="page page--tour">
+            <Header header="tour" />
+            <Tour
+              consent={this.state.hasConsent}
+              allowTracking={() => this.loadAnalytics()}
+            />
+          </section>
+          <section id="contact" className="page page--contact">
+            <Header header="contact" />
+            <Suspense fallback={<div>loading...</div>}>
+              <Contact />
+            </Suspense>
+          </section>
       </React.Fragment>
     );
   }
