@@ -7,11 +7,10 @@ import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
-import Game from "./Game";
 import Tour from "./Tour";
 import "./App.scss";
 
-// const Game = lazy(() => import("./Game"));
+const Game = lazy(() => import("./Game"));
 const Watch = lazy(() => import("./Watch"));
 const Contact = lazy(() => import("./Contact"));
 
@@ -60,6 +59,7 @@ export default class App extends React.Component {
 
     return (
       <React.Fragment>
+        <Suspense fallback={<div>loading...</div>}>
           <BarDesktop toggleGame={() => this.toggleGame()} />
           <Bar toggleGame={() => this.toggleGame()} />
           <section className="page page--home">
@@ -99,6 +99,7 @@ export default class App extends React.Component {
               <Contact />
             </Suspense>
           </section>
+        </Suspense>
       </React.Fragment>
     );
   }
