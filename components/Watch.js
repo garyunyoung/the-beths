@@ -1,8 +1,8 @@
 import React from "react";
-import "./Watch.scss";
 import { utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
+import scss from "../styles/Watch.scss";
 
-export default function Watch(props) {
+export default function Watch() {
   return (
     <section className="watch">
       <h2 className="watch__text">future me hates me</h2>
@@ -69,6 +69,7 @@ export default function Watch(props) {
           class="xmas"
         />
       </section>
+      <style jsx>{scss}</style>
     </section>
   );
 }

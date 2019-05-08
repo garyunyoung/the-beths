@@ -1,6 +1,10 @@
 const cld =
   "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/";
 
+// Favicon //
+export const favicon =
+  "https://res.cloudinary.com/garyou/image/upload/v1557354437/the-beths/favicon-16x16.ico";
+
 // Bar + Nav //
 export const logo = `${cld}v1556808500/the-beths/logo.png`;
 export const tui = `${cld}v1556808503/the-beths/tui.png`;

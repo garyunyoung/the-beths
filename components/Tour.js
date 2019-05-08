@@ -1,6 +1,6 @@
 import React from "react";
 import { tour } from "./cloudinary";
-import "./Tour.scss";
+import scss from "../styles/Tour.scss";
 
 export default class Tour extends React.Component {
   loadSongkick() {
@@ -21,18 +21,22 @@ export default class Tour extends React.Component {
       return (
         <div className="consent-banner">
           <p className="consent-banner__text">
-            our songkick widget requires analytics to run, accept our
-            cookies 🍪 to see what shows we have lined up!
+            our songkick widget requires analytics to run, accept our cookies 🍪
+            to see what shows we have lined up!
           </p>
           <button className="btn" onClick={() => this.props.allowTracking()}>
             accept
           </button>
+          <style jsx>{scss}</style>
         </div>
       );
     } else {
       return (
         <section className="tour">
-          <div className="tour-pic" style={{ backgroundImage: 'url(' + tour + ')' }} />
+          <div
+            className="tour-pic"
+            style={{ backgroundImage: "url(" + tour + ")" }}
+          />
           <p className="tour-text">come gig!</p>
           <div className="song-kick">
             <a
@@ -44,6 +48,7 @@ export default class Tour extends React.Component {
               data-background-color="transparent"
             />
           </div>
+          <style jsx>{scss}</style>
         </section>
       );
     }

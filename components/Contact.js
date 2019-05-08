@@ -1,6 +1,6 @@
 import React from "react";
 import { contact, cpB } from './cloudinary';
-import "./Contact.scss";
+import scss from "../styles/Contact.scss";
 
 export default function Contact() {
   return (
@@ -55,6 +55,7 @@ export default function Contact() {
           <img className="cp-logo" src={cpB} alt="carpark records logo" />
         </a>
       </p>
+      <style jsx>{scss}</style>
     </section>
   );
 }

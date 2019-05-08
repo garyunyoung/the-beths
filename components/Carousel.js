@@ -1,5 +1,5 @@
 import React from "react";
-import "./Carousel.scss";
+import scss from "../styles/Carousel.scss";
 
 export default class Carousel extends React.Component {
   constructor(props) {
@@ -42,6 +42,7 @@ export default class Carousel extends React.Component {
             }}
           >{`>`}</a>
         </div>
+        <style jsx>{scss}</style>
       </div>
     );
   }

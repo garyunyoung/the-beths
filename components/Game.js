@@ -3,7 +3,9 @@ import GameManager from "./game/game_manager";
 import KeyboardInputManager from "./game/keyboard_input_manager";
 import HTMLActuator from "./game/html_actuator";
 import LocalStorageManager from "./game/local_storage_manager";
-import "./Game.scss";
+import scssA from "../styles/Game.scss";
+import scssB from "../styles/gameHelpers.scss";
+
 
 export default class Game extends React.Component {
   constructor(props) {
@@ -71,12 +73,10 @@ export default class Game extends React.Component {
             <div className="tile-container" />
           </div>
         </div>
-
         <p className="game-explanation">
           <strong className="important">How to play: </strong>
           Swipe to join similar Beths and get to the final tile!
         </p>
-
         <div className="credits">
           Based on{" "}
           <a href="http://gabrielecirulli.github.io/2048/" target="_blank">
@@ -88,7 +88,6 @@ export default class Game extends React.Component {
             Doge 2048
           </a>
         </div>
-
         <div className="tile-stack">
           <div className="tile tile-4">
             <div className="tile-inner" />
@@ -130,6 +129,8 @@ export default class Game extends React.Component {
             <div className="tile-inner" />
           </div>
         </div>
+        <style jsx>{scssA}</style> 
+        <style jsx>{scssB}</style> 
       </section>
     );
   }

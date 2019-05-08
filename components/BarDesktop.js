@@ -3,7 +3,7 @@ import Sticky from "./Sticky";
 import Socials from "./Socials";
 import { NavItem, NavItemGame } from "./Nav";
 import { Logo } from "./Bar";
-import "./BarDesktop.scss";
+import scss from "../styles/BarDesktop.scss";
 
 export default function BarDesktop(props) {
   return (
@@ -20,6 +20,7 @@ export default function BarDesktop(props) {
           <NavItem className="nav__item" text="contact" link="contact" />
           <NavItemGame class="nav__tui" toggleGame={props.toggleGame} />
         </nav>
+        <style jsx>{scss}</style>
       </nav>
     </Sticky>
   );

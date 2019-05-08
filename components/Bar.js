@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import Sticky from "./Sticky";
 import { logo } from "./cloudinary";
-import "./Bar.scss";
+import scss from "../styles/Bar.scss";
 
 export default class Bar extends React.Component {
   constructor(props) {
@@ -38,6 +38,7 @@ export default class Bar extends React.Component {
           toggleNav={() => this.toggleNav()}
           toggleGame={() => this.activateGame()}
         />
+        <style jsx>{scss}</style>
       </Sticky>
     );
   }

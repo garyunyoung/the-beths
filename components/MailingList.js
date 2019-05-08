@@ -1,6 +1,6 @@
 import React from "react";
 import { dag } from './cloudinary';
-import "./MailingList.scss";
+import scss from "../styles/MailingList.scss";
 
 export default class MailingList extends React.Component {
   constructor(props) {
@@ -62,6 +62,7 @@ export default class MailingList extends React.Component {
             </form>
           </div>
         </div>
+        <style jsx>{scss}</style>
       </section>
     );
   }

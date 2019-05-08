@@ -3,7 +3,7 @@ import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import MailingList from "./MailingList";
 import { fmhmT, cpY } from "./cloudinary";
-import "./Home.scss";
+import scss from "../styles/Home.scss";
 
 export default function Home() {
   return (
@@ -50,6 +50,7 @@ export default function Home() {
       </section>
       <CTAButton />
       <MailingList />
+      <style jsx>{scss}</style>
     </section>
   );
 }

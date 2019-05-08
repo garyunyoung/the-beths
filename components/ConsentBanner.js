@@ -1,5 +1,5 @@
 import React from "react";
-import "./ConsentBanner.scss";
+import scss from "../styles/ConsentBanner.scss";
 
 export default class ConsentBanner extends React.Component {
   constructor(props) {
@@ -35,6 +35,7 @@ export default class ConsentBanner extends React.Component {
         <button className="btn btn--a" onClick={() => this.accept()}>
           accept 🍪
         </button>
+        <style jsx>{scss}</style>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import Socials from "./Socials";
 import { tui } from "./cloudinary";
-import "./Nav.scss";
+import scss from "../styles/Nav.scss";
 
 export default function Nav(props) {
   return (
@@ -18,6 +18,7 @@ export default function Nav(props) {
           <NavItemGame toggleGame={props.toggleGame} />
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />
         </ul>
+        <style jsx>{scss}</style>
       </nav>
     </React.Fragment>
   );

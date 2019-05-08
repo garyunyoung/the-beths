@@ -1,9 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
-import { fmhmM, fmhmA, wbP, shirtW, shirtB } from './cloudinary';
-
-
-import "./Merch.scss";
+import { fmhmM, fmhmA, wbP, shirtW, shirtB } from "./cloudinary";
+import scss from "../styles/Merch.scss";
 
 export default function Merch() {
   const merch = [
@@ -31,7 +29,7 @@ export default function Merch() {
       title: "dogs dogs dogs shirt - black",
       src: shirtB,
       link: "http://smarturl.it/TheBeths-ShirtB"
-    },
+    }
   ];
 
   return (
@@ -45,6 +43,7 @@ export default function Merch() {
       >
         <h1>visit store</h1>
       </a>
+      <style jsx>{scss}</style>
     </section>
   );
 }

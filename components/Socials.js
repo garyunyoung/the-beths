@@ -1,5 +1,5 @@
 import React from "react";
-import "./Socials.scss";
+import scss from "../styles/Socials.scss";
 
 export default function Socials(props) {
   return (
@@ -39,6 +39,7 @@ export default function Socials(props) {
       >
         <i className="socials__icon socials__icon--bandcamp fab fa-bandcamp" />
       </a>
+      <style jsx>{scss}</style>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.scss";
+import scss from "../styles/Header.scss";
 
 export default function Header(props) {
   return (
@@ -8,7 +8,8 @@ export default function Header(props) {
         props.open ? "header header--game--open" : ""
       } `}
     >
-      {props.open ? 'GAME UNLOCKED' : props.header}
+      {props.open ? "GAME UNLOCKED" : props.header}
+      <style jsx>{scss}</style>
     </h1>
   );
 }

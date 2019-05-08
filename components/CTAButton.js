@@ -1,5 +1,5 @@
 import React from "react";
-import "./CTAButton.scss";
+import scss from "../styles/CTAButton.scss";
 
 export default function CTAButton() {
   return (
@@ -24,6 +24,7 @@ export default function CTAButton() {
           vinyl / cd
         </a>
       </div>
+      <style jsx>{scss}</style>
     </div>
   );
 }
