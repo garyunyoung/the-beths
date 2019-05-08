@@ -62,8 +62,12 @@
       height: 8vw;
     }
 
-    .thumbnail___image--xmas {
-      height: 7vw;
+    .thumbnail__image--xmas {
+      height: 6.5vw;
+    }
+
+    .thumbnail__text--xmas {
+      max-width: 20vw;
     }
 
     .thumbnail__text {
@@ -73,6 +77,7 @@
       }
     }
   }
+
 }
 
 @media only screen and (min-width: 2560px) {

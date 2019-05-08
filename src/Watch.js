@@ -66,7 +66,7 @@ export default function Watch(props) {
           image={hyamlc}
           modifier="hyamlc"
           link="https://www.youtube.com/watch?v=Moz6XOAKK5U"
-          class="thumbnail___image--xmas"
+          class="xmas"
         />
       </section>
     </section>
@@ -87,12 +87,11 @@ function Thumbnail(props) {
         rel="noopener noreferrer"
       >
         <img
-          className={`thumbnail__image ${props.class} cld-responsive`}
+          className={`thumbnail__image thumbnail__image--${props.class} cld-responsive`}
           src={props.image}
           alt={`${props.title} thumbnail`}
-          loading="lazy"
         />
-        <p className="thumbnail__text">{props.title}</p>
+        <p className={`thumbnail__text thumbnail__text--${props.class}`}>{props.title}</p>
       </a>
     </div>
   );
