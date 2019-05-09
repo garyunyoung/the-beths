@@ -1,6 +1,6 @@
 import Head from "next/head";
 import App from "../components/App";
-import { fmhmM, favicon } from "../components/cloudinary";
+import { favicon } from "../components/cloudinary";
 
 export default function IndexPage() {
   return (
