@@ -57,12 +57,14 @@ $field-width-mobile: 280px !global;
 $grid-spacing-desktop: 15px;
 $grid-spacing-mobile: 10px !global;
 
+
 $tile-size-desktop: (
     $field-width-desktop - $grid-spacing-desktop * ($grid-row-cells + 1)
   ) / $grid-row-cells;
 $tile-size-mobile: (
     $field-width-mobile - $grid-spacing-mobile * ($grid-row-cells + 1)
   ) / $grid-row-cells !global;
+
 
 $mobile-threshold: $field-width-desktop + 20px;
 $bigger-threshold: $field-width-desktop + (20 * 3px);
@@ -165,6 +167,7 @@ $animation-speed: 600ms;
 
     text-align: center;
     font-weight: bold;
+    font-size: 15px;
     color: white;
 
     border-radius: $tile-border-radius;
@@ -203,6 +206,8 @@ $animation-speed: 600ms;
     float: right;
     cursor: pointer;
     font-weight: 600;
+    font-size: 15px;
+
     &:hover {
       text-shadow: 0.2px 0.2px white;
       color: white;
@@ -492,6 +497,7 @@ $animation-speed: 600ms;
   $grid-spacing-desktop,
   $tile-size-desktop
 );
+
 @include smaller($mobile-threshold) {
   @include page_style(
     15px,
@@ -501,3 +507,4 @@ $animation-speed: 600ms;
     $tile-size-mobile
   );
 }
+
