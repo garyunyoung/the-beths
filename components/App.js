@@ -1,5 +1,4 @@
 import React from "react";
-// import cloudinary from "cloudinary-core";
 import { docCookies } from "./cookies";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
@@ -53,9 +52,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    // let cl = cloudinary.Cloudinary.new({ cloud_name: "garyou" });
-    // cl.responsive();
-
     return (
       <React.Fragment>
         <BarDesktop toggleGame={() => this.toggleGame()} />
