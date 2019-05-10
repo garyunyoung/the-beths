@@ -1,5 +1,6 @@
 import React from "react";
 import { docCookies } from "./cookies";
+import { tagManager } from './google';
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
@@ -7,7 +8,7 @@ import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
-import Game from './Game';
+import Game from "./Game";
 import Tour from "./Tour";
 import Contact from "./Contact";
 import scss from "../styles/App.scss";
@@ -36,19 +37,24 @@ export default class App extends React.Component {
     }));
   }
 
+
   loadAnalytics() {
     docCookies.setItem(cookieName, "accepted");
     this.setState({ hasConsent: true });
-    // let script = document.createElement("script"); // create a script DOM node
-    // script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
-    // document.head.appendChild(script);
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag() {
-    //   window.dataLayer.push(arguments);
-    // }
-    // gtag("js", new Date());
-    // gtag("config", "UA-128211149-2");
-    this.setState({ hasConsent: true });
+
+    let script = document.createElement("script"); // create a script DOM node
+    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-128211149-2");
+
+    tagManager()
   }
 
   render() {
@@ -66,7 +72,7 @@ export default class App extends React.Component {
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch />
+          <Merch consent={this.state.hasConsent}/>
         </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
