@@ -38,7 +38,7 @@ export default class Tour extends React.Component {
             style={{ backgroundImage: "url(" + tour + ")" }}
           />
           <p className="tour-text">come gig!</p>
-          <div className="song-kick">
+          <div id='song-kick' className="song-kick">
             <a
               href="https://www.songkick.com/artists/8923484"
               className="songkick-widget"
