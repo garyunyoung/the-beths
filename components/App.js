@@ -13,7 +13,7 @@ import Tour from "./Tour";
 import Contact from "./Contact";
 import scss from "../styles/App.scss";
 
-const cookieName = "beths-EU-consent";
+const cookieName = "beths-GDPR-consent";
 
 export default class App extends React.Component {
   constructor(props) {
