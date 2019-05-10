@@ -54,7 +54,7 @@ export default class App extends React.Component {
     // gtag("js", new Date());
     // gtag("config", "UA-128211149-2");
 
-    // tagManager()
+    tagManager()
   }
 
   render() {
