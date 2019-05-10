@@ -55,9 +55,7 @@ a {
   color: black;
   font-weight: 300;
 }
-a:hover {
-  color: #c45827;
-}
+
 
 li {
   list-style: none;
@@ -67,5 +65,11 @@ li {
 @media (max-width: 414px) {
   body {
     font-size: 2.5vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  a:hover {
+    color: #c45827;
   }
 }
