@@ -41,19 +41,6 @@ export default class App extends React.Component {
   loadAnalytics() {
     docCookies.setItem(cookieName, "accepted");
     this.setState({ hasConsent: true });
-
-    // let script = document.createElement("script"); // create a script DOM node
-    // script.src = "https://www.googletagmanager.com/gtag/js?id=UA-128211149-2"; // set its src to the provided URL
-    // document.head.appendChild(script);
-
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag() {
-    //   window.dataLayer.push(arguments);
-    // }
-
-    // gtag("js", new Date());
-    // gtag("config", "UA-128211149-2");
-
     tagManager()
   }
 
