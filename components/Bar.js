@@ -23,11 +23,17 @@ export default class Bar extends React.Component {
     this.props.toggleGame();
   }
 
+  closeNav() {
+    this.setState(() => ({
+      isOpen: false
+    }));
+  }
+
   render() {
     return (
       <Sticky>
         <div id="home" className="bar">
-          <Logo />
+          <Logo closeNav={() => this.closeNav()}/>
           <HamburgerButton
             open={this.state.isOpen}
             toggleNav={() => this.toggleNav()}
@@ -39,7 +45,7 @@ export default class Bar extends React.Component {
           toggleGame={() => this.activateGame()}
         />
         <style jsx>{scss}</style>
-     </Sticky>
+      </Sticky>
     );
   }
 }
@@ -54,7 +60,7 @@ function HamburgerButton(props) {
 
 export function Logo(props) {
   return (
-    <a className="nav__item" href="#">
+    <a className="nav__item" href="#" onClick={props.closeNav}>
       <img
         className={`${props.className} bar__logo cld-responsive`}
         src={logo}
