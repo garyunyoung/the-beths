@@ -7,7 +7,7 @@ export default function IndexPage() {
     <div>
       <Head>
         <meta charSet="utf-8" />
-        <title>the beths</title>
+        <title>The Beths</title>
         <link rel="shortcut icon" href={favicon} />
 
         {/* <!-- Font Awesome --> */}
