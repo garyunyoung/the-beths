@@ -26,20 +26,20 @@ export default class Bar extends React.Component {
   render() {
     return (
       <Sticky>
-        <nav id="home" className="bar">
+        <div id="home" className="bar">
           <Logo />
           <HamburgerButton
             open={this.state.isOpen}
             toggleNav={() => this.toggleNav()}
           />
-        </nav>
+        </div>
         <Nav
           open={this.state.isOpen}
           toggleNav={() => this.toggleNav()}
           toggleGame={() => this.activateGame()}
         />
         <style jsx>{scss}</style>
-      </Sticky>
+     </Sticky>
     );
   }
 }

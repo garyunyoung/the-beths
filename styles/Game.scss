@@ -188,7 +188,7 @@ $animation-speed: 600ms;
       font-size: $score-container-height;
       line-height: $score-container-height;
       color: $highlight-text-color;
-      z-index: 100;
+      z-index: 5;
       @include animation(move-up $animation-speed ease-in);
       @include animation-fill-mode(both);
     }
@@ -254,7 +254,7 @@ $animation-speed: 600ms;
     background: rgba($game-container-background, 0.7);
     border-radius: $tile-border-radius;
 
-    z-index: 100;
+    z-index: 5;
 
     @include animation(fade-in $animation-speed ease $transition-speed * 12);
     @include animation-fill-mode(both);
@@ -280,7 +280,7 @@ $animation-speed: 600ms;
       font-weight: bold;
       color: $bright-text-color;
 
-      z-index: 101;
+      z-index: 6;
       text-align: center;
 
       .game-message {
@@ -397,7 +397,7 @@ $animation-speed: 600ms;
     .tile-inner {
       border-radius: $tile-border-radius;
       background: $tile-color;
-      z-index: 10;
+      z-index: 3;
     }
 
     // Movement transition
@@ -470,7 +470,7 @@ $animation-speed: 600ms;
   }
 
   .tile-merged .tile-inner {
-    z-index: 20;
+    z-index: 4;
     @include animation(pop $animation-speed ease $transition-speed);
     @include animation-fill-mode(backwards);
   }
