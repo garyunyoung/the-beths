@@ -68,7 +68,7 @@
     }
 
     .cta {
-      border: .2vw solid white;
+      border: 0.2vw solid white;
       margin-bottom: 3vh;
       padding: 1vw 1.5vw;
       &:hover {
@@ -105,5 +105,18 @@
     .home__wrapper {
       display: none;
     }
+  }
+}
+
+// Iphone X //
+@media only screen and (width: 375px) and (height: 635px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .home__content {
+    height: 62vh;
+  }
+}
+// Pixel 2 XL /
+@media only screen and (width: 411px) and (height: 823px) and (orientation: portrait) {
+  .home__content {
+    height: 62vh;
   }
 }
