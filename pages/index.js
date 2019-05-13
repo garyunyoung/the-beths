@@ -20,7 +20,7 @@ export default function IndexPage() {
 
         {/* <!--Font --> */}
         <link
-          href="https://fonts.googleapis.com/css?family=Gaegu:300,400"
+          href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700"
           rel="stylesheet"
         />
 
