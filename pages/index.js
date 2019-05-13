@@ -10,6 +10,13 @@ export default function IndexPage() {
         <title>The Beths</title>
         <link rel="shortcut icon" href={favicon} />
 
+        {/* Preload */}
+        <link
+          rel="preload"
+          href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808502/the-beths/home-mobile.jpg"
+          as="image"
+        />
+
         {/* <!-- Font Awesome --> */}
         <link
           rel="stylesheet"
@@ -92,13 +99,6 @@ export default function IndexPage() {
         <meta
           name="twitter:image:alt"
           content="Picture of the Beths chilling on a ledge somewhere in New Zealand. Photo: Maison Fairey"
-        />
-
-        {/* Preload */}
-        <link
-          rel="preload"
-          href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto/v1556808502/the-beths/home-mobile.jpg"
-          as="image"
         />
       </Head>
       <App />
