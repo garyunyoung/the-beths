@@ -57,14 +57,12 @@ $field-width-mobile: 280px !global;
 $grid-spacing-desktop: 15px;
 $grid-spacing-mobile: 10px !global;
 
-
 $tile-size-desktop: (
     $field-width-desktop - $grid-spacing-desktop * ($grid-row-cells + 1)
   ) / $grid-row-cells;
 $tile-size-mobile: (
     $field-width-mobile - $grid-spacing-mobile * ($grid-row-cells + 1)
   ) / $grid-row-cells !global;
-
 
 $mobile-threshold: $field-width-desktop + 20px;
 $bigger-threshold: $field-width-desktop + (20 * 3px);
@@ -408,19 +406,19 @@ $animation-speed: 600ms;
     $exponent: 1;
     $limit: 13;
 
-    $background-images: "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318941/the-beths/the-beths-gifs/JONWINK.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318939/the-beths/the-beths-gifs/BENRAIN.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318945/the-beths/the-beths-gifs/LIZGOOGLY.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318944/the-beths/the-beths-gifs/LIZSPACE.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318939/the-beths/the-beths-gifs/BEN.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318947/the-beths/the-beths-gifs/PIZZAJON.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318942/the-beths/the-beths-gifs/LIZ.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318940/the-beths/the-beths-gifs/BENPLANE.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318942/the-beths/the-beths-gifs/JONTUI.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318943/the-beths/the-beths-gifs/LIZRAINBOW.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318943/the-beths/the-beths-gifs/JONCRICKET.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318940/the-beths/the-beths-gifs/BENBREAD.gif",
-      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/v1557318940/the-beths/the-beths-gifs/DAGFINAL.gif";
+    $background-images: "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318941/the-beths/the-beths-gifs/JONWINK.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318939/the-beths/the-beths-gifs/BENRAIN.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557757579/the-beths/the-beths-gifs/LIZGOOGLY_R.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318944/the-beths/the-beths-gifs/LIZSPACE.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318939/the-beths/the-beths-gifs/BEN.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318947/the-beths/the-beths-gifs/PIZZAJON.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318942/the-beths/the-beths-gifs/LIZ.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318940/the-beths/the-beths-gifs/BENPLANE.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318942/the-beths/the-beths-gifs/JONTUI.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318943/the-beths/the-beths-gifs/LIZRAINBOW.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318943/the-beths/the-beths-gifs/JONCRICKET.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318940/the-beths/the-beths-gifs/BENBREAD.gif",
+      "https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto/fl_lossy,q_65/v1557318940/the-beths/the-beths-gifs/DAGFINAL.gif";
 
     // Build tile colors
     @while $exponent <= $limit {
@@ -507,4 +505,3 @@ $animation-speed: 600ms;
     $tile-size-mobile
   );
 }
-
