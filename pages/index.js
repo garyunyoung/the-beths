@@ -31,13 +31,6 @@ export default function IndexPage() {
           rel="stylesheet"
         />
 
-        {/* <!-- MailChimp CSS --> */}
-        <link
-          href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
-          rel="stylesheet"
-          type="text/css"
-        />
-
         {/* <!-- Mobile Compatibility --> */}
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
