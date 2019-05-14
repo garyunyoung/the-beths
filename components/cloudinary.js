@@ -6,39 +6,39 @@ export const favicon =
   "https://res.cloudinary.com/garyou/image/upload/the-beths/favicon-16x16.ico";
 
 // Bar + Nav //
-export const logo = `${cld}logo.png`;
-export const tui = `${cld}tui.png`;
+export const logo = `${cld}logo_SM.png`;
+export const tui = `${cld}tui_SM.png`;
 
 // Home Mobile //
-export const fmhmT = `${cld}fmhm-title.png`;
-export const cpY = `${cld}cp-y.png`;
+export const fmhmT = `${cld}fmhm-title_SM.png`;
+export const cpY = `${cld}cp-y_SM.png`;
 
 // Mailing List //
-export const dag = `${cld}fmhm-dog.png`;
+export const dag = `${cld}fmhm-dog_SM.png`;
 
 // Merch //
-export const fmhmM = `${cld}fmhm-m.jpg`;
-export const fmhmA = `${cld}fmhm-a.jpg`;
-export const wbP = `${cld}wb-p.jpg`;
-export const shirtW = `${cld}shirt-w.jpg`;
-export const shirtB = `${cld}shirt-b.jpg`;
+export const fmhmM = `${cld}fmhm-m_SM.jpg`;
+export const fmhmA = `${cld}fmhm-a_SM.jpg`;
+export const wbP = `${cld}wb-p_SM.jpg`;
+export const shirtW = `${cld}shirt-w_SM.jpg`;
+export const shirtB = `${cld}shirt-b_SM.jpg`;
 
 // Watch //
-export const utg = `${cld}utg.png`;
-export const huh = `${cld}huh.png`;
-export const ld = `${cld}ld.png`;
-export const gno = `${cld}gno.png`;
-export const fmhm = `${cld}fmhm.png`;
-export const ywlm = `${cld}ywlm.png`;
-export const w = `${cld}w.png`;
-export const lits = `${cld}lits.png`;
-export const hyamlc = `${cld}hyamlc.png`;
+export const utg = `${cld}utg_SM.png`;
+export const huh = `${cld}huh_SM.png`;
+export const ld = `${cld}ld_SM.png`;
+export const gno = `${cld}gno_SM.png`;
+export const fmhm = `${cld}fmhm_SM.png`;
+export const ywlm = `${cld}ywlm_SM.png`;
+export const w = `${cld}w_SM.png`;
+export const lits = `${cld}lits_SM.png`;
+export const hyamlc = `${cld}hyamlc_SM.png`;
 
 // Tour //
-export const tour = `${cld}tour.jpg`;
+export const tour = `${cld}tour_SM.jpg`;
 
 // Contact //
-export const contact = `${cld}contact.jpg`;
+export const contact = `${cld}contact_SM.jpg`;
 export const cpB = `${cld}cp-bw.jpg`;
 
 

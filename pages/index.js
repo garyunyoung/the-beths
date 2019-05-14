@@ -13,7 +13,7 @@ export default function IndexPage() {
         {/* Preload */}
         <link
           rel="preload"
-          href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile.jpg"
+          href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile_SM.jpg"
           as="image"
         />
 

@@ -1,15 +1,13 @@
 .home__content {
   height: 70vh;
   width: 100vw;
-  background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile.jpg");
+  background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile_SM.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 
   .home__wrapper,
-  .title,
-  .cpY,
   .nav__desktop {
     display: none;
   }
