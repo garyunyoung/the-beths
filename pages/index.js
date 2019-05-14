@@ -85,10 +85,7 @@ export default function IndexPage() {
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://thebeths.com"
-        />
+        <meta property="og:url" content="https://thebeths.com" />
         <meta
           property="og:image:alt"
           content="Picture of the Beths chilling on a ledge somewhere in New Zealand. Photo: Maison Fairey"
