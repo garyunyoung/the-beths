@@ -11,11 +11,11 @@ export default function IndexPage() {
         <link rel="shortcut icon" href={favicon} />
 
         {/* Preload */}
-        {/* <link
+        <link
           rel="preload"
           href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile.jpg"
           as="image"
-        /> */}
+        />
 
         {/* <!-- Font Awesome --> */}
         <link
