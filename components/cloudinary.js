@@ -35,8 +35,10 @@ export const lits = `${cld}lits.png`;
 export const hyamlc = `${cld}hyamlc.png`;
 
 // Tour //
-export const tour = `${cld}the-beths/tour.jpg`;
+export const tour = `${cld}tour.jpg`;
 
 // Contact //
-export const contact = `${cld}the-beths/contact.jpg`;
-export const cpB = `${cld}the-beths/cp-bw.jpg`;
+export const contact = `${cld}contact.jpg`;
+export const cpB = `${cld}cp-bw.jpg`;
+
+
