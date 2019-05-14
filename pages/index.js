@@ -80,14 +80,14 @@ export default function IndexPage() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/c_scale,w_1200/v1557099275/the-beths/fb.jpg"
+          content="https://res.cloudinary.com/garyou/image/upload/c_scale,w_1200/the-beths/fb.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://afternoon-ocean-85610.herokuapp.com/?fbclid=IwAR0hiYGS9PJJMZx2mw8LPhgS-UA0C_qukLRVBwe_41jbJ3aanvUM4XNbgJg"
+          content="https://thebeths.com"
         />
         <meta
           property="og:image:alt"
