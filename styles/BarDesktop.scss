@@ -32,12 +32,21 @@
 
       .socials__icon {
         font-size: 2.5vh;
-        margin: auto 1vw;
+        margin: auto 0.8vw;
         color: black;
 
         &:hover {
           fill: #c45827;
         }
+      }
+      .socials__icon--spotify,
+      .socials__icon--facebook,
+      .socials__icon--instagram,
+      .socials__icon--twitter {
+        padding: 0;
+      }
+      .socials__icon--bandcamp {
+        padding: .1vw;
       }
     }
   }

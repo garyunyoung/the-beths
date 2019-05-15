@@ -13,8 +13,8 @@ export default function BarDesktop(props) {
           <Socials
             className="brDesktop__socials--icons"
             color={"black"}
-            width={"20"}
-            height={"20"}
+            width={"22"}
+            height={"22"}
           />
         </section>
         <Logo className="barDesktop__logo" />

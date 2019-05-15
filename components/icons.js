@@ -47,8 +47,8 @@ export const Icon = ({
   name = "",
   fill = "white",
   viewBox = "0 0 1792 1792",
-  width = "30",
-  height = "30",
+  width = "40",
+  height = "40",
   className = ""
 }) => (
   <svg
