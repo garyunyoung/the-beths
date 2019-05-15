@@ -76,6 +76,7 @@ export default function Watch() {
 
 function Thumbnail(props) {
   return (
+    <div className='thumbnail__container'>
     <div
       className={`thumbnail ${
         props.modifier ? `thumbnail--${props.modifier}` : ""
@@ -94,6 +95,7 @@ function Thumbnail(props) {
         />
         <p className={`thumbnail__text thumbnail__text--${props.class}`}>{props.title}</p>
       </a>
+    </div>
     </div>
   );
 }
