@@ -10,7 +10,12 @@ export default function BarDesktop(props) {
     <Sticky>
       <nav className="barDesktop">
         <section className="barDesktop__socials">
-          <Socials className="brDesktop__socials--icons" />
+          <Socials
+            className="brDesktop__socials--icons"
+            color={"black"}
+            width={"20"}
+            height={"20"}
+          />
         </section>
         <Logo className="barDesktop__logo" />
         <nav className="barDesktop__nav">

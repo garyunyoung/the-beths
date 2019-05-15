@@ -47,13 +47,14 @@ export const Icon = ({
   name = "",
   fill = "white",
   viewBox = "0 0 1792 1792",
-  width = "60",
+  width = "30",
+  height = "30",
   className = ""
 }) => (
   <svg
     fill={fill}
     width={width}
-    height={width}
+    height={height}
     className={className}
     xmlns="http://www.w3.org/2000/svg"
     viewBox={viewBox}
@@ -65,3 +66,12 @@ export const Icon = ({
 );
 
 <style jsx>{scss}</style>;
+
+// 15.4
+// 30.8125
+// 61.625
+// 123.25
+// 246.5
+// 493
+// 986
+// 1792

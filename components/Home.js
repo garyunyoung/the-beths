@@ -46,7 +46,7 @@ export default function Home() {
             <h1 className="cta">vinyl / cd</h1>
           </a>
         </section>
-        <Socials />
+        <Socials color={"white"} />
       </section>
       <CTAButton />
       <MailingList />

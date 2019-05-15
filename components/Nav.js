@@ -13,7 +13,10 @@ export default function Nav(props) {
           <NavItem text="tour" link="tour" toggleNav={props.toggleNav} />
           <NavItem text="contact" link="contact" toggleNav={props.toggleNav} />
           <li>
-            <Socials className="nav__social" />
+            <Socials
+              className="nav__social"
+              color={"black"}
+            />
           </li>
           <NavItemGame toggleGame={props.toggleGame} />
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />
