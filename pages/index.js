@@ -28,8 +28,6 @@ export default function IndexPage() {
           name="description"
           content="New Zealand four-piece The Beths channel their longtime friendship into high-energy guitar pop with a smart lyrical bite."
         />
-        <meta property="fb:app_id" content="320561938462640" />
-
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
         <meta property="og:title" content="The Beths - Official Website" />
@@ -39,7 +37,7 @@ export default function IndexPage() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/c_scale,w_1200/the-beths/fb.jpg"
+          content="https://res.cloudinary.com/garyou/image/upload/v1557941465/the-beths/fb_SM.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
