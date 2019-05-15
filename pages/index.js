@@ -37,7 +37,7 @@ export default function IndexPage() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/v1557941465/the-beths/fb2_SM.jpg"
+          content="hhttps://res.cloudinary.com/garyou/image/upload/v1557942143/the-beths/fb.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
