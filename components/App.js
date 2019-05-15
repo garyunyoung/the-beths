@@ -1,6 +1,7 @@
 import React from "react";
+import dynamic from 'next/dynamic'
 import { docCookies } from "./cookies";
-import { tagManager } from './google';
+import { tagManager } from "./google";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
@@ -8,10 +9,10 @@ import ConsentBanner from "./ConsentBanner";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
-import Game from "./Game";
 import Tour from "./Tour";
 import Contact from "./Contact";
 import scss from "../styles/App.scss";
+const Game = dynamic(import('./Game'))
 
 const cookieName = "beths-GDPR-consent";
 
@@ -37,11 +38,16 @@ export default class App extends React.Component {
     }));
   }
 
+  gameVisibility() {
+    if (this.state.gameIsOpen) {
+      return <Game open={this.state.gameIsOpen}/>
+    }
+  }
 
   loadAnalytics() {
     docCookies.setItem(cookieName, "accepted");
     this.setState({ hasConsent: true });
-    tagManager()
+    tagManager();
   }
 
   render() {
@@ -59,7 +65,7 @@ export default class App extends React.Component {
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch consent={this.state.hasConsent}/>
+          <Merch consent={this.state.hasConsent} />
         </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
@@ -67,7 +73,7 @@ export default class App extends React.Component {
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />
-          <Game open={this.state.gameIsOpen} />
+          {this.gameVisibility()}
         </section>
         <section id="tour" className="page page--tour">
           <Header header="tour" />

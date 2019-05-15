@@ -6,7 +6,6 @@ import LocalStorageManager from "./game/local_storage_manager";
 import scssA from "../styles/Game.scss";
 import scssB from "../styles/gameHelpers.scss";
 
-
 export default class Game extends React.Component {
   constructor(props) {
     super(props);
@@ -129,8 +128,8 @@ export default class Game extends React.Component {
             <div className="tile-inner" />
           </div>
         </div>
-        <style jsx>{scssA}</style> 
-        <style jsx>{scssB}</style> 
+        <style jsx>{scssA}</style>
+        <style jsx>{scssB}</style>
       </section>
     );
   }
