@@ -23,32 +23,6 @@ export default function IndexPage() {
           rel="stylesheet"
         />
 
-        {/* <!-- Mobile Compatibility --> */}
-        <meta name="HandheldFriendly" content="True" />
-        <meta name="MobileOptimized" content="320" />
-        <meta
-          name="viewport"
-          content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
-        />
-
-        {/* <!-- MacOS integration --> */}
-        <link
-          rel="mask-icon"
-          href="https://res.cloudinary.com/garyou/image/upload/v1557135007/the-beths/logo-svg.svg"
-          color="#f5dc4a"
-        />
-
-        {/* <!-- iOS integration --> */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="https://res.cloudinary.com/garyou/image/upload/c_scale,w_180/v1556808502/the-beths/home-mobile.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="The Beths" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta name="theme-color" content="#000000" />
-
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
@@ -82,6 +56,33 @@ export default function IndexPage() {
           name="twitter:image:alt"
           content="Picture of the Beths chilling on a ledge somewhere in New Zealand. Photo: Maison Fairey"
         />
+
+        {/* <!-- Mobile Compatibility --> */}
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta
+          name="viewport"
+          content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
+        />
+
+        {/* <!-- MacOS integration --> */}
+        <link
+          rel="mask-icon"
+          href="https://res.cloudinary.com/garyou/image/upload/v1557135007/the-beths/logo-svg.svg"
+          color="#f5dc4a"
+        />
+
+        {/* <!-- iOS integration --> */}
+        <link
+          rel="apple-touch-icon"
+          href="https://res.cloudinary.com/garyou/image/upload/c_scale,w_180/v1556808502/the-beths/home-mobile.png"
+          sizes="180x180"
+        />
+
+        <meta name="apple-mobile-web-app-title" content="The Beths" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="theme-color" content="#000000" />
       </Head>
       <App />
     </div>
