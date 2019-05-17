@@ -11,12 +11,19 @@ export default function Nav(props) {
           <NavItem text="merch" link="merch" toggleNav={props.toggleNav} />
           <NavItem text="watch" link="watch" toggleNav={props.toggleNav} />
           <NavItem text="tour" link="tour" toggleNav={props.toggleNav} />
+          <li className={`nav__item nav__item--blog`}>
+            <a
+              className="nav__link"
+              href="https://breakfastandtravelupdates.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              blog
+            </a>
+          </li>
           <NavItem text="contact" link="contact" toggleNav={props.toggleNav} />
           <li>
-            <Socials
-              className="nav__social"
-              color={"black"}
-            />
+            <Socials className="nav__social" color={"black"} />
           </li>
           <NavItemGame toggleGame={props.toggleGame} />
           <NavItem text="^" link="top" toggleNav={props.toggleNav} />

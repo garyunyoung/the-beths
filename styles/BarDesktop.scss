@@ -1,5 +1,7 @@
-.barDesktop {
+.barDesktop,
+.barDesktop__logo {
   display: none;
+ 
 }
 
 @media (min-width: 1024px) {
@@ -11,16 +13,18 @@
     border-bottom: 1px solid lightgrey;
     height: 7.5vh;
     padding: 0 5.5vw;
-
-    .barDesktop__logo {
-      width: 9vw;
-      position: absolute;
-      top: 1vh;
-    }
+    width: 100vw;
   }
 
+  .barDesktop__logo {
+    display: block;
+    width: 9vw;
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .barDesktop__socials {
-    width: auto;
 
     .brDesktop__socials--icons {
       display: flex;
@@ -43,7 +47,7 @@
         padding: 0;
       }
       .socials__icon--bandcamp {
-        padding: .1vw;
+        padding: 0.1vw;
       }
     }
   }
@@ -54,7 +58,7 @@
 
     .nav__item {
       font-size: 2.5vh;
-      margin: auto 1vw;
+      margin: auto .7vw;
 
       .nav__link {
         font-weight: 400;
