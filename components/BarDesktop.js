@@ -9,7 +9,6 @@ export default function BarDesktop(props) {
   return (
     <Sticky>
       <Logo className="barDesktop__logo" />
-
       <nav className="barDesktop">
         <section className="barDesktop__socials">
           <Socials

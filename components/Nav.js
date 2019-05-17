@@ -26,7 +26,7 @@ export default function Nav(props) {
             <Socials className="nav__social" color={"black"} />
           </li>
           <NavItemGame toggleGame={props.toggleGame} />
-          <NavItem text="^" link="top" toggleNav={props.toggleNav} />
+          {/* <NavItem text="^" link="top" toggleNav={props.toggleNav} /> */}
         </ul>
         <style jsx>{scss}</style>
       </nav>
