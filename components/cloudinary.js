@@ -19,6 +19,7 @@ export const dag = `${cld}fmhm-dog_SM.png`;
 // Merch //
 export const fmhmM = `${cld}fmhm-m_SM.jpg`;
 export const fmhmA = `${cld}fmhm-a_SM.jpg`;
+export const fmhmO = `${cld}fmhm-o_SM.jpg`;
 export const wbP = `${cld}wb-p_SM.jpg`;
 export const shirtW = `${cld}shirt-w_SM.jpg`;
 export const shirtB = `${cld}shirt-b_SM.jpg`;

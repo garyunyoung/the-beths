@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
-import { fmhmM, fmhmA, wbP, shirtW, shirtB } from "./cloudinary";
+import { fmhmM, fmhmO, wbP, shirtW, shirtB } from "./cloudinary";
 import scss from "../styles/Merch.scss";
 
 export default function Merch() {
@@ -11,8 +11,8 @@ export default function Merch() {
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
-      title: "future me hates me - LP - transparent aqua",
-      src: fmhmA,
+      title: "future me hates me - LP - translucent orange",
+      src: fmhmO,
       link: "http://smarturl.it/TheBethsFMHM-Vinyl"
     },
     {
