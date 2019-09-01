@@ -6,7 +6,7 @@ Key features:
 - Designed and iterated on using Gravit.io.
 - Mobile first, responsive and accessible. 
 - Integrated Google Analytics using Google Tag Manager.
-- Integrated a Songkick widget. 
+- Integrated a Songkick widget and Mailchimp sign up form.
 - Added a GDPR banner that enables/disables analytics.
 
 Created using: NextJS, SCSS, HTML and deployed using Heroku.
