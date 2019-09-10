@@ -2,7 +2,6 @@ import React from "react";
 import { contact, cpB } from "./cloudinary";
 import scss from "../styles/Contact.scss";
 
-
 export default function Contact() {
   return (
     <section
@@ -29,8 +28,8 @@ export default function Contact() {
       </p>
       <p className="contact__text">
         us/can:{" "}
-        <a className="contact__link" href="mailto:bswanson@paradigmagency.com">
-          bswanson@paradigmagency.com
+        <a className="contact__link" href="mailto:brian@madison-house.com">
+          brian@madison-house.com
         </a>
       </p>
       <p className="contact__text">
