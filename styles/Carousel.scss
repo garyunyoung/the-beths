@@ -41,7 +41,7 @@
 
 .carousel-image--title {
   width: 60vw;
-  margin: 3vh auto;
+  margin: 24px auto 3vh auto;
   height: 2em;
 }
 
@@ -57,8 +57,7 @@
 
   .carousel-image--title {
     max-width: 30vw;
-    margin: auto auto 7vh auto;
-
+    margin: 24px auto calc(7vh - 24px) auto;
   }
 }
 

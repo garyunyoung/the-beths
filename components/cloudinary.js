@@ -24,6 +24,10 @@ export const wbP = `${cld}wb-p_SM.jpg`;
 export const shirtW = `${cld}shirt-w_SM.jpg`;
 export const shirtB = `${cld}shirt-b_SM.jpg`;
 
+export const cricketShirtY = `${cld}cricket-tee_y.png`;
+export const rabbitShirtPB = `${cld}rabbit-tee_pb.png`;
+export const rabitShirtB = `${cld}rabbit-tee_b.png`;
+
 // Watch //
 export const utg = `${cld}utg_SM.png`;
 export const huh = `${cld}huh_SM.png`;
