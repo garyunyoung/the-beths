@@ -6,7 +6,7 @@ export const favicon =
   "https://res.cloudinary.com/garyou/image/upload/the-beths/favicon-16x16.ico";
 
 // Bar + Nav //
-export const logo = `${cld}logo_SM.png`;
+export const logo = `${cld}the_beths_logo.svg`;
 export const tui = `${cld}tui_SM.png`;
 
 // Home Mobile //

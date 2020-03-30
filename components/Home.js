@@ -10,13 +10,13 @@ export default function Home() {
     <section className="home">
       <section className="home__content">
         <section className="home__wrapper">
-          <img
+          {/* <img
             className="title cld-responsive"
             src={fmhmT}
             alt="future me hates me title"
-          />
-          <h1 className="titleText">future me hates me</h1>
-          <h1 className="outNow">out now</h1>
+          /> */}
+          <h1 className="titleText">jump rope gazers</h1>
+          <h1 className="outNow">July 19</h1>
           <a
             href="http://store.carparkrecords.com/products/615148-cak128-the-beths-future-me-hates-me"
             target="_blank"
@@ -35,15 +35,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">digital</h1>
-          </a>
-          <a
-            className="cta__link"
-            href="http://smarturl.it/TheBethsFMHM-VinylCD"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h1 className="cta">vinyl / cd</h1>
+            <h1 className="cta">pre-order here</h1>
           </a>
         </section>
         <Socials color={"white"} />

@@ -20,6 +20,7 @@ export default function BarDesktop(props) {
         </section>
         <nav className="barDesktop__nav">
           <NavItem className="nav__item" text="merch" link="merch" />
+          <NavItem className="nav__item" text="pre-order" link="" />
           <NavItem className="nav__item" text="watch" link="watch" />
           <NavItem className="nav__item" text="tour" link="tour" />
           <li className={`nav__item nav__item--blog`}>
