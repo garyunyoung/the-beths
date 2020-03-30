@@ -1,12 +1,15 @@
 .banner {
   width: 100%;
-  background-color: gold;
   position: fixed;
   bottom: 0;
   text-align: right;
-  padding: 1em;
   z-index: 5;
-  
+
+  .banner__consent {
+    background-color: gold;
+    // padding: 1em;
+  }
+
   .banner__text {
     padding: 0.5em 0.2em 1em;
   }
@@ -25,11 +28,72 @@
   }
 }
 
+.mailing-list-banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 8px;
+
+  .mailing-list-banner__text {
+  }
+
+  .mailing-list-banner__email {
+  }
+
+  .mailing-list-banner__social {
+    position: static;
+    margin-bottom: -16px;
+  }
+}
+
 @media (min-width: 1024px) {
-  .btn--a,
-  .btn--d {
-    &:hover {
-      box-shadow: 1px 1px 1px black;
+  .mailing-list-banner {
+    .mailing-list-banner__signup {
+      display: flex;
+    }
+    .mailing-list-banner__text {
+      margin-right: 32px;
+    }
+    .mailing-list-banner__social {
+      margin-top: -16px;
+      margin-bottom: -32px;
+      display: flex;
+    }
+  }
+
+  .banner {
+    // padding: 8px;
+
+    .banner__text {
+      text-align: center;
+      padding: 0;
+      padding-bottom: 4px;
+      margin-top: -0.5em;
+    }
+
+    .banner__buttons {
+      width: max-content;
+      margin: 0 auto;
+    }
+
+    .btn {
+      border-color: transparent;
+      padding: 0;
+      margin: 0;
+    }
+
+    .btn--d {
+      margin-right: 32px;
+    }
+
+    .btn--a,
+    .btn--d {
+      padding: 0 8px;
+      &:hover {
+        box-shadow: 1px 1px 1px black;
+      }
     }
   }
 }
