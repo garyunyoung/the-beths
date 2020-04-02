@@ -1,18 +1,19 @@
 import React from "react";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 import { docCookies } from "./cookies";
 import { tagManager } from "./google";
 import Bar from "./Bar";
 import BarDesktop from "./BarDesktop";
 import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
+import MailingListBanner from "./MailingListBanner";
 import Header from "./Header";
 import Merch from "./Merch";
 import Watch from "./Watch";
 import Tour from "./Tour";
 import Contact from "./Contact";
 import scss from "../styles/App.scss";
-const Game = dynamic(import('./Game'))
+const Game = dynamic(import("./Game"));
 
 const cookieName = "beths-GDPR-consent";
 
@@ -40,7 +41,7 @@ export default class App extends React.Component {
 
   gameVisibility() {
     if (this.state.gameIsOpen) {
-      return <Game open={this.state.gameIsOpen}/>
+      return <Game open={this.state.gameIsOpen} />;
     }
   }
 
@@ -53,6 +54,8 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
+
+
         <BarDesktop toggleGame={() => this.toggleGame()} />
         <Bar toggleGame={() => this.toggleGame()} />
         <section className="page page--home">

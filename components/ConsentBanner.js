@@ -1,6 +1,4 @@
 import React from "react";
-import Socials from "./Socials";
-
 import scss from "../styles/ConsentBanner.scss";
 
 export default class ConsentBanner extends React.Component {
@@ -26,21 +24,6 @@ export default class ConsentBanner extends React.Component {
     return (
       <React.Fragment>
         <div className="banner">
-          <div className="mailing-list-banner">
-            <div className="mailing-list-banner__signup">
-              <p className="mailing-list-banner__text">join the mailing list</p>
-              <p className="mailing-list-banner__email">
-                garyunyoung@gmail.com
-              </p>
-            </div>
-            <div className="mailing-list-banner__socials">
-              <Socials
-                className="mailing-list-banner__social"
-                width="24"
-                color={"black"}
-              />
-            </div>
-          </div>
           <div className="banner__consent">
             <button className="btn btn--x" onClick={() => this.close()}>
               x

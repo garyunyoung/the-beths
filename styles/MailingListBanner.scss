@@ -1,0 +1,35 @@
+.mailing-list-banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 8px;
+
+  .mailing-list-banner__text {
+  }
+
+  .mailing-list-banner__email {
+  }
+
+  .mailing-list-banner__social {
+    position: static;
+    margin-bottom: -16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mailing-list-banner {
+    .mailing-list-banner__signup {
+      display: flex;
+    }
+    .mailing-list-banner__text {
+      margin-right: 32px;
+    }
+    .mailing-list-banner__social {
+      margin-top: -16px;
+      margin-bottom: -32px;
+      display: flex;
+    }
+  }
+}
