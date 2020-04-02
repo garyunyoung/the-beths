@@ -1,6 +1,5 @@
 import React from "react";
 import Sticky from "./Sticky";
-import Socials from "./Socials";
 import { NavItem, NavItemGame } from "./Nav";
 import { Logo } from "./Bar";
 import scss from "../styles/BarDesktop.scss";
@@ -8,17 +7,9 @@ import scss from "../styles/BarDesktop.scss";
 export default function BarDesktop(props) {
   return (
     <Sticky>
-      <Logo className="barDesktop__logo" />
       <nav className="barDesktop">
-        <section className="barDesktop__socials">
-          <Socials
-            className="brDesktop__socials--icons"
-            color={"black"}
-            width={"22"}
-            height={"22"}
-          />
-        </section>
-        <nav className="barDesktop__nav">
+        <Logo className="barDesktop__logo barDesktop__logo--desktop" />
+        <div className="barDesktop__nav">
           <NavItem className="nav__item" text="merch" link="merch" />
           <NavItem className="nav__item" text="pre-order" link="" />
           <NavItem className="nav__item" text="watch" link="watch" />
@@ -34,8 +25,9 @@ export default function BarDesktop(props) {
             </a>
           </li>
           <NavItem className="nav__item" text="contact" link="contact" />
+          <li className={`nav__item`}>subscribe</li>
           <NavItemGame class="nav__tui" toggleGame={props.toggleGame} />
-        </nav>
+        </div>
         <style jsx>{scss}</style>
       </nav>
     </Sticky>

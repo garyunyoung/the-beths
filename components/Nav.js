@@ -9,7 +9,8 @@ export default function Nav(props) {
       <nav className={`nav ${props.open ? "nav--open" : ""} `}>
         <ul className={`nav__list`}>
           <NavItem text="merch" link="merch" toggleNav={props.toggleNav} />
-          <NavItem text="watch" link="watch" toggleNav={props.toggleNav} />
+          <NavItem text="pre-order" link="watch" toggleNav={props.toggleNav} />
+          <NavItem text="videos" link="watch" toggleNav={props.toggleNav} />
           <NavItem text="tour" link="tour" toggleNav={props.toggleNav} />
           <li className={`nav__item nav__item--blog`}>
             <a
@@ -22,11 +23,10 @@ export default function Nav(props) {
             </a>
           </li>
           <NavItem text="contact" link="contact" toggleNav={props.toggleNav} />
-          <li>
-            <Socials className="nav__social" color={"black"} />
-          </li>
           <NavItemGame toggleGame={props.toggleGame} />
-          {/* <NavItem text="^" link="top" toggleNav={props.toggleNav} /> */}
+          <li>
+            <Socials className="nav__social" width="24" color={"black"} />
+          </li>
         </ul>
         <style jsx>{scss}</style>
       </nav>
@@ -50,7 +50,8 @@ export function NavItem(props) {
 
 export function NavItemGame(props) {
   return (
-    <li className="nav__item">
+    <li className="nav__item nav__item--tui">
+      <span className="nav__link">game</span>
       <a href="#game" onClick={props.toggleGame}>
         <img className={`${props.class} nav__tui`} src={tui} alt="tui bird" />
       </a>
