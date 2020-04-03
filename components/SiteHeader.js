@@ -34,10 +34,30 @@ export default function SiteHeader(props) {
           </svg>
         </a>
         <div className="site-header__nav site-header__nav--desktop">
-          <NavItem text="merch" desktop="true" closeMenu={closeMenu} link="merch" />
-          <NavItem text="pre-order" desktop="true" closeMenu={closeMenu} link="" />
-          <NavItem text="videos" desktop="true" closeMenu={closeMenu} link="watch" />
-          <NavItem text="tour" desktop="true" closeMenu={closeMenu} link="tour" />
+          <NavItem
+            text="merch"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="merch"
+          />
+          <NavItem
+            text="pre-order"
+            desktop="true"
+            closeMenu={closeMenu}
+            link=""
+          />
+          <NavItem
+            text="videos"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="watch"
+          />
+          <NavItem
+            text="tour"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="tour"
+          />
           <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
             <a
               className="site-menu__nav-item-link site-menu__nav-item-link--desktop"
@@ -48,8 +68,18 @@ export default function SiteHeader(props) {
               blog
             </a>
           </li>
-          <NavItem text="contact" desktop="true" closeMenu={closeMenu} link="tour" />
-          <NavItem text="subscribe" desktop="true" closeMenu={closeMenu} link="tour" />
+          <NavItem
+            text="contact"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="tour"
+          />
+          <NavItem
+            text="subscribe"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="tour"
+          />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
               O
@@ -62,7 +92,7 @@ export default function SiteHeader(props) {
             className="site-header__menu-toggle"
             onClick={() => toggleMenu()}
           >
-            {isOpen ? "x" : "menu //"}
+            {isOpen ? "x" : "//"}
           </button>
         </div>
       </header>

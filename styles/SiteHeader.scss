@@ -1,3 +1,5 @@
+
+
 .site-header {
   height: 48px;
   width: 100%;
@@ -57,7 +59,7 @@
   }
 
   &__nav {
-    padding: 102px 0;
+    padding: 102px 0 0;
   }
   &__nav-item {
     margin-bottom: 12px;
@@ -98,3 +100,13 @@
     }
   }
 }
+
+
+
+@media (max-width: 374px) {
+    .site-menu {
+      &__nav {
+        padding: 64px 0 0;
+      }
+    }
+  }
