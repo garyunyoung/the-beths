@@ -7,11 +7,12 @@ import scss from "../styles/SiteHeader.scss";
 export default function SiteHeader(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
     <Sticky>
       <header className="site-header">
-        <a className="site-header__logo" href="#" onClick={props.closeNav}>
+        <a className="site-header__logo" href="#" onClick={() => closeMenu()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 300 70.3"
@@ -33,10 +34,10 @@ export default function SiteHeader(props) {
           </svg>
         </a>
         <div className="site-header__nav site-header__nav--desktop">
-          <NavItem text="merch" desktop="true" link="merch" />
-          <NavItem text="pre-order" desktop="true" link="" />
-          <NavItem text="videos" desktop="true" link="watch" />
-          <NavItem text="tour" desktop="true" link="tour" />
+          <NavItem text="merch" desktop="true" closeMenu={closeMenu} link="merch" />
+          <NavItem text="pre-order" desktop="true" closeMenu={closeMenu} link="" />
+          <NavItem text="videos" desktop="true" closeMenu={closeMenu} link="watch" />
+          <NavItem text="tour" desktop="true" closeMenu={closeMenu} link="tour" />
           <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
             <a
               className="site-menu__nav-item-link site-menu__nav-item-link--desktop"
@@ -47,8 +48,8 @@ export default function SiteHeader(props) {
               blog
             </a>
           </li>
-          <NavItem text="contact" desktop="true" link="tour" />
-          <NavItem text="subscribe" desktop="true" link="tour" />
+          <NavItem text="contact" desktop="true" closeMenu={closeMenu} link="tour" />
+          <NavItem text="subscribe" desktop="true" closeMenu={closeMenu} link="tour" />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
               O
@@ -67,10 +68,10 @@ export default function SiteHeader(props) {
       </header>
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
-          <NavItem text="merch" link="merch" />
-          <NavItem text="pre-order" link="" />
-          <NavItem text="watch" link="watch" />
-          <NavItem text="tour" link="tour" />
+          <NavItem text="merch" closeMenu={closeMenu} link="merch" />
+          <NavItem text="pre-order" closeMenu={closeMenu} link="" />
+          <NavItem text="watch" closeMenu={closeMenu} link="watch" />
+          <NavItem text="tour" closeMenu={closeMenu} link="tour" />
           <li className={`site-menu__nav-item`}>
             <a
               className="site-menu__nav-item-link"
@@ -111,7 +112,7 @@ export function NavItem(props) {
           props.desktop ? "site-menu__nav-item-link--desktop" : ""
         }`}
         href={`#${props.link}`}
-        onClick={() => toggleMenu()}
+        onClick={() => props.closeMenu()}
       >
         {props.text}
       </a>
