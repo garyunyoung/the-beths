@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "../styles/Sticky.scss";
+import scss from "../styles/_sticky.scss";
 
 export default function Sticky(props) {
   return (

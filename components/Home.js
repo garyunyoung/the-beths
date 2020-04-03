@@ -1,15 +1,14 @@
 import React from "react";
-import Socials from "./Socials";
 import CTAButton from "./CTAButton";
 import MailingList from "./MailingList";
-import { fmhmT, cpY } from "./cloudinary";
+import { cpY } from "./cloudinary";
 import scss from "../styles/Home.scss";
 
 export default function Home() {
   return (
     <section className="home">
-      <section className="home__content">
-        <section className="home__wrapper">
+      <div className="home__content">
+        <div className="home__wrapper">
           {/* <img
             className="title cld-responsive"
             src={fmhmT}
@@ -37,11 +36,10 @@ export default function Home() {
           >
             <h1 className="cta">pre-order here</h1>
           </a>
-        </section>
-        <Socials color={"white"} />
-      </section>
-      <CTAButton />
-      <MailingList />
+        </div>
+      </div>
+      {/* Socials */}
+      {/* Mailing List */}
       <style jsx>{scss}</style>
     </section>
   );

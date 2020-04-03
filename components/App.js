@@ -3,7 +3,8 @@ import dynamic from "next/dynamic";
 import { docCookies } from "./cookies";
 import { tagManager } from "./google";
 import Bar from "./Bar";
-import BarDesktop from "./BarDesktop";
+import NavbarDesktop from "./NavbarDesktop";
+import SiteHeader from "./SiteHeader";
 import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import MailingListBanner from "./MailingListBanner";
@@ -54,10 +55,9 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-
-
-        <BarDesktop toggleGame={() => this.toggleGame()} />
-        <Bar toggleGame={() => this.toggleGame()} />
+        {/* <NavbarDesktop toggleGame={() => this.toggleGame()} />
+        <Bar toggleGame={() => this.toggleGame()} /> */}
+        <SiteHeader toggleGame={() => this.toggleGame()}/>
         <section className="page page--home">
           <Home />
           <ConsentBanner

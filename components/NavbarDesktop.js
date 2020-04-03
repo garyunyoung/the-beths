@@ -1,15 +1,15 @@
 import React from "react";
-import Sticky from "./Sticky";
+import Sticky from "./_sticky";
 import { NavItem, NavItemGame } from "./Nav";
 import { Logo } from "./Bar";
-import scss from "../styles/BarDesktop.scss";
+import scss from "../styles/NavbarDesktop.scss";
 
-export default function BarDesktop(props) {
+export default function navbarDesktop(props) {
   return (
     <Sticky>
-      <nav className="barDesktop">
-        <Logo className="barDesktop__logo barDesktop__logo--desktop" />
-        <div className="barDesktop__nav">
+      <nav className="navbarDesktop">
+        <Logo className="navbarDesktop__logo navbarDesktop__logo--desktop" />
+        <div className="navbarDesktop__nav">
           <NavItem className="nav__item" text="merch" link="merch" />
           <NavItem className="nav__item" text="pre-order" link="" />
           <NavItem className="nav__item" text="watch" link="watch" />

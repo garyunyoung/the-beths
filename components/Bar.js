@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import Sticky from "./Sticky";
+import Sticky from "./_sticky";
 import { logo } from "./cloudinary";
 import scss from "../styles/Bar.scss";
 
