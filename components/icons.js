@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "../styles/Socials.scss";
+import scss from "../styles/_socials.scss";
 
 const getPath = (name, props) => {
   switch (name) {

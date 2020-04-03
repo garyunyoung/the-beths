@@ -1,7 +1,9 @@
 import React from "react";
 import CTAButton from "./CTAButton";
+import Socials from "./_socials";
+
 import MailingList from "./MailingList";
-import { cpY } from "./cloudinary";
+import { jumpRopeGazersHandwrittenTitle, newAlbumText, cpY } from "./cloudinary";
 import scss from "../styles/Home.scss";
 
 export default function Home() {
@@ -9,35 +11,39 @@ export default function Home() {
     <section className="home">
       <div className="home__content">
         <div className="home__wrapper">
-          {/* <img
-            className="title cld-responsive"
-            src={fmhmT}
-            alt="future me hates me title"
-          /> */}
-          <h1 className="titleText">jump rope gazers</h1>
-          <h1 className="outNow">July 19</h1>
+          <img
+            className="home__album-title cls-responsive"
+            src={jumpRopeGazersHandwrittenTitle}
+          />
+          <img
+            className="home__new-album-text cls-responsive"
+            src={newAlbumText}
+          />
+          <p className="home__release-date">july 10</p>
           <a
             href="http://store.carparkrecords.com/products/615148-cak128-the-beths-future-me-hates-me"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              className="cpY cld-responsive"
+              className="home__carpark-logo cld-responsive"
               src={cpY}
               alt="carpark records logo"
             />
           </a>
 
           <a
-            className="cta__link"
+            className="home__pre-order-link"
             href="http://smarturl.it/TheBethsFMHM-Digital"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="cta">pre-order here</h1>
+            pre-order here
           </a>
         </div>
       </div>
+      <Socials className="home__social" width="24" color={"black"} />
+
       {/* Socials */}
       {/* Mailing List */}
       <style jsx>{scss}</style>

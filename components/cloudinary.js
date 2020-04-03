@@ -13,6 +13,9 @@ export const tui = `${cld}tui_SM.png`;
 export const fmhmT = `${cld}fmhm-title_SM.png`;
 export const cpY = `${cld}cp-y_SM.png`;
 
+export const newAlbumText = `${cld}new_album_text.svg`;
+export const jumpRopeGazersHandwrittenTitle = `${cld}jumpropegazers_album_title.svg`;
+
 // Mailing List //
 export const dag = `${cld}fmhm-dog_SM.png`;
 

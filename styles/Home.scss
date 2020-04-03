@@ -27,61 +27,53 @@
     height: 92.5vh;
 
     .home__wrapper {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Helvetica", sans-serif;
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      height: 80vh;
-      width: 54vw;
 
       position: absolute;
-      right: 0;
-      width: 40%;
+      right: 5%;
+      top: 26%;
+      width: 30%;
+      padding: 48px;
     }
 
-    .title {
-      width: 15vw;
-      margin: 0;
+    .home__album-title {
+      width: 100%;
+      filter: invert(1);
+      margin-bottom: 48px;
     }
 
-    .titleText {
-      font-size: 2.7em;
-      line-height: 0.5em;
-      letter-spacing: 1px;
-      color: #fdd73f;
-      margin: 0 0 4vh 0;
-      cursor: default;
+    .home__new-album-text {
+      width: 60%;
+      filter: invert(1);
+      margin-bottom: 16px;
     }
 
-    .outNow {
-      font-size: 3vh;
-      letter-spacing: 2px;
+    .home__release-date {
+      font-size: 24px;
+      letter-spacing: 3px;
       font-weight: lighter;
       color: white;
-      margin-bottom: 4vh;
-      cursor: default;
+      margin-bottom: 24px;
     }
 
-    .cpY {
-      width: 2vw;
-      margin-bottom: 5vh;
+    .home__carpark-logo {
+      width: 24px;
+      margin-bottom: 48px;
     }
 
-    .cta {
-      border: 0.2vw solid white;
-      margin-bottom: 3vh;
-      padding: 1vw 1.5vw;
+    .home__pre-order-link {
+      font-size: 24px;
+      letter-spacing: 3px;
+      padding: 0 16px 16px;
+      border-bottom: 1px solid white;
+      color: white;
       &:hover {
         box-shadow: 3px 3px white;
       }
-    }
-
-    .cta__link {
-      font-size: 1.2em;
-      letter-spacing: 3px;
-      color: white;
-      text-transform: uppercase;
     }
   }
 }
@@ -100,7 +92,7 @@
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .home__content {
-    background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto/the-beths/home-mobile_SM.jpg ");
+    background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto/the-beths/jumpropegazers_desktop.jpg");
     background-position: center;
 
     .home__wrapper {

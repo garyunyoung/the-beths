@@ -9,6 +9,8 @@ import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import MailingListBanner from "./MailingListBanner";
 import Header from "./Header";
+import Socials from "./_socials";
+
 import Merch from "./Merch";
 import Watch from "./Watch";
 import Tour from "./Tour";
@@ -57,7 +59,7 @@ export default class App extends React.Component {
       <React.Fragment>
         {/* <NavbarDesktop toggleGame={() => this.toggleGame()} />
         <Bar toggleGame={() => this.toggleGame()} /> */}
-        <SiteHeader toggleGame={() => this.toggleGame()}/>
+        <SiteHeader toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home />
           <ConsentBanner
