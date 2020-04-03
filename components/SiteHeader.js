@@ -33,10 +33,28 @@ export default function SiteHeader(props) {
           </svg>
         </a>
         <div className="site-header__nav site-header__nav--desktop">
-          <NavItem text="merch" link="merch" />
-          <NavItem text="pre-order" link="" />
-          <NavItem text="watch" link="watch" />
-          <NavItem text="tour" link="tour" />
+          <NavItem text="merch" desktop="true" link="merch" />
+          <NavItem text="pre-order" desktop="true" link="" />
+          <NavItem text="videos" desktop="true" link="watch" />
+          <NavItem text="tour" desktop="true" link="tour" />
+          <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
+            <a
+              className="site-menu__nav-item-link site-menu__nav-item-link--desktop"
+              href="https://breakfastandtravelupdates.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              blog
+            </a>
+          </li>
+          <NavItem text="contact" desktop="true" link="tour" />
+          <NavItem text="subscribe" desktop="true" link="tour" />
+          <li className="site-menu__nav-item site-menu__nav-item--desktop">
+            <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
+              O
+            </span>
+            <a href="#game" onClick={props.toggleGame} />
+          </li>
         </div>
         <div className="site-header__nav">
           <button
@@ -53,7 +71,7 @@ export default function SiteHeader(props) {
           <NavItem text="pre-order" link="" />
           <NavItem text="watch" link="watch" />
           <NavItem text="tour" link="tour" />
-          <li className={`site-menu__nav-item site-menu__nav-item--blog`}>
+          <li className={`site-menu__nav-item`}>
             <a
               className="site-menu__nav-item-link"
               href="https://breakfastandtravelupdates.com/"
@@ -83,9 +101,15 @@ export default function SiteHeader(props) {
 
 export function NavItem(props) {
   return (
-    <li className={`site-menu__nav-item site-menu__nav-item--${props.text}`}>
+    <li
+      className={`site-menu__nav-item ${
+        props.desktop ? "site-menu__nav-item--desktop" : ""
+      }`}
+    >
       <a
-        className="site-menu__nav-item-link"
+        className={`site-menu__nav-item-link ${
+          props.desktop ? "site-menu__nav-item-link--desktop" : ""
+        }`}
         href={`#${props.link}`}
         onClick={() => toggleMenu()}
       >

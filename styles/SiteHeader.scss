@@ -68,3 +68,33 @@
     font-weight: 400;
   }
 }
+
+@media (min-width: 768px) {
+  .site-header {
+    justify-content: flex-end;
+
+    &__nav {
+      display: none;
+      &--desktop {
+        display: flex;
+      }
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .site-menu {
+    &__nav-item {
+      &--desktop {
+        margin: 0 12px;
+      }
+    }
+    &__nav-item-link {
+      &--desktop {
+        color: white;
+      }
+    }
+  }
+}
