@@ -118,15 +118,3 @@ export function NavItem(props) {
     </li>
   );
 }
-
-export function NavItemGame(props) {
-  return (
-    // <li className="nav__item nav__item--tui">
-    //   <span className="nav__link nav__link--game">game</span>
-    //   <a href="#game" onClick={props.toggleGame}>
-    //     <img className={`${props.class} nav__tui`} src={tui} alt="tui bird" />
-    //   </a>
-    // </li>
-    null
-  );
-}
