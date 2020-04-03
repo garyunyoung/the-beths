@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Sticky from "./_sticky";
 import Socials from "./Socials";
 import { logo, tui } from "./cloudinary";
 import scss from "../styles/SiteHeader.scss";
 
 export default function SiteHeader(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <Sticky>
       <header className="site-header">
@@ -38,13 +41,13 @@ export default function SiteHeader(props) {
         <div className="site-header__nav">
           <button
             className="site-header__menu-toggle"
-            onClick={props.toggleNav}
+            onClick={() => toggleMenu()}
           >
-            {props.open ? "x" : "menu //"}
+            {isOpen ? "x" : "menu //"}
           </button>
         </div>
       </header>
-      <nav className="site-menu">
+      <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
           <NavItem text="merch" link="merch" />
           <NavItem text="pre-order" link="" />
@@ -84,7 +87,7 @@ export function NavItem(props) {
       <a
         className="site-menu__nav-item-link"
         href={`#${props.link}`}
-        onClick={props.toggleNav}
+        onClick={() => toggleMenu()}
       >
         {props.text}
       </a>

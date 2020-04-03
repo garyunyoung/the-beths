@@ -30,15 +30,16 @@
   }
 
   &__nav {
-    // transform: translateX(100vw);
-
     &--desktop {
-        display: none;
+      display: none;
     }
   }
 }
 
 .site-menu {
+  transform: translateX(-100vw);
+  transition: transform 350ms cubic-bezier(0.55, 0, 0.1, 1);
+
   height: 100vh;
   width: 100vw;
 
@@ -49,6 +50,11 @@
   background-color: white;
 
   padding-top: 40px;
+
+  &--is-open {
+    transform: translateX(0vw);
+    transition: transform 350ms cubic-bezier(0.55, 0, 0.1, 1);
+  }
 
   &__nav {
     padding: 102px 0;
