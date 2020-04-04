@@ -5,11 +5,46 @@
     font-size: 1.5em;
     font-weight: lighter;
     margin-bottom: 3vh;
+    width: max-content;
+    margin: 0 auto 3vh;
+    position: relative;
+
+    &:hover {
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      &:before,
+      &:after {
+        content: "-";
+      }
+    }
+
+    &:before {
+      display: inline;
+      content: "+";
+      left: -24px;
+      position: absolute;
+    }
+
+    &:after {
+      display: inline;
+      content: "+";
+      right: -24px;
+      position: absolute;
+    }
   }
   .watch__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    display: none;
+
+    &--jump-rope-gazers {
+      display: flex;
+    }
   }
 }
 
@@ -78,7 +113,7 @@
   }
 
   .thumbnail__container:hover > .thumbnail {
-    transform: rotate(20deg);
+    // transform: rotate(20deg);
   }
 }
 

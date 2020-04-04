@@ -5,8 +5,17 @@ import scss from "../styles/Watch.scss";
 export default function Watch() {
   return (
     <section className="watch">
+      <h2 className="watch__text">jump rope gazers</h2>
+      <section className="watch__wrapper watch__wrapper--jump-rope-gazers">
+        <Thumbnail
+          title="dying to believe"
+          image={utg}
+          modifier="utg"
+          link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
+        />
+      </section>
       <h2 className="watch__text">future me hates me</h2>
-      <section className="watch__wrapper">
+      <section className="watch__wrapper watch__wrapper--future-me-hates-me">
         <Thumbnail
           title="uptown girl"
           image={utg}
@@ -45,7 +54,7 @@ export default function Watch() {
         />
       </section>
       <h2 className="watch__text">warm blood EP</h2>
-      <section className="watch__wrapper">
+      <section className="watch__wrapper watch__wrapper--warm-blood">
         <Thumbnail
           title="whatever"
           image={w}
@@ -76,26 +85,28 @@ export default function Watch() {
 
 function Thumbnail(props) {
   return (
-    <div className='thumbnail__container'>
-    <div
-      className={`thumbnail ${
-        props.modifier ? `thumbnail--${props.modifier}` : ""
-      }`}
-    >
-      <a
-        className="thumbnail__link"
-        href={props.link}
-        target="_blank"
-        rel="noopener noreferrer"
+    <div className="thumbnail__container">
+      <div
+        className={`thumbnail ${
+          props.modifier ? `thumbnail--${props.modifier}` : ""
+        }`}
       >
-        <img
-          className={`thumbnail__image thumbnail__image--${props.class} cld-responsive`}
-          src={props.image}
-          alt={`${props.title} thumbnail`}
-        />
-        <p className={`thumbnail__text thumbnail__text--${props.class}`}>{props.title}</p>
-      </a>
-    </div>
+        <a
+          className="thumbnail__link"
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className={`thumbnail__image thumbnail__image--${props.class} cld-responsive`}
+            src={props.image}
+            alt={`${props.title} thumbnail`}
+          />
+          <p className={`thumbnail__text thumbnail__text--${props.class}`}>
+            {props.title}
+          </p>
+        </a>
+      </div>
     </div>
   );
 }
