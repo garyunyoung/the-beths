@@ -57,8 +57,6 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <NavbarDesktop toggleGame={() => this.toggleGame()} />
-        <Bar toggleGame={() => this.toggleGame()} /> */}
         <SiteHeader toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home />

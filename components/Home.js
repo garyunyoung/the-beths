@@ -42,9 +42,8 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <Socials className="home__social" width="24" color={"black"} />
+      <Socials className="home__socials" width="24" color={"black"} />
 
-      {/* Socials */}
       {/* Mailing List */}
       <style jsx>{scss}</style>
     </section>

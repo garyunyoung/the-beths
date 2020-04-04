@@ -1,15 +1,25 @@
-.home__content {
-  height: 70vh;
-  width: 100vw;
-  background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/jumpropegazers_mobile.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+.home {
+  .home__content {
+    height: 70vh;
+    width: 100vw;
+    background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/jumpropegazers_mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 
-  .home__wrapper,
-  .nav__desktop {
-    display: none;
+    .home__wrapper,
+    .nav__desktop {
+      display: none;
+    }
+  }
+  &__socials {
+    width: max-content;
+    margin: 32px auto;
+
+    &__icon {
+      margin: 8px;
+    }
   }
 }
 

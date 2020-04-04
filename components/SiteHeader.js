@@ -76,10 +76,10 @@ export default function SiteHeader(props) {
       </header>
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
-          <NavItem text="merch" closeMenu={closeMenu} link="merch" />
-          <NavItem text="pre-order" closeMenu={closeMenu} link="" />
-          <NavItem text="watch" closeMenu={closeMenu} link="watch" />
+          <NavItem text="music" closeMenu={closeMenu} link="" />
+          <NavItem text="videos" closeMenu={closeMenu} link="watch" />
           <NavItem text="tour" closeMenu={closeMenu} link="tour" />
+          <NavItem text="store" closeMenu={closeMenu} link="store" />
           <li className={`site-menu__nav-item`}>
             <a
               className="site-menu__nav-item-link"
@@ -91,9 +91,6 @@ export default function SiteHeader(props) {
             </a>
           </li>
           <NavItem text="contact" link="contact" />
-          <li className={`site-menu__nav-item`}>
-            <span className="site-menu__nav-item-link">subscribe</span>
-          </li>
           <li className="site-menu__nav-item">
             <span className="site-menu__nav-item-link">game</span>
             <a href="#game" onClick={props.toggleGame} />
