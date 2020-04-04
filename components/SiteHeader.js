@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Sticky from "./_sticky";
 import Socials from "./_socials";
 import { logo, tui } from "./cloudinary";
+import { Icon } from "./icons";
+
 import scss from "../styles/SiteHeader.scss";
 
 export default function SiteHeader(props) {
@@ -17,28 +19,28 @@ export default function SiteHeader(props) {
         </a>
         <div className="site-header__nav site-header__nav--desktop">
           <NavItem
-            text="merch"
+            text="music"
             desktop="true"
             closeMenu={closeMenu}
             link="merch"
           />
           <NavItem
-            text="pre-order"
+            text="video"
             desktop="true"
             closeMenu={closeMenu}
-            link=""
+            link="video"
           />
           <NavItem
-            text="videos"
+            text="store"
             desktop="true"
             closeMenu={closeMenu}
-            link="watch"
+            link="tour"
           />
           <NavItem
             text="tour"
             desktop="true"
             closeMenu={closeMenu}
-            link="tour"
+            link="watch"
           />
           <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
             <a
@@ -52,12 +54,6 @@ export default function SiteHeader(props) {
           </li>
           <NavItem
             text="contact"
-            desktop="true"
-            closeMenu={closeMenu}
-            link="tour"
-          />
-          <NavItem
-            text="subscribe"
             desktop="true"
             closeMenu={closeMenu}
             link="tour"

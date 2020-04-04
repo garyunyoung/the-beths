@@ -68,13 +68,13 @@ export default class App extends React.Component {
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
-        <section id="merch" className="page page--merch">
-          <Header header="merch" />
-          <Merch consent={this.state.hasConsent} />
-        </section>
         <section id="watch" className="page page--watch">
           <Header header="watch" />
           <Watch />
+        </section>
+        <section id="merch" className="page page--merch">
+          <Header header="merch" />
+          <Merch consent={this.state.hasConsent} />
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />

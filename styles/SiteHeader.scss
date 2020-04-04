@@ -6,10 +6,8 @@
   justify-content: space-between;
   align-items: center;
 
-  position: absolute;
-
   padding: 0 16px;
-  background-color: transparent;
+  background-color: white;
   z-index: 1;
 
   &__logo {
@@ -17,7 +15,7 @@
 
     img {
       width: 100px;
-    //   filter: invert(1);
+      //   filter: invert(1);
     }
   }
 
@@ -68,17 +66,12 @@
 
 @media (min-width: 768px) {
   .site-header {
-    justify-content: flex-end;
 
     &__nav {
       display: none;
       &--desktop {
         display: flex;
       }
-    }
-
-    &__logo {
-      display: none;
     }
   }
 
@@ -90,7 +83,7 @@
     }
     &__nav-item-link {
       &--desktop {
-        color: white;
+        font-size: 18px;
       }
     }
   }
