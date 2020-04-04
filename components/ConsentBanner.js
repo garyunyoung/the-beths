@@ -23,21 +23,21 @@ export default class ConsentBanner extends React.Component {
     }
     return (
       <React.Fragment>
-        <div className="banner">
-          <div className="banner__consent">
-            <button className="btn btn--x" onClick={() => this.close()}>
+        <div className="sticky-consent-banner">
+          <div className="sticky-consent-banner__content">
+            <button className="sticky-consent-banner__button sticky-consent-banner__button--close" onClick={() => this.close()}>
               x
             </button>
-            <p className="banner__text">
+            <p className="sticky-consent-banner__text">
               hey! some of the features on our site require analytics to run.
               you can use the site without these features, but it's better with
               them!
             </p>
-            <div className="banner__buttons">
-              <button className="btn btn--d" onClick={() => this.close()}>
+            <div className="sticky-consent-banner__buttons">
+              <button className="sticky-consent-banner__button  sticky-consent-banner__button--decline" onClick={() => this.close()}>
                 decline
               </button>
-              <button className="btn btn--a" onClick={() => this.accept()}>
+              <button className="sticky-consent-banner__button  sticky-consent-banner__button--accept" onClick={() => this.accept()}>
                 accept 🍪
               </button>
             </div>

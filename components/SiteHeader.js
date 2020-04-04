@@ -22,25 +22,25 @@ export default function SiteHeader(props) {
             text="music"
             desktop="true"
             closeMenu={closeMenu}
-            link="merch"
+            link=""
           />
           <NavItem
             text="video"
             desktop="true"
             closeMenu={closeMenu}
-            link="video"
+            link="watch"
           />
           <NavItem
             text="store"
             desktop="true"
             closeMenu={closeMenu}
-            link="tour"
+            link="merch"
           />
           <NavItem
             text="tour"
             desktop="true"
             closeMenu={closeMenu}
-            link="watch"
+            link="tour"
           />
           <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
             <a
@@ -56,7 +56,7 @@ export default function SiteHeader(props) {
             text="contact"
             desktop="true"
             closeMenu={closeMenu}
-            link="tour"
+            link="contact"
           />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
@@ -99,7 +99,7 @@ export default function SiteHeader(props) {
             <a href="#game" onClick={props.toggleGame} />
           </li>
           <li>
-            <Socials className="nav__social" width="24" color={"black"} />
+            <Socials className="site-menu-socials" width="18" color={"black"} />
           </li>
         </ul>
       </nav>

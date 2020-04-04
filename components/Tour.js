@@ -19,12 +19,12 @@ export default class Tour extends React.Component {
   render() {
     if (!this.props.consent) {
       return (
-        <div className="consent-banner">
-          <p className="consent-banner__text">
+        <div className="tour-consent-banner">
+          <p className="tour-consent-banner__text">
             our songkick widget requires analytics to run, accept our cookies 🍪
             to see what shows we have lined up!
           </p>
-          <button className="btn" onClick={() => this.props.allowTracking()}>
+          <button className="tour-consent-banner__accept-button" onClick={() => this.props.allowTracking()}>
             accept
           </button>
           <style jsx>{scss}</style>
