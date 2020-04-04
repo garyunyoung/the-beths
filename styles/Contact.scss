@@ -6,6 +6,8 @@
   display: flex;
   flex-flow: column;
   text-align: center;
+  background: none;
+
 
   .contact__text {
     font-size: 2.5vh;
@@ -33,3 +35,19 @@
     }
   }
 }
+
+
+// background-image: linear-gradient(
+//   to right,
+//   #fffdc2,
+//   #fffdc2 50%,
+//   #d7f0a2 50%,
+//   #d7f0a2 100%
+// );
+// background-image: linear-gradient(
+//   to right,
+//   #FBB54D,
+//   #FBB54D 50%,
+//   #4A6E34 50%,
+//   #4A6E34 100%
+// );
