@@ -13,6 +13,35 @@
       display: none;
     }
   }
+
+  &__test-menu {
+    // border: 2px dashed gold;
+    margin: 8px;
+    padding: 8px;
+    margin-top: 24px;
+  }
+
+  &__test {
+    font-size: 18px;
+    text-align: center;
+    max-width: 150px;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+  &__test-socials {
+    width: max-content;
+    margin: 8px auto;
+
+    &__icon {
+      margin: 0 4px;
+    }
+  }
+
+  &__test-mailing-list {
+    text-align: center;
+    margin: 16px 0;
+  }
+
   &__socials {
     width: max-content;
     margin: 32px auto;
@@ -32,57 +61,60 @@
 }
 
 @media (min-width: 1024px) {
-  .home__content {
-    background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto/the-beths/jumpropegazers_desktop.jpg");
-    height: 92.5vh;
+  .home {
+    .home__content {
+      background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto/the-beths/jumpropegazers_desktop.jpg");
+      // height: 92.5vh;
+      height: 81vh;
 
-    .home__wrapper {
-      font-family: "Helvetica", sans-serif;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
+      .home__wrapper {
+        font-family: "Helvetica", sans-serif;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
 
-      position: absolute;
-      right: 5%;
-      top: 26%;
-      width: 30%;
-      padding: 48px;
-    }
+        position: absolute;
+        right: 5%;
+        top: 26%;
+        width: 30%;
+        padding: 48px;
+      }
 
-    .home__album-title {
-      width: 100%;
-      filter: invert(1);
-      margin-bottom: 48px;
-    }
+      .home__album-title {
+        width: 100%;
+        filter: invert(1);
+        margin-bottom: 48px;
+      }
 
-    .home__new-album-text {
-      width: 60%;
-      filter: invert(1);
-      margin-bottom: 16px;
-    }
+      .home__new-album-text {
+        width: 60%;
+        filter: invert(1);
+        margin-bottom: 16px;
+      }
 
-    .home__release-date {
-      font-size: 24px;
-      letter-spacing: 3px;
-      font-weight: lighter;
-      color: white;
-      margin-bottom: 24px;
-    }
+      .home__release-date {
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-weight: lighter;
+        color: white;
+        margin-bottom: 24px;
+      }
 
-    .home__carpark-logo {
-      width: 24px;
-      margin-bottom: 48px;
-    }
+      .home__carpark-logo {
+        width: 24px;
+        margin-bottom: 48px;
+      }
 
-    .home__pre-order-link {
-      font-size: 24px;
-      letter-spacing: 3px;
-      padding: 0 16px 16px;
-      border-bottom: 1px solid white;
-      color: white;
-      &:hover {
-        box-shadow: 3px 3px white;
+      .home__pre-order-link {
+        font-size: 24px;
+        letter-spacing: 3px;
+        padding: 0 16px 16px;
+        border-bottom: 1px solid white;
+        color: white;
+        &:hover {
+          box-shadow: 3px 3px white;
+        }
       }
     }
   }
