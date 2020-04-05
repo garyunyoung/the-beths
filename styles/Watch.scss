@@ -1,58 +1,72 @@
 .watch {
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.watch-section {
+  max-width: 900px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 24px;
 
-  .watch__text {
-    font-size: 1.5em;
+  &__text {
+    font-size: 24px;
     font-weight: lighter;
-    margin-bottom: 3vh;
-    width: max-content;
-    margin: 0 auto 3vh;
-    position: relative;
+
+    transform: scale(1);
+    transition: all 0.23s ease-in-out 0s;
 
     &:hover {
-      font-weight: 400;
+      transform: scale(1.2);
+      transition: all 0.23s ease-in-out 0s;
+
       cursor: pointer;
     }
 
-    &:first-child {
-      &:before,
-      &:after {
-        content: "-";
-      }
-    }
-
-    &:before {
-      display: inline;
-      content: "+";
-      left: -24px;
-      position: absolute;
-    }
-
+    &:before,
     &:after {
       display: inline;
       content: "+";
-      right: -24px;
       position: absolute;
     }
+
+    &:before {
+      left: -24px;
+    }
+
+    &:after {
+      right: -24px;
+    }
   }
-  .watch__wrapper {
-    display: flex;
+  &__wrapper {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 24px;
 
     display: none;
+  }
 
-    &--is-open {
+  &--is-open {
+    .watch-section__wrapper {
       display: flex;
+    }
+
+    .watch-section__text {
+      transform: scale(1.2);
+    }
+
+    .watch-section__text:before,
+    .watch-section__text:after {
+      content: "-";
     }
   }
 }
-
 .thumbnail {
   top: 2vw;
   left: 10vw;
-  padding: 3vw 4vw;
-  margin-bottom: 3vh;
+  padding: 16px;
+  text-align: center;
 
   .thumbnail__image {
     height: 20vw;
@@ -70,6 +84,10 @@
 }
 
 @media (min-width: 1024px) {
+  .watch-section {
+    margin-bottom: 32px;
+  }
+
   .watch {
     .watch__text {
       font-size: 1.5em;
@@ -89,6 +107,10 @@
   .thumbnail {
     cursor: pointer;
 
+    .thumbnail__container {
+      margin: 16px;
+    }
+
     .thumbnail__image {
       height: 8vw;
     }
@@ -107,9 +129,6 @@
         color: #c45827;
       }
     }
-  }
-  .thumbnail__container {
-    margin: 2px;
   }
 
   .thumbnail__container:hover > .thumbnail {
