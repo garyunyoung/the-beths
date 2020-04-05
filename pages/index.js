@@ -26,18 +26,18 @@ export default function IndexPage() {
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
-          content="New Zealand four-piece The Beths channel their longtime friendship into high-energy guitar pop with a smart lyrical bite."
+          content="New album 'Jump Rope Gazers' out July 10. Order here at thebeths.com."
         />
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
-        <meta property="og:title" content="The Beths - Official Website" />
+        <meta property="og:title" content="The Beths" />
         <meta
           property="og:description"
-          content="Buy/Stream 'Future Me Hates Me'"
+          content="New album 'Jump Rope Gazers' out July 10. Order here at thebeths.com."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/v1557943529/the-beths/fb_dag.jpg"
+          content="https://res.cloudinary.com/garyou/image/upload/v1586127585/the-beths/the-beths-jump-rope-gazers-album-art.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
