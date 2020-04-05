@@ -19,22 +19,22 @@ export default function SiteHeader(props) {
         </a>
         <div className="site-header__nav site-header__nav--desktop">
           <NavItem
-            text="music"
+            text="pre-order"
             desktop="true"
             closeMenu={closeMenu}
             link=""
           />
           <NavItem
-            text="video"
-            desktop="true"
-            closeMenu={closeMenu}
-            link="watch"
-          />
-          <NavItem
-            text="store"
+            text="merch"
             desktop="true"
             closeMenu={closeMenu}
             link="merch"
+          />
+          <NavItem
+            text="watch"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="watch"
           />
           <NavItem
             text="tour"
@@ -58,9 +58,15 @@ export default function SiteHeader(props) {
             closeMenu={closeMenu}
             link="contact"
           />
+          <NavItem
+            text="✉️"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="contact"
+          />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
-              O
+              🐦
             </span>
             <a href="#game" onClick={props.toggleGame} />
           </li>
@@ -108,7 +114,7 @@ export default function SiteHeader(props) {
 export function NavItem(props) {
   return (
     <li
-      className={`site-menu__nav-item ${
+      className={`site-menu__nav-item site-menu__nav-item--${props.text} ${
         props.desktop ? "site-menu__nav-item--desktop" : ""
       }`}
     >

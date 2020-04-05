@@ -32,6 +32,7 @@ export const rabbitShirtPB = `${cld}rabbit-tee_pb.png`;
 export const rabitShirtB = `${cld}rabbit-tee_b.png`;
 export const blueAndRedStripedSocks = `${cld}blue-and-red-striped-socks.png`;
 export const futureMeHatesMeCloudyBlue = `${cld}fmhm-cloudy-blue.jpg`;
+export const jumpRopeGazers = `${cld}jump-rope-gazers-album-art.jpg`;
 
 // Watch //
 export const utg = `${cld}utg_SM.png`;

@@ -52,25 +52,6 @@ function CarouselImage(props) {
   return (
     <React.Fragment>
       <div
-        className={`carousel-image carousel-image--first ${
-          props.visible ? "carousel-image--visible" : ""
-        }`}
-      >
-        <a
-          className="carousel__wrapper--link"
-          href={props.item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div
-            className="carousel-image__image"
-            alt={`merch: ${props.item.title}`}
-            style={{ backgroundImage: `url(${props.item.src})` }}
-          />
-          <p className="carousel-image--title">{null}</p>
-        </a>
-      </div>
-      <div
         className={`carousel-image ${
           props.visible ? "carousel-image--visible" : ""
         }`}
@@ -87,25 +68,6 @@ function CarouselImage(props) {
             style={{ backgroundImage: `url(${props.item.src})` }}
           />
           <p className="carousel-image--title">{props.item.title}</p>
-        </a>
-      </div>
-      <div
-        className={`carousel-image carousel-image--last ${
-          props.visible ? "carousel-image--visible" : ""
-        }`}
-      >
-        <a
-          className="carousel__wrapper--link"
-          href={props.item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div
-            className="carousel-image__image"
-            alt={`merch: ${props.item.title}`}
-            style={{ backgroundImage: `url(${props.item.src})` }}
-          />
-          <p className="carousel-image--title">{null}</p>
         </a>
       </div>
     </React.Fragment>

@@ -8,7 +8,7 @@
 .carousel__button {
   font-size: 3vh;
   font-weight: 800;
-  padding: 10vh 3vw;
+  // padding: 10vh 3vw;
   margin-bottom: 12vh;
   cursor: pointer;
 
@@ -21,13 +21,11 @@
   position: absolute;
   left: -200vw;
   opacity: 0;
-  transition: all 1200s ease-in-out;
 }
 
 .carousel-image--visible {
   position: static;
   opacity: 1;
-  transition: all 1200ms ease-in-out;
 }
 
 .carousel-image--first,

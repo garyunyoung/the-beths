@@ -19,20 +19,21 @@
   }
 }
 
-.consent-banner {
+.tour-consent-banner {
   text-align: center;
   background-color: gold;
-  padding: 1em;
+  padding: 24px;
 
-  .consent-banner__text {
-    padding: 1em;
+  &__text {
+    padding: 0 16px;
+    margin-bottom: 16px;
   }
 
-  .btn {
+ &__accept-button {
     background-color: transparent;
     border: 1px solid black;
-    padding: 0.5em 1em;
-    font-size: 1em;
+    padding: 8px 16px;
+    font-size: 16px;
     cursor: pointer;
     &:hover {
       box-shadow: 1px 1px 1px black;

@@ -6,7 +6,8 @@ import MailingListBanner from "./MailingListBanner";
 import {
   jumpRopeGazersHandwrittenTitle,
   newAlbumText,
-  cpY
+  cpY,
+  jumpRopeGazers
 } from "./cloudinary";
 import scss from "../styles/Home.scss";
 
@@ -14,6 +15,10 @@ export default function Home() {
   return (
     <section className="home">
       <div className="home__content">
+        {/* <img
+          className="home__jump-rope-gazers cls-responsive"
+          src={jumpRopeGazers}
+        /> */}
         <div className="home__wrapper">
           <img
             className="home__album-title cls-responsive"
@@ -42,7 +47,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            pre-order here
+            {`pre-order here `}
           </a>
         </div>
       </div>
