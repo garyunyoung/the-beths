@@ -43,7 +43,7 @@ export default function Home() {
 
           <a
             className="home__pre-order-link"
-            href="http://smarturl.it/TheBethsFMHM-Digital"
+            href="https://smarturl.it/thebeths_jrg"
             target="_blank"
             rel="noopener noreferrer"
           >
