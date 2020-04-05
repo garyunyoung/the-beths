@@ -1,5 +1,5 @@
 import React from "react";
-import { dag } from './cloudinary';
+// import { dag } from './cloudinary';
 import scss from "../styles/MailingList.scss";
 
 export default class MailingList extends React.Component {

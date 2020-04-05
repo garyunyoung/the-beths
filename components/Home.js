@@ -2,7 +2,7 @@ import React from "react";
 import CTAButton from "./CTAButton";
 import Socials from "./_socials";
 
-import MailingList from "./MailingList";
+import MailingListBanner from "./MailingListBanner";
 import {
   jumpRopeGazersHandwrittenTitle,
   newAlbumText,
@@ -13,7 +13,6 @@ import scss from "../styles/Home.scss";
 export default function Home() {
   return (
     <section className="home">
-
       <div className="home__content">
         <div className="home__wrapper">
           <img
@@ -47,14 +46,10 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="home__test-menu">
-        {/* <p className="home__test">music   video store tour contact</p> */}
-        <Socials className="home__test-socials" width="18" color={"black"} />
-        <p className="home__test-mailing-list">mailing list       garyunyoung@gmail.com</p>
+      <div>
+        <Socials className="home__socials-footer" width="18" color={"black"} />
+        <MailingListBanner />
       </div>
-      {/* <Socials className="home__socials" width="24" color={"black"} /> */}
-
-      {/* Mailing List */}
       <style jsx>{scss}</style>
     </section>
   );
