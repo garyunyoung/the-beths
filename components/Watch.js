@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
 import scss from "../styles/Watch.scss";
 
 export default function Watch() {
+  const [isOpen, setIsOpen] = useState({
+    "jump-rope-gazers": true,
+    "future-me-hates-me": false,
+    "warm-blood": false,
+    bonus: false
+  });
+
+  const toggleVideoSection = section => {
+    setIsOpen({ ...isOpen, [section]: !isOpen[section] });
+  };
+
   return (
     <section className="watch">
-      <h2 className="watch__text">jump rope gazers</h2>
-      <section className="watch__wrapper watch__wrapper--jump-rope-gazers">
+      <h2
+        className="watch__text"
+        onClick={() => toggleVideoSection("jump-rope-gazers")}
+      >
+        jump rope gazers
+      </h2>
+      <section
+        className={`watch__wrapper watch__wrapper--jump-rope-gazers ${
+          isOpen["jump-rope-gazers"] ? "watch__wrapper--is-open" : ""
+        }`}
+      >
         <Thumbnail
           title="dying to believe"
           image={utg}
@@ -14,8 +34,17 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=BmCZ-NxESOc"
         />
       </section>
-      <h2 className="watch__text">future me hates me</h2>
-      <section className="watch__wrapper watch__wrapper--future-me-hates-me">
+      <h2
+        className="watch__text"
+        onClick={() => toggleVideoSection("future-me-hates-me")}
+      >
+        future me hates me
+      </h2>
+      <section
+        className={`watch__wrapper watch__wrapper--future-me-hates-me ${
+          isOpen["future-me-hates-me"] ? "watch__wrapper--is-open" : ""
+        }`}
+      >
         <Thumbnail
           title="uptown girl"
           image={utg}
@@ -53,8 +82,17 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=CV3Bjx-vPTg"
         />
       </section>
-      <h2 className="watch__text">warm blood EP</h2>
-      <section className="watch__wrapper watch__wrapper--warm-blood">
+      <h2
+        className="watch__text"
+        onClick={() => toggleVideoSection("warm-blood")}
+      >
+        warm blood EP
+      </h2>
+      <section
+        className={`watch__wrapper watch__wrapper--warm-blood ${
+          isOpen["warm-blood"] ? "watch__wrapper--is-open" : ""
+        }`}
+      >
         <Thumbnail
           title="whatever"
           image={w}
@@ -68,8 +106,14 @@ export default function Watch() {
           link="https://www.youtube.com/watch?v=4Pz8qzMj-Bw"
         />
       </section>
-      <h2 className="watch__text">bonus</h2>
-      <section className="watch__wrapper watch__wrapper--xmas">
+      <h2 className="watch__text" onClick={() => toggleVideoSection("bonus")}>
+        bonus
+      </h2>
+      <section
+        className={`watch__wrapper watch__wrapper--bonus ${
+          isOpen["bonus"] ? "watch__wrapper--is-open" : ""
+        }`}
+      >
         <Thumbnail
           title="have yourself a merry litte christmas"
           image={hyamlc}
