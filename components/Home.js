@@ -47,8 +47,8 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <Socials className="home__socials-footer" width="18" color={"black"} />
         <MailingListBanner />
+        <Socials className="home__socials-footer" width="20" color={"black"} />
       </div>
       <style jsx>{scss}</style>
     </section>

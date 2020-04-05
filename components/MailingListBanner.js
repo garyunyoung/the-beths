@@ -32,9 +32,9 @@ export default class MailingListBanner extends React.Component {
                       this.setState({ emailValue: e.target.value });
                     }}
                     name="EMAIL"
-                    className="mailing-list-banner__email-input email"
+                    className="mailing-list-banner__email-input-field email"
                     id="mce-EMAIL"
-                    placeholder="your email address here"
+                    placeholder="email address"
                     required
                   />
                   <div className="mailing-list-banner__aria aria" aria-hidden="true">
@@ -50,7 +50,7 @@ export default class MailingListBanner extends React.Component {
                     <input
                       className="mailing-list-banner__submit-button button"
                       type="submit"
-                      value=">"
+                      value="subscribe >>>"
                       name="subscribe"
                       id="mc-embedded-subscribe"
                     />

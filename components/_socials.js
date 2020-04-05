@@ -4,12 +4,12 @@ import scss from "../styles/_socials.scss";
 
 export default function Socials(props) {
   return (
-    <section className={`${props.className}`}>
+    <section className={`socials-default ${props.className}`}>
       <a
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--spotify`}
+        className={`socials-default__icons ${props.className}__icon ${props.className}__icon--spotify`}
       >
         <Icon
           name="spotify"
@@ -21,7 +21,7 @@ export default function Socials(props) {
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--spotify`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--spotify`}
 
       >
         <Icon
@@ -34,7 +34,7 @@ export default function Socials(props) {
         href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--spotify`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--spotify`}
       >
         <Icon
           name="spotify"
@@ -46,7 +46,7 @@ export default function Socials(props) {
         href="https://www.facebook.com/thebethsnz/"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--facebook`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--facebook`}
       >
         <Icon
           name="facebook"
@@ -58,7 +58,7 @@ export default function Socials(props) {
         href="https://www.instagram.com/lizstokedstokes/"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--instagram`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--instagram`}
       >
         <Icon
           name="instagram"
@@ -70,7 +70,7 @@ export default function Socials(props) {
         href="https://twitter.com/lizstokedstokes"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--twitter`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--twitter`}
       >
         <Icon
           name="twitter"
@@ -82,7 +82,7 @@ export default function Socials(props) {
         href="https://thebethsnz.bandcamp.com/music"
         target="_blank"
         rel="noopener noreferrer"
-        className={`${props.className}__icon ${props.className}__icon--bandcamp`}
+        className={`socials-default ${props.className}__icon ${props.className}__icon--bandcamp`}
       >
         <Icon
           name="bandcamp"

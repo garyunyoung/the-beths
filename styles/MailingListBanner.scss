@@ -18,7 +18,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   height: 32px;
   padding: 0px 0.4em;
   display: inline-block;
-  margin: 0;
   width: 350px;
   vertical-align: top;
 }
@@ -39,9 +38,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   letter-spacing: 0.03em;
   background-color: transparent;
   box-sizing: border-box;
-  height: 32px;
-  line-height: 32px;
-  padding: 0 18px;
   display: inline-block;
   transition: all 0.23s ease-in-out 0s;
 }
@@ -83,7 +79,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   padding: 0.5em 0;
 }
 
-
 .mailing-list-banner {
   display: flex;
   flex-flow: column;
@@ -91,7 +86,12 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   justify-content: center;
   background-color: white;
   margin: 32px 0;
-  padding: 0 16px;
+  // padding: 0 16px;
+
+  border: 2px dashed gold;
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
 
   &__wrapper {
     width: 100%;
@@ -102,6 +102,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   }
   &__email-input-label {
     position: relative;
+    width: max-content;
+    margin: 0 auto 16px auto;
 
     &:before,
     &:after {
@@ -120,13 +122,9 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     }
   }
 
-  &__email-input-label::before {
-    left: -24px;
-    top: 2px;
-  }
-
-  &__email-input {
+  &__email-input-field {
     border: 1px dashed black;
+    margin-bottom: 8px;
   }
 
   &__aria {
@@ -134,7 +132,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   }
 
   &__submit-button {
-    width: 32px;
+    // width: 32px;
+    padding: 0 16px;
     margin-left: 8px;
   }
 
@@ -148,18 +147,38 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   .mailing-list-banner {
     &__form-content {
       display: flex;
+      flex-flow: column;
       align-items: center;
-      justify-content: center;
+    }
+
+    &__input-wrapper {
+      flex-flow: column;
     }
 
     &__email-input-label {
-      margin-right: 40px;
+      margin-bottom: 24px;
+      &:before {
+        left: -24px;
+      }
+
+      &:after {
+        right: -24px;
+      }
     }
+    &__email-input-field {
+      margin-bottom: 8px;
+    }
+
+    &__submit-button {
+      margin-top: 16px;
+    }
+
   }
 }
 
 @media (min-width: 1024px) {
   .mailing-list-banner {
     margin: 64px 0;
+    padding: 32px 0;
   }
 }

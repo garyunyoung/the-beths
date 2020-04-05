@@ -1,3 +1,11 @@
+.socials-default {
+  display: flex;
+
+  &__icon {
+    display: flex;
+  }
+}
+
 // .socials {
 //   position: absolute;
 //   display: flex;
