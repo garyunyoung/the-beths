@@ -30,6 +30,8 @@ export const shirtB = `${cld}shirt-b_SM.jpg`;
 export const cricketShirtY = `${cld}cricket-tee_y.png`;
 export const rabbitShirtPB = `${cld}rabbit-tee_pb.png`;
 export const rabitShirtB = `${cld}rabbit-tee_b.png`;
+export const blueAndRedStripedSocks = `${cld}blue-and-red-striped-socks.png`;
+export const futureMeHatesMeCloudyBlue = `${cld}fmhm-cloudy-blue.jpg`;
 
 // Watch //
 export const utg = `${cld}utg_SM.png`;

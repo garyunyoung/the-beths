@@ -12,6 +12,11 @@
   margin-bottom: 12vh;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.23s ease-in-out 0s;
+  }
+
 }
 .carousel-image {
   position: absolute;
