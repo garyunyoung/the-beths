@@ -3,6 +3,19 @@
 
   &__icon {
     display: flex;
+
+    &--apple {
+      margin-top: -1px;
+
+      svg {
+        padding: 2px;
+      }
+    }
+    &--bandcamp {
+      svg {
+        padding: 1px;
+      }
+    }
   }
 }
 
