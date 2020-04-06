@@ -76,7 +76,6 @@ export default function Home() {
           </a>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
         </div>
-        <MailingListBanner />
       </div>
       <style jsx>{scss}</style>
     </section>

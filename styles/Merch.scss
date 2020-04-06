@@ -1,8 +1,10 @@
 .merch__visit {
   text-align: center;
-  font-size: 1.5em;
-  margin: 3vh;
   cursor: pointer;
+  h3 {
+    font-size: 24px;
+    margin: 32px 0 0;
+  }
 }
 
 @media only screen and (min-width: 2560px) {

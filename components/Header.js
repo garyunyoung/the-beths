@@ -3,13 +3,13 @@ import scss from "../styles/Header.scss";
 
 export default function Header(props) {
   return (
-    <h1
+    <h2
       className={`header header--${props.header} ${
         props.open ? "header header--game--open" : ""
       } `}
     >
       {props.open ? "GAME UNLOCKED" : props.header}
       <style jsx>{scss}</style>
-    </h1>
+    </h2>
   );
 }

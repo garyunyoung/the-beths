@@ -53,13 +53,9 @@ li {
 .page {
   padding-top: 48px;
 }
-.page--game {
-  padding-top: 0;
-}
 
-.page--home {
-  // min-height: 90vh;
-  overflow: hidden;
+.page--home,
+.page--game {
   padding-top: 0;
 }
 
@@ -71,8 +67,7 @@ li {
 
 @media (min-width: 415px) and (max-width: 1023px) {
   .page--home {
-    height: 100vh;
-    overflow: visible;
+    min-height: max-content;
   }
 }
 

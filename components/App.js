@@ -66,6 +66,8 @@ export default class App extends React.Component {
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
+        <MailingListBanner />
+
         <section id="watch" className="page page--watch">
           <Header header="video" />
           <Watch />
