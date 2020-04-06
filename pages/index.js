@@ -26,14 +26,14 @@ export default function IndexPage() {
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
-          content="New album 'Jump Rope Gazers' out July 10. Order here at thebeths.com."
+          content="New album 'Jump Rope Gazers' out July 10 on Carpark Records. Order here at thebeths.com."
         />
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
         <meta property="og:title" content="The Beths" />
         <meta
           property="og:description"
-          content="New album 'Jump Rope Gazers' out July 10. Order here at thebeths.com."
+          content="New album 'Jump Rope Gazers' out July 10 on Carpark Records. Order here at thebeths.com."
         />
         <meta
           property="og:image"
