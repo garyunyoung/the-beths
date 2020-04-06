@@ -87,10 +87,10 @@ export default function SiteHeader(props) {
       </header>
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
-          <NavItem text="music" closeMenu={closeMenu} link="" />
-          <NavItem text="videos" closeMenu={closeMenu} link="watch" />
+          <NavItem text="pre-order" closeMenu={closeMenu} link="" />
+          <NavItem text="merch" closeMenu={closeMenu} link="merch" />
+          <NavItem text="watch" closeMenu={closeMenu} link="watch" />
           <NavItem text="tour" closeMenu={closeMenu} link="tour" />
-          <NavItem text="store" closeMenu={closeMenu} link="store" />
           <li className={`site-menu__nav-item`}>
             <a
               className="site-menu__nav-item-link"

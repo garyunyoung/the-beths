@@ -85,13 +85,15 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin: 32px 0;
   // padding: 0 16px;
 
   // border-bottom: 2px dashed gold;
   border-left: none;
   border-right: none;
-  padding: 24px 0;
+  // padding: 24px 0;
+
+  margin: 32px 0;
+  padding: 0 16px;
 
   &__wrapper {
     width: 100%;

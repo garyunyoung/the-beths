@@ -50,9 +50,14 @@ li {
   }
 }
 
+.page {
+  padding-top: 48px;
+}
+
 .page--home {
   min-height: 90vh;
   overflow: hidden;
+  padding-top: 0;
 }
 
 .page--contact {
