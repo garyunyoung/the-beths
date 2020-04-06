@@ -60,6 +60,18 @@
   width: 60vw;
   margin: 24px auto 3vh auto;
   height: 2em;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .carousel-image__image {
+    width: 500px;
+    height: 500px;
+  }
+
+  .carousel-image--title {
+    padding: 0 96px;
+  }
 }
 
 @media (min-width: 1024px) {

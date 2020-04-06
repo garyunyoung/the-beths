@@ -65,9 +65,15 @@ li {
   min-height: 100vh;
 }
 
-@media (min-width: 415px) and (max-width: 1023px) {
+@media (min-width: 425px) {
   .page--home {
     min-height: max-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .page--watch {
+    min-height: 100vh;
   }
 }
 

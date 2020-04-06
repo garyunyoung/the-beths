@@ -7,6 +7,14 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .merch__visit {
+    h3 {
+      font-size: 32px;
+    }
+  }
+}
+
 @media only screen and (min-width: 2560px) {
   .merch__visit {
     font-size: 2em;

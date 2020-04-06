@@ -13,7 +13,7 @@ export default function SiteHeader(props) {
 
   return (
     <Sticky>
-      <header className="site-header">
+      <header className={`site-header ${isOpen ? "site-header--show-border" : ""}`}>
         <Socials
           className="site-header-socials-desktop"
           width="20"

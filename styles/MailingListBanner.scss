@@ -146,7 +146,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .mailing-list-banner {
     &__form-content {
       display: flex;
@@ -156,6 +156,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
     &__input-wrapper {
       flex-flow: column;
+      justify-content: center;
     }
 
     &__email-input-label {
@@ -175,7 +176,6 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     &__submit-button {
       margin-top: 16px;
     }
-
   }
 }
 

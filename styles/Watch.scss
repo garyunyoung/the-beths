@@ -83,7 +83,29 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) {
+  .watch-section {
+    margin-bottom: 48px;
+  }
+  .thumbnail {
+    .thumbnail__image {
+      height: 120px;
+      padding: 20px;
 
+      &--dying-to-believe {
+        height: 350px;
+        padding-top: 0;
+      }
+    }
+    .thumbnail__text {
+      font-size: 18px;
+
+      &--christmas {
+        max-width: 200px;
+      }
+    }
+  }
+}
 @media (min-width: 1024px) {
   .watch-section {
     margin-bottom: 32px;

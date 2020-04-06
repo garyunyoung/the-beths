@@ -8,7 +8,6 @@
   text-align: center;
   background: none;
 
-
   .contact__text {
     font-size: 2.5vh;
     font-weight: 600;
@@ -20,12 +19,21 @@
   }
 
   .cp-logo {
-    margin: 3vw;
-    width: 6vw;
-    height: 6vw;
+    margin-top: 24px;
+    width: 14px;
+    height: 14px;
   }
 }
 
+@media (min-width: 1024px) {
+  .contact {
+    .cp-logo {
+      margin-top: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
 @media (min-width: 1024px) {
   .contact {
     .cp-logo {
@@ -35,7 +43,6 @@
     }
   }
 }
-
 
 // background-image: linear-gradient(
 //   to right,

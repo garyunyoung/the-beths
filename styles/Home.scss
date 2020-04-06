@@ -68,13 +68,29 @@
   &__pre-order-link {
     border: 1px solid black;
     padding: 8px 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .home {
+    &__content {
+      background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/the-beths-jump-rope-gazers-album-art.jpg");
+    }
+  }
+
+  .home-content-mobile {
+    padding: 48px;
+    &__new-album-text {
+      max-width: 400px;
+    }
   }
 }
 
 @media (min-width: 1024px) {
   .home {
     &__content {
-      background-image: url("https://res.cloudinary.com/garyou/image/upload/v1586089223/the-beths/jump-rope-gazers-desktop.jpg");
+      background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/jump-rope-gazers-desktop.jpg");
       height: 81vh;
       margin-bottom: -64px;
     }
