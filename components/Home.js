@@ -53,7 +53,7 @@ export default function Home() {
             className="home-content-mobile__new-album-text cls-responsive"
             src={newAlbumText}
           />
-          <p className="home-content-mobile__release-date">july 10</p>
+          <p className="home-content-mobile__release-date">July 10</p>
           <a
             href="http://store.carparkrecords.com/products/615148-cak128-the-beths-future-me-hates-me"
             target="_blank"
@@ -72,7 +72,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {`pre-order here `}
+            PRE-ORDER HERE
           </a>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
         </div>

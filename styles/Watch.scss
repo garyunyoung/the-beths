@@ -73,12 +73,14 @@
 
     &--dying-to-believe {
       height: 70vw;
+      margin-bottom: 16px;
     }
   }
 
   .thumbnail__text {
-    font-size: 1em;
+    font-size: 16px;
     max-width: 40vw;
+    margin: 0 auto;
   }
 }
 

@@ -30,16 +30,16 @@ export default function SiteHeader(props) {
             link=""
           />
           <NavItem
-            text="merch"
-            desktop="true"
-            closeMenu={closeMenu}
-            link="merch"
-          />
-          <NavItem
-            text="watch"
+            text="video"
             desktop="true"
             closeMenu={closeMenu}
             link="watch"
+          />
+          <NavItem
+            text="store"
+            desktop="true"
+            closeMenu={closeMenu}
+            link="merch"
           />
           <NavItem
             text="tour"
@@ -88,8 +88,8 @@ export default function SiteHeader(props) {
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
           <NavItem text="pre-order" closeMenu={closeMenu} link="" />
-          <NavItem text="merch" closeMenu={closeMenu} link="merch" />
-          <NavItem text="watch" closeMenu={closeMenu} link="watch" />
+          <NavItem text="video" closeMenu={closeMenu} link="watch" />
+          <NavItem text="store" closeMenu={closeMenu} link="merch" />
           <NavItem text="tour" closeMenu={closeMenu} link="tour" />
           <li className={`site-menu__nav-item`}>
             <a
@@ -101,7 +101,7 @@ export default function SiteHeader(props) {
               blog
             </a>
           </li>
-          <NavItem text="contact" link="contact" />
+          <NavItem text="contact" closeMenu={closeMenu} link="contact" />
           <li className="site-menu__nav-item">
             <span className="site-menu__nav-item-link">🐦</span>
             <a href="#game" onClick={props.toggleGame} />

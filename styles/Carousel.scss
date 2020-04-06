@@ -40,8 +40,8 @@
   height: 60vw;
   width: 70vw;
 
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   margin: 0 auto;
 
   &:hover {
@@ -90,5 +90,12 @@
   }
   .carousel-image--title {
     max-width: 80vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-image__image {
+    height: 250px;
+    width: 250px;
   }
 }
