@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <Socials className="home__socials-footer" width="20" color={"black"} />
+        {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
         <MailingListBanner />
       </div>
       <style jsx>{scss}</style>

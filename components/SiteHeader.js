@@ -14,6 +14,11 @@ export default function SiteHeader(props) {
   return (
     <Sticky>
       <header className="site-header">
+        <Socials
+          className="site-header-socials-desktop"
+          width="20"
+          color={"black"}
+        />
         <a className="site-header__logo" href="#" onClick={() => closeMenu()}>
           <img src={logo} />
         </a>

@@ -3,6 +3,7 @@
 
   &__icon {
     display: flex;
+    margin: 0 4px;
 
     &--apple {
       margin-top: -1px;
@@ -12,6 +13,7 @@
       }
     }
     &--bandcamp {
+      margin: 0 6px 0 5px;
       svg {
         padding: 1px;
       }

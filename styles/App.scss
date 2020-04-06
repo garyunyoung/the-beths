@@ -38,7 +38,6 @@ li {
   list-style: none;
 }
 
-
 @media (max-width: 414px) {
   body {
     font-size: 2.5vh;
@@ -71,5 +70,15 @@ li {
   .page--contact {
     background-size: cover;
     min-height: 100vh;
+  }
+}
+
+.home-socials-banner {
+  display: flex;
+  margin-left: -88px;
+}
+.home-socials-banner-socials {
+  &__icon {
+    margin: 0 4px;
   }
 }

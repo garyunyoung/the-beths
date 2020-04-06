@@ -50,8 +50,8 @@
   .home {
     &__content {
       height: 80vh;
-      background-size: 114%;
-      background-position: top;
+      // background-size: 114%;
+      // background-position: top;
     }
 
     &__wrapper {
@@ -67,6 +67,7 @@
       background-image: url("https://res.cloudinary.com/garyou/image/upload/v1586089223/the-beths/jump-rope-gazers-desktop.jpg");
       // height: 92.5vh;
       height: 81vh;
+      margin-bottom: -64px;
     }
     &__wrapper {
       font-family: "Helvetica", sans-serif;
