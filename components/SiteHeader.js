@@ -103,7 +103,7 @@ export default function SiteHeader(props) {
           </li>
           <NavItem text="contact" link="contact" />
           <li className="site-menu__nav-item">
-            <span className="site-menu__nav-item-link">game</span>
+            <span className="site-menu__nav-item-link">🐦</span>
             <a href="#game" onClick={props.toggleGame} />
           </li>
           <li>

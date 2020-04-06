@@ -46,6 +46,29 @@
   }
 }
 
+.home-content-mobile {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-bottom: 2px dashed gold;
+
+  padding: 32px;
+  &__new-album-text {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  &__release-date {
+    margin-bottom: 16px;
+  }
+  &__carpark-logo {
+    display: none;
+  }
+  &__pre-order-link {
+    border: 1px solid black;
+    padding: 8px 16px;
+  }
+}
+
 @media (min-width: 415px) and (max-width: 1023px) {
   .home {
     &__content {
@@ -132,7 +155,6 @@
       &:hover > *:hover {
         transform: scale(1.1);
         opacity: 1;
-
       }
       &__icon {
         margin: 0 8px;
@@ -141,6 +163,10 @@
         // }
       }
     }
+  }
+
+  .home-content-mobile {
+    display: none;
   }
 }
 
