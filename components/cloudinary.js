@@ -44,6 +44,7 @@ export const ywlm = `${cld}ywlm_SM.png`;
 export const w = `${cld}w_SM.png`;
 export const lits = `${cld}lits_SM.png`;
 export const hyamlc = `${cld}hyamlc_SM.png`;
+export const dyingToBelieve = `${cld}dying-to-believe-how-to-be-the-beths.png`;
 
 // Tour //
 export const tour = `${cld}tour_SM.jpg`;

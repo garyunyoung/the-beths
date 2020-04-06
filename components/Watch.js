@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
+import { dyingToBelieve, utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
 import scss from "../styles/Watch.scss";
 
 const jumpRopeGazers = {
@@ -9,8 +9,8 @@ const jumpRopeGazers = {
   videos: [
     {
       title: "dying to believe",
-      thumbnail: utg,
-      link: "https://www.youtube.com/watch?v=BmCZ-NxESOc",
+      thumbnail: dyingToBelieve,
+      link: "https://www.youtube.com/watch?v=CkzI93Aqztk&fbclid=IwAR3Xbfr07XL_D-etDu4yjslljyQvFdE_UL3YTy_PX3ninPzGK2J560cN_Rw",
       modifier: "dying-to-believe"
     }
   ]
@@ -174,11 +174,11 @@ function Thumbnail(props) {
           rel="noopener noreferrer"
         >
           <img
-            className={`thumbnail__image thumbnail__image--${props.class} cld-responsive`}
+            className={`thumbnail__image thumbnail__image--${props.modifier} cld-responsive`}
             src={props.image}
             alt={`${props.title} thumbnail`}
           />
-          <p className={`thumbnail__text thumbnail__text--${props.class}`}>
+          <p className={`thumbnail__text thumbnail__text--${props.modifier}`}>
             {props.title}
           </p>
         </a>

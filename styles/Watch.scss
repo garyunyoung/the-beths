@@ -70,10 +70,10 @@
   .thumbnail__image {
     height: 20vw;
     object-fit: contain;
-  }
 
-  .thumbnail___image--xmas {
-    height: 17vw;
+    &--dying-to-believe {
+      height: 70vw;
+    }
   }
 
   .thumbnail__text {
@@ -112,6 +112,10 @@
 
     .thumbnail__image {
       height: 8vw;
+
+      &--dying-to-believe {
+        height: 25vw;
+      }
     }
 
     .thumbnail__image--xmas {
