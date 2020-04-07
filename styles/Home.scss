@@ -75,6 +75,8 @@
     font-weight: 400;
     margin-bottom: 16px;
 
+    text-align: center;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -100,8 +102,8 @@
   .home {
     &__content {
       background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/jump-rope-gazers-desktop.jpg");
-      height: 97vh;
-      margin-bottom: -64px;
+      height: 100vh;
+      // margin-bottom: -64px;
     }
 
     &__wrapper {

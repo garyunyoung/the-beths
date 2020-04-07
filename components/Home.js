@@ -51,7 +51,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`pre-add on Apple `}
+              {`pre-add on Apple Music`}
             </a>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              pre-save on apple
+              pre-save on apple music
             </a>
           </div>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
