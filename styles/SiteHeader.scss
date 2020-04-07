@@ -15,6 +15,7 @@
   }
 
   &__logo {
+    margin-top: 4px;
     width: 100px;
 
     img {
@@ -26,6 +27,7 @@
     font-size: 24px;
     color: black;
     border: none;
+    background-color: transparent;
   }
 
   &__nav {
