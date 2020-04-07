@@ -16,9 +16,10 @@
 
   &__logo {
     display: flex;
+    width: 100px;
 
     img {
-      width: 100px;
+      width: 100%;
     }
   }
 
