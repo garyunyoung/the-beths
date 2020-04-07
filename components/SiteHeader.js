@@ -13,7 +13,9 @@ export default function SiteHeader(props) {
 
   return (
     <Sticky>
-      <header className={`site-header ${isOpen ? "site-header--show-border" : ""}`}>
+      <header
+        className={`site-header ${isOpen ? "site-header--show-border" : ""}`}
+      >
         <Socials
           className="site-header-socials-desktop"
           width="20"
@@ -70,10 +72,11 @@ export default function SiteHeader(props) {
             link="contact"
           />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
-            <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
-              🐦
-            </span>
-            <a href="#game" onClick={props.toggleGame} />
+            <a href="#game" onClick={props.toggleGame}>
+              <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
+                🐦
+              </span>
+            </a>
           </li>
         </div>
         <div className="site-header__nav">
@@ -103,8 +106,9 @@ export default function SiteHeader(props) {
           </li>
           <NavItem text="contact" closeMenu={closeMenu} link="contact" />
           <li className="site-menu__nav-item">
-            <span className="site-menu__nav-item-link">🐦</span>
-            <a href="#game" onClick={props.toggleGame} />
+            <a href="#game" onClick={props.toggleGame}>
+              <span className="site-menu__nav-item-link">🐦</span>
+            </a>
           </li>
           <li>
             <Socials className="site-menu-socials" width="18" color={"black"} />
