@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sticky from "./_sticky";
 import Socials from "./_socials";
+import MailingListDropdown from "./_mailingListDropdown";
 import { logo, tui } from "./cloudinary";
 import { Icon } from "./icons";
 
@@ -120,6 +121,7 @@ export default function SiteHeader(props) {
           </li>
         </ul>
       </nav>
+      <MailingListDropdown/>
       <style jsx>{scss}</style>
     </Sticky>
   );
