@@ -1,5 +1,5 @@
 .socials-default {
-  display: none;
+  // display: none;
 
   &__icon {
     display: flex;
@@ -71,7 +71,7 @@
 
 @media (min-width: 1024px) {
   .socials-default {
-    display: flex;
+    // display: flex;
   }
 }
 
