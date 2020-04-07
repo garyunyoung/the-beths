@@ -4,6 +4,7 @@
   &__icon {
     display: flex;
     margin: 0 4px;
+    margin-top: 4px;
 
     &:hover {
       svg {
@@ -12,14 +13,14 @@
     }
 
     &--apple {
-      margin-top: -1px;
+      margin-top: -2px;
 
       svg {
         padding: 2px;
       }
     }
     &--bandcamp {
-      margin: 0 6px 0 5px;
+      margin: 4px 6px 0 5px;
       svg {
         padding: 1px;
       }
