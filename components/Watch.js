@@ -135,7 +135,7 @@ function WatchSection(props) {
 
   return (
     <div
-      className={`watch-section ${
+      className={`watch-section watch-section--${props.modifier} ${
         props.currentSection == props.modifier ? "watch-section--is-open" : ""
       }`}
     >

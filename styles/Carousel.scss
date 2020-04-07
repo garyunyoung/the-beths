@@ -65,8 +65,8 @@
 
 @media (min-width: 768px) {
   .carousel-image__image {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
   }
 
   .carousel-image--title {
@@ -90,15 +90,20 @@
   }
 
   .carousel-image--title {
-    max-width: 30vw;
+    max-width: 35vw;
     margin: 24px auto calc(7vh - 24px) auto;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .carousel-image__image {
     height: 360px;
     width: 360px;
+  }
+
+  .carousel-image--title {
+    max-width: 35vw;
+    padding: 0 148px;
   }
 }
 

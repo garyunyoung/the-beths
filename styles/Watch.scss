@@ -134,6 +134,10 @@
       margin: 16px;
     }
 
+    // .thumbnail__container:hover > .thumbnail {
+    //   transform: rotate(20deg);
+    // }
+
     .thumbnail__image {
       height: 8vw;
 
@@ -157,16 +161,12 @@
       }
     }
   }
-
-  .thumbnail__container:hover > .thumbnail {
-    // transform: rotate(20deg);
-  }
 }
 
 @media (min-width: 1024px) {
   .thumbnail {
     .thumbnail__image {
-      height: 10vw;
+      height: 150px;
 
       &--dying-to-believe {
         height: 25vw;
