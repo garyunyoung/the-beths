@@ -94,7 +94,7 @@ const christmas = {
   ]
 };
 export default function Watch() {
-  const [currentSection, setCurrentSection] = useState(jumpRopeGazers.modifier);
+  const [currentSection, setCurrentSection] = useState(futureMeHatesMe.modifier);
 
   return (
     <section className="watch">

@@ -10,6 +10,10 @@
   align-items: center;
   margin-bottom: 24px;
 
+  &--jump-rope-gazers {
+    display: none;
+  }
+
   &__text {
     font-size: 24px;
     font-weight: lighter;
