@@ -8,6 +8,10 @@
   .credits {
     display: none;
   }
+
+  .game-area {
+    z-index: 0;
+  }
 }
 
 .game--open {

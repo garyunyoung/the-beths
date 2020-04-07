@@ -11,6 +11,11 @@ export default function SiteHeader(props) {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const toggleGame = () => {
+    props.toggleGame()
+    closeMenu()
+  }
+
   return (
     <Sticky>
       <header
@@ -72,7 +77,7 @@ export default function SiteHeader(props) {
             link="contact"
           />
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
-            <a href="#game" onClick={props.toggleGame}>
+            <a href="#game" onClick={toggleGame}>
               <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
                 🐦
               </span>
@@ -106,7 +111,7 @@ export default function SiteHeader(props) {
           </li>
           <NavItem text="contact" closeMenu={closeMenu} link="contact" />
           <li className="site-menu__nav-item">
-            <a href="#game" onClick={props.toggleGame}>
+            <a href="#game" onClick={toggleGame}>
               <span className="site-menu__nav-item-link">🐦</span>
             </a>
           </li>

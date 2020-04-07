@@ -20,6 +20,7 @@
 
 .header--game--open {
   display: block;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -27,6 +28,7 @@
     padding-top: 40px;
     margin-bottom: 32px;
   }
+
 
   .header--contact {
     padding-top: 15vh;
