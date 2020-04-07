@@ -7,7 +7,7 @@ import {
   jumpRopeGazersHandwrittenTitle,
   newAlbumText,
   cpY,
-  jumpRopeGazers
+  jumpRopeGazers,
 } from "./cloudinary";
 import scss from "../styles/Home.scss";
 
@@ -36,15 +36,24 @@ export default function Home() {
               alt="carpark records logo"
             />
           </a>
-
-          <a
-            className="home__pre-order-link"
-            href="https://smarturl.it/thebeths_jrg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {`pre-order here `}
-          </a>
+          <div className="home__pre-order-links">
+            <a
+              className="home__pre-order-link"
+              href="https://smarturl.it/jrg_spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {`pre-save on Spotify `}
+            </a>
+            <a
+              className="home__pre-order-link"
+              href="https://smarturl.it/jrg_apple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {`pre-add on Apple `}
+            </a>
+          </div>
         </div>
       </div>
       <div>
@@ -65,15 +74,24 @@ export default function Home() {
               alt="carpark records logo"
             />
           </a>
-
-          <a
-            className="home-content-mobile__pre-order-link"
-            href="https://smarturl.it/thebeths_jrg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PRE-ORDER HERE
-          </a>
+          <div className="home-content-mobile__pre-order-links">
+            <a
+              className="home-content-mobile__pre-order-link"
+              href="https://smarturl.it/jrg_spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              pre-save on spotify
+            </a>
+            <a
+              className="home-content-mobile__pre-order-link"
+              href="https://smarturl.it/jrg_apple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              pre-save on apple
+            </a>
+          </div>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
         </div>
       </div>

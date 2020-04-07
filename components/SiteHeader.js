@@ -71,12 +71,12 @@ export default function SiteHeader(props) {
             closeMenu={closeMenu}
             link="contact"
           />
-          <NavItem
+          {/* <NavItem
             text="✉️"
             desktop="true"
             closeMenu={closeMenu}
             link="contact"
-          />
+          /> */}
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <a href="#game" onClick={toggleGame}>
               <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">
@@ -121,7 +121,7 @@ export default function SiteHeader(props) {
           </li>
         </ul>
       </nav>
-      <MailingListDropdown/>
+      {/* <MailingListDropdown/> */}
       <style jsx>{scss}</style>
     </Sticky>
   );

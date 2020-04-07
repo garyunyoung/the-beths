@@ -65,10 +65,19 @@
   &__carpark-logo {
     display: none;
   }
+  &__pre-order-links {
+    display: flex;
+    flex-flow: column;
+  }
   &__pre-order-link {
     border: 1px solid black;
     padding: 8px 16px;
     font-weight: 400;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -133,12 +142,19 @@
       margin-bottom: 48px;
     }
 
+    &__pre-order-links {
+      display: flex;
+      flex-flow: column;
+    }
+
     &__pre-order-link {
       font-size: 24px;
       letter-spacing: 3px;
       padding: 0 16px 16px;
       border-bottom: 1px solid white;
       color: white;
+
+      margin-bottom: 24px;
       &:hover {
         box-shadow: 3px 3px white;
         color: white;
