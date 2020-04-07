@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dyingToBelieve, utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
+import { dyingToBelievePremier, utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
 import scss from "../styles/Watch.scss";
 
 const jumpRopeGazers = {
@@ -9,7 +9,7 @@ const jumpRopeGazers = {
   videos: [
     {
       title: "dying to believe",
-      thumbnail: dyingToBelieve,
+      thumbnail: dyingToBelievePremier,
       link: "https://www.youtube.com/watch?v=CkzI93Aqztk&fbclid=IwAR3Xbfr07XL_D-etDu4yjslljyQvFdE_UL3YTy_PX3ninPzGK2J560cN_Rw",
       modifier: "dying-to-believe"
     }
@@ -94,7 +94,7 @@ const christmas = {
   ]
 };
 export default function Watch() {
-  const [currentSection, setCurrentSection] = useState(futureMeHatesMe.modifier);
+  const [currentSection, setCurrentSection] = useState(jumpRopeGazers.modifier);
 
   return (
     <section className="watch">

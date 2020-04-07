@@ -2,6 +2,8 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  overflow: hidden;
 }
 .watch-section {
   max-width: 900px;
@@ -10,9 +12,9 @@
   align-items: center;
   margin-bottom: 24px;
 
-  &--jump-rope-gazers {
-    display: none;
-  }
+  // &--jump-rope-gazers {
+  //   display: none;
+  // }
 
   &__text {
     font-size: 24px;
@@ -76,7 +78,7 @@
     object-fit: contain;
 
     &--dying-to-believe {
-      height: 70vw;
+      height: 60vw;
       margin-bottom: 16px;
     }
   }
