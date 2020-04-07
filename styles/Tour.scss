@@ -29,7 +29,7 @@
     margin-bottom: 16px;
   }
 
- &__accept-button {
+  &__accept-button {
     background-color: transparent;
     border: 1px solid black;
     padding: 8px 16px;
@@ -51,6 +51,12 @@
       margin: 0 15vw;
       background-size: contain;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .tour-consent-banner {
+    margin-bottom: 32px;
   }
 }
 

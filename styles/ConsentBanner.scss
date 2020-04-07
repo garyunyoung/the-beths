@@ -6,7 +6,7 @@
 
   &__content {
     background-color: #f9dd11;
-    // opacity: 0.8;
+    opacity: 0.8;
 
     display: flex;
     flex-flow: column;
@@ -51,7 +51,7 @@
 @media (min-width: 1024px) {
   .sticky-consent-banner {
     &__text {
-      font-size: 16px;
+      font-size: 14px;
     }
     &__button {
       font-size: 16px;

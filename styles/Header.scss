@@ -6,9 +6,12 @@
 
   border-top: 2px dashed gold;
 
-  // padding-top: 72px;
   margin-bottom: 40px;
   padding-top: 32px;
+}
+
+.header--contact {
+  padding-top: 15vh;
 }
 
 .header--game {
@@ -24,6 +27,10 @@
     padding-top: 40px;
     margin-bottom: 32px;
   }
+
+  .header--contact {
+    padding-top: 15vh;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -36,6 +43,19 @@
   }
 
   .header--contact {
-    padding-top: 20vh;
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding-top: 48px;
+  }
+  .header--store {
+    padding-bottom: 16px;
+  }
+
+  .header--contact {
+    padding-top: 18vh;
   }
 }

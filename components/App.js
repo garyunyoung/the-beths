@@ -25,7 +25,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       gameIsOpen: false,
-      hasConsent: false
+      hasConsent: false,
     };
   }
 
@@ -37,8 +37,8 @@ export default class App extends React.Component {
   }
 
   toggleGame() {
-    this.setState(_props => ({
-      gameIsOpen: true
+    this.setState((_props) => ({
+      gameIsOpen: true,
     }));
   }
 

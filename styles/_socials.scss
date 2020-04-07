@@ -5,6 +5,12 @@
     display: flex;
     margin: 0 4px;
 
+    &:hover {
+      svg {
+        fill: #c45827;
+      }
+    }
+
     &--apple {
       margin-top: -1px;
 

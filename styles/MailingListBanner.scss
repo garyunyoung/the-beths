@@ -23,7 +23,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 }
 #mc_embed_signup label {
   display: block;
-  font-size: 16px;
+  // font-size: 16px;
   font-weight: bold;
 }
 #mc_embed_signup .clear {
@@ -44,6 +44,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 #mc_embed_signup .button:hover {
   cursor: pointer;
   transform: scale(1.2);
+  color: #c45827;
 }
 #mc_embed_signup div#mce-responses {
   float: left;
@@ -94,7 +95,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
   // margin: 32px 0;
   padding: 0 16px;
-  margin: 48px 0 0;
+  margin: 16px 0 0;
 
   &__wrapper {
     width: 100%;
@@ -148,6 +149,8 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
 @media (min-width: 768px) {
   .mailing-list-banner {
+    margin: 48px 0 0;
+
     &__form-content {
       display: flex;
       flex-flow: column;
@@ -160,6 +163,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
     }
 
     &__email-input-label {
+      font-size: 16px;
       margin-bottom: 24px;
       &:before {
         left: -24px;
@@ -183,5 +187,17 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   .mailing-list-banner {
     margin: 64px 0;
     padding: 32px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mailing-list-banner {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 48px;
+
+    &__email-input-label {
+      font-size: 18px;
+    }
   }
 }

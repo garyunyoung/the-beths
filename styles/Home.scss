@@ -91,9 +91,10 @@
   .home {
     &__content {
       background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/jump-rope-gazers-desktop.jpg");
-      height: 81vh;
+      height: 97vh;
       margin-bottom: -64px;
     }
+
     &__wrapper {
       font-family: "Helvetica", sans-serif;
       display: flex;
@@ -102,10 +103,9 @@
       align-items: center;
 
       position: absolute;
-      right: 5%;
+      right: 8%;
       top: 26%;
-      width: 30%;
-      padding: 48px;
+      width: 300px;
     }
 
     &__album-title {
@@ -149,6 +149,16 @@
 
   .home-content-mobile {
     display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home {
+    &__wrapper {
+      right: 9%;
+      top: 24%;
+      width: 380px;
+    }
   }
 }
 
