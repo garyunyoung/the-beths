@@ -61,7 +61,7 @@ export default function Socials(props) {
         <Icon name="bandcamp" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://thebethsnz.bandcamp.com/music"
+        href="https://www.youtube.com/c/thebeths"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon ${props.className}__icon ${props.className}__icon--youtube`}

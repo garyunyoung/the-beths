@@ -26,7 +26,7 @@ export default function Home() {
           />
           <p className="home__release-date">july 10</p>
           <a
-            href="http://store.carparkrecords.com/products/615148-cak128-the-beths-future-me-hates-me"
+            href="https://smarturl.it/thebeths_jrg"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +56,7 @@ export default function Home() {
           />
           <p className="home-content-mobile__release-date">July 10</p>
           <a
-            href="http://store.carparkrecords.com/products/615148-cak128-the-beths-future-me-hates-me"
+            href="https://smarturl.it/thebeths_jrg"
             target="_blank"
             rel="noopener noreferrer"
           >
