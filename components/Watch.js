@@ -1,5 +1,17 @@
 import React, { useState } from "react";
-import { dyingToBelievePremier, utg, huh, ld, gno, fmhm, ywlm, w, lits, hyamlc } from "./cloudinary";
+import {
+  dyingToBelievePremier,
+  dyingToBelieve,
+  utg,
+  huh,
+  ld,
+  gno,
+  fmhm,
+  ywlm,
+  w,
+  lits,
+  hyamlc,
+} from "./cloudinary";
 import scss from "../styles/Watch.scss";
 
 const jumpRopeGazers = {
@@ -10,10 +22,11 @@ const jumpRopeGazers = {
     {
       title: "dying to believe",
       thumbnail: dyingToBelievePremier,
-      link: "https://www.youtube.com/watch?v=CkzI93Aqztk&fbclid=IwAR3Xbfr07XL_D-etDu4yjslljyQvFdE_UL3YTy_PX3ninPzGK2J560cN_Rw",
-      modifier: "dying-to-believe"
-    }
-  ]
+      link:
+        "https://www.youtube.com/watch?v=CkzI93Aqztk&fbclid=IwAR3Xbfr07XL_D-etDu4yjslljyQvFdE_UL3YTy_PX3ninPzGK2J560cN_Rw",
+      modifier: "dying-to-believe",
+    },
+  ],
 };
 
 const futureMeHatesMe = {
@@ -25,39 +38,39 @@ const futureMeHatesMe = {
       title: "uptown girl",
       thumbnail: utg,
       link: "https://www.youtube.com/watch?v=BmCZ-NxESOc",
-      modifier: "uptown-girl"
+      modifier: "uptown-girl",
     },
     {
       title: "happy unhappy",
       thumbnail: huh,
       link: "https://www.youtube.com/watch?v=ct8AwQwlbNA",
-      modifier: "happy-unhappy"
+      modifier: "happy-unhappy",
     },
     {
       title: "little death",
       thumbnail: ld,
       link: "https://www.youtube.com/watch?v=UuzlZWvTU2I",
-      modifier: "little-death"
+      modifier: "little-death",
     },
     {
       title: "great no one",
       thumbnail: gno,
       link: "https://www.youtube.com/watch?v=qQYhM48H5zs",
-      modifier: "great-noone"
+      modifier: "great-noone",
     },
     {
       title: "future me hates me",
       thumbnail: fmhm,
       link: "https://www.youtube.com/watch?v=iVImwSb4EYU",
-      modifier: "future-me-hates-me"
+      modifier: "future-me-hates-me",
     },
     {
       title: "you wouldn't like me",
       thumbnail: ywlm,
       link: "https://www.youtube.com/watch?v=CV3Bjx-vPTg",
-      modifier: "you-wouldnt-like-me"
-    }
-  ]
+      modifier: "you-wouldnt-like-me",
+    },
+  ],
 };
 
 const warmBlood = {
@@ -69,15 +82,15 @@ const warmBlood = {
       title: "whatever",
       thumbnail: w,
       link: "https://www.youtube.com/watch?v=qtqX7rWtR8A",
-      modifier: "whatever"
+      modifier: "whatever",
     },
     {
       title: "lying in the sun",
       thumbnail: lits,
       link: "https://www.youtube.com/watch?v=4Pz8qzMj-Bw",
-      modifier: "lying-in-the-sun"
-    }
-  ]
+      modifier: "lying-in-the-sun",
+    },
+  ],
 };
 
 const christmas = {
@@ -89,20 +102,27 @@ const christmas = {
       title: "have yourself a merry litte christmas",
       thumbnail: hyamlc,
       link: "https://www.youtube.com/watch?v=Moz6XOAKK5U",
-      modifier: "christmas"
-    }
-  ]
+      modifier: "christmas",
+    },
+  ],
 };
 export default function Watch() {
   const [currentSection, setCurrentSection] = useState(jumpRopeGazers.modifier);
 
   return (
     <section className="watch">
-      <WatchSection
-        {...jumpRopeGazers}
-        currentSection={currentSection}
-        setCurrentSection={setCurrentSection}
-      />
+      <h2 className="watch-section__text watch-section__text--jump-rope-gazers">jump rope gazers</h2>
+      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
+        <iframe
+          className="watch__jump-rope-gazers-iframe"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/CkzI93Aqztk"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <WatchSection
         {...futureMeHatesMe}
         currentSection={currentSection}
@@ -124,12 +144,11 @@ export default function Watch() {
 }
 
 function WatchSection(props) {
-
   const toggleSection = () => {
     if (props.currentSection == props.modifier) {
-      props.setCurrentSection(null)
+      props.setCurrentSection(null);
     } else {
-      props.setCurrentSection(props.modifier)
+      props.setCurrentSection(props.modifier);
     }
   };
 
@@ -139,14 +158,11 @@ function WatchSection(props) {
         props.currentSection == props.modifier ? "watch-section--is-open" : ""
       }`}
     >
-      <h2
-        className="watch-section__text"
-        onClick={() => toggleSection()}
-      >
+      <h2 className="watch-section__text" onClick={() => toggleSection()}>
         {props.title}
       </h2>
       <div className="watch-section__wrapper">
-        {props.videos.map(video => (
+        {props.videos.map((video) => (
           <Thumbnail
             title={video.title}
             image={video.thumbnail}

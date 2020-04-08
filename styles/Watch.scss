@@ -5,6 +5,16 @@
 
   overflow: hidden;
 }
+
+.watch__jump-rope-gazers-embed {
+  width: 100vw;
+  height: 56.25vw;
+}
+
+.watch__jump-rope-gazers-iframe {
+  // width: 100vw;
+  // height: 56.25vw;
+}
 .watch-section {
   max-width: 900px;
   display: flex;
@@ -13,7 +23,7 @@
   margin-bottom: 24px;
 
   // &--jump-rope-gazers {
-  //   display: none;
+  //   display: block;
   // }
 
   &__text {
@@ -44,12 +54,24 @@
     &:after {
       right: -24px;
     }
+
+    &--jump-rope-gazers {
+      &:before,
+      &:after {
+        content: "-";
+      }
+    }
   }
   &__wrapper {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 24px;
     display: none;
+
+    &--jump-rope-gazers {
+      display: block;
+      margin-bottom: 24px;
+    }
   }
 
   &--is-open {
@@ -87,11 +109,27 @@
     font-size: 16px;
     max-width: 40vw;
     margin: 0 auto;
+
+    &--dying-to-believe {
+      margin: 24px auto;
+    }
+  }
+
+  .thumbnail-text-dying-to-believe {
+    margin: 24px 0;
   }
 }
 @media (min-width: 768px) {
   .watch-section {
     margin-bottom: 48px;
+  }
+  .watch__jump-rope-gazers-embed {
+    width: 755px;
+    height: 424px;
+    max-width: 100%;
+    max-height: calc((100vw - 40px) / (16 / 9));
+
+    text-align: center;
   }
   .thumbnail {
     .thumbnail__image {
@@ -105,6 +143,10 @@
     }
     .thumbnail__text {
       font-size: 18px;
+
+      &--dying-to-believe {
+        margin: 24px auto;
+      }
 
       &--christmas {
         max-width: 200px;
@@ -164,6 +206,10 @@
       font-size: 1.2em;
       &:hover {
         color: #c45827;
+      }
+
+      &__dying-to-believe {
+        margin: 24px auto;
       }
     }
   }
