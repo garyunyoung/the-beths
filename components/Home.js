@@ -39,19 +39,11 @@ export default function Home() {
           <div className="home__pre-order-links">
             <a
               className="home__pre-order-link"
-              href="https://smarturl.it/jrg_spotify"
+              href="https://smarturl.it/thebeths_jrg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`pre-save on Spotify `}
-            </a>
-            <a
-              className="home__pre-order-link"
-              href="https://smarturl.it/jrg_apple"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {`pre-add on Apple Music`}
+              {`pre-order here`}
             </a>
           </div>
         </div>
@@ -77,19 +69,11 @@ export default function Home() {
           <div className="home-content-mobile__pre-order-links">
             <a
               className="home-content-mobile__pre-order-link"
-              href="https://smarturl.it/jrg_spotify"
+              href="https://smarturl.it/thebeths_jrg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              pre-save on spotify
-            </a>
-            <a
-              className="home-content-mobile__pre-order-link"
-              href="https://smarturl.it/jrg_apple"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              pre-save on apple music
+              PRE-ORDER HERE
             </a>
           </div>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
