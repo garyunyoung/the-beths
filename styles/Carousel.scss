@@ -57,7 +57,7 @@
 }
 
 .carousel-image--title {
-  width: 60vw;
+  width: 90vw;
   margin: 24px auto 3vh auto;
   height: 2em;
   padding: 0 24px;
@@ -67,6 +67,10 @@
   .carousel-image__image {
     width: 300px;
     height: 300px;
+  }
+
+  .carousel-image--title {
+    width: 60vw;
   }
 }
 
@@ -100,7 +104,6 @@
   .carousel-image--title {
     max-width: 660px;
     padding: 0 148px;
-
   }
 }
 
