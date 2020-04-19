@@ -50,6 +50,7 @@ export const dyingToBelieveThumbnail = `${cld}dying-to-believe-premier-thumbnail
 
 // Tour //
 export const tour = `${cld}tour_SM.jpg`;
+export const tourTheBeths = `${cld}tour-the-beths-jump-rope-gazers.png`;
 
 // Contact //
 export const contact = `${cld}contact_SM.jpg`;

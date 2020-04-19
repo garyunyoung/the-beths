@@ -1,5 +1,5 @@
 import React from "react";
-import { tour } from "./cloudinary";
+import { tour, tourTheBeths } from "./cloudinary";
 import scss from "../styles/Tour.scss";
 
 export default class Tour extends React.Component {
@@ -35,7 +35,7 @@ export default class Tour extends React.Component {
         <section className="tour">
           <div
             className="tour-pic"
-            style={{ backgroundImage: "url(" + tour + ")" }}
+            style={{ backgroundImage: "url(" + tourTheBeths + ")" }}
           />
           <p className="tour-text">come gig!</p>
           <div id='song-kick' className="song-kick">
