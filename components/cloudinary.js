@@ -47,6 +47,10 @@ export const hyamlc = `${cld}hyamlc_SM.png`;
 export const dyingToBelieve = `${cld}dying-to-believe-how-to-be-the-beths.png`;
 export const dyingToBelievePremier = `${cld}dying-to-believe-premier.png`;
 export const dyingToBelieveThumbnail = `${cld}dying-to-believe-premier-thumbnail.png`;
+export const jumpRopeGazersShirtBundle = `${cld}jumpropegazers-shirt-vinyl-bundle.png`;
+export const jumpRopeGazersShirtCdBundle = `${cld}jumpropegazers-shirt-cd-bundle.png`;
+export const jumpRopeGazersOrangeLp = `${cld}jumpropegazers-orange-lp.png`;
+export const jumpRopeGazersTuiShirt = `${cld}jumpropegazers-tui-shirt.png`;
 
 // Tour //
 export const tour = `${cld}tour_SM.jpg`;
