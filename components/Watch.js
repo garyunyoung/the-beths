@@ -111,13 +111,26 @@ export default function Watch() {
 
   return (
     <section className="watch">
-      <h2 className="watch-section__text watch-section__text--jump-rope-gazers">jump rope gazers</h2>
+      <h2 className="watch-section__text watch-section__text--jump-rope-gazers">
+        jump rope gazers
+      </h2>
       <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
         <iframe
           className="watch__jump-rope-gazers-iframe"
           width="100%"
           height="100%"
           src="https://www.youtube.com/embed/CkzI93Aqztk"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
+        <iframe
+          className="watch__jump-rope-gazers-iframe"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/lvYrJxNwW5I"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
