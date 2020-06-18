@@ -10,6 +10,7 @@ import ConsentBanner from "./ConsentBanner";
 import MailingListBanner from "./MailingListBanner";
 import Header from "./Header";
 import Socials from "./_socials";
+import FacebookPixel from "../components/facebookPixel";
 
 import Merch from "./Merch";
 import Watch from "./Watch";
@@ -52,6 +53,7 @@ export default class App extends React.Component {
     docCookies.setItem(cookieName, "accepted");
     this.setState({ hasConsent: true });
     tagManager();
+    FacebookPixel();
   }
 
   render() {
