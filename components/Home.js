@@ -24,7 +24,7 @@ export default function Home() {
             className="home__new-album-text cls-responsive"
             src={newAlbumText}
           />
-          <p className="home__release-date">july 10</p>
+          <p className="home__release-date">out now</p>
           <a
             href="https://smarturl.it/thebeths_jrg"
             target="_blank"
@@ -43,7 +43,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`pre-order here`}
+              {`buy or stream now`}
             </a>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              PRE-ORDER HERE
+              BUY OR STREAM NOW
             </a>
           </div>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}

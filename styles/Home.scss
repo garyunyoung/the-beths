@@ -60,7 +60,8 @@
     margin-bottom: 16px;
   }
   &__release-date {
-    margin-bottom: 16px;
+    margin-bottom: 0;
+    visibility: hidden;
   }
   &__carpark-logo {
     display: none;
@@ -136,7 +137,8 @@
       letter-spacing: 3px;
       font-weight: lighter;
       color: white;
-      margin-bottom: 24px;
+      margin-bottom: 8px;
+      visibility: hidden;
     }
 
     &__carpark-logo {
