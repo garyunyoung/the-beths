@@ -33,6 +33,11 @@ export const rabitShirtB = `${cld}rabbit-tee_b.png`;
 export const blueAndRedStripedSocks = `${cld}blue-and-red-striped-socks.png`;
 export const futureMeHatesMeCloudyBlue = `${cld}fmhm-cloudy-blue.jpg`;
 export const jumpRopeGazers = `${cld}jump-rope-gazers-album-art.jpg`;
+export const jumpRopeGazersShirtBundle = `${cld}jumpropegazers-shirt-vinyl-bundle.png`;
+export const jumpRopeGazersShirtCdBundle = `${cld}jumpropegazers-shirt-cd-bundle.png`;
+export const jumpRopeGazersOrangeLp = `${cld}jumpropegazers-orange-lp.png`;
+export const jumpRopeGazersTuiShirt = `${cld}jumpropegazers-tui-shirt.png`;
+export const pukekoTee = `${cld}pukeko-tee.png`;
 
 // Watch //
 export const utg = `${cld}utg_SM.png`;
@@ -47,10 +52,7 @@ export const hyamlc = `${cld}hyamlc_SM.png`;
 export const dyingToBelieve = `${cld}dying-to-believe-how-to-be-the-beths.png`;
 export const dyingToBelievePremier = `${cld}dying-to-believe-premier.png`;
 export const dyingToBelieveThumbnail = `${cld}dying-to-believe-premier-thumbnail.png`;
-export const jumpRopeGazersShirtBundle = `${cld}jumpropegazers-shirt-vinyl-bundle.png`;
-export const jumpRopeGazersShirtCdBundle = `${cld}jumpropegazers-shirt-cd-bundle.png`;
-export const jumpRopeGazersOrangeLp = `${cld}jumpropegazers-orange-lp.png`;
-export const jumpRopeGazersTuiShirt = `${cld}jumpropegazers-tui-shirt.png`;
+
 
 // Tour //
 export const tour = `${cld}tour_SM.jpg`;

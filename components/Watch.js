@@ -118,6 +118,16 @@ export default function Watch() {
         <iframe
           width="100%"
           height="100%"
+          src="https://www.youtube.com/embed/lRMoE02hp_s"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
+        <iframe
+          width="100%"
+          height="100%"
           src="https://www.youtube.com/embed/qaoCF5cVj2g"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
