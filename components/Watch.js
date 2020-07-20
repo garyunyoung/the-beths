@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  notGettingExcited,
   dyingToBelievePremier,
   dyingToBelieve,
   utg,
@@ -20,12 +21,39 @@ const jumpRopeGazers = {
   title: "jump rope gazers",
   videos: [
     {
-      title: "dying to believe",
-      thumbnail: dyingToBelievePremier,
+      title: "out of sight",
+      thumbnail: notGettingExcited,
       link:
-        "https://www.youtube.com/watch?v=CkzI93Aqztk&fbclid=IwAR3Xbfr07XL_D-etDu4yjslljyQvFdE_UL3YTy_PX3ninPzGK2J560cN_Rw",
+        "https://found.ee/thebeths_OOS_MV",
+      modifier: "out-of-sight",
+    },
+    {
+      title: "jump rope gazers",
+      thumbnail: notGettingExcited,
+      link:
+        "https://found.ee/thebeths_jrg_mv",
+      modifier: "jump-rope-gazers",
+    },
+    {
+      title: "i'm not getting excited",
+      thumbnail: notGettingExcited,
+      link: "https://found.ee/thebeths_INGE_MV",
+      modifier: "not-getting-excited",
+    },
+    {
+      title: "dying to believe",
+      thumbnail: dyingToBelieve,
+      link:
+        "https://found.ee/thebeths_dying_MV",
       modifier: "dying-to-believe",
     },
+    {
+      title: "live from house",
+      thumbnail: dyingToBelieve,
+      link:
+        "https://found.ee/thebeths_livestreams_yt",
+      modifier: "live-from-house",
+    }
   ],
 };
 
@@ -106,56 +134,17 @@ const christmas = {
     },
   ],
 };
+
 export default function Watch() {
   const [currentSection, setCurrentSection] = useState(jumpRopeGazers.modifier);
 
   return (
     <section className="watch">
-      <h2 className="watch-section__text watch-section__text--jump-rope-gazers">
-        jump rope gazers
-      </h2>
-      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/lRMoE02hp_s"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/qaoCF5cVj2g"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
-        <iframe
-          className="watch__jump-rope-gazers-iframe"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/lvYrJxNwW5I"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className="watch-section__wrapper watch-section__wrapper--jump-rope-gazers watch__jump-rope-gazers-embed">
-        <iframe
-          className="watch__jump-rope-gazers-iframe"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/CkzI93Aqztk"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <WatchSection
+        {...jumpRopeGazers}
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
       <WatchSection
         {...futureMeHatesMe}
         currentSection={currentSection}

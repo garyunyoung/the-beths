@@ -99,10 +99,10 @@
     height: 20vw;
     object-fit: contain;
 
-    &--dying-to-believe {
-      height: 60vw;
-      margin-bottom: 16px;
-    }
+    // &--dying-to-believe {
+    //   height: 60vw;
+    //   margin-bottom: 16px;
+    // }
   }
 
   .thumbnail__text {
@@ -110,14 +110,14 @@
     max-width: 40vw;
     margin: 0 auto;
 
-    &--dying-to-believe {
-      margin: 24px auto;
-    }
+    // &--dying-to-believe {
+    //   margin: 24px auto;
+    // }
   }
 
-  .thumbnail-text-dying-to-believe {
-    margin: 24px 0;
-  }
+  // .thumbnail-text-dying-to-believe {
+  //   margin: 24px 0;
+  // }
 }
 @media (min-width: 768px) {
   .watch-section {
@@ -136,17 +136,17 @@
       height: 120px;
       padding: 20px;
 
-      &--dying-to-believe {
-        height: 350px;
-        padding-top: 0;
-      }
+      // &--dying-to-believe {
+      //   height: 350px;
+      //   padding-top: 0;
+      // }
     }
     .thumbnail__text {
       font-size: 18px;
 
-      &--dying-to-believe {
-        margin: 24px auto;
-      }
+      // &--dying-to-believe {
+      //   margin: 24px auto;
+      // }
 
       &--christmas {
         max-width: 200px;
@@ -189,9 +189,9 @@
     .thumbnail__image {
       height: 8vw;
 
-      &--dying-to-believe {
-        height: 25vw;
-      }
+      // &--dying-to-believe {
+      //   height: 25vw;
+      // }
     }
 
     .thumbnail__image--xmas {
@@ -208,9 +208,9 @@
         color: #c45827;
       }
 
-      &__dying-to-believe {
-        margin: 24px auto;
-      }
+      // &__dying-to-believe {
+      //   margin: 24px auto;
+      // }
     }
   }
 }
@@ -220,9 +220,9 @@
     .thumbnail__image {
       height: 150px;
 
-      &--dying-to-believe {
-        height: 25vw;
-      }
+      // &--dying-to-believe {
+      //   height: 25vw;
+      // }
     }
   }
 }
