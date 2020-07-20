@@ -6,7 +6,7 @@ export default function Socials(props) {
   return (
     <section className={`socials-default ${props.className}`}>
       <a
-        href="https://www.instagram.com/lizstokedstokes/"
+        href="https://found.ee/thebeths_ig"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon ${props.className}__icon ${props.className}__icon--instagram`}
@@ -14,7 +14,7 @@ export default function Socials(props) {
         <Icon name="instagram" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://twitter.com/lizstokedstokes"
+        href="https://found.ee/thebeths_tw"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon socials-default__icon--twitter ${props.className}__icon ${props.className}__icon--twitter`}
@@ -22,7 +22,7 @@ export default function Socials(props) {
         <Icon name="twitter" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://www.facebook.com/thebethsnz/"
+        href="https://found.ee/thebeths_fb"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon ${props.className}__icon ${props.className}__icon--facebook`}
@@ -30,7 +30,7 @@ export default function Socials(props) {
         <Icon name="facebook" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
+        href="https://found.ee/thebeths_spotify"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon ${props.className}__icon ${props.className}__icon--spotify`}
@@ -38,7 +38,7 @@ export default function Socials(props) {
         <Icon name="spotify" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://music.apple.com/us/artist/the-beths"
+        href="https://found.ee/thebeths_apple"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon socials-default__icon--apple ${props.className}__icon ${props.className}__icon--apple`}
@@ -53,7 +53,7 @@ export default function Socials(props) {
         </svg>
       </a>
       <a
-        href="https://thebethsnz.bandcamp.com/music"
+        href="https://found.ee/thebeths_bc"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon socials-default__icon--bandcamp ${props.className}__icon ${props.className}__icon--bandcamp`}
@@ -61,7 +61,7 @@ export default function Socials(props) {
         <Icon name="bandcamp" width={props.width} fill={props.color} />
       </a>
       <a
-        href="https://www.youtube.com/c/thebeths"
+        href="https://found.ee/thebeths_yt"
         target="_blank"
         rel="noopener noreferrer"
         className={`socials-default__icon ${props.className}__icon ${props.className}__icon--youtube`}

@@ -58,7 +58,7 @@ export default function SiteHeader(props) {
           <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
             <a
               className="site-menu__nav-item-link site-menu__nav-item-link--desktop"
-              href="https://breakfastandtravelupdates.com/"
+              href="https://found.ee/thebeths_bensblog"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -96,14 +96,14 @@ export default function SiteHeader(props) {
       </header>
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
-          <NavItem text="pre-order" closeMenu={closeMenu} link="https://smarturl.it/thebeths_jrg" />
+          <NavItem text="buy/stream" closeMenu={closeMenu} link="https://smarturl.it/thebeths_jrg" />
           <NavItem text="video" closeMenu={closeMenu} link="#watch" />
           <NavItem text="store" closeMenu={closeMenu} link="#merch" />
           <NavItem text="tour" closeMenu={closeMenu} link="#tour" />
           <li className={`site-menu__nav-item`}>
             <a
               className="site-menu__nav-item-link"
-              href="https://breakfastandtravelupdates.com/"
+              href="https://found.ee/thebeths_bensblog"
               target="_blank"
               rel="noopener noreferrer"
             >
