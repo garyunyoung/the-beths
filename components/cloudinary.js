@@ -53,7 +53,9 @@ export const dyingToBelieve = `${cld}dying-to-believe-how-to-be-the-beths.png`;
 export const dyingToBelievePremier = `${cld}dying-to-believe-premier.png`;
 export const dyingToBelieveThumbnail = `${cld}dying-to-believe-premier-thumbnail.png`;
 export const notGettingExcited = `${cld}not-getting-excited.png`;
-
+export const outOfSight = `${cld}Screen_Shot_2020-07-20_at_9.51.38_PM_uuyz3m.png`;
+export const liveFromHouse = `${cld}live-from-house-v2_rmopk2.png`;
+export const jumpRopeGazersSingle = `${cld}images__1_2_wxies9.png`;
 
 // Tour //
 export const tour = `${cld}tour_SM.jpg`;

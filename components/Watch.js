@@ -12,6 +12,9 @@ import {
   w,
   lits,
   hyamlc,
+  outOfSight,
+  liveFromHouse,
+  jumpRopeGazersSingle
 } from "./cloudinary";
 import scss from "../styles/Watch.scss";
 
@@ -22,14 +25,14 @@ const jumpRopeGazers = {
   videos: [
     {
       title: "out of sight",
-      thumbnail: notGettingExcited,
+      thumbnail: outOfSight,
       link:
         "https://found.ee/thebeths_OOS_MV",
       modifier: "out-of-sight",
     },
     {
       title: "jump rope gazers",
-      thumbnail: notGettingExcited,
+      thumbnail: jumpRopeGazersSingle,
       link:
         "https://found.ee/thebeths_jrg_mv",
       modifier: "jump-rope-gazers",
@@ -49,7 +52,7 @@ const jumpRopeGazers = {
     },
     {
       title: "live from house",
-      thumbnail: dyingToBelieve,
+      thumbnail: liveFromHouse,
       link:
         "https://found.ee/thebeths_livestreams_yt",
       modifier: "live-from-house",
