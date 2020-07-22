@@ -8,42 +8,42 @@ export default function Merch() {
     {
       title: "pūkeko tee - [PRE-ORDER]",
       src: pukekoTee,
-      link: "https://thebeths.merchtable.com/"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "cricket t-shirt - yellow",
       src: cricketShirtY,
-      link: "http://smarturl.it/TheBethsCricketY"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "rabbit t-shirt - baby blue",
       src: rabbitShirtPB,
-      link: "https://smarturl.it/TheBethsRabbitBB"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "rabbit t-shirt - black",
       src: rabitShirtB,
-      link: "https://smarturl.it/TheBethsRabbitB"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "the beths: socks",
       src: blueAndRedStripedSocks,
-      link: "https://thebeths.merchtable.com/apparel/the-beths-socks"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "jump rope gazers - LP - orange",
       src: jumpRopeGazersOrangeLp,
-      link: "https://thebeths.merchtable.com/music/the-beths-jump-rope-gazers-vinyl-lp"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "future me hates me - LP - cloudy blue ",
       src: futureMeHatesMeCloudyBlue,
-      link: "http://smarturl.it/TheBethsFMHM-Vinyl"
+      link: "https://found.ee/thebeths_merch"
     },
     {
       title: "Warm Blood EP - LP - pink",
       src: wbP,
-      link: "https://thebeths.merchtable.com/music/warm-blood-12-vinyl-ep"
+      link: "https://found.ee/thebeths_merch"
     }
   ];
 
@@ -52,7 +52,7 @@ export default function Merch() {
       <Carousel merch={merch} />
       <a
         className="merch__visit"
-        href="http://smarturl.it/TheBeths-Store"
+        href="https://found.ee/thebeths_merch"
         target="_blank"
         rel="noopener noreferrer"
       >
