@@ -32,12 +32,6 @@ export default function SiteHeader(props) {
         </a>
         <div className="site-header__nav site-header__nav--desktop">
           <NavItem
-            text="buy / stream"
-            desktop="true"
-            closeMenu={closeMenu}
-            link="https://smarturl.it/thebeths_jrg"
-          />
-          <NavItem
             text="video"
             desktop="true"
             closeMenu={closeMenu}
