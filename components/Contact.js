@@ -34,8 +34,8 @@ export default function Contact() {
       </p>
       <p className="contact__text">
         eu/uk:{" "}
-        <a className="contact__link" href="mailto:joren@thelullabyefactory.com">
-          joren@thelullabyefactory.com
+        <a className="contact__link" href="mailto:joren@hometown-talent.com">
+          joren@hometown-talent.com
         </a>
       </p>
       <br />
