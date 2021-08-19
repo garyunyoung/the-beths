@@ -59,6 +59,16 @@ export default function SiteHeader(props) {
               blog
             </a>
           </li>
+          <li className={`site-menu__nav-item site-menu__nav-item--desktop`}>
+            <a
+              className="site-menu__nav-item-link site-menu__nav-item-link--desktop"
+              href="https://www.patreon.com/thebeths"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              patreon
+            </a>
+          </li>
           <NavItem
             text="contact"
             desktop="true"
@@ -102,6 +112,16 @@ export default function SiteHeader(props) {
               rel="noopener noreferrer"
             >
               blog
+            </a>
+          </li>
+          <li className={`site-menu__nav-item`}>
+            <a
+              className="site-menu__nav-item-link"
+              href="https://www.patreon.com/thebeths"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              patreon
             </a>
           </li>
           <NavItem text="contact" closeMenu={closeMenu} link="#contact" />
