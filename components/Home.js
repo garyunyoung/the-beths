@@ -39,11 +39,19 @@ export default function Home() {
           <div className="home__pre-order-links">
             <a
               className="home__pre-order-link"
-              href="https://smarturl.it/thebeths_jrg"
+              href="https://found.ee/film_nz2020"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`buy or stream now`}
+              {`PRE-ORDER FILM & WATCH TRAILER`}
+            </a>
+            <a
+              className="home__pre-order-link"
+              href="https://found.ee/beths_nz2020"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {`PRE-ORDER LIVE LP/CD`}
             </a>
           </div>
         </div>
@@ -69,11 +77,19 @@ export default function Home() {
           <div className="home-content-mobile__pre-order-links">
             <a
               className="home-content-mobile__pre-order-link"
-              href="https://smarturl.it/thebeths_jrg"
+              href="https://found.ee/beths_nz2020"
               target="_blank"
               rel="noopener noreferrer"
             >
-              BUY OR STREAM NOW
+              PRE-ORDER FILM & WATCH TRAILER
+            </a>
+            <a
+              className="home-content-mobile__pre-order-link"
+              href="https://found.ee/film_nz2020"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PRE-ORDER LIVE LP/CD
             </a>
           </div>
           {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
