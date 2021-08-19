@@ -6,7 +6,12 @@ import scss from "../styles/Merch.scss";
 export default function Merch() {
   const merch = [
     {
-      title: "pūkeko tee - [PRE-ORDER]",
+      title: "jump rope gazers - LP - orange",
+      src: jumpRopeGazersOrangeLp,
+      link: "https://found.ee/thebeths_merch"
+    },
+    {
+      title: "pūkeko tee",
       src: pukekoTee,
       link: "https://found.ee/thebeths_merch"
     },
@@ -28,11 +33,6 @@ export default function Merch() {
     {
       title: "the beths: socks",
       src: blueAndRedStripedSocks,
-      link: "https://found.ee/thebeths_merch"
-    },
-    {
-      title: "jump rope gazers - LP - orange",
-      src: jumpRopeGazersOrangeLp,
       link: "https://found.ee/thebeths_merch"
     },
     {
