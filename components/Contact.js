@@ -9,8 +9,8 @@ export default function Contact() {
       // style={{ backgroundImage: "url(" + contact + ")" }}
     >
       <p className="contact__text">management</p>
-        <a className="contact__link" href="mailto:info@monstermanagement.com.au">
-          info@monstermanagement.com.au
+        <a className="contact__link" href="mailto:hello@mam.land">
+          hello@mam.land
         </a>
       <br />
       <p className="contact__text">record label</p>
