@@ -12,6 +12,8 @@
 
   position: absolute;
   background-color: transparent;
+// 
+  display: none;
 
   &--show-border {
     border-bottom: 2px dashed gold;

@@ -1,0 +1,10 @@
+.mobile-nav {
+}
+
+.mobile-nav-menu {
+  display: none;
+
+  &.is-open {
+    display: flex;
+  }
+}
