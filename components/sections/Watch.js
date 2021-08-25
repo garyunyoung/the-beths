@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   notGettingExcited,
-  dyingToBelievePremier,
   dyingToBelieve,
   utg,
   huh,
@@ -15,8 +14,8 @@ import {
   outOfSight,
   liveFromHouse,
   jumpRopeGazersSingle
-} from "./cloudinary";
-import scss from "../styles/Watch.scss";
+} from "../utilities/cloudinary.js";
+import scss from "../../styles/Watch.scss";
 
 const jumpRopeGazers = {
   isOpen: true,

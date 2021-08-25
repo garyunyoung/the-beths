@@ -1,7 +1,7 @@
 import React from "react";
-import Carousel from "./Carousel";
-import { pukekoTee, jumpRopeGazersShirtBundle, jumpRopeGazersShirtCdBundle, jumpRopeGazersOrangeLp, jumpRopeGazersTuiShirt, blueAndRedStripedSocks, futureMeHatesMeCloudyBlue, fmhmM, fmhmO, fmhmA, wbP, shirtW, shirtB, cricketShirtY, rabbitShirtPB, rabitShirtB } from "./cloudinary";
-import scss from "../styles/Merch.scss";
+import Carousel from "../partials/Carousel";
+import { pukekoTee, jumpRopeGazersOrangeLp, blueAndRedStripedSocks, futureMeHatesMeCloudyBlue, wbP, cricketShirtY, rabbitShirtPB, rabitShirtB } from "../utilities/cloudinary.js";
+import scss from "../../styles/Merch.scss";
 
 export default function Merch() {
   const merch = [

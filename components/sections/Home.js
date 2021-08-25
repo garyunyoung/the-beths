@@ -3,9 +3,9 @@ import {
   jumpRopeGazersHandwrittenTitle,
   newAlbumText,
   cpY
-} from "./cloudinary";
+} from "../utilities/cloudinary.js";
 
-import scss from "../styles/Home.scss";
+import scss from "../../styles/Home.scss";
 
 export default function Home() {
   return (
@@ -88,7 +88,7 @@ export default function Home() {
               PRE-ORDER LIVE LP/CD
             </a>
           </div>
-          {/* <Socials className="home__socials-footer" width="20" color={"black"} /> */}
+          {/* <Socials className="home_Socials-footer" width="20" color={"black"} /> */}
         </div>
       </div>
       <style jsx>{scss}</style>

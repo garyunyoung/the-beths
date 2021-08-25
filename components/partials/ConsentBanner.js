@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "../styles/ConsentBanner.scss";
+import scss from "../../styles/ConsentBanner.scss";
 
 export default class ConsentBanner extends React.Component {
   constructor(props) {

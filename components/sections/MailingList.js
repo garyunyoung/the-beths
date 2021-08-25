@@ -1,7 +1,7 @@
 import React from "react";
-import scss from "../styles/_mailingListDropdown.scss";
+import scss from "../../styles/MailingList.scss";
 
-export default class MailingListDropdown extends React.Component {
+export default class MailingList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,9 +11,8 @@ export default class MailingListDropdown extends React.Component {
 
   render() {
     return (
-      <section className="mailing-list-dropdown">
-          <p className="mailing-list-dropdown__close">x</p>
-        <div className="mailing-list-dropdown__wrapper">
+      <section className="mailing-list-banner">
+        <div className="mailing-list-banner__wrapper">
           <div id="mc_embed_signup">
             <form
               action="https://thebeths.us20.list-manage.com/subscribe/post?u=0bfa27c5341eacbfd10d85a43&amp;id=05cac296b0"
@@ -23,9 +22,9 @@ export default class MailingListDropdown extends React.Component {
               className="validate"
               target="_blank"
             >
-              <div id="mc_embed_signup_scroll" className="mailing-list-dropdown__form-content">
-                <label htmlFor="mce-EMAIL" className="mailing-list-dropdown__email-input-label">join our mailing list!</label>
-                <div className="mailing-list-dropdown__input-wrapper input-wrapper">
+              <div id="mc_embed_signup_scroll" className="mailing-list-banner__form-content">
+                <label htmlFor="mce-EMAIL" className="mailing-list-banner__email-input-label">join our mailing list!</label>
+                <div className="mailing-list-banner__input-wrapper input-wrapper">
                   <input
                     type="email"
                     value={this.state.emailValue}
@@ -33,12 +32,12 @@ export default class MailingListDropdown extends React.Component {
                       this.setState({ emailValue: e.target.value });
                     }}
                     name="EMAIL"
-                    className="mailing-list-dropdown__email-input-field email"
+                    className="mailing-list-banner__email-input-field email"
                     id="mce-EMAIL"
                     placeholder="email address"
                     required
                   />
-                  <div className="mailing-list-dropdown__aria aria" aria-hidden="true">
+                  <div className="mailing-list-banner__aria aria" aria-hidden="true">
                     <input
                       type="text"
                       name="b_0bfa27c5341eacbfd10d85a43_05cac296b0"
@@ -49,7 +48,7 @@ export default class MailingListDropdown extends React.Component {
                   </div>
                   <div className="clear">
                     <input
-                      className="mailing-list-dropdown__submit-button button"
+                      className="mailing-list-banner__submit-button button"
                       type="submit"
                       value="subscribe >>>"
                       name="subscribe"

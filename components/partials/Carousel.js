@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "../styles/Carousel.scss";
+import scss from "../../styles/Carousel.scss";
 
 export default class Carousel extends React.Component {
   constructor(props) {

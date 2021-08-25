@@ -1,6 +1,6 @@
 import React from "react";
-import { tourTheBeths } from "./cloudinary";
-import scss from "../styles/Tour.scss";
+import { tourTheBeths } from "../utilities/cloudinary.js";
+import scss from "../../styles/Tour.scss";
 
 export default class Tour extends React.Component {
   loadSongkick() {

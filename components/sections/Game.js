@@ -1,10 +1,10 @@
 import React from "react";
-import GameManager from "./game/game_manager";
-import KeyboardInputManager from "./game/keyboard_input_manager";
-import HTMLActuator from "./game/html_actuator";
-import LocalStorageManager from "./game/local_storage_manager";
-import scssA from "../styles/Game.scss";
-import scssB from "../styles/gameHelpers.scss";
+import GameManager from "../game/game_manager";
+import KeyboardInputManager from "../game/keyboard_input_manager";
+import HTMLActuator from "../game/html_actuator";
+import LocalStorageManager from "../game/local_storage_manager";
+import scssA from "../../styles/Game.scss";
+import scssB from "../../styles/_gameHelpers.scss";
 
 export default class Game extends React.Component {
   constructor(props) {

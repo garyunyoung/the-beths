@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Sticky from "./_sticky";
-import Socials from "./_socials";
-import { logo } from "./cloudinary";
-import scss from "../styles/SiteHeader.scss";
+import Sticky from "../partials/Sticky";
+import Socials from "../partials/Socials";
+import { logo } from "../utilities/cloudinary.js";
+import scss from "../../styles/SiteHeader.scss";
 
 export default function SiteHeader(props) {
   const [isOpen, setIsOpen] = useState(false);

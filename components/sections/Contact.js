@@ -1,6 +1,6 @@
 import React from "react";
-import { contact, cpB } from "./cloudinary";
-import scss from "../styles/Contact.scss";
+import { cpB } from "../utilities/cloudinary.js";
+import scss from "../../styles/Contact.scss";
 
 export default function Contact() {
   return (

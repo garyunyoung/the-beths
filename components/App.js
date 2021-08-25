@@ -1,20 +1,20 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { docCookies } from "./cookies";
-import { tagManager } from "./google";
-import SiteHeader from "./SiteHeader";
-import Home from "./Home";
-import ConsentBanner from "./ConsentBanner";
-import MailingListBanner from "./MailingListBanner";
-import Header from "./Header";
-import FacebookPixel from "../components/facebookPixel";
+import { docCookies } from "./utilities/cookies.js";
+import { tagManager } from "./utilities/google.js";
+import SiteHeader from "./sections/SiteHeader";
+import Home from "./sections/Home";
+import ConsentBanner from "./partials/ConsentBanner.js";
+import MailingList from "./sections/MailingList";
+import Header from "./partials/Header";
+import FacebookPixel from "./utilities/facebookPixel.js";
 
-import Merch from "./Merch";
-import Watch from "./Watch";
-import Tour from "./Tour";
-import Contact from "./Contact";
+import Merch from "./sections/Merch";
+import Watch from "./sections/Watch";
+import Tour from "./sections/Tour";
+import Contact from "./sections/Contact";
 import scss from "../styles/App.scss";
-const Game = dynamic(import("./Game"));
+const Game = dynamic(import("./sections/Game"));
 
 const cookieName = "beths-GDPR-consent";
 
@@ -65,7 +65,7 @@ export default class App extends React.Component {
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
-        <MailingListBanner />
+        <MailingList />
 
         <section id="watch" className="page page--watch">
           <Header header="video" />

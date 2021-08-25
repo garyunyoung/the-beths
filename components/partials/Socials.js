@@ -1,6 +1,6 @@
 import React from "react";
-import { Icon } from "./icons";
-import scss from "../styles/_socials.scss";
+import { Icon } from "../utilities/icons";
+import scss from "../../styles/Socials.scss";
 
 export default function Socials(props) {
   return (
