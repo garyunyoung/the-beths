@@ -10,6 +10,9 @@
   background-color: white;
   z-index: 2;
 
+  position: absolute;
+  background-color: transparent;
+
   &--show-border {
     border-bottom: 2px dashed gold;
   }
@@ -21,13 +24,19 @@
     img {
       width: 100%;
     }
+
+    visibility: hidden;
   }
 
   &__menu-toggle {
     font-size: 24px;
     color: black;
+    //
+    color: white;
     border: none;
     background-color: transparent;
+
+    background-color: black;
   }
 
   &__nav {

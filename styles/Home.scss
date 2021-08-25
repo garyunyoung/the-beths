@@ -1,11 +1,11 @@
 .home {
   &__content {
-    height: calc(100vh - 92px - 48px);
+    height: 78vh;
     width: 100vw;
 
     background-image: url("https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629344430/the-beths/town-hall-live-2020/Beths_Live_Amazon_Artwork_Poster_Out_Sept_zzmvm8.jpg");
-    background-size: calc(100% - 48px);
-    background-position: center 48px;
+    background-size: contain;
+    background-position: center 72px;
     background-repeat: no-repeat;
 
     background-color: black;

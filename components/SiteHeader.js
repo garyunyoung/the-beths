@@ -94,13 +94,14 @@ export default function SiteHeader(props) {
             className="site-header__menu-toggle"
             onClick={() => toggleMenu()}
           >
-            {isOpen ? "x" : "//"}
+            {isOpen ? "CLOSE" : "MENU"}
           </button>
         </div>
       </header>
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
-          <NavItem text="buy/stream" closeMenu={closeMenu} link="https://smarturl.it/thebeths_jrg" />
+          <NavItem text="pre-order film" closeMenu={closeMenu} link="https://found.ee/film_nz2020" />
+          <NavItem text="pre-order live lp/cd" closeMenu={closeMenu} link="https://found.ee/beths_nz2020" />
           <NavItem text="video" closeMenu={closeMenu} link="#watch" />
           <NavItem text="store" closeMenu={closeMenu} link="#merch" />
           <NavItem text="tour" closeMenu={closeMenu} link="#tour" />
