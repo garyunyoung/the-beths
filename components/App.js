@@ -2,8 +2,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
-import SiteHeader from "./sections/SiteHeader";
 import MobileNavigation from "./sections/MobileNavigation";
+import Navigation from "./sections/Navigation";
 import Home from "./sections/Home";
 import ConsentBanner from "./partials/ConsentBanner.js";
 import MailingList from "./sections/MailingList";
@@ -57,7 +57,7 @@ export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <SiteHeader toggleGame={() => this.toggleGame()} /> */}
+        <Navigation toggleGame={() => this.toggleGame()} />
         <MobileNavigation toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home />

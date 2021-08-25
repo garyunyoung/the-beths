@@ -16,18 +16,18 @@ export default function MobileNavigation(props) {
 
   return (
     <Sticky>
-      <header className="mobile-nav">
-        <div className="mobile-nav__content">
+      <header className="mobile-navigation">
+        <div className="mobile-navigation__content">
           <MenuButton text="MENU" onClick={openMenu} />
         </div>
       </header>
 
-      <nav className={`mobile-nav-menu ${isOpen ? "is-open" : ""}`}>
-        <a className="mobile-nav-menu__logo" href="#" onClick={() => closeMenu()}>
-          <img className="mobile-nav-menu__logo-image" src={logo} />
+      <nav className={`mobile-navigation-menu ${isOpen ? "is-open" : ""}`}>
+        <a className="mobile-navigation-menu__logo" href="#" onClick={() => closeMenu()}>
+          <img className="mobile-navigation-menu__logo-image" src={logo} />
         </a>
         <MenuButton text="CLOSE" onClick={closeMenu} />
-        <ul className="mobile-nav-menu__nav-items">
+        <ul className="mobile-navigation-menu__nav-items">
           <ExternalNavItem text="pre-order film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
           <ExternalNavItem text="pre-order live lp/cd" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
           <ExternalNavItem text="buy/stream jump rope gazers" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" />
@@ -39,7 +39,7 @@ export default function MobileNavigation(props) {
           <InternalNavItem text="contact" onClick={closeMenu} link="#contact" />
           <InternalNavItem text="🐦" onClick={toggleGame} link="#game" />
           <li>
-            <Socials className="mobile-nav-menu__socials" width="18" color={"black"} />
+            <Socials className="mobile-navigation-menu__socials" width="18" color={"black"} />
           </li>
         </ul>
       </nav>
@@ -50,9 +50,9 @@ export default function MobileNavigation(props) {
 
 function ExternalNavItem(props) {
   return (
-    <li className="mobile-nav-menu__nav-item">
+    <li className="mobile-navigation-menu__nav-item">
       <a
-        className="mobile-nav-menu__nav-item-link"
+        className="mobile-navigation-menu__nav-item-link"
         href={`${props.link}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -66,9 +66,9 @@ function ExternalNavItem(props) {
 
 function InternalNavItem(props) {
   return (
-    <li className="mobile-nav-menu__nav-item">
+    <li className="mobile-navigation-menu__nav-item">
       <a
-        className="mobile-nav-menu__nav-item-link"
+        className="mobile-navigation-menu__nav-item-link"
         href={`${props.link}`}
         onClick={() => props.onClick()}
       >
@@ -81,7 +81,7 @@ function InternalNavItem(props) {
 function MenuButton(props) {
   return (
     <button
-    className="mobile-nav-menu__menu-button"
+    className="mobile-navigation-menu__menu-button"
     onClick={() => props.onClick()}
   >
     {props.text}
