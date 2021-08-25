@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Sticky from "./_sticky";
 import Socials from "./_socials";
-import MailingListDropdown from "./_mailingListDropdown";
-import { logo, tui } from "./cloudinary";
-import { Icon } from "./icons";
-
+import { logo } from "./cloudinary";
 import scss from "../styles/SiteHeader.scss";
 
 export default function SiteHeader(props) {
@@ -75,12 +72,6 @@ export default function SiteHeader(props) {
             closeMenu={closeMenu}
             link="#contact"
           />
-          {/* <NavItem
-            text="✉️"
-            desktop="true"
-            closeMenu={closeMenu}
-            link="contact"
-          /> */}
           <li className="site-menu__nav-item site-menu__nav-item--desktop">
             <a href="#game" onClick={toggleGame}>
               <span className="site-menu__nav-item-link site-menu__nav-item-link--desktop">

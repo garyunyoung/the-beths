@@ -1,14 +1,10 @@
 import React from "react";
-import CTAButton from "./CTAButton";
-import Socials from "./_socials";
-
-import MailingListBanner from "./MailingListBanner";
 import {
   jumpRopeGazersHandwrittenTitle,
   newAlbumText,
-  cpY,
-  jumpRopeGazers,
+  cpY
 } from "./cloudinary";
+
 import scss from "../styles/Home.scss";
 
 export default function Home() {

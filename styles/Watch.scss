@@ -11,10 +11,6 @@
   height: 56.25vw;
 }
 
-.watch__jump-rope-gazers-iframe {
-  // width: 100vw;
-  // height: 56.25vw;
-}
 .watch-section {
   max-width: 900px;
   display: flex;
@@ -98,26 +94,13 @@
   .thumbnail__image {
     height: 20vw;
     object-fit: contain;
-
-    // &--dying-to-believe {
-    //   height: 60vw;
-    //   margin-bottom: 16px;
-    // }
   }
 
   .thumbnail__text {
     font-size: 16px;
     max-width: 40vw;
     margin: 0 auto;
-
-    // &--dying-to-believe {
-    //   margin: 24px auto;
-    // }
   }
-
-  // .thumbnail-text-dying-to-believe {
-  //   margin: 24px 0;
-  // }
 }
 @media (min-width: 768px) {
   .watch-section {
@@ -135,18 +118,9 @@
     .thumbnail__image {
       height: 120px;
       padding: 20px;
-
-      // &--dying-to-believe {
-      //   height: 350px;
-      //   padding-top: 0;
-      // }
     }
     .thumbnail__text {
       font-size: 18px;
-
-      // &--dying-to-believe {
-      //   margin: 24px auto;
-      // }
 
       &--christmas {
         max-width: 200px;
@@ -182,16 +156,8 @@
       margin: 16px;
     }
 
-    // .thumbnail__container:hover > .thumbnail {
-    //   transform: rotate(20deg);
-    // }
-
     .thumbnail__image {
       height: 8vw;
-
-      // &--dying-to-believe {
-      //   height: 25vw;
-      // }
     }
 
     .thumbnail__image--xmas {
@@ -207,10 +173,6 @@
       &:hover {
         color: #c45827;
       }
-
-      // &__dying-to-believe {
-      //   margin: 24px auto;
-      // }
     }
   }
 }
@@ -219,10 +181,6 @@
   .thumbnail {
     .thumbnail__image {
       height: 150px;
-
-      // &--dying-to-believe {
-      //   height: 25vw;
-      // }
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { tour, tourTheBeths } from "./cloudinary";
+import { tourTheBeths } from "./cloudinary";
 import scss from "../styles/Tour.scss";
 
 export default class Tour extends React.Component {

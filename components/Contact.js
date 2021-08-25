@@ -6,7 +6,6 @@ export default function Contact() {
   return (
     <section
       className="contact"
-      // style={{ backgroundImage: "url(" + contact + ")" }}
     >
       <p className="contact__text">management</p>
         <a className="contact__link" href="mailto:hello@mam.land">

@@ -55,8 +55,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  // border-bottom: 2px dashed gold;
-
+  
   padding: 32px;
   margin-bottom: 32px;
 
@@ -216,20 +215,6 @@
 }
 
 @media only screen and (min-width: 2560px) {
-  .home {
-    &__wrapper {
-    }
-  }
-
-  &__content {
-    .titleText {
-      // font-size: 5.2em;
-    }
-
-    .cta__link {
-      // font-size: 2em;
-    }
-  }
 }
 
 @media only screen and (min-width: 1023px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {

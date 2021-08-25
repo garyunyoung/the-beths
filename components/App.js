@@ -2,14 +2,11 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { docCookies } from "./cookies";
 import { tagManager } from "./google";
-import Bar from "./Bar";
-import NavbarDesktop from "./NavbarDesktop";
 import SiteHeader from "./SiteHeader";
 import Home from "./Home";
 import ConsentBanner from "./ConsentBanner";
 import MailingListBanner from "./MailingListBanner";
 import Header from "./Header";
-import Socials from "./_socials";
 import FacebookPixel from "../components/facebookPixel";
 
 import Merch from "./Merch";
