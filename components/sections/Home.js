@@ -12,26 +12,6 @@ export default function Home() {
     <section className="home">
       <div className="home__content">
         <div className="home__wrapper">
-          <img
-            className="home__album-title cls-responsive"
-            src={jumpRopeGazersHandwrittenTitle}
-          />
-          <img
-            className="home__new-album-text cls-responsive"
-            src={newAlbumText}
-          />
-          <p className="home__release-date">out now</p>
-          <a
-            href="https://smarturl.it/thebeths_jrg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="home__carpark-logo cld-responsive"
-              src={cpY}
-              alt="carpark records logo"
-            />
-          </a>
           <div className="home__pre-order-links">
             <a
               className="home__pre-order-link"
@@ -47,7 +27,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`BUY/STREAM LIVE LP/CD`}
+              {`BUY / STREAM LIVE ALBUM`}
             </a>
           </div>
         </div>

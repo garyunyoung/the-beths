@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Sticky from "../partials/Sticky";
 import Socials from "../partials/Socials";
 import { logo } from "../utilities/cloudinary.js";
 import scss from "../../styles/Navigation.scss";
 
 export default function Navigation(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
   const toggleGame = () => {
     props.toggleGame()
   }
+
+  const closeMenu = () => setIsOpen(!false)
+
 
   return (
     <Sticky>

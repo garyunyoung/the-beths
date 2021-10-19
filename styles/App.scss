@@ -16,15 +16,15 @@ html {
 body,
 button,
 input {
-  font-family: "Gaegu", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, -apple-system,
+  font-family: 'Gaegu', 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, -apple-system,
     BlinkMacSystemFont, cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -46,7 +46,7 @@ li {
 
 @media (min-width: 1024px) {
   a:hover {
-    color: #c45827;
+    color: #ef97b0;
     cursor: pointer;
   }
 }
@@ -83,7 +83,6 @@ li {
     hsla(0, 0%, 0%, 0.002) 98.2%,
     hsla(0, 0%, 0%, 0) 100%
   );
-
 }
 
 @media (min-width: 425px) {
@@ -102,6 +101,10 @@ li {
   .page--contact {
     background-size: cover;
     min-height: 100vh;
+  }
+
+  .divider {
+    background-color: black;
   }
 }
 

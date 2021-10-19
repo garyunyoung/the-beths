@@ -60,7 +60,7 @@ export default function MobileSocials(props) {
           href="https://www.patreon.com/thebeths"
           target="_blank"
           rel="noopener noreferrer"
-          className='mobile-navigation-socials__patreon'
+          className='socials-default__icon socials-default__icon--patreon'
         >
           <svg
             height="24px"

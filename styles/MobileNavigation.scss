@@ -17,22 +17,21 @@
 
 .mobile-navigation-menu {
   display: none;
+  flex-flow: column;
+  text-align: right;
+
+  position: absolute;
+  top: 72px;
+  right: 16px;
+
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+
+  padding: 16px;
 
   &.is-open {
-    text-align: right;
-    position: absolute;
-    top: 72px;
-    right: 16px;
-
     display: flex;
-    flex-flow: column;
-
-    background-color: white;
-    border-radius: 12px;
-
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
-
-    padding: 16px;
   }
 
   &__menu-button {
@@ -50,7 +49,17 @@
     border-radius: 12px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
 
+    &:hover {
+      cursor: pointer;
+      color: #ef97b0;
+      transition: all 0.23s ease-in-out 0s;
+    }
+
     padding: 0 16px;
+
+    &--desktop {
+      display: none;
+    }
   }
 
   &__nav-item {
@@ -95,21 +104,98 @@
     }
   }
 
-  &__patreon {
-    color: transparent;
-
-    margin: 0 8px;
-
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
   &__more-arrow {
     font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__extra-socials {
     display: none;
+  }
+}
+
+.desktop-navigation-socials {
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .mobile-navigation-menu {
+    &__menu-button {
+      display: none;
+
+      &--desktop {
+        display: flex;
+      }
+    }
+
+    &.is-open-desktop {
+      display: flex;
+    }
+  }
+
+  .mobile-navigation-socials {
+    display: none;
+  }
+
+
+  .desktop-navigation-socials {
+    display: flex;
+    flex-flow: column;
+  
+    &__content {
+      min-height: 45px;
+  
+      background-color: white;
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+  
+      display: flex;
+      align-items: center;
+      width: fit-content;
+  
+      padding: 0 16px 0 13px;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.socials-default {
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+
+    min-height: 100%;
+    max-height: 45px;
+    color: transparent;
+
+    &:hover {
+      svg {
+        fill: #ef97b0;
+        transition: all 0.23s ease-in-out 0s;
+      }
+    }
+
+    &--patreon {
+      margin-left: 6px;
+    }
+
+    &--apple {
+      margin-top: -2px;
+
+      svg {
+        padding: 2px;
+      }
+    }
+
+    &--bandcamp {
+      svg {
+        padding: 1px;
+      }
+    }
   }
 }

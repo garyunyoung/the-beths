@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
 import MobileNavigation from "./sections/MobileNavigation";
-import Navigation from "./sections/Navigation";
 import Home from "./sections/Home";
 import ConsentBanner from "./partials/ConsentBanner.js";
 import MailingList from "./sections/MailingList";
@@ -62,7 +61,6 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         {this.state.hasConsent ? this.loadFacebookPixels() : null}
-        <Navigation toggleGame={() => this.toggleGame()} />
         <MobileNavigation toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home />
@@ -76,11 +74,11 @@ export default class App extends React.Component {
         <MailingList />
 
         <section id="watch" className="page page--watch">
-          <Header header="video" />
+          <Header header="watch" />
           <Watch />
         </section>
         <section id="merch" className="page page--merch">
-          <Header header="store" />
+          <Header header="merch" />
           <Merch consent={this.state.hasConsent} />
         </section>
         <section id="game" className="page page--game">

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import Sticky from "../partials/Sticky";
 import MobileSocials from "../partials/MobileSocials";
+import Socials from "../partials/Socials";
 import scss from "../../styles/MobileNavigation.scss";
 
 export default function MobileNavigation(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenDesktop, setIsOpenDesktop] = useState(false);
+  const toggleMenuDesktop = () => setIsOpenDesktop(!isOpenDesktop)
   const toggleMenu = () => setIsOpen(!isOpen)
-  const closeMenu = () => setIsOpen(!false)
+  const closeMenu = () => setIsOpen(false)
 
   const toggleGame = () => {
     props.toggleGame()
@@ -17,12 +20,14 @@ export default function MobileNavigation(props) {
     <Sticky>
       <header className="mobile-navigation">
         <div className="mobile-navigation__content">
-          <MenuButton text="☰ MENU" onClick={toggleMenu} />
+          <MenuButton text="☰ MENU" className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
+          <MenuButton text="☰ MENU" className='mobile-navigation-menu__menu-button mobile-navigation-menu__menu-button--desktop' onClick={toggleMenuDesktop} />
           <MobileSocials className="mobile-navigation-socials" width="18" color={"black"} />
+          <Socials className="desktop-navigation-socials" width="18" color={"black"} />
         </div>
       </header>
 
-      <nav className={`mobile-navigation-menu ${isOpen ? "is-open" : ""}`}>
+      <nav className={`mobile-navigation-menu ${isOpen ? "is-open" : ""} ${isOpenDesktop ? "is-open-desktop" : ""}`}>
         <ul className="mobile-navigation-menu__nav-items">
           <ExternalNavItem text="Watch Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
           <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
@@ -74,7 +79,7 @@ function InternalNavItem(props) {
 function MenuButton(props) {
   return (
     <button
-      className="mobile-navigation-menu__menu-button"
+      className={props.className}
       onClick={() => props.onClick()}
     >
       {props.text}
