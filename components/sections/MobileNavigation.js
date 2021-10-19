@@ -28,8 +28,8 @@ export default function MobileNavigation(props) {
         </a>
         <MenuButton text="CLOSE" onClick={closeMenu} />
         <ul className="mobile-navigation-menu__nav-items">
-          <ExternalNavItem text="pre-order film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
-          <ExternalNavItem text="pre-order live lp/cd" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
+          <ExternalNavItem text="watch film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
+          <ExternalNavItem text="order live lp/cd" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
           <ExternalNavItem text="buy/stream jump rope gazers" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" />
           <InternalNavItem text="video" onClick={closeMenu} link="#watch" />
           <InternalNavItem text="store" onClick={closeMenu} link="#merch" />

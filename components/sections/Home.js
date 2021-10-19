@@ -39,7 +39,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`PRE-ORDER FILM & WATCH TRAILER`}
+              {`WATCH FILM`}
             </a>
             <a
               className="home__pre-order-link"
@@ -47,7 +47,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`PRE-ORDER LIVE LP/CD`}
+              {`ORDER LIVE LP/CD`}
             </a>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              PRE-ORDER FILM & WATCH TRAILER
+              WATCH FILM
             </a>
             <a
               className="home-content-mobile__pre-order-link"
@@ -85,7 +85,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              PRE-ORDER LIVE LP/CD
+              ORDER LIVE LP/CD
             </a>
           </div>
           {/* <Socials className="home_Socials-footer" width="20" color={"black"} /> */}

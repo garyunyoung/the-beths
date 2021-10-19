@@ -19,8 +19,8 @@ export default function Navigation(props) {
               <img className="navigation__logo-image" src={logo} />
             </a>
             <span className="navigation__nav-itmes">
-              <ExternalNavItem text="pre-order film" link="https://found.ee/film_nz2020" />
-              <ExternalNavItem text="pre-order live lp/cd" link="https://found.ee/beths_nz2020" />
+              <ExternalNavItem text="watch film" link="https://found.ee/film_nz2020" />
+              <ExternalNavItem text="order live lp/cd" link="https://found.ee/beths_nz2020" />
               <InternalNavItem text="video" link="#watch" />
               <InternalNavItem text="store" link="#merch" />
               <InternalNavItem text="tour" link="#tour" />
