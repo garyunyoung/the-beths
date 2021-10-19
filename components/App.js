@@ -72,6 +72,7 @@ export default class App extends React.Component {
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
+        <div className="divider"></div>
         <MailingList />
 
         <section id="watch" className="page page--watch">

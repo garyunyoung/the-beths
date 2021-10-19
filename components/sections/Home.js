@@ -73,22 +73,21 @@ export default function Home() {
           <div className="home-content-mobile__pre-order-links">
             <a
               className="home-content-mobile__pre-order-link"
+              href="https://found.ee/film_nz2020"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BUY / STREAM LIVE ALBUM
+            </a>
+            <a
+              className="home-content-mobile__pre-order-link"
               href="https://found.ee/beths_nz2020"
               target="_blank"
               rel="noopener noreferrer"
             >
               WATCH FILM
             </a>
-            <a
-              className="home-content-mobile__pre-order-link"
-              href="https://found.ee/film_nz2020"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              BUY/STREAM LIVE LP/CD
-            </a>
           </div>
-          {/* <Socials className="home_Socials-footer" width="20" color={"black"} /> */}
         </div>
       </div>
       <style jsx>{scss}</style>
