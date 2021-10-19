@@ -21,7 +21,7 @@ export default class Tour extends React.Component {
       return (
         <div className="tour-consent-banner">
           <p className="tour-consent-banner__text">
-            our songkick widget requires analytics to run, accept our cookies 🍪
+            our songkick widget requires analytics to run, accept our cookies
             to see what shows we have lined up!
           </p>
           <button className="tour-consent-banner__accept-button" onClick={() => this.props.allowTracking()}>

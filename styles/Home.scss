@@ -113,6 +113,10 @@
       height: calc(100vh - 48px - 77px);
       background-size: 80%;
     }
+
+    &__pre-order-link {
+      font-size: 30px;
+    }
   }
 
   .home-content-mobile {
@@ -131,7 +135,7 @@
       min-height: 590px;
 
       background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1634616653/the-beths/town-hall-live-2020/Beths_Live_Youtube_2048x1152_Out_Now_tan7np.jpg');
-      background-size: calc(100vw + 48px);
+      background-size: 100%;
       background-position: top center;
       margin-top: calc(-48px);
 
@@ -200,26 +204,10 @@
   }
 }
 
-// @media (min-width: 1280px) {
-//   .home {
-//     &__content {
-//       background-size: calc(100vw - 184px);
-//     }
-//   }
-// }
-
-// @media (min-width: 1440px) {
-//   .home {
-//     &__content {
-//       min-height: 818px;
-//     }
-//   }
-// }
 
 @media (min-width: 2560px) {
   .home {
     &__content {
-      // min-height: 1320px;
       background-size: calc(100vw - 284px);
     }
   }
