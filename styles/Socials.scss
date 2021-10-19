@@ -1,10 +1,11 @@
 .socials-default {
-  // display: none;
-
   &__icon {
     display: flex;
+    align-items: center;
     margin: 0 4px;
-    margin-top: 4px;
+
+    min-height: 100%;
+    max-height: 45px;
 
     &:hover {
       svg {
@@ -21,7 +22,6 @@
     }
 
     &--bandcamp {
-      margin: 4px 6px 0 5px;
       svg {
         padding: 1px;
       }

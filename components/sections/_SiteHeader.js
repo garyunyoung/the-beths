@@ -92,7 +92,7 @@ export default function SiteHeader(props) {
       <nav className={`site-menu ${isOpen ? "site-menu--is-open" : ""}`}>
         <ul className="site-menu__nav">
           <NavItem text="watch film" closeMenu={closeMenu} link="https://found.ee/film_nz2020" />
-          <NavItem text="buy live lp/cd" closeMenu={closeMenu} link="https://found.ee/beths_nz2020" />
+          <NavItem text="buy/stream live lp/cd" closeMenu={closeMenu} link="https://found.ee/beths_nz2020" />
           <NavItem text="video" closeMenu={closeMenu} link="#watch" />
           <NavItem text="store" closeMenu={closeMenu} link="#merch" />
           <NavItem text="tour" closeMenu={closeMenu} link="#tour" />

@@ -47,7 +47,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {`ORDER LIVE LP/CD`}
+              {`BUY/STREAM LIVE LP/CD`}
             </a>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ORDER LIVE LP/CD
+              BUY/STREAM LIVE LP/CD
             </a>
           </div>
           {/* <Socials className="home_Socials-footer" width="20" color={"black"} /> */}
