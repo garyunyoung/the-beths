@@ -29,7 +29,7 @@ export default function MobileNavigation(props) {
 
       <nav className={`mobile-navigation-menu ${isOpen ? "is-open" : ""} ${isOpenDesktop ? "is-open-desktop" : ""}`}>
         <ul className="mobile-navigation-menu__nav-items">
-          <ExternalNavItem text="Watch Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
+          <ExternalNavItem text="Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
           <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
           <ExternalNavItem text="Jump Rope Gazers" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" />
           <InternalNavItem text="Watch" onClick={closeMenu} link="#watch" />
@@ -37,7 +37,7 @@ export default function MobileNavigation(props) {
           <InternalNavItem text="Tour" onClick={closeMenu} link="#tour" />
           <ExternalNavItem text="Breakfast Blog" onClick={closeMenu} link="https://found.ee/thebeths_bensblog" />
           <ExternalNavItem text="Patreon" onClick={closeMenu} link="https://www.patreon.com/thebeths" />
-          <InternalNavItem text="Secret Game? 👀" onClick={toggleGame} link="#game" />
+          <InternalNavItem text="??? 👀" onClick={toggleGame} link="#game" />
           <InternalNavItem text="Contact" onClick={closeMenu} link="#contact" />
         </ul>
       </nav>

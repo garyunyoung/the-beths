@@ -204,11 +204,26 @@
   }
 }
 
-
 @media (min-width: 2560px) {
   .home {
     &__content {
       background-size: calc(100vw - 284px);
+
+      &:after {
+        content: '';
+        width: calc(100vw - 284px);
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        background: radial-gradient(circle, transparent 74%, black 87%);
+      }
     }
   }
 }
