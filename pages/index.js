@@ -26,18 +26,18 @@ export default function IndexPage() {
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
-          content="New Live Album 'Auckland, New Zealand, 2020' out September 17 on Carpark Records. Order here at thebeths.com."
+          content="New Live Album 'Auckland, New Zealand, 2020' out now on Carpark Records. Order here at thebeths.com."
         />
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
         <meta property="og:title" content="The Beths" />
         <meta
           property="og:description"
-          content="New Live Album 'Auckland, New Zealand, 2020' out September 17 on Carpark Records. Order here at thebeths.com."
+          content="New Live Album 'Auckland, New Zealand, 2020' out now on Carpark Records. Order here at thebeths.com."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/v1629342930/the-beths/town-hall-live-2020/facebook_820x312_out_sept.jpg"
+          content="https://res.cloudinary.com/garyou/image/upload/v1629343047/the-beths/town-hall-live-2020/facebook_820x312_out_now.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
