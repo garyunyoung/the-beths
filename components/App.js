@@ -54,9 +54,14 @@ export default class App extends React.Component {
     FacebookPixel();
   }
 
+  loadFacebookPixels() {
+    FacebookPixel()
+  }
+
   render() {
     return (
       <React.Fragment>
+        {this.state.hasConsent ? this.loadFacebookPixels() : null}
         <Navigation toggleGame={() => this.toggleGame()} />
         <MobileNavigation toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
