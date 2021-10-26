@@ -63,8 +63,8 @@
 
   @include element('cta-links') {
     display: flex;
-    flex-flow: column;
-    margin: 48px;
+    flex-flow: column-reverse;
+    padding: 48px;
 
     @include sm-desktop {
       display: flex;
@@ -87,7 +87,7 @@
     padding: 16px 24px;
     margin-bottom: 16px;
 
-    &:last-child {
+    &:first-child {
       margin-bottom: 0;
     }
 

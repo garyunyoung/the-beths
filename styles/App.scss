@@ -1,5 +1,6 @@
-// Global Styling//
+@import 'styles/_mixins.scss';
 
+// Global Styling//
 *,
 *::before,
 *::after {
@@ -46,7 +47,7 @@ li {
 
 @media (min-width: 1024px) {
   a:hover {
-    color: #ef97b0;
+    color: $pink;
     cursor: pointer;
   }
 }
@@ -66,25 +67,6 @@ li {
   min-height: 100vh;
 }
 
-// .divider {
-//   height: 96px;
-//   background: linear-gradient(
-//     hsl(0, 0%, 0%) 0%,
-//     hsla(0, 0%, 0%, 0.738) 19%,
-//     hsla(0, 0%, 0%, 0.541) 34%,
-//     hsla(0, 0%, 0%, 0.382) 47%,
-//     hsla(0, 0%, 0%, 0.278) 56.5%,
-//     hsla(0, 0%, 0%, 0.194) 65%,
-//     hsla(0, 0%, 0%, 0.126) 73%,
-//     hsla(0, 0%, 0%, 0.075) 80.2%,
-//     hsla(0, 0%, 0%, 0.042) 86.1%,
-//     hsla(0, 0%, 0%, 0.021) 91%,
-//     hsla(0, 0%, 0%, 0.008) 95.2%,
-//     hsla(0, 0%, 0%, 0.002) 98.2%,
-//     hsla(0, 0%, 0%, 0) 100%
-//   );
-// }
-
 @media (min-width: 425px) {
   .page--home {
     min-height: max-content;
@@ -102,18 +84,23 @@ li {
     background-size: cover;
     min-height: 100vh;
   }
-
-  // .divider {
-  //   background-color: black;
-  // }
 }
 
-.home-socials-banner {
-  display: flex;
-  margin-left: -88px;
-}
-.home-socials-banner-socials {
-  &__icon {
-    margin: 0 4px;
-  }
+@include block('divider') {
+  height: 96px;
+  background: linear-gradient(
+    hsl(0, 0%, 0%) 0%,
+    hsla(0, 0%, 0%, 0.738) 19%,
+    hsla(0, 0%, 0%, 0.541) 34%,
+    hsla(0, 0%, 0%, 0.382) 47%,
+    hsla(0, 0%, 0%, 0.278) 56.5%,
+    hsla(0, 0%, 0%, 0.194) 65%,
+    hsla(0, 0%, 0%, 0.126) 73%,
+    hsla(0, 0%, 0%, 0.075) 80.2%,
+    hsla(0, 0%, 0%, 0.042) 86.1%,
+    hsla(0, 0%, 0%, 0.021) 91%,
+    hsla(0, 0%, 0%, 0.008) 95.2%,
+    hsla(0, 0%, 0%, 0.002) 98.2%,
+    hsla(0, 0%, 0%, 0) 100%
+  );
 }
