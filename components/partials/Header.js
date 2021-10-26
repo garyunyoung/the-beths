@@ -5,7 +5,7 @@ export default function Header(props) {
   return (
     <h2
       className={`header header--${props.header} ${
-        props.open ? "header header--game--open" : ""
+        props.open ? "header header--game is-open" : ""
       } `}
     >
       {props.open ? "GAME UNLOCKED" : props.header}

@@ -1,26 +1,26 @@
-.header {
+@import 'styles/_mixins.scss';
+
+@include block('header') {
   text-align: center;
-  font-size: 5vh;
-  padding-top: 12vh;
-  margin-bottom: 3vh;
 
-  // border-top: 2px dashed gold;
+  font-size: 40px;
+  font-weight: 700;
 
-  margin-bottom: 40px;
   padding-top: 32px;
-}
+  margin-bottom: 40px;
 
-.header--contact {
-  padding-top: 15vh;
-}
+  @include modifier('contact') {
+    padding-top: 15vh;
+  }
 
-.header--game {
-  display: none;
-}
-
-.header--game--open {
-  display: block;
-  margin-bottom: 16px;
+  @include modifier('game') {
+    display: none;
+    
+    @include state('open') {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,7 +28,6 @@
     padding-top: 40px;
     margin-bottom: 32px;
   }
-
 
   .header--contact {
     padding-top: 15vh;
