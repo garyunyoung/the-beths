@@ -10,20 +10,42 @@
 
   @include element('background-image-wrapper') {
     width: 100vw;
-    padding: 93px 16px 32px;
+    padding: calc(#{$nav-height-mobile} + 48px) 16px 32px;
 
     @include tablet {
       width: 80vw;
     }
 
     @include sm-desktop {
+      width: 100vw;
+      padding: $nav-height-desktop 0 0;
+
+      overflow: hidden;
+    }
+
+    @include med-desktop {
+      padding-top: 0;
+      margin-top: ($nav-height-desktop * -1) + 16px;
+    }
+
+    @include lg-desktop {
+      width: 84vw;
       position: relative;
+
       &:after {
-        box-shadow: none;
-        background: radial-gradient(transparent 50%, black 70%);
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: radial-gradient(transparent 65%, black 100%);
       }
     }
   }
+
   @include element('background-image') {
     width: 100%;
 
@@ -41,20 +63,30 @@
   }
 
   @include element('cta-links') {
-    width: 100vw;
     padding: 0 16px 64px;
     display: flex;
     flex-flow: column-reverse;
 
     @include lg-mobile {
       padding: 0 48px 64px;
-      max-width: 380px;
     }
 
     @include sm-desktop {
       display: flex;
       flex-flow: row;
       justify-content: center;
+      max-width: none;
+
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include med-desktop {
+      bottom: 8px;
+    }
+
+    @include lg-desktop {
+      bottom: 24px;
     }
   }
 
@@ -63,6 +95,7 @@
 
     font-size: 18px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: white;
 
     border: 2px solid white;
@@ -91,8 +124,12 @@
       }
     }
 
+    @include med-desktop {
+      font-size: 26px;
+    }
+
     @include lg-desktop {
-      font-size: 32px;
+      font-size: 38px;
     }
   }
 }
