@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Sticky from '../partials/Sticky';
-import MobileSocials from '../partials/MobileSocials';
+import SocialsMobile from '../partials/SocialsMobile';
 import scss from '../../styles/Navigation.scss';
 
-export default function MobileNavigation(props) {
+export default function NavigationMobile(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
@@ -18,7 +18,7 @@ export default function MobileNavigation(props) {
       <header className='mobile-navigation'>
         <div className='mobile-navigation__content'>
           <MenuButton text='☰ MENU' className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
-          <MobileSocials className='mobile-navigation-socials' width='18' color={'black'} />
+          <SocialsMobile className='mobile-navigation-socials' width='18' color={'black'} />
         </div>
       </header>
 

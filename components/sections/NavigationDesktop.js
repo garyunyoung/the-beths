@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import DesktopSocials from "../partials/DesktopSocials";
+import SocialsDesktop from "../partials/SocialsDesktop";
 import scss from "../../styles/Navigation.scss";
 
-export default function DesktopNavigation(props) {
+export default function NavigationDesktop(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDesktop, setIsOpenDesktop] = useState(false);
   const toggleMenuDesktop = () => setIsOpenDesktop(!isOpenDesktop)
@@ -19,13 +19,11 @@ export default function DesktopNavigation(props) {
       <header className="desktop-navigation">
         <div className="desktop-navigation__content">
 
-          <DesktopSocials className="desktop-navigation-socials" width="18" color={"black"} />
+          <SocialsDesktop className="desktop-navigation-socials" width="18" color={"black"} />
 
           <nav className='desktop-navigation-menu'>
             <ul className="desktop-navigation-menu__nav-items">
               <ExternalNavItem text="Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
-          {/* <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" /> */}
-          {/* <ExternalNavItem text="JRG" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" /> */}
               <InternalNavItem text="Watch" onClick={closeMenu} link="#watch" />
               <InternalNavItem text="Merch" onClick={closeMenu} link="#merch" />
               <InternalNavItem text="Tour" onClick={closeMenu} link="#tour" />
