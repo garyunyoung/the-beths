@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Sticky from '../partials/Sticky';
 import SocialsMobile from '../partials/SocialsMobile';
 import scss from '../../styles/Navigation.scss';
 
@@ -14,7 +13,7 @@ export default function NavigationMobile(props) {
   }
 
   return (
-    <Sticky>
+    <React.Fragment>
       <header className='mobile-navigation'>
         <div className='mobile-navigation__content'>
           <MenuButton text='☰ MENU' className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
@@ -37,7 +36,7 @@ export default function NavigationMobile(props) {
         </ul>
       </nav>
       <style jsx>{scss}</style>
-    </Sticky>
+    </React.Fragment>
   );
 }
 

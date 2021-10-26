@@ -73,7 +73,6 @@ export default class App extends React.Component {
           />
         </section>
         <div className="divider"></div>
-        <MailingList />
 
         <section id="watch" className="page page--watch">
           <Header header="watch" />
@@ -98,6 +97,8 @@ export default class App extends React.Component {
           <Header header="contact" />
           <Contact />
         </section>
+        <MailingList />
+
         <style jsx>{scss}</style>
       </React.Fragment>
     );
