@@ -4,6 +4,8 @@
   display: flex;
   flex-flow: column;
 
+  margin: 0 auto;
+
   @include element('image') {
     height: 198px;
     background-size: contain;
@@ -20,6 +22,17 @@
 
 @include block('song-kick') {
   padding: 0 6px;
+
+  @include sm-desktop {
+    width: 100%;
+    max-width: $max-content-width-sm-desktop;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @include lg-desktop {
+    max-width: $max-content-width-lg-desktop;
+  }
 }
 
 .tour-consent-banner {
@@ -45,9 +58,9 @@
 }
 
 @media (min-width: 1024px) {
-  .song-kick {
-    margin: 0 13vw;
-  }
+  // .song-kick {
+  //   margin: 0 13vw;
+  // }
   .tour {
     .tour-pic {
       height: 20vh;
@@ -78,8 +91,8 @@
       font-size: 1.5em;
     }
 
-    .song-kick {
-      padding: 0;
-    }
+    // .song-kick {
+    //   padding: 0;
+    // }
   }
 }
