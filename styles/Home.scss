@@ -1,136 +1,66 @@
+$consent-banner-height-mobile: 120px;
+$nav-height-mobile: 45px;
+
+@mixin lg-mobile {
+  @media (min-width: 376px) and (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 415px) {
+    @content;
+  }
+}
+
+@mixin sm-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin med-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lg-desktop {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin set-size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
 .home {
-  min-height: 78vh;
-  &__content {
-    height: 78vh;
-    width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+
+  &__background-image {
+    height: calc(100vh - #{$nav-height-mobile} - 56px);
+    padding: calc(#{$nav-height-mobile} + 56px) 16px 0 16px;
 
     background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629344430/the-beths/town-hall-live-2020/Beths_Live_Amazon_Artwork_Poster_Out_Now_zsacjy.jpg');
-    background-size: 85%;
+    background-size: contain;
     background-position: center 72px;
     background-repeat: no-repeat;
 
-    background-color: black;
-    position: relative;
-
-    margin-top: 0;
-  }
-
-  &__wrapper,
-  .nav__desktop {
-    display: none;
-  }
-
-  &__test {
-    font-size: 18px;
-    text-align: center;
-    max-width: 150px;
-    margin: 0 auto;
-    line-height: 25px;
-  }
-
-  &_Socials-footer {
-    width: max-content;
-    margin: 32px auto;
-
-    &__icon {
-      margin: 0 4px;
+    @include lg-mobile {
+      height: calc(
+        100vh - #{$consent-banner-height-mobile} - #{$nav-height-mobile} - 56px
+      );
     }
-  }
 
-  &__test-mailing-list {
-    text-align: center;
-    margin: 16px 0;
-  }
-
-  &_Socials {
-    width: max-content;
-    margin: 32px auto;
-
-    &__icon {
-      margin: 8px;
-    }
-  }
-}
-
-.home-content-mobile {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-
-  background-color: black;
-
-  padding: 32px;
-
-  &__new-album-text {
-    width: 100%;
-    margin-bottom: 16px;
-
-    display: none;
-  }
-  &__release-date {
-    margin-bottom: 0;
-    visibility: hidden;
-
-    display: none;
-  }
-  &__carpark-logo {
-    display: none;
-  }
-  &__pre-order-links {
-    display: flex;
-    flex-flow: column;
-  }
-
-  &__pre-order-link {
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-
-    border: 2px solid white;
-    border-radius: 12px;
-
-    padding: 16px 24px;
-    margin-bottom: 16px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media (min-width: 414px) {
-  .home {
-    &__content {
-      background-size: 100%;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .home {
-    &__content {
+    @include tablet {
       height: calc(100vh - 48px - 77px);
       background-size: 80%;
     }
 
-    &__pre-order-link {
-      font-size: 30px;
-    }
-  }
-
-  .home-content-mobile {
-    padding: 48px;
-
-    &__new-album-text {
-      max-width: 400px;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .home {
-    &__content {
+    @include sm-desktop {
       height: 100vh;
       min-height: 590px;
 
@@ -159,55 +89,49 @@
         background: radial-gradient(transparent 50%, black 70%);
       }
     }
+  }
 
-    &__wrapper {
+  &__cta-links {
+    display: flex;
+    flex-flow: column;
+    margin: 48px;
+
+    @include sm-desktop {
       display: flex;
-      flex-flow: column;
+      flex-flow: row;
       justify-content: center;
-      align-items: center;
+      max-width: 1407px;
+    }
+  }
 
-      position: absolute;
+  &__cta-link {
+    text-align: center;
 
-      bottom: 48px;
-      left: 0;
-      margin: 0;
-      width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 12px;
+
+    padding: 16px 24px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    &__pre-order-links {
-      display: flex;
-      max-width: 940px;
+    @include tablet {
+      font-size: 32px;
     }
 
-    &__pre-order-link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+    @include sm-desktop {
       font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      color: white;
-      text-transform: uppercase;
 
-      background-color: rgba(255, 255, 255, 0.4);
       border: 1px solid white;
-
-      padding: 0.5em 1em;
-      margin-bottom: 1em;
-
-      color: white;
-      background-color: white;
-
       background-color: rgba(0, 0, 0, 0.4);
 
-      border-radius: 12px;
-      padding: 16px 24px;
       margin: 0 24px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
 
       &:hover {
         box-shadow: 3px 3px white;
@@ -216,16 +140,8 @@
         transform: scale(1.01);
       }
     }
-  }
 
-  .home-content-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 2560px) {
-  .home {
-    &__pre-order-link {
+    @include med-desktop {
       font-size: 32px;
     }
   }

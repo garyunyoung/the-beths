@@ -24,9 +24,9 @@ export default function DesktopNavigation(props) {
 
           <nav className='desktop-navigation-menu'>
             <ul className="desktop-navigation-menu__nav-items">
-              {/* <ExternalNavItem text="Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
-          <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
-          <ExternalNavItem text="Jump Rope Gazers" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" /> */}
+              <ExternalNavItem text="Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
+          {/* <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" /> */}
+          {/* <ExternalNavItem text="JRG" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" /> */}
               <InternalNavItem text="Watch" onClick={closeMenu} link="#watch" />
               <InternalNavItem text="Merch" onClick={closeMenu} link="#merch" />
               <InternalNavItem text="Tour" onClick={closeMenu} link="#tour" />

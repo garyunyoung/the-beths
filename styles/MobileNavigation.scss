@@ -142,7 +142,7 @@
       display: flex;
       justify-content: space-between;
 
-      width: 940px;
+      width: 960px;
 
       height: 60px;
 
@@ -265,6 +265,15 @@
       svg {
         padding: 1px;
       }
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .desktop-navigation {
+    &__content {
+      width: 1047px;
+      
     }
   }
 }

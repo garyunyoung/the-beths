@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-import Sticky from "../partials/Sticky";
-import MobileSocials from "../partials/MobileSocials";
-import Socials from "../partials/Socials";
-import scss from "../../styles/MobileNavigation.scss";
+import React, { useState } from 'react';
+import Sticky from '../partials/Sticky';
+import MobileSocials from '../partials/MobileSocials';
+import scss from '../../styles/MobileNavigation.scss';
 
 export default function MobileNavigation(props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpenDesktop, setIsOpenDesktop] = useState(false);
-  const toggleMenuDesktop = () => setIsOpenDesktop(!isOpenDesktop)
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
 
@@ -18,27 +15,25 @@ export default function MobileNavigation(props) {
 
   return (
     <Sticky>
-      <header className="mobile-navigation">
-        <div className="mobile-navigation__content">
-          <MenuButton text="☰ MENU" className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
-          <MenuButton text="☰ MENU" className='mobile-navigation-menu__menu-button mobile-navigation-menu__menu-button--desktop' onClick={toggleMenuDesktop} />
-          <MobileSocials className="mobile-navigation-socials" width="18" color={"black"} />
-          <Socials className="desktop-navigation-socials" width="18" color={"black"} />
+      <header className='mobile-navigation'>
+        <div className='mobile-navigation__content'>
+          <MenuButton text='☰ MENU' className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
+          <MobileSocials className='mobile-navigation-socials' width='18' color={'black'} />
         </div>
       </header>
 
-      <nav className={`mobile-navigation-menu ${isOpen ? "is-open" : ""} ${isOpenDesktop ? "is-open-desktop" : ""}`}>
-        <ul className="mobile-navigation-menu__nav-items">
-          <ExternalNavItem text="Film" onClick={closeMenu} link="https://found.ee/film_nz2020" />
-          <ExternalNavItem text="Live Album" onClick={closeMenu} link="https://found.ee/beths_nz2020" />
-          <ExternalNavItem text="Jump Rope Gazers" onClick={closeMenu} link="https://smarturl.it/thebeths_jrg" />
-          <InternalNavItem text="Watch" onClick={closeMenu} link="#watch" />
-          <InternalNavItem text="Merch" onClick={closeMenu} link="#merch" />
-          <InternalNavItem text="Tour" onClick={closeMenu} link="#tour" />
-          <ExternalNavItem text="Breakfast Blog" onClick={closeMenu} link="https://found.ee/thebeths_bensblog" />
-          <ExternalNavItem text="Patreon" onClick={closeMenu} link="https://www.patreon.com/thebeths" />
-          <InternalNavItem text="??? 👀" onClick={toggleGame} link="#game" />
-          <InternalNavItem text="Contact" onClick={closeMenu} link="#contact" />
+      <nav className='mobile-navigation-mene'>
+        <ul className='mobile-navigation-menu__nav-items'>
+          <ExternalNavItem text='Film' onClick={closeMenu} link='https://found.ee/film_nz2020' />
+          <ExternalNavItem text='Live Album' onClick={closeMenu} link='https://found.ee/beths_nz2020' />
+          <ExternalNavItem text='Jump Rope Gazers' onClick={closeMenu} link='https://smarturl.it/thebeths_jrg' />
+          <InternalNavItem text='Watch' onClick={closeMenu} link='#watch' />
+          <InternalNavItem text='Merch' onClick={closeMenu} link='#merch' />
+          <InternalNavItem text='Tour' onClick={closeMenu} link='#tour' />
+          <ExternalNavItem text='Blog' onClick={closeMenu} link='https://found.ee/thebeths_bensblog' />
+          <ExternalNavItem text='Patreon' onClick={closeMenu} link='https://www.patreon.com/thebeths' />
+          <InternalNavItem text='???' onClick={toggleGame} link='#game' />
+          <InternalNavItem text='Contact' onClick={closeMenu} link='#contact' />
         </ul>
       </nav>
       <style jsx>{scss}</style>
@@ -48,12 +43,12 @@ export default function MobileNavigation(props) {
 
 function ExternalNavItem(props) {
   return (
-    <li className="mobile-navigation-menu__nav-item">
+    <li className='mobile-navigation-menu__nav-item'>
       <a
-        className="mobile-navigation-menu__nav-item-link"
+        className='mobile-navigation-menu__nav-item-link'
         href={`${props.link}`}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
         onClick={() => props.onClick()}
       >
         {props.text}
@@ -64,9 +59,9 @@ function ExternalNavItem(props) {
 
 function InternalNavItem(props) {
   return (
-    <li className="mobile-navigation-menu__nav-item">
+    <li className='mobile-navigation-menu__nav-item'>
       <a
-        className="mobile-navigation-menu__nav-item-link"
+        className='mobile-navigation-menu__nav-item-link'
         href={`${props.link}`}
         onClick={() => props.onClick()}
       >
