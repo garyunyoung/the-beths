@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Icon } from "../utilities/icons";
-import scss from "../../styles/MobileNavigation.scss";
+import scss from "../../styles/Socials.scss";
 
 export default function Socials(props) {
 

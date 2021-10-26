@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sticky from '../partials/Sticky';
 import MobileSocials from '../partials/MobileSocials';
-import scss from '../../styles/MobileNavigation.scss';
+import scss from '../../styles/Navigation.scss';
 
 export default function MobileNavigation(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function MobileNavigation(props) {
         </div>
       </header>
 
-      <nav className='mobile-navigation-mene'>
+      <nav className='mobile-navigation-menu'>
         <ul className='mobile-navigation-menu__nav-items'>
           <ExternalNavItem text='Film' onClick={closeMenu} link='https://found.ee/film_nz2020' />
           <ExternalNavItem text='Live Album' onClick={closeMenu} link='https://found.ee/beths_nz2020' />

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import MobileSocials from "../partials/MobileSocials";
-import Socials from "../partials/Socials";
-import scss from "../../styles/MobileNavigation.scss";
+import DesktopSocials from "../partials/DesktopSocials";
+import scss from "../../styles/Navigation.scss";
 
 export default function DesktopNavigation(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ export default function DesktopNavigation(props) {
       <header className="desktop-navigation">
         <div className="desktop-navigation__content">
 
-          <Socials className="desktop-navigation-socials" width="18" color={"black"} />
+          <DesktopSocials className="desktop-navigation-socials" width="18" color={"black"} />
 
           <nav className='desktop-navigation-menu'>
             <ul className="desktop-navigation-menu__nav-items">

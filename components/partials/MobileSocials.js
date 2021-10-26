@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Icon } from "../utilities/icons";
-import scss from "../../styles/MobileNavigation.scss";
+import scss from "../../styles/Socials.scss";
 
 export default function MobileSocials(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -122,8 +122,6 @@ export default function MobileSocials(props) {
           </svg>
         </a>
       </div>
-
-
       <style jsx>{scss}</style>
     </section>
   );

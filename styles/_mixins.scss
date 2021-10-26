@@ -1,6 +1,10 @@
 // Bemify Documentation: https://franzheidl.github.io/bemify/
 @import "bemify"; 
 
+$consent-banner-height-mobile: 120px;
+$nav-height-mobile: 45px;
+$nav-height-desktop: 60px;
+
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 376px) and (max-width: 414px) {

@@ -1,31 +1,36 @@
-// .socials-default {
-//   &__icon {
-//     display: flex;
-//     align-items: center;
-//     margin: 0 4px;
+.socials-default {
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
 
-//     min-height: 100%;
-//     max-height: 45px;
+    min-height: 100%;
+    max-height: 45px;
+    color: transparent;
 
-//     &:hover {
-//       svg {
-//         fill: #ef97b0;
-//         transition: all 0.23s ease-in-out 0s;
-//       }
-//     }
+    &:hover {
+      svg {
+        fill: #ef97b0;
+        transition: all 0.23s ease-in-out 0s;
+      }
+    }
 
-//     &--apple {
-//       margin-top: -2px;
+    &--patreon {
+      margin-left: 6px;
+    }
 
-//       svg {
-//         padding: 2px;
-//       }
-//     }
+    &--apple {
+      margin-top: -2px;
 
-//     &--bandcamp {
-//       svg {
-//         padding: 1px;
-//       }
-//     }
-//   }
-// }
+      svg {
+        padding: 2px;
+      }
+    }
+
+    &--bandcamp {
+      svg {
+        padding: 1px;
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
 @import 'styles/_mixins.scss';
 
-$consent-banner-height-mobile: 120px;
-$nav-height-mobile: 45px;
-
 @include block('home') {
   min-height: 100vh;
   background-color: black;
