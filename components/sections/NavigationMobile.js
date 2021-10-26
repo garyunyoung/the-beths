@@ -22,7 +22,7 @@ export default function NavigationMobile(props) {
         </div>
       </header>
 
-      <nav className='mobile-navigation-menu'>
+      <nav className={`mobile-navigation-menu  ${isOpen ? 'is-open' : ''}`} >
         <ul className='mobile-navigation-menu__nav-items'>
           <ExternalNavItem text='Film' onClick={closeMenu} link='https://found.ee/film_nz2020' />
           <ExternalNavItem text='Live Album' onClick={closeMenu} link='https://found.ee/beths_nz2020' />
