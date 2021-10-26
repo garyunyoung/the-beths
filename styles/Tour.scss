@@ -1,22 +1,25 @@
-.tour {
+@import 'styles/_mixins.scss';
+
+@include block('tour') {
   display: flex;
   flex-flow: column;
 
-  .tour-pic {
-    height: 15vh;
-    margin: 0 5vw;
+  @include element('image') {
+    height: 198px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    margin-top: -56px;
   }
 
-  .tour-text {
-    text-align: center;
-    margin: 1em 0 0 0;
+  @include element('text') {
+    margin: 16px auto 0 auto;
   }
-  .song-kick {
-    padding: 0 2vw;
-  }
+}
+
+@include block('song-kick') {
+  padding: 0 6px;
 }
 
 .tour-consent-banner {

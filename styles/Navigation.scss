@@ -71,6 +71,10 @@
 
     padding: 0 16px;
 
+    @include lg-mobile {
+      font-size: 20px;
+    }
+
     @include modifier('desktop') {
       display: none;
     }
@@ -87,6 +91,10 @@
     color: black;
 
     margin: 0;
+
+    @include lg-mobile {
+      font-size: 20px;
+    }
   }
 }
 
@@ -110,10 +118,14 @@
   }
 
   @include element('more-arrow') {
-    font-size: 14px;
+    font-size: 18px;
 
     &:hover {
       cursor: pointer;
+    }
+
+    @include lg-mobile {
+      font-size: 20px;
     }
   }
 

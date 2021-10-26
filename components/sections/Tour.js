@@ -34,10 +34,12 @@ export default class Tour extends React.Component {
       return (
         <section className="tour">
           <div
-            className="tour-pic"
+            className="tour__image"
             style={{ backgroundImage: "url(" + tourTheBeths + ")" }}
-          />
-          <p className="tour-text">come gig!</p>
+          ></div>
+          <p className="tour__text">come gig!</p>
+
+
           <div id='song-kick' className="song-kick">
             <a
               href="https://www.songkick.com/artists/8923484"
