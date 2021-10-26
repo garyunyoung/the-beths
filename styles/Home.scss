@@ -4,77 +4,57 @@
   min-height: 100vh;
   background-color: black;
 
-  @include element('background-image') {
-    height: calc(100vh - #{$nav-height-mobile} - 56px);
-    padding: calc(#{$nav-height-mobile} + 56px) 16px 0 16px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
-    background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629344430/the-beths/town-hall-live-2020/Beths_Live_Amazon_Artwork_Poster_Out_Now_zsacjy.jpg');
-    background-size: contain;
-    background-position: center 72px;
-    background-repeat: no-repeat;
-
-    @include lg-mobile {
-      height: calc(
-        100vh - #{$consent-banner-height-mobile} - #{$nav-height-mobile} - 56px
-      );
-    }
+  @include element('background-image-wrapper') {
+    width: 100vw;
+    padding: 93px 16px 32px;
 
     @include tablet {
-      height: calc(100vh - 48px - 77px);
-      background-size: 80%;
+      width: 80vw;
     }
 
     @include sm-desktop {
-      height: 100vh;
-      min-height: 590px;
-
-      background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629343962/the-beths/town-hall-live-2020/Beths_Live_Youtube_2048x1152_1_utnqgy.jpg');
-      background-position: top center;
-      margin-top: -32px;
-
-      
-      background-size: 80%;
-      
-      background-position: center;
-      
       position: relative;
-
-      // background-color: red;
-
       &:after {
-        content: '';
-        width: calc(100vw - 284px);
-
-        height: 82%;
-        width: 80%;
-
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-
+        box-shadow: none;
         background: radial-gradient(transparent 50%, black 70%);
       }
     }
+  }
+  @include element('background-image') {
+    width: 100%;
 
-    @include lg-desktop {
-      height: 100vh;
-      background-size: 80%;
-      background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629344430/the-beths/town-hall-live-2020/Beths_Live_Amazon_Artwork_Poster_Out_Now_zsacjy.jpg');
+    @include sm-desktop {
+      display: none;
+    }
+
+    @include modifier('desktop') {
+      display: none;
+
+      @include sm-desktop {
+        display: block;
+      }
     }
   }
 
   @include element('cta-links') {
+    width: 100vw;
+    padding: 0 16px 64px;
     display: flex;
     flex-flow: column-reverse;
-    padding: 48px;
+
+    @include lg-mobile {
+      padding: 0 48px 64px;
+      max-width: 380px;
+    }
 
     @include sm-desktop {
       display: flex;
       flex-flow: row;
       justify-content: center;
-      max-width: 1407px;
     }
   }
 
@@ -106,8 +86,8 @@
       &:hover {
         box-shadow: 3px 3px white;
         color: white;
-        transition: all 0.23s ease-in-out 0s;
-        transform: scale(1.01);
+        transition: $hover;
+        transform: scale;
       }
     }
 

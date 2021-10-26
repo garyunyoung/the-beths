@@ -73,7 +73,6 @@ export default class App extends React.Component {
           />
         </section>
         <div className="divider"></div>
-
         <section id="watch" className="page page--watch">
           <Header header="watch" />
           <Watch />
