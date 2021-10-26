@@ -8,13 +8,13 @@ export default function SocialsMobile(props) {
   const toggleExtraSocials = () => setIsOpen(!isOpen)
 
   return (
-    <section className={`socials-default ${props.className} ${isOpen ? 'is-open' : ''}`}>
+    <section className={`socials ${props.className} ${isOpen ? 'is-open' : ''}`}>
       <div className={`${props.className}__content`}>
         <a
           href="https://found.ee/thebeths_ig"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon ${props.className}__icon ${props.className}__icon--instagram`}
+          className={`socials__icon ${props.className}__icon ${props.className}__icon--instagram`}
         >
           <Icon name="instagram" width={props.width} fill={props.color} />
         </a>
@@ -22,7 +22,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_fb"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon ${props.className}__icon ${props.className}__icon--facebook`}
+          className={`socials__icon ${props.className}__icon ${props.className}__icon--facebook`}
         >
           <Icon name="facebook" width={props.width} fill={props.color} />
         </a>
@@ -30,7 +30,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_tw"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon socials-default__icon--twitter ${props.className}__icon ${props.className}__icon--twitter`}
+          className={`socials__icon socials__icon--twitter ${props.className}__icon ${props.className}__icon--twitter`}
         >
           <Icon name="twitter" width={props.width} fill={props.color} />
         </a>
@@ -38,7 +38,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_spotify"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon ${props.className}__icon ${props.className}__icon--spotify`}
+          className={`socials__icon ${props.className}__icon ${props.className}__icon--spotify`}
         >
           <Icon name="spotify" width={props.width} fill={props.color} />
         </a>
@@ -46,7 +46,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_yt"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon ${props.className}__icon ${props.className}__icon--youtube`}
+          className={`socials__icon ${props.className}__icon ${props.className}__icon--youtube`}
         >
           <Icon
             name="youtube"
@@ -60,7 +60,7 @@ export default function SocialsMobile(props) {
           href="https://www.patreon.com/thebeths"
           target="_blank"
           rel="noopener noreferrer"
-          className='socials-default__icon socials-default__icon--patreon'
+          className='socials__icon socials__icon--patreon'
         >
           <svg
             height="24px"
@@ -86,7 +86,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_apple"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon socials-default__icon--apple ${props.className}__icon ${props.className}__icon--apple`}
+          className={`socials__icon socials__icon--apple ${props.className}__icon ${props.className}__icon--apple`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_bc"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon socials-default__icon--bandcamp ${props.className}__icon ${props.className}__icon--bandcamp`}
+          className={`socials__icon socials__icon--bandcamp ${props.className}__icon ${props.className}__icon--bandcamp`}
         >
           <Icon name="bandcamp" width={props.width} fill={props.color} />
         </a>
@@ -110,7 +110,7 @@ export default function SocialsMobile(props) {
           href="https://found.ee/thebeths_sc"
           target="_blank"
           rel="noopener noreferrer"
-          className={`socials-default__icon ${props.className}__icon ${props.className}__icon--soundcloud`}
+          className={`socials__icon ${props.className}__icon ${props.className}__icon--soundcloud`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
