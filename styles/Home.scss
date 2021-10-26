@@ -134,12 +134,28 @@
       height: 100vh;
       min-height: 590px;
 
-      background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1634616653/the-beths/town-hall-live-2020/Beths_Live_Youtube_2048x1152_Out_Now_tan7np.jpg');
-      background-size: 100%;
+      background-image: url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1629343962/the-beths/town-hall-live-2020/Beths_Live_Youtube_2048x1152_1_utnqgy.jpg');
       background-position: top center;
-      margin-top: calc(-48px);
+      margin-top: -48px;
 
       position: relative;
+
+      background-size: 80%;
+      background-position: center;
+
+      &:after {
+        content: '';
+        width: calc(100vw - 284px);
+        height: 80%;
+
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        background: radial-gradient(transparent 50%, black 70%);
+      }
     }
 
     &__wrapper {
@@ -205,27 +221,6 @@
 }
 
 @media (min-width: 2560px) {
-  .home {
-    &__content {
-      background-size: calc(100vw - 284px);
-
-      &:after {
-        content: '';
-        width: calc(100vw - 284px);
-        height: 100%;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-
-        background: radial-gradient(circle, transparent 74%, black 87%);
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
