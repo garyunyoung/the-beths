@@ -8,9 +8,9 @@ export default function Contact() {
       className="contact"
     >
       <p className="contact__text">management</p>
-        <a className="contact__link" href="mailto:hello@mam.land">
-          hello@mam.land
-        </a>
+      <a className="contact__link" href="mailto:hello@mam.land">
+        hello@mam.land
+      </a>
       <br />
       <p className="contact__text">record label</p>
       <a
@@ -28,7 +28,7 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="cp-logo" src={cpB} alt="carpark records logo" />
+          <img className="contact__carpark-logo" src={cpB} alt="carpark records logo" />
         </a>
       </p>
       <style jsx>{scss}</style>

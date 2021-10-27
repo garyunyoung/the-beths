@@ -225,6 +225,11 @@
       transition: $hover;
       color: $pink;
     }
+
+    @include lg-desktop {
+      font-size: 24px;
+      width: 139px;
+    }
   }
 }
 
@@ -245,6 +250,10 @@
     font-size: 20px;
     font-weight: 700;
     padding: 0 16px;
+
+    @include lg-desktop {
+      font-size: 24px;
+    }
   }
 }
 
