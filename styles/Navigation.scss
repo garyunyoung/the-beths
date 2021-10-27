@@ -24,7 +24,7 @@
 
   padding: 16px;
 
-  @include sm-desktop {
+  @include med-desktop {
     display: none;
   }
 
@@ -53,7 +53,7 @@
 
   padding: 16px;
 
-  @include sm-desktop {
+  @include med-desktop {
     display: none;
   }
 
@@ -161,7 +161,7 @@
 @include block('desktop-navigation') {
   display: none;
 
-  @include sm-desktop {
+  @include med-desktop {
     display: flex;
     justify-content: center;
 
@@ -198,8 +198,9 @@
       height: $nav-height-desktop;
       padding: 0 4.4vw;
     }
-
+    
     @include lg-desktop {
+      height: $nav-height-lg-desktop;
       width: 84vw;
       padding: 0;
     }
@@ -280,6 +281,10 @@
 
     @include med-desktop {
       height: $nav-height-desktop;
+    }
+
+    @include lg-desktop {
+      height: $nav-height-lg-desktop;
     }
   }
 }

@@ -16,7 +16,7 @@ export default function NavigationMobile(props) {
     <React.Fragment>
       <header className='mobile-navigation'>
         <div className='mobile-navigation__content'>
-          <MenuButton text='☰ MENU' className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
+          <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
           <SocialsMobile className='mobile-navigation-socials' width='18' color={'black'} />
         </div>
       </header>

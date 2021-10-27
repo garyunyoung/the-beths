@@ -5,7 +5,8 @@ export default class MailingList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      emailValue: ""
+      emailValue: "",
+      isOpen: false
     };
   }
 
@@ -13,7 +14,16 @@ export default class MailingList extends React.Component {
     return (
       <section className="mailing-list-banner">
         <div className="mailing-list-banner__wrapper">
-          <div id="mc_embed_signup">
+          <div
+            className='mailing-list-banner__cta-link'
+            onClick={e => {
+              this.setState({ isOpen: !this.state.isOpen });
+            }}
+
+          >
+            JOIN MAILING LIST
+          </div>
+          <div id="mc_embed_signup" className={`mailchimp ${`${this.state.isOpen ? 'is-open' : ''}`}`}>
             <form
               action="https://thebeths.us20.list-manage.com/subscribe/post?u=0bfa27c5341eacbfd10d85a43&amp;id=05cac296b0"
               method="post"
@@ -50,7 +60,7 @@ export default class MailingList extends React.Component {
                     <input
                       className="mailing-list-banner__submit-button button"
                       type="submit"
-                      value="subscribe >>>"
+                      value="subscribe"
                       name="subscribe"
                       id="mc-embedded-subscribe"
                     />

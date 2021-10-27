@@ -72,7 +72,7 @@ export default class App extends React.Component {
             allowTracking={() => this.loadAnalytics()}
           />
         </section>
-        <div className="divider"></div>
+        <MailingList />
         <section id="watch" className="page page--watch">
           <Header header="watch" />
           <Watch />
@@ -96,7 +96,6 @@ export default class App extends React.Component {
           <Header header="contact" />
           <Contact />
         </section>
-        <MailingList />
 
         <style jsx>{scss}</style>
       </React.Fragment>

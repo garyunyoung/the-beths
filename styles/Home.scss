@@ -41,7 +41,7 @@
 
     @include med-desktop {
       padding-top: 0;
-      margin-top: ($nav-height-desktop * -1) + 16px;
+      margin-top: ($nav-height-desktop * -1);
     }
 
     @include lg-desktop {
@@ -79,12 +79,12 @@
   }
 
   @include element('cta-links') {
-    padding: 0 16px 64px;
+    padding: 0 16px 16px;
     display: flex;
     flex-flow: column-reverse;
 
     @include lg-mobile {
-      padding: 0 48px 64px;
+      padding: 0 48px 16px;
     }
 
     @include sm-desktop {
@@ -98,11 +98,7 @@
     }
 
     @include med-desktop {
-      bottom: 8px;
-    }
-
-    @include lg-desktop {
-      bottom: 24px;
+      bottom: 56px;
     }
   }
 
