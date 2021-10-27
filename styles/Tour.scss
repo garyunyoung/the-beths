@@ -13,6 +13,12 @@
     background-repeat: no-repeat;
 
     margin-top: -56px;
+
+    @include sm-desktop {
+      height: 20vh;
+      margin: 0 15vw;
+      background-size: contain;
+    }
   }
 
   @include element('text') {
@@ -35,21 +41,29 @@
   }
 }
 
-.tour-consent-banner {
+@include block('tour-consent-banner') {
   text-align: center;
   background-color: gold;
   padding: 24px;
 
-  &__text {
+  @include med-desktop {
+    margin-bottom: 32px;
+  }
+
+  @include element('text') {
+    font-size: 18px;
+
     padding: 0 16px;
     margin-bottom: 16px;
   }
 
-  &__accept-button {
+  @include element('accept-button') {
     background-color: transparent;
     border: 1px solid black;
     padding: 8px 16px;
+
     font-size: 16px;
+
     cursor: pointer;
     &:hover {
       box-shadow: 1px 1px 1px black;
@@ -57,42 +71,13 @@
   }
 }
 
-@media (min-width: 1024px) {
-  // .song-kick {
-  //   margin: 0 13vw;
-  // }
-  .tour {
-    .tour-pic {
-      height: 20vh;
-      margin: 0 15vw;
-      background-size: contain;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .tour-consent-banner {
-    margin-bottom: 32px;
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  .tour-text {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .tour {
-    .tour-pic {
-      height: 15vh;
-    }
-    .tour-text {
-      font-size: 1.5em;
-    }
-
-    // .song-kick {
-    //   padding: 0;
-    // }
-  }
-}
+// @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+//   .tour {
+//     .tour-pic {
+//       height: 15vh;
+//     }
+//     .tour-text {
+//       font-size: 1.5em;
+//     }
+//   }
+// }
