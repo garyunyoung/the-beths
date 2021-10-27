@@ -52,9 +52,8 @@ function CarouselImage(props) {
   return (
     <React.Fragment>
       <div
-        className={`carousel-image ${
-          props.visible ? "carousel-image--visible" : ""
-        }`}
+        className={`carousel-image ${props.visible ? "carousel-image--visible" : ""
+          }`}
       >
         <a
           className="carousel__wrapper--link"

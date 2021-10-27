@@ -3,11 +3,11 @@
 @include block('header') {
   text-align: center;
 
-  font-size: 40px;
-  font-weight: 700;
-
   padding-top: 32px;
   margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: 700;
 
   @include tablet {
     padding-top: 40px;
@@ -21,6 +21,10 @@
 
   @include med-desktop {
     padding-top: 48px;
+  }
+
+  @include lg-desktop {
+    font-size: 60px;
   }
 
   @include modifier('merch') {

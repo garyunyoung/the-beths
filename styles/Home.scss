@@ -34,6 +34,7 @@
     @include sm-desktop {
       width: 100vw;
       padding: $nav-height-desktop 0 0;
+      padding-top: 0;
 
       overflow: hidden;
     }

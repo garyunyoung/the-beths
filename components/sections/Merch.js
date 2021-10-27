@@ -51,12 +51,12 @@ export default function Merch() {
     <section className="merch">
       <Carousel merch={merch} />
       <a
-        className="merch__visit"
+        className="merch__visit-link"
         href="https://found.ee/thebeths_merch"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h3>visit store</h3>
+        visit store
       </a>
       <style jsx>{scss}</style>
     </section>

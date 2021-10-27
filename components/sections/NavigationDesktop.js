@@ -18,7 +18,7 @@ export default function NavigationDesktop(props) {
           <SocialsDesktop className='desktop-navigation-socials' width='18' color={'black'} />
           <nav className='desktop-navigation-menu'>
             <ul className='desktop-navigation-menu__nav-items'>
-              <ExternalNavItem text='Film' link='https://found.ee/film_nz2020' />
+              <InternalNavItem text='Film' link='#' />
               <InternalNavItem text='Watch' link='#watch' />
               <InternalNavItem text='Merch' link='#merch' />
               <InternalNavItem text='Tour' link='#tour' />

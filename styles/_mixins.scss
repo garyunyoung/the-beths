@@ -70,15 +70,6 @@ $nav-height-desktop: 60px;
 }
 
 // Keyframes
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-}
-
 @keyframes fade-in-movement {
   0% {
     opacity: 0;
