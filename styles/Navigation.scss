@@ -1,5 +1,18 @@
 @import 'styles/_mixins.scss';
 
+// Animations
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-navigation {
+    animation-name: fade-in;
+    animation-duration: 1s;
+  }
+
+  .desktop-navigation {
+    animation-name: ease-up-in-slow;
+    animation-duration: 1s;
+  }
+}
+
 // Mobile
 @include block('mobile-navigation') {
   width: 100%;

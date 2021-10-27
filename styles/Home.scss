@@ -1,5 +1,20 @@
 @import 'styles/_mixins.scss';
 
+// Animations
+@media (prefers-reduced-motion: no-preference) {
+  .home__background-image-wrapper {
+    animation-name: fade-in;
+    animation-duration: 1.3s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home__cta-links {
+    animation-name: ease-up-in-fast;
+    animation-duration: 2s;
+  }
+}
+
 @include block('home') {
   min-height: 100vh;
   background-color: black;

@@ -1,5 +1,5 @@
 // Bemify Documentation: https://franzheidl.github.io/bemify/
-@import "bemify"; 
+@import 'bemify';
 
 $pink: #ef97b0;
 $hover: all 0.23s ease-in-out 0s;
@@ -55,11 +55,59 @@ $nav-height-desktop: 60px;
 // // Pixel 2 XL /
 // @media only screen and (width: 411px) and (height: 823px) and (orientation: portrait) {}
 
-
 // Helpers
 @mixin set-size($height, $width) {
   height: $height;
   width: $width;
 }
 
+// Keyframes
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
+@keyframes ease-up-in-slow-mobile {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ease-up-in-slow {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ease-up-in-fast {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
