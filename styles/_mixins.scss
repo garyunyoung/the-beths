@@ -12,6 +12,15 @@ $consent-banner-height-mobile: 120px;
 $nav-height-mobile: 45px;
 $nav-height-desktop: 60px;
 
+// Font sizes
+
+// mobile: 18px
+// large mobile: 20px
+// tablet: 20px
+// sm-desktop: 20px
+// lg-desktop: 24px
+
+
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 375px) {

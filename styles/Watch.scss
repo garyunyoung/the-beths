@@ -1,3 +1,5 @@
+@import 'styles/_mixins.scss';
+
 .watch {
   display: flex;
   flex-flow: column;
@@ -23,16 +25,21 @@
   }
 
   &__text {
-    font-size: 24px;
-    font-weight: lighter;
+    font-size: 18px;
+    font-weight: 700;
 
-    transform: scale(1);
-    transition: all 0.23s ease-in-out 0s;
+    @include lg-mobile {
+      font-size: 20px;
+    }
+
+    @include lg-desktop {
+      font-size: 24px;
+    }
 
     &:hover {
-      transform: scale(1.2);
-      transition: all 0.23s ease-in-out 0s;
-
+      transform: $scale;
+      transition: $hover;
+      color: $pink;
       cursor: pointer;
     }
 
@@ -40,15 +47,7 @@
     &:after {
       display: inline;
       content: '+';
-      position: absolute;
-    }
-
-    &:before {
-      left: -24px;
-    }
-
-    &:after {
-      right: -24px;
+      margin: 8px;
     }
 
     &--jump-rope-gazers {
@@ -66,7 +65,6 @@
 
     &--jump-rope-gazers {
       display: block;
-      // margin-bottom: 24px;
     }
   }
 
@@ -76,7 +74,8 @@
     }
 
     .watch-section__text {
-      transform: scale(1.2);
+      transform: $scale;
+      transition: $hover;
     }
 
     .watch-section__text:before,
@@ -97,11 +96,25 @@
   }
 
   .thumbnail__text {
-    font-size: 16px;
+    font-size: 18px;
     max-width: 40vw;
     margin: 0 auto;
+
+    &:hover {
+      color: $pink;
+      transition: $hover;
+    }
+
+    @include lg-mobile {
+      font-size: 20px;
+    }
+
+    @include lg-desktop {
+      font-size: 24px;
+    }
   }
 }
+
 @media (min-width: 768px) {
   .watch-section {
     margin-bottom: 48px;
@@ -120,8 +133,6 @@
       padding: 20px;
     }
     .thumbnail__text {
-      font-size: 18px;
-
       &--christmas {
         max-width: 200px;
       }
@@ -134,11 +145,6 @@
   }
 
   .watch {
-    .watch__text {
-      font-size: 1.5em;
-      cursor: default;
-    }
-
     .watch__wrapper {
       margin: 0 auto;
       max-width: 70vw;
@@ -167,13 +173,6 @@
     .thumbnail__text--xmas {
       max-width: 20vw;
     }
-
-    .thumbnail__text {
-      font-size: 1.2em;
-      &:hover {
-        color: #ef97b0;
-      }
-    }
   }
 }
 
@@ -181,19 +180,6 @@
   .thumbnail {
     .thumbnail__image {
       height: 150px;
-    }
-  }
-}
-
-@media only screen and (min-width: 2560px) {
-  .watch {
-    .watch__text {
-      font-size: 2em;
-    }
-  }
-  .thumbnail {
-    .thumbnail__text {
-      font-size: 1.5em;
     }
   }
 }
