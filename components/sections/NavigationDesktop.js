@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SocialsDesktop from '../partials/SocialsDesktop';
 import scss from '../../styles/Navigation.scss';
 
 export default function NavigationDesktop(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen)
+  const closeMenu = () => setIsOpen(false)
+
   const toggleGame = () => {
     props.toggleGame()
   }
 
   return (
     <React.Fragment>
-      <header className='desktop-navigation'>
+      <header className={`desktop-navigation ${isOpen ? 'is-open' : ''}`}>
         <div className='desktop-navigation__content'>
           <SocialsDesktop className='desktop-navigation-socials' width='18' color={'black'} />
           <nav className='desktop-navigation-menu'>
@@ -23,6 +27,7 @@ export default function NavigationDesktop(props) {
               <InternalNavItem text='Contact' link='#contact' />
               <GameNavItem text='???' onClick={toggleGame} link='#game' />
             </ul>
+            <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='desktop-navigation__menu-button' onClick={toggleMenu} />
           </nav>
         </div>
       </header>
@@ -70,5 +75,16 @@ function GameNavItem(props) {
         {props.text}
       </a>
     </li>
+  );
+}
+
+function MenuButton(props) {
+  return (
+    <button
+      className={props.className}
+      onClick={() => props.onClick()}
+    >
+      {props.text}
+    </button>
   );
 }

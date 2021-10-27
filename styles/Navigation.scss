@@ -30,7 +30,7 @@
   text-align: right;
 
   position: fixed;
-  top: 72px;
+  top: 77px;
   right: 16px;
   z-index: 1;
 
@@ -135,9 +135,11 @@
   @include state('open') {
     .mobile-navigation-socials__more-arrow {
       transform: scaleX(-1);
+      color: $pink;
     }
     .mobile-navigation-socials__extra-socials {
       display: flex;
+      margin-top: 16px;
     }
   }
 }
@@ -147,16 +149,26 @@
   display: none;
 
   @include sm-desktop {
-    position: fixed;
+    display: flex;
+    justify-content: center;
 
+    position: fixed;
     top: 32px;
     left: 0;
     z-index: 1;
 
     width: 100%;
+  }
 
-    display: flex;
-    justify-content: center;
+  @include state('open') {
+    .desktop-navigation-menu__nav-items {
+      display: flex;
+      padding-left: 16px;
+    }
+
+    .desktop-navigation__menu-button {
+      color: $pink;
+    }
   }
 
   @include element('content') {
@@ -179,49 +191,61 @@
       padding: 0;
     }
   }
+
+  @include element('menu-button') {
+    width: 123px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 8px;
+
+    &:hover {
+      cursor: pointer;
+
+      transition: $hover;
+      color: $pink;
+    }
+  }
 }
 
 @include block('desktop-navigation-menu') {
-  @include sm-desktop {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 
-    background-color: white;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-
-    padding: 0 16px;
-  }
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 
   @include element('nav-items') {
-    @include sm-desktop {
-      width: 100%;
-      display: flex;
-    }
+    display: none;
   }
+
   @include element('nav-item-link') {
-    @include sm-desktop {
-      font-size: 20px;
-      font-weight: 700;
-      padding: 0 8px;
-    }
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 16px;
   }
 }
 
 @include block('desktop-navigation-socials') {
   display: none;
 
-  @include sm-desktop {
-    display: flex;
-    flex-flow: column;
+  display: flex;
+  flex-flow: column;
 
-    background-color: white;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 
-    padding: 0 8px;
-  }
+  padding: 0 8px;
 
   @include element('content') {
     min-height: $nav-height-mobile;
