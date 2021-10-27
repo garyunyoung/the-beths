@@ -39,8 +39,12 @@ li {
   list-style: none;
 }
 
+body {
+  font-size: 18px;
+  font-weight: 300;
+}
 
-@media (max-width: 414px) {
+@media (min-width: 375px) {
   body {
     font-size: 20px;
   }

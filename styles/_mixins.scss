@@ -20,7 +20,6 @@ $nav-height-desktop: 60px;
 // sm-desktop: 20px
 // lg-desktop: 24px
 
-
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 375px) {
@@ -72,6 +71,15 @@ $nav-height-desktop: 60px;
 
 // Keyframes
 @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-movement {
   0% {
     opacity: 0;
     transform: translateY(20px);

@@ -240,7 +240,7 @@ $animation-speed: 600ms;
     }
   }
 
-  @include keyframes(fade-in) {
+  @include keyframes(fade-in-movement) {
     0% {
       opacity: 0;
     }
@@ -258,7 +258,7 @@ $animation-speed: 600ms;
 
     z-index: 5;
 
-    @include animation(fade-in $animation-speed ease $transition-speed * 12);
+    @include animation(fade-in-movement $animation-speed ease $transition-speed * 12);
     @include animation-fill-mode(both);
 
     &.visible {
@@ -322,7 +322,7 @@ $animation-speed: 600ms;
         display: block;
       }
 
-      @include animation(fade-in $animation-speed ease $transition-speed * 12);
+      @include animation(fade-in-movement $animation-speed ease $transition-speed * 12);
       @include animation-fill-mode(both);
     }
   }
