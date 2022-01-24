@@ -1,4 +1,6 @@
-export default () => (
+import React from "react";
+
+const FacebookPixel = () => (
   <React.Fragment>
     <script
       dangerouslySetInnerHTML={{
@@ -45,3 +47,7 @@ export default () => (
 
   </React.Fragment>
 );
+
+FacebookPixel.displayName = 'FacebookPixel';
+
+export default FacebookPixel;

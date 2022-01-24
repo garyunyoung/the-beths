@@ -78,12 +78,12 @@ export default class Game extends React.Component {
         </p>
         <div className="credits">
           Based on{" "}
-          <a href="http://gabrielecirulli.github.io/2048/" target="_blank">
+          <a href="http://gabrielecirulli.github.io/2048/" target="_blank" rel="noreferrer">
             2048 by Gabriele Cirulli
           </a>
           <br />
           Inspired by{" "}
-          <a href="http://doge2048.com/" target="_blank">
+          <a href="http://doge2048.com/" target="_blank" rel="noreferrer">
             Doge 2048
           </a>
         </div>

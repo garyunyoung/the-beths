@@ -29,9 +29,9 @@ export default class ConsentBanner extends React.Component {
               x
             </button>
             <p className="sticky-consent-banner__text">
-              hey! some of the features on our site require analytics to run.
+              {`hey! some of the features on our site require analytics to run.
               you can use the site without these features, but it's better with
-              them!
+              them!`}
             </p>
             <div className="sticky-consent-banner__buttons">
               <button className="sticky-consent-banner__button  sticky-consent-banner__button--decline" onClick={() => this.close()}>

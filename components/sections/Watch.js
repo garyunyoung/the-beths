@@ -178,16 +178,16 @@ function WatchSection(props) {
 
   return (
     <div
-      className={`watch-section watch-section--${props.modifier} ${
-        props.currentSection == props.modifier ? "watch-section--is-open" : ""
-      }`}
+      className={`watch-section watch-section--${props.modifier} ${props.currentSection == props.modifier ? "watch-section--is-open" : ""
+        }`}
     >
       <h2 className="watch-section__text" onClick={() => toggleSection()}>
         {props.title}
       </h2>
       <div className="watch-section__wrapper">
-        {props.videos.map((video) => (
+        {props.videos.map((video, index) => (
           <Thumbnail
+            key={index}
             title={video.title}
             image={video.thumbnail}
             modifier={video.modifier}
@@ -203,9 +203,8 @@ function Thumbnail(props) {
   return (
     <div className="thumbnail">
       <div
-        className={`thumbnail__container ${
-          props.modifier ? `thumbnail--${props.modifier}` : ""
-        }`}
+        className={`thumbnail__container ${props.modifier ? `thumbnail--${props.modifier}` : ""
+          }`}
       >
         <a
           className="thumbnail__link"

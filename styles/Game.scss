@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .game {
   height: 0;
   width: 100vw;
@@ -56,17 +58,19 @@ $grid-row-cells: 4;
 $tile-border-radius: 10px;
 
 $field-width-desktop: 500px;
-$field-width-mobile: 280px !global;
+$field-width-mobile: 280px;
 
 $grid-spacing-desktop: 15px;
-$grid-spacing-mobile: 10px !global;
+$grid-spacing-mobile: 10px;
 
-$tile-size-desktop: (
-    $field-width-desktop - $grid-spacing-desktop * ($grid-row-cells + 1)
-  ) / $grid-row-cells;
-$tile-size-mobile: (
-    $field-width-mobile - $grid-spacing-mobile * ($grid-row-cells + 1)
-  ) / $grid-row-cells !global;
+$tile-size-desktop: math.div(
+    $field-width-desktop - $grid-spacing-desktop *
+      ($grid-row-cells + 1)
+  , $grid-row-cells);
+$tile-size-mobile: math.div(
+    $field-width-mobile - $grid-spacing-mobile *
+      ($grid-row-cells + 1)
+  , $grid-row-cells);
 
 $mobile-threshold: $field-width-desktop + 20px;
 $bigger-threshold: $field-width-desktop + (20 * 3px);
@@ -126,7 +130,8 @@ $animation-speed: 600ms;
   .heading {
     @include clearfix;
     width: 100%;
-    border-radius: 0 0 $tile-border-radius $tile-border-radius;
+    border-radius: 0 0 $tile-border-radius
+      $tile-border-radius;
   }
 
   @include keyframes(move-up) {
@@ -258,7 +263,10 @@ $animation-speed: 600ms;
 
     z-index: 5;
 
-    @include animation(fade-in-movement $animation-speed ease $transition-speed * 12);
+    @include animation(
+      fade-in-movement $animation-speed ease
+        $transition-speed * 12
+    );
     @include animation-fill-mode(both);
 
     &.visible {
@@ -322,7 +330,10 @@ $animation-speed: 600ms;
         display: block;
       }
 
-      @include animation(fade-in-movement $animation-speed ease $transition-speed * 12);
+      @include animation(
+        fade-in-movement $animation-speed ease
+          $transition-speed * 12
+      );
       @include animation-fill-mode(both);
     }
   }
@@ -382,8 +393,12 @@ $animation-speed: 600ms;
     @for $x from 1 through $grid-row-cells {
       @for $y from 1 through $grid-row-cells {
         &.tile-position-#{$x}-#{$y} {
-          $xPos: floor(($tile-size + $grid-spacing) * ($x - 1));
-          $yPos: floor(($tile-size + $grid-spacing) * ($y - 1));
+          $xPos: floor(
+            ($tile-size + $grid-spacing) * ($x - 1)
+          );
+          $yPos: floor(
+            ($tile-size + $grid-spacing) * ($y - 1)
+          );
           @include transform(translate($xPos, $yPos));
         }
       }
@@ -453,7 +468,9 @@ $animation-speed: 600ms;
   }
 
   .tile-new .tile-inner {
-    @include animation(appear $animation-speed ease $transition-speed);
+    @include animation(
+      appear $animation-speed ease $transition-speed
+    );
     @include animation-fill-mode(backwards);
   }
 
@@ -473,7 +490,9 @@ $animation-speed: 600ms;
 
   .tile-merged .tile-inner {
     z-index: 4;
-    @include animation(pop $animation-speed ease $transition-speed);
+    @include animation(
+      pop $animation-speed ease $transition-speed
+    );
     @include animation-fill-mode(backwards);
   }
 
