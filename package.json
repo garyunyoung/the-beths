@@ -1,5 +1,6 @@
 {
-  "scripts": {
+   "license": "UNLICENSED" ,  
+   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT"
