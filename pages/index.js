@@ -2,7 +2,48 @@ import Head from "next/head";
 import App from "../components/App";
 import { favicon } from "../components/utilities/cloudinary.js";
 
-export default function IndexPage() {
+import { client } from '../lib/sanity';
+
+const videoQuery = `*\[_type == "video"\] {
+  name, 
+  url, 
+  album->{
+    name
+  }, 
+  thumbnail{
+    asset->{
+      _id,
+      url
+    },
+  },
+}`;
+
+const merchQuery = `*\[_type == "merch"\] {
+  name, 
+  url, 
+  thumbnail{
+    asset->{
+      _id,
+      url
+    },
+  },
+}`;
+
+export async function getStaticProps() {
+  const videoData = await client.fetch(videoQuery);
+  const merchData = await client.fetch(merchQuery);
+
+  const data = { videoData, merchData };
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 1,
+  };
+}
+
+export default function IndexPage({ data }) {
   return (
     <div>
       <Head>
@@ -82,7 +123,7 @@ export default function IndexPage() {
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="theme-color" content="#000000" />
       </Head>
-      <App />
+      <App data={data} />
     </div>
   );
 }

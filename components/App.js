@@ -28,6 +28,7 @@ export default class App extends React.Component {
     };
   }
 
+
   componentDidMount() {
     const cookie = docCookies.getItem(cookieName);
     if (cookie !== null) {
@@ -75,11 +76,11 @@ export default class App extends React.Component {
         <MailingList />
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch />
+          <Watch data={this.props.data.videoData} />
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch consent={this.state.hasConsent} />
+          <Merch consent={this.state.hasConsent} data={this.props.data.merchData} />
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />
