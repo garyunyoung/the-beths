@@ -1,4 +1,7 @@
+
 import React from "react";
+import { urlFor } from "../../lib/sanity.js";
+
 import scss from "../../styles/Carousel.scss";
 
 export default class Carousel extends React.Component {
@@ -48,25 +51,27 @@ export default class Carousel extends React.Component {
   }
 }
 
-function CarouselImage(props) {
+function CarouselImage({ visible, item }) {
+  const { name, url, thumbnail } = item
+
   return (
     <React.Fragment>
       <div
-        className={`carousel-image ${props.visible ? "carousel-image--visible" : ""
+        className={`carousel-image ${visible ? "carousel-image--visible" : ""
           }`}
       >
         <a
           className="carousel__wrapper--link"
-          href={props.item.link}
+          href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
           <div
             className="carousel-image__image"
-            alt={`merch: ${props.item.title}`}
-            style={{ backgroundImage: `url(${props.item.src})` }}
+            alt={`merch: ${name}`}
+            style={{ backgroundImage: `url(${urlFor(thumbnail).url()})` }}
           />
-          <p className="carousel-image--title">{props.item.title}</p>
+          <p className="carousel-image--title">{name}</p>
         </a>
       </div>
     </React.Fragment>
