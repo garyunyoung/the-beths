@@ -15,6 +15,7 @@ import Watch from "./sections/Watch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
 import scss from "../styles/App.scss";
+
 const Game = dynamic(import("./sections/Game"));
 
 const cookieName = "beths-GDPR-consent";
@@ -76,11 +77,11 @@ export default class App extends React.Component {
         <MailingList />
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch data={this.props.data.videoData} />
+          <Watch videos={this.props.data.videoData} />
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />
-          <Merch consent={this.state.hasConsent} data={this.props.data.merchData} />
+          <Merch consent={this.state.hasConsent} merch={this.props.data.merchData} />
         </section>
         <section id="game" className="page page--game">
           <Header header="game" open={this.state.gameIsOpen} />

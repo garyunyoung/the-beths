@@ -1,41 +1,41 @@
 import React, { useState } from "react";
-import Image from 'next/image'
 import { urlFor } from "../../lib/sanity.js";
+import Image from 'next/image'
 
 import scss from "../../styles/Watch.scss";
 
-export default function Watch({ data }) {
+export default function Watch({ videos }) {
   const jumpRopeGazersData = {
     isOpen: true,
     modifier: "jump-rope-gazers",
     name: "jump rope gazers",
-    videos: data.filter(video => video.album.name === "Jump Rope Gazers")
+    videos: videos.filter(video => video.album.name === "Jump Rope Gazers")
   };
 
   const futureMeHatesMeData = {
     isOpen: false,
     modifier: "future-me-hates-me",
     name: "future me hates me",
-    videos: data.filter(video => video.album.name === "Future Me Hates Me")
+    videos: videos.filter(video => video.album.name === "Future Me Hates Me")
   };
 
   const warmBloodData = {
     isOpen: false,
     modifier: "warm-blood",
     name: "warm blood",
-    videos: data.filter(video => video.album.name === "Future Me Hates Me")
+    videos: videos.filter(video => video.album.name === "Warm Blood")
   };
 
-  const otherData = {
+  const christmasData = {
     isOpen: false,
-    modifier: "other",
-    name: "other",
-    videos: data.filter(video => !video.album)
-
+    modifier: "christmas",
+    name: "christmas",
+    videos: videos.filter(video => video.album.name === "Christmas")
   };
+
 
   const [currentSection, setCurrentSection] = useState(jumpRopeGazersData.modifier);
-  const albums = [jumpRopeGazersData, futureMeHatesMeData, warmBloodData, otherData]
+  const albums = [jumpRopeGazersData, futureMeHatesMeData, warmBloodData, christmasData]
 
   return (
     <section className="watch">

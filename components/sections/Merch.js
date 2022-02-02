@@ -2,9 +2,7 @@ import React from "react";
 import Carousel from "../partials/Carousel";
 import scss from "../../styles/Merch.scss";
 
-export default function Merch({ data }) {
-  const merch = data
-
+export default function Merch({ merch }) {
   return (
     <section className="merch">
       <Carousel merch={merch} />
