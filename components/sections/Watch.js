@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from 'next/image'
 import { urlFor } from "../../lib/sanity.js";
 
 import scss from "../../styles/Watch.scss";
@@ -38,8 +39,9 @@ export default function Watch({ data }) {
 
   return (
     <section className="watch">
-      {albums.map(album =>
+      {albums.map((album, index) =>
         <WatchSection
+          key={index}
           {...album}
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
@@ -94,11 +96,16 @@ function Thumbnail({ name, thumbnail, link, modifier }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
+          <Image
             className={`thumbnail__image thumbnail__image--${modifier} cld-responsive`}
             src={urlFor(thumbnail).url()}
             alt={`${name} thumbnail`}
+
+            objectFit="contain"
+            width={120}
+            height={120}
           />
+
           <p className={`thumbnail__text thumbnail__text--${modifier}`}>
             {name}
           </p>
