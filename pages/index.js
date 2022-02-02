@@ -8,7 +8,8 @@ const videoQuery = `*\[_type == "video"\] {
   name, 
   url, 
   album->{
-    name
+    name,
+    releaseDate
   }, 
   thumbnail{
     asset->{
