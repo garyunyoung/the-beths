@@ -1,11 +1,12 @@
 {
-    "scripts": {
+  "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT"
   },
   "dependencies": {
     "@babel/core": "^7.0.0-0",
+    "@sanity/client": "^3.0.3",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.10",
     "@types/react": "^17.0.38",
