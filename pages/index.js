@@ -30,11 +30,18 @@ const merchQuery = `*\[_type == "merch"\] {
   },
 }`;
 
+const contactQuery = `*\[_type == "contact"\] {
+  email,
+}`;
+
 export async function getStaticProps() {
   const videoData = await client.fetch(videoQuery);
   const merchData = await client.fetch(merchQuery);
+  const contactData = await client.fetch(contactQuery);
 
-  const data = { videoData, merchData };
+  const data = { videoData, merchData, contactData };
+
+  console.log(contactData, 'index')
 
   return {
     props: {

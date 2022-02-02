@@ -96,7 +96,7 @@ export default class App extends React.Component {
         </section>
         <section id="contact" className="page page--contact">
           <Header header="contact" />
-          <Contact />
+          <Contact contacts={this.props.data.contactData} />
         </section>
 
         <style jsx>{scss}</style>
