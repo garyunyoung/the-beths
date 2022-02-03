@@ -41,8 +41,6 @@ export async function getStaticProps() {
 
   const data = { videoData, merchData, contactData };
 
-  console.log(contactData, 'index')
-
   return {
     props: {
       data,
