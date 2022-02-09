@@ -1,7 +1,7 @@
 import React from "react";
 
 const FacebookPixel = () => (
-  <React.Fragment>
+  <>
     <script
       dangerouslySetInnerHTML={{
         __html: `!function(f,b,e,v,n,t,s)
@@ -45,7 +45,7 @@ const FacebookPixel = () => (
       }}
     />
 
-  </React.Fragment>
+  </>
 );
 
 FacebookPixel.displayName = 'FacebookPixel';

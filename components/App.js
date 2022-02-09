@@ -62,7 +62,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         {this.state.hasConsent ? this.loadFacebookPixels() : null}
         <NavigationMobile toggleGame={() => this.toggleGame()} />
         <NavigationDesktop toggleGame={() => this.toggleGame()} />
@@ -101,7 +101,7 @@ export default class App extends React.Component {
         </section>
 
         <style jsx>{scss}</style>
-      </React.Fragment>
+      </>
     );
   }
 }

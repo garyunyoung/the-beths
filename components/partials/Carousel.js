@@ -55,7 +55,7 @@ function CarouselImage({ visible, item }) {
   const { name, url, thumbnail } = item
 
   return (
-    <React.Fragment>
+    <>
       <div
         className={`carousel-image ${visible ? "carousel-image--visible" : ""
           }`}
@@ -74,6 +74,6 @@ function CarouselImage({ visible, item }) {
           <p className="carousel-image--title">{name}</p>
         </a>
       </div>
-    </React.Fragment>
+    </>
   );
 }

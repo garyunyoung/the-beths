@@ -12,7 +12,7 @@ export default function NavigationDesktop(props) {
   }
 
   return (
-    <React.Fragment>
+    <>
       <header className={`desktop-navigation ${isOpen ? 'is-open' : ''}`}>
         <div className='desktop-navigation__content'>
           <SocialsDesktop className='desktop-navigation-socials' width='18' color={'black'} />
@@ -32,7 +32,7 @@ export default function NavigationDesktop(props) {
         </div>
       </header>
       <style jsx>{scss}</style>
-    </React.Fragment>
+    </>
   );
 }
 

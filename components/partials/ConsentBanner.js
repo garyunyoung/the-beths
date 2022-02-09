@@ -22,7 +22,7 @@ export default class ConsentBanner extends React.Component {
       return null;
     }
     return (
-      <React.Fragment>
+      <>
         <div className="sticky-consent-banner">
           <div className="sticky-consent-banner__content">
             <button className="sticky-consent-banner__button sticky-consent-banner__button--close" onClick={() => this.close()}>
@@ -44,7 +44,7 @@ export default class ConsentBanner extends React.Component {
           </div>
           <style jsx>{scss}</style>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }

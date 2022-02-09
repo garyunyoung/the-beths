@@ -13,7 +13,7 @@ export default function NavigationMobile(props) {
   }
 
   return (
-    <React.Fragment>
+    <>
       <header className='mobile-navigation'>
         <div className='mobile-navigation__content'>
           <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='mobile-navigation-menu__menu-button' onClick={toggleMenu} />
@@ -36,7 +36,7 @@ export default function NavigationMobile(props) {
         </ul>
       </nav>
       <style jsx>{scss}</style>
-    </React.Fragment>
+    </>
   );
 }
 
