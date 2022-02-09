@@ -3,6 +3,9 @@ import App from "../components/App";
 import { favicon } from "../components/utilities/cloudinary.js";
 import { client } from '../lib/sanity';
 
+import Layout from '../components/layout'
+
+
 const merchQuery = `*\[_type == "merch"\] {
   name, 
   url, 
