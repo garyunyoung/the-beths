@@ -11,9 +11,9 @@ import Header from "./partials/Header";
 import FacebookPixel from "./utilities/facebookPixel.js";
 
 import Merch from "./sections/Merch";
-import Watch from "./sections/Watch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
+
 import scss from "../styles/App.scss";
 
 const Game = dynamic(import("./sections/Game"));
@@ -77,7 +77,8 @@ export default class App extends React.Component {
         <MailingList />
         <section id="watch" className="page page--watch">
           <Header header="watch" />
-          <Watch videos={this.props.data.videoData} />
+          <p>featured video goes here</p>
+          <p>See all videos link here</p>
         </section>
         <section id="merch" className="page page--merch">
           <Header header="merch" />

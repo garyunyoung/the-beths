@@ -1,23 +1,7 @@
 import Head from "next/head";
 import App from "../components/App";
 import { favicon } from "../components/utilities/cloudinary.js";
-
 import { client } from '../lib/sanity';
-
-const videoQuery = `*\[_type == "video"\] {
-  name, 
-  url, 
-  album->{
-    name,
-    releaseDate
-  }, 
-  thumbnail{
-    asset->{
-      _id,
-      url
-    },
-  },
-}`;
 
 const merchQuery = `*\[_type == "merch"\] {
   name, 
@@ -35,11 +19,10 @@ const contactQuery = `*\[_type == "contact"\] {
 }`;
 
 export async function getStaticProps() {
-  const videoData = await client.fetch(videoQuery);
   const merchData = await client.fetch(merchQuery);
   const contactData = await client.fetch(contactQuery);
 
-  const data = { videoData, merchData, contactData };
+  const data = { merchData, contactData };
 
   return {
     props: {

@@ -19,7 +19,7 @@ export default function NavigationDesktop(props) {
           <nav className='desktop-navigation-menu'>
             <ul className='desktop-navigation-menu__nav-items'>
               <InternalNavItem text='Film' link='#' />
-              <InternalNavItem text='Watch' link='#watch' />
+              <InternalNavItem text='Videos' link='/videos' />
               <InternalNavItem text='Merch' link='#merch' />
               <InternalNavItem text='Tour' link='#tour' />
               <ExternalNavItem text='Blog' link='https://found.ee/thebeths_bensblog' />

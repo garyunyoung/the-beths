@@ -26,7 +26,7 @@ export default function NavigationMobile(props) {
           <ExternalNavItem text='Film' onClick={closeMenu} link='https://found.ee/film_nz2020' />
           <ExternalNavItem text='Live Album' onClick={closeMenu} link='https://found.ee/beths_nz2020' />
           <ExternalNavItem text='Jump Rope Gazers' onClick={closeMenu} link='https://smarturl.it/thebeths_jrg' />
-          <InternalNavItem text='Watch' onClick={closeMenu} link='#watch' />
+          <InternalNavItem text='Videos' onClick={closeMenu} link='/videos' />
           <InternalNavItem text='Merch' onClick={closeMenu} link='#merch' />
           <InternalNavItem text='Tour' onClick={closeMenu} link='#tour' />
           <ExternalNavItem text='Blog' onClick={closeMenu} link='https://found.ee/thebeths_bensblog' />
