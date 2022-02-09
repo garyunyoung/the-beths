@@ -2,17 +2,16 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
-import NavigationMobile from "./sections/NavigationMobile";
-import NavigationDesktop from "./sections/NavigationDesktop";
-import Home from "./sections/Home";
+
 import ConsentBanner from "./partials/ConsentBanner.js";
-import MailingList from "./sections/MailingList";
-import Header from "./partials/Header";
 import FacebookPixel from "./utilities/facebookPixel.js";
 
+import Header from "./partials/Header";
+import Home from "./sections/Home";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
+import MailingList from "./sections/MailingList";
 
 import scss from "../styles/App.scss";
 
@@ -64,8 +63,6 @@ export default class App extends React.Component {
     return (
       <>
         {this.state.hasConsent ? this.loadFacebookPixels() : null}
-        <NavigationMobile toggleGame={() => this.toggleGame()} />
-        <NavigationDesktop toggleGame={() => this.toggleGame()} />
         <section className="page page--home">
           <Home />
           <ConsentBanner
