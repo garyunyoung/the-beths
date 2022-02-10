@@ -10,7 +10,6 @@ import Home from "./sections/Home";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
-import MailingList from "./sections/MailingList";
 
 import scss from "../styles/App.scss";
 
@@ -48,7 +47,6 @@ export default function App({ data }) {
           allowTracking={() => loadAnalytics()}
         />
       </section>
-      <MailingList />
       <section id="watch" className="page page--watch">
         <Header header="watch" />
         <p>featured video goes here</p>

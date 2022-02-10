@@ -1,5 +1,6 @@
 import NavigationMobile from "./sections/NavigationMobile";
 import NavigationDesktop from "./sections/NavigationDesktop";
+import MailingList from "../components/sections/MailingList";
 
 export default function Layout({ children }) {
   return (
@@ -7,7 +8,7 @@ export default function Layout({ children }) {
       <NavigationMobile />
       <NavigationDesktop />
       <main>{children}</main>
-      <h1>I AM FOOTER</h1>
+      <MailingList />
     </>
   )
 }
