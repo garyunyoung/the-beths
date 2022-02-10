@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
@@ -19,86 +19,78 @@ const Game = dynamic(import("./sections/Game"));
 
 const cookieName = "beths-GDPR-consent";
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      gameIsOpen: false,
-      hasConsent: false,
-    };
-  }
+export default function App({ data }) {
+  const [gameIsOpen, setGameIsOpen] = useState(false)
+  const [hasConsent, setHasConsent] = useState(false)
 
-
-  componentDidMount() {
+  useEffect(() => {
     const cookie = docCookies.getItem(cookieName);
     if (cookie !== null) {
-      this.loadAnalytics();
+      loadAnalytics();
+    }
+
+  })
+
+  function toggleGame() {
+    setGameIsOpen(true)
+  }
+
+  function gameVisibility() {
+    if (gameIsOpen) {
+      return <Game open={gameIsOpen} />;
     }
   }
 
-  toggleGame() {
-    this.setState((_props) => ({
-      gameIsOpen: true,
-    }));
-  }
-
-  gameVisibility() {
-    if (this.state.gameIsOpen) {
-      return <Game open={this.state.gameIsOpen} />;
-    }
-  }
-
-  loadAnalytics() {
+  function loadAnalytics() {
     docCookies.setItem(cookieName, "accepted");
-    this.setState({ hasConsent: true });
+    setHasConsent(true)
     tagManager();
     FacebookPixel();
   }
 
-  loadFacebookPixels() {
+  function loadFacebookPixels() {
     FacebookPixel()
   }
 
-  render() {
-    return (
-      <>
-        {this.state.hasConsent ? this.loadFacebookPixels() : null}
-        <section className="page page--home">
-          <Home />
-          <ConsentBanner
-            consent={this.state.hasConsent}
-            loadAnalytics={() => this.loadAnalytics()}
-            allowTracking={() => this.loadAnalytics()}
-          />
-        </section>
-        <MailingList />
-        <section id="watch" className="page page--watch">
-          <Header header="watch" />
-          <p>featured video goes here</p>
-          <p>See all videos link here</p>
-        </section>
-        <section id="merch" className="page page--merch">
-          <Header header="merch" />
-          <Merch consent={this.state.hasConsent} merch={this.props.data.merchData} />
-        </section>
-        <section id="game" className="page page--game">
-          <Header header="game" open={this.state.gameIsOpen} />
-          {this.gameVisibility()}
-        </section>
-        <section id="tour" className="page page--tour">
-          <Header header="tour" />
-          <Tour
-            consent={this.state.hasConsent}
-            allowTracking={() => this.loadAnalytics()}
-          />
-        </section>
-        <section id="contact" className="page page--contact">
-          <Header header="contact" />
-          <Contact contacts={this.props.data.contactData} />
-        </section>
+  return (
+    <>
+      {hasConsent ? loadFacebookPixels() : null}
+      <section className="page page--home">
+        <Home />
+        <ConsentBanner
+          consent={hasConsent}
+          loadAnalytics={() => loadAnalytics()}
+          allowTracking={() => loadAnalytics()}
+        />
+      </section>
+      <MailingList />
+      <section id="watch" className="page page--watch">
+        <Header header="watch" />
+        <p>featured video goes here</p>
+        <p>See all videos link here</p>
+      </section>
+      <section id="merch" className="page page--merch">
+        <Header header="merch" />
+        <Merch consent={hasConsent} merch={data.merchData} />
+      </section>
+      <section id="game" className="page page--game">
+        <Header header="game" open={gameIsOpen} />
+        {gameVisibility()}
+      </section>
+      <section id="tour" className="page page--tour">
+        <Header header="tour" />
+        <Tour
+          consent={hasConsent}
+          allowTracking={() => loadAnalytics()}
+        />
+      </section>
+      <section id="contact" className="page page--contact">
+        <Header header="contact" />
+        <Contact contacts={data.contactData} />
+      </section>
 
-        <style jsx>{scss}</style>
-      </>
-    );
-  }
+      <style jsx>{scss}</style>
+    </>
+  );
+
 }
