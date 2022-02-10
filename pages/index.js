@@ -1,10 +1,8 @@
 import Head from "next/head";
-import App from "../components/App";
 import { favicon } from "../components/utilities/cloudinary.js";
 import { client } from '../lib/sanity';
 
-import Layout from '../components/layout'
-
+import App from "../components/App";
 
 const merchQuery = `*\[_type == "merch"\] {
   name, 
@@ -48,12 +46,6 @@ export default function IndexPage({ data }) {
           rel="preload"
           href="https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/the-beths/home-mobile_SM.jpg"
           as="image"
-        />
-
-        {/* <!--Font --> */}
-        <link
-          href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700"
-          rel="stylesheet"
         />
 
         {/* <!-- Generic Metadata + Analytics--> */}
