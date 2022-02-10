@@ -1,6 +1,7 @@
 import React from 'react'
 import { client } from '../../lib/sanity';
 
+import Header from "../../components/partials/Header"
 import Watch from "../../components/sections/Watch";
 
 const videoQuery = `*\[_type == "video"\] {
@@ -34,7 +35,10 @@ export async function getStaticProps() {
 
 function Videos({ videoData }) {
   return (
-    <Watch videos={videoData} />
+    <>
+      <Header header="videos" />
+      <Watch videos={videoData} />
+    </>
   )
 }
 

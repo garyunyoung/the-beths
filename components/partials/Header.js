@@ -1,15 +1,13 @@
 import React from "react";
 import scss from "../../styles/Header.scss";
 
-export default function Header(props) {
+export default function Header({ header }) {
   return (
-    <h2
-      className={`header header--${props.header} ${
-        props.open ? "header header--game is-open" : ""
-      } `}
-    >
-      {props.open ? "GAME UNLOCKED" : props.header}
+    <>
+      <h2 className={`header header--${header}`}>
+        {header}
+      </h2>
       <style jsx>{scss}</style>
-    </h2>
+    </>
   );
 }
