@@ -17,7 +17,7 @@ export default class Game extends React.Component {
 
   render() {
     return (
-      <section className={`game ${this.props.open ? "is-open" : ""} `}>
+      <section className="game is-open">
         <div className="game-area">
           <div className="game-curtain" />
           <div className="above-game">

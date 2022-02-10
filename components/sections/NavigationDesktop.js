@@ -5,11 +5,6 @@ import scss from '../../styles/Navigation.scss';
 export default function NavigationDesktop(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen)
-  const closeMenu = () => setIsOpen(false)
-
-  const toggleGame = () => {
-    props.toggleGame()
-  }
 
   return (
     <>
@@ -25,7 +20,7 @@ export default function NavigationDesktop(props) {
               <ExternalNavItem text='Blog' link='https://found.ee/thebeths_bensblog' />
               <ExternalNavItem text='Patreon' link='https://www.patreon.com/thebeths' />
               <InternalNavItem text='Contact' link='#contact' />
-              <GameNavItem text='???' onClick={toggleGame} link='#game' />
+              <InternalNavItem text='2048' link='/game2048' />
             </ul>
             <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='desktop-navigation__menu-button' onClick={toggleMenu} />
           </nav>
@@ -57,20 +52,6 @@ function InternalNavItem(props) {
       <a
         className='desktop-navigation-menu__nav-item-link'
         href={`${props.link}`}
-      >
-        {props.text}
-      </a>
-    </li>
-  );
-}
-
-function GameNavItem(props) {
-  return (
-    <li className='desktop-navigation-menu__nav-item'>
-      <a
-        className='desktop-navigation-menu__nav-item-link'
-        href={`${props.link}`}
-        onClick={() => props.onClick()}
       >
         {props.text}
       </a>

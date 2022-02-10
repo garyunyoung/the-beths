@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
 
@@ -15,12 +14,9 @@ import MailingList from "./sections/MailingList";
 
 import scss from "../styles/App.scss";
 
-const Game = dynamic(import("./sections/Game"));
-
 const cookieName = "beths-GDPR-consent";
 
 export default function App({ data }) {
-  const [gameIsOpen, setGameIsOpen] = useState(false)
   const [hasConsent, setHasConsent] = useState(false)
 
   useEffect(() => {
@@ -28,18 +24,7 @@ export default function App({ data }) {
     if (cookie !== null) {
       loadAnalytics();
     }
-
   })
-
-  function toggleGame() {
-    setGameIsOpen(true)
-  }
-
-  function gameVisibility() {
-    if (gameIsOpen) {
-      return <Game open={gameIsOpen} />;
-    }
-  }
 
   function loadAnalytics() {
     docCookies.setItem(cookieName, "accepted");
@@ -73,10 +58,6 @@ export default function App({ data }) {
         <Header header="merch" />
         <Merch consent={hasConsent} merch={data.merchData} />
       </section>
-      <section id="game" className="page page--game">
-        <Header header="game" open={gameIsOpen} />
-        {gameVisibility()}
-      </section>
       <section id="tour" className="page page--tour">
         <Header header="tour" />
         <Tour
@@ -88,7 +69,6 @@ export default function App({ data }) {
         <Header header="contact" />
         <Contact contacts={data.contactData} />
       </section>
-
       <style jsx>{scss}</style>
     </>
   );

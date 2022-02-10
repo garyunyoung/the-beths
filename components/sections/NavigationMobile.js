@@ -2,15 +2,10 @@ import React, { useState } from 'react';
 import SocialsMobile from '../partials/SocialsMobile';
 import scss from '../../styles/Navigation.scss';
 
-export default function NavigationMobile(props) {
+export default function NavigationMobile() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
-
-  const toggleGame = () => {
-    props.toggleGame()
-    closeMenu()
-  }
 
   return (
     <>
@@ -31,7 +26,7 @@ export default function NavigationMobile(props) {
           <InternalNavItem text='Tour' onClick={closeMenu} link='#tour' />
           <ExternalNavItem text='Blog' onClick={closeMenu} link='https://found.ee/thebeths_bensblog' />
           <ExternalNavItem text='Patreon' onClick={closeMenu} link='https://www.patreon.com/thebeths' />
-          <InternalNavItem text='???' onClick={toggleGame} link='#game' />
+          <InternalNavItem text='2048' onClick={closeMenu} link='/game2048' />
           <InternalNavItem text='Contact' onClick={closeMenu} link='#contact' />
         </ul>
       </nav>
