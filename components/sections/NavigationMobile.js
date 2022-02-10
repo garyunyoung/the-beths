@@ -22,12 +22,12 @@ export default function NavigationMobile() {
           <ExternalNavItem text='Live Album' onClick={closeMenu} link='https://found.ee/beths_nz2020' />
           <ExternalNavItem text='Jump Rope Gazers' onClick={closeMenu} link='https://smarturl.it/thebeths_jrg' />
           <InternalNavItem text='Videos' onClick={closeMenu} link='/videos' />
-          <InternalNavItem text='Merch' onClick={closeMenu} link='#merch' />
-          <InternalNavItem text='Tour' onClick={closeMenu} link='#tour' />
+          <InternalNavItem text='Merch' onClick={closeMenu} link='/#merch' />
+          <InternalNavItem text='Tour' onClick={closeMenu} link='/#tour' />
           <ExternalNavItem text='Blog' onClick={closeMenu} link='https://found.ee/thebeths_bensblog' />
           <ExternalNavItem text='Patreon' onClick={closeMenu} link='https://www.patreon.com/thebeths' />
           <InternalNavItem text='2048' onClick={closeMenu} link='/game2048' />
-          <InternalNavItem text='Contact' onClick={closeMenu} link='#contact' />
+          <InternalNavItem text='Contact' onClick={closeMenu} link='/#contact' />
         </ul>
       </nav>
       <style jsx>{scss}</style>

@@ -13,13 +13,13 @@ export default function NavigationDesktop(props) {
           <SocialsDesktop className='desktop-navigation-socials' width='18' color={'black'} />
           <nav className='desktop-navigation-menu'>
             <ul className='desktop-navigation-menu__nav-items'>
-              <InternalNavItem text='Film' link='#' />
+              <InternalNavItem text='Film' link='/' />
               <InternalNavItem text='Videos' link='/videos' />
-              <InternalNavItem text='Merch' link='#merch' />
-              <InternalNavItem text='Tour' link='#tour' />
+              <InternalNavItem text='Merch' link='/#merch' />
+              <InternalNavItem text='Tour' link='/#tour' />
               <ExternalNavItem text='Blog' link='https://found.ee/thebeths_bensblog' />
               <ExternalNavItem text='Patreon' link='https://www.patreon.com/thebeths' />
-              <InternalNavItem text='Contact' link='#contact' />
+              <InternalNavItem text='Contact' link='/#contact' />
               <InternalNavItem text='2048' link='/game2048' />
             </ul>
             <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='desktop-navigation__menu-button' onClick={toggleMenu} />
