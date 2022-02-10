@@ -3,15 +3,6 @@
 @include block('merch') {
   text-align: center;
 
-  @include sm-desktop {
-    max-width: $max-content-width-sm-desktop;
-    margin: 0 auto;
-  }
-
-  @include lg-desktop {
-    max-width: $max-content-width-lg-desktop;
-  }
-
   @include element('visit-link') {
     font-size: 24px;
     font-weight: 700;

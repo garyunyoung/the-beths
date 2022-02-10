@@ -3,11 +3,28 @@
 .page {
   padding-top: 48px;
   overflow: hidden;
+
+  @include sm-desktop {
+    max-width: $max-content-width-sm-desktop;
+    margin: 0 auto;
+  }
+
+  @include lg-desktop {
+    max-width: $max-content-width-lg-desktop;
+  }
 }
 
 .page--home {
   padding-top: 0;
   background-color: black;
+
+  @include sm-desktop {
+    max-width: none;
+  }
+
+  @include lg-desktop {
+    max-width: none;
+  }
 }
 
 .page--home,

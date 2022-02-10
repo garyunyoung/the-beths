@@ -31,13 +31,7 @@
 
   @include sm-desktop {
     width: 100%;
-    max-width: $max-content-width-sm-desktop;
     padding: 0;
-    margin: 0 auto;
-  }
-
-  @include lg-desktop {
-    max-width: $max-content-width-lg-desktop;
   }
 }
 
