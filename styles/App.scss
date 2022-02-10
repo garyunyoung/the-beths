@@ -4,6 +4,8 @@
   padding-top: 48px;
   overflow: hidden;
 
+  padding: 48px $mobile-side-padding 0;
+
   @include sm-desktop {
     max-width: $max-content-width-sm-desktop;
     margin: 0 auto;
