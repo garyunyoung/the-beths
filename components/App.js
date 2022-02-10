@@ -48,9 +48,19 @@ export default function App({ data }) {
         />
       </section>
       <section id="watch" className="page page--watch">
-        <Header header="watch" />
-        <p>featured video goes here</p>
-        <p>See all videos link here</p>
+        <Header header="latest video" />
+        <span className="aspect-ratio-box-outter">
+          <iframe
+            className="aspect-ratio-box-inner"
+            src="https://www.youtube.com/embed/vd2Rps0cMdo?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </span>
+        <p>The Beths - 'A Real Thing'</p>
+        <a>View all videos</a>
       </section>
       <section id="merch" className="page page--merch">
         <Header header="merch" />
