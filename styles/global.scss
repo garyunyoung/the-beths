@@ -1,0 +1,67 @@
+@import 'styles/_mixins.scss';
+
+// Global Styling//
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+p,
+a,
+button,
+input {
+  font-family: 'Gaegu', 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif, -apple-system,
+    BlinkMacSystemFont, cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media (min-width: 375px) {
+  body {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  a:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}

@@ -11,7 +11,7 @@ import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
 
-import scss from "../styles/App.scss";
+import styles from '../styles/App.scss'
 
 const cookieName = "beths-GDPR-consent";
 
@@ -67,7 +67,7 @@ export default function App({ data }) {
         <Header header="contact" />
         <Contact contacts={data.contactData} />
       </section>
-      <style jsx>{scss}</style>
+      <style jsx>{styles}</style>
     </>
   );
 

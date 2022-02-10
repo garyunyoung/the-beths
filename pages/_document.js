@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         {/* <!--Font --> */}
         <link
-          href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700&display=optional"
+          href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700"
           rel="stylesheet"
         />
       </Head>
