@@ -17,8 +17,7 @@
 }
 
 .page--home {
-  padding-top: 0;
-  background-color: black;
+  padding: 0;
 
   @include sm-desktop {
     max-width: none;
