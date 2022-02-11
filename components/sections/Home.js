@@ -23,7 +23,7 @@ export default function Home() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          BUY / STREAM
+          BUY / STREAM SINGLE
         </a>
       </div>
       <style jsx>{scss}</style>

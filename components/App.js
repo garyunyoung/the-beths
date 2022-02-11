@@ -17,6 +17,7 @@ const cookieName = "beths-GDPR-consent";
 
 export default function App({ data }) {
   const [hasConsent, setHasConsent] = useState(false)
+  const [shouldShowYoutubePoster, setShouldShowYoutubePoster] = useState(true)
 
   useEffect(() => {
     const cookie = docCookies.getItem(cookieName);
@@ -36,6 +37,8 @@ export default function App({ data }) {
     FacebookPixel()
   }
 
+
+
   return (
     <>
       {hasConsent ? loadFacebookPixels() : null}
@@ -49,18 +52,24 @@ export default function App({ data }) {
       </section>
       <section id="watch" className="page page--watch">
         <Header header="latest video" />
+
         <span className="aspect-ratio-box-outter">
-          <iframe
-            className="aspect-ratio-box-inner"
-            src="https://www.youtube.com/embed/vd2Rps0cMdo?controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          {shouldShowYoutubePoster ?
+            <span
+              className="aspect-ratio-box-inner page__latest-video-poster"
+              onClick={() => setShouldShowYoutubePoster(false)}
+              style={{ backgroundImage: `url('https://res.cloudinary.com/garyou/image/upload/v1644552695/the-beths/a-real-thing/a-real-thing-youtube-poster_g4wisv.png')` }}>
+            </span> :
+            <iframe
+              className="aspect-ratio-box-inner"
+              src="https://www.youtube.com/embed/vd2Rps0cMdo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>}
         </span>
-        <p>The Beths - 'A Real Thing'</p>
-        <a>View all videos</a>
+        <a className="merch__visit-link" >View all videos</a>
       </section>
       <section id="merch" className="page page--merch">
         <Header header="merch" />

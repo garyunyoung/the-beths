@@ -34,6 +34,10 @@
   min-height: 100vh;
 }
 
+.page--watch {
+  text-align: center;
+}
+
 @media (min-width: 425px) {
   .page--home {
     min-height: max-content;
@@ -68,4 +72,13 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.page__latest-video-poster {
+  display: block;
+  background-size: cover;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
