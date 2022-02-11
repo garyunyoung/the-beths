@@ -11,19 +11,19 @@ export default function Home() {
       <div className='home__cta-links '>
         <a
           className='home__cta-link'
-          href='https://found.ee/film_nz2020'
+          href='https://youtu.be/vd2Rps0cMdo'
           target='_blank'
           rel='noopener noreferrer'
         >
-          WATCH FILM
+          WATCH VIDEO
         </a>
         <a
           className='home__cta-link'
-          href='https://found.ee/beths_nz2020'
+          href='https://found.ee/beths_arealthing'
           target='_blank'
           rel='noopener noreferrer'
         >
-          BUY / STREAM LIVE ALBUM
+          BUY / STREAM
         </a>
       </div>
       <style jsx>{scss}</style>
