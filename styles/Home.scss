@@ -65,9 +65,13 @@
   }
 
   @include element('cta-links') {
-    padding: 0 16px 16px;
     display: flex;
     flex-flow: column-reverse;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: 0 16px 16px;
 
     @include lg-mobile {
       padding: 0 48px 16px;
@@ -77,10 +81,8 @@
       display: flex;
       flex-flow: row;
       justify-content: center;
-      max-width: none;
 
-      position: absolute;
-      bottom: 0;
+      max-width: none;
     }
 
     @include med-desktop {
@@ -96,30 +98,29 @@
     letter-spacing: 3px;
     color: white;
 
-    border: 2px solid white;
     border-radius: 12px;
 
     padding: 16px 24px;
     margin-bottom: 16px;
 
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+
     &:first-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      box-shadow: 3px 3px white;
+      color: white;
+      transition: $hover;
+      transform: $scale;
     }
 
     @include sm-desktop {
       font-size: 20px;
 
-      border: 1px solid white;
-      background-color: rgba(0, 0, 0, 0.4);
-
       margin: 0 24px;
-
-      &:hover {
-        box-shadow: 3px 3px white;
-        color: white;
-        transition: $hover;
-        transform: $scale;
-      }
     }
 
     @include med-desktop {
