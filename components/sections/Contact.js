@@ -37,7 +37,9 @@ export default function Contact({ contacts }) {
           <ExternalLink
             key={index}
             href={href}
-            text={text} />
+          >
+            {text}
+          </ExternalLink>
         )}
       </span>
       <span className='contact__logos'>

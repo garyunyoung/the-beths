@@ -1,4 +1,4 @@
-function ExternalLink({ className = '', href, text }) {
+function ExternalLink({ className = '', href, children }) {
   return (
     <a
       className={className}
@@ -6,7 +6,7 @@ function ExternalLink({ className = '', href, text }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {text}
+      {children}
     </a>
   )
 }

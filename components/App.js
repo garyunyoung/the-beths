@@ -74,7 +74,7 @@ export default function App({ data }) {
         </Link>
       </section>
       <section id="merch" className="page page--merch">
-        <Header header="merch" />
+        <Header header="featured merch" />
         <Merch consent={hasConsent} merch={data.merchData} />
       </section>
       <section id="tour" className="page page--tour">

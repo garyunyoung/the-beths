@@ -4,4 +4,20 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  @include element('grid') {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1.5em;
+  }
+}
+
+@include block('merch-thumbnail') {
+  text-align: center;
+
+  @include element('text') {
+    padding: 0 1em;
+    margin-top: 0.5em;
+  }
 }
