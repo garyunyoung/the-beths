@@ -1,6 +1,4 @@
 function ExternalLink({ className = '', href, text }) {
-
-
   return (
     <a
       className={className}

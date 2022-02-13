@@ -38,6 +38,15 @@ $font-lg-desktop: 24px;
   }
 }
 
+// Call to actions
+@mixin internal-secondary-link {
+  @include body-font-size;
+
+  color: black;
+  border-bottom: black;
+  padding: 0 24px;
+}
+
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 375px) {

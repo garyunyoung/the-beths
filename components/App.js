@@ -52,7 +52,7 @@ export default function App({ data }) {
         />
       </section>
       <section id="watch" className="page page--watch">
-        <Header header="latest video" />
+        <Header header="featured video" />
         <span className="aspect-ratio-box-outter">
           {shouldShowYoutubePoster ?
             <span
@@ -70,7 +70,7 @@ export default function App({ data }) {
             </iframe>}
         </span>
         <Link href="/videos">
-          <a className="merch__visit-link">View all videos</a>
+          <a className="link">View All Videos</a>
         </Link>
       </section>
       <section id="merch" className="page page--merch">

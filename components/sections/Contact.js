@@ -1,5 +1,5 @@
 import React from 'react';
-import ExternalLink from '../partials/ExternalLink.js';
+import ExternalLink from '../partials/Links.js';
 
 import { cpB } from '../utilities/cloudinary.js';
 

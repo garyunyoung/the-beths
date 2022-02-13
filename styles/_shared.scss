@@ -1,0 +1,21 @@
+@import 'styles/_mixins.scss';
+
+@include block('link') {
+  display: inline-block;
+
+  width: max-content;
+
+  @include body-font-size;
+  font-weight: 700;
+
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+
+  padding: 12px 24px;
+
+  &:hover {
+    border-color: $pink;
+    transition: $hover;
+  }
+}
