@@ -15,12 +15,28 @@ $nav-height-desktop: 45px;
 $nav-height-lg-desktop: 60px;
 
 // Font sizes
+$font-mobile: 18px;
+$font-lg-mobile: 20px;
+$font-tablet: 20px;
+$font-sm-desktop: 24px;
+$font-lg-desktop: 24px;
 
-// mobile: 18px
-// large mobile: 20px
-// tablet: 20px
-// sm-desktop: 20px
-// lg-desktop: 24px
+@mixin body-font-size {
+  font-weight: 300;
+  font-size: $font-mobile;
+
+  @include lg-mobile {
+    font-size: $font-lg-mobile;
+  }
+
+  @include sm-desktop {
+    font-size: $font-sm-desktop;
+  }
+
+  @include lg-desktop {
+    font-size: $font-lg-desktop;
+  }
+}
 
 // Media Queries
 @mixin lg-mobile {

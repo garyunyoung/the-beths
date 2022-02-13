@@ -2,42 +2,19 @@
 
 @include block('contact') {
   min-height: 65.5vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  background: none;
 
-  @include element('text') {
-    font-size: 18px;
-    font-weight: 700;
-    cursor: default;
-
-    @include lg-mobile {
-      font-size: 20px;
-    }
-
-    @include lg-desktop {
-      font-size: 24px;
-    }
+  @include element('section') {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 24px;
   }
 
-  @include element('link') {
-    font-size: 18px;
-
-    @include lg-mobile {
-      font-size: 20px;
-    }
-
-    @include sm-desktop {
-      font-size: 24px;
-    }
+  @include element('header') {
+    font-weight: 700;
   }
 
   @include element('carpark-logo') {
     @include set-size(24px, 24px);
-    margin-top: 24px;
   }
 }

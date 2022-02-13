@@ -66,25 +66,5 @@
 }
 
 #song-kick body {
-  font-size: 18px;
-  font-weight: 300;
-
-  @include lg-mobile {
-    font-size: 20px;
-  }
-
-  @include lg-desktop {
-    font-size: 24px;
-  }
+  @include body-font-size;
 }
-
-// @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-//   .tour {
-//     .tour-pic {
-//       height: 15vh;
-//     }
-//     .tour-text {
-//       font-size: 1.5em;
-//     }
-//   }
-// }
