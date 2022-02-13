@@ -26,7 +26,7 @@ export default function NavigationMobile() {
           <InternalNavItem text='Tour' onClick={closeMenu} link='/#tour' />
           <ExternalNavItem text='Blog' onClick={closeMenu} link='https://found.ee/thebeths_bensblog' />
           <ExternalNavItem text='Patreon' onClick={closeMenu} link='https://www.patreon.com/thebeths' />
-          <InternalNavItem text='2048' onClick={closeMenu} link='/game2048' />
+          <InternalNavItem text='Game' onClick={closeMenu} link='/game2048' />
           <InternalNavItem text='Contact' onClick={closeMenu} link='/#contact' />
         </ul>
       </nav>

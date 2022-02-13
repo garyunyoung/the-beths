@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { docCookies } from "./utilities/cookies.js";
 import { tagManager } from "./utilities/google.js";
+import Link from 'next/link'
 
 import ConsentBanner from "./partials/ConsentBanner.js";
 import FacebookPixel from "./utilities/facebookPixel.js";
@@ -52,7 +53,6 @@ export default function App({ data }) {
       </section>
       <section id="watch" className="page page--watch">
         <Header header="latest video" />
-
         <span className="aspect-ratio-box-outter">
           {shouldShowYoutubePoster ?
             <span
@@ -69,7 +69,9 @@ export default function App({ data }) {
               allowfullscreen>
             </iframe>}
         </span>
-        <a className="merch__visit-link" >View all videos</a>
+        <Link href="/videos">
+          <a className="merch__visit-link">View all videos</a>
+        </Link>
       </section>
       <section id="merch" className="page page--merch">
         <Header header="merch" />
