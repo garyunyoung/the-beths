@@ -34,6 +34,15 @@
       $orange 0%,
       $yellow 60%
     );
+
+    background: radial-gradient(
+      circle,
+      black 0%,
+      $orange 0%,
+      $orange 14%,
+      $yellow 39%,
+      $yellow 100%
+    );
   }
 
   @include element('single-art') {
