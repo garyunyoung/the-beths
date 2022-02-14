@@ -20,10 +20,14 @@ const callToActions = [
 export default function Home() {
   return (
     <section className='home'>
-      <div className='home__single-art'
-        style={{
-          backgroundImage: `url(${aRealThingSingleArt})`
-        }}></div>
+      <span className='home__single-art-wrapper'>
+        <img
+          className='home__single-art'
+          src={aRealThingSingleArt}
+          alt="Pink squiggles on an yellow orb designed by Phillipa Emery"
+        />
+      </span>
+
       <div className='home__cta-links '>
         {callToActions.map(({ href, text }, index) => (
           <ExternalLink

@@ -22,35 +22,30 @@
   flex-flow: column;
   align-items: center;
 
-  background: linear-gradient(
-    180deg,
-    $orange 0%,
-    $yellow 100%
-  );
+  background-color: $yellow;
 
-  @include sm-desktop {
-    background: linear-gradient(
-      90deg,
-      $orange 0%,
-      $yellow 60%
-    );
+  @include element('single-art-wrapper') {
+    width: 60vw;
+    height: 60vw;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background: radial-gradient(
       circle,
       black 0%,
       $orange 0%,
-      $orange 14%,
-      $yellow 39%,
+      $orange 40%,
+      $yellow 70%,
       $yellow 100%
     );
   }
 
   @include element('single-art') {
-    width: 40vw;
-    height: 40vw;
-
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 70%;
   }
 
   @include element('cta-links') {
