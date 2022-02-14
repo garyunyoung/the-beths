@@ -17,6 +17,6 @@ module.exports = {
     return config
   },
   images: {
-    domains: ['cdn.sanity.io']
+    domains: ['cdn.sanity.io', 'res.cloudinary.com']
   }
 }

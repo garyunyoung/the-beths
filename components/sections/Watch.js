@@ -105,7 +105,6 @@ function Thumbnail({ name, thumbnail, link, modifier }) {
             width={120}
             height={120}
           />
-
           <p className={`thumbnail__text thumbnail__text--${modifier}`}>
             {name}
           </p>

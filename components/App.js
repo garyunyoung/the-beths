@@ -52,13 +52,15 @@ export default function App({ data }) {
         />
       </section>
       <section id="watch" className="page page--watch">
-        <Header header="featured video" />
+        <Header header="latest video" />
         <span className="aspect-ratio-box-outter">
           {shouldShowYoutubePoster ?
             <span
               className="aspect-ratio-box-inner page__latest-video-poster"
               onClick={() => setShouldShowYoutubePoster(false)}
-              style={{ backgroundImage: `url('https://res.cloudinary.com/garyou/image/upload/v1644552695/the-beths/a-real-thing/a-real-thing-youtube-poster_g4wisv.png')` }}>
+              style={{
+                backgroundImage: `url('https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1644552695/the-beths/a-real-thing/a-real-thing-youtube-poster_g4wisv.png')`
+              }}>
             </span> :
             <iframe
               className="aspect-ratio-box-inner"

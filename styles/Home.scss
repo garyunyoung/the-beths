@@ -22,46 +22,26 @@
   flex-flow: column;
   align-items: center;
 
-  @include element('background-image-wrapper') {
-    height: 100vh;
-    width: 100vw;
+  background: linear-gradient(
+    180deg,
+    $orange 0%,
+    $yellow 100%
+  );
+
+  @include sm-desktop {
+    background: linear-gradient(
+      90deg,
+      $orange 0%,
+      $yellow 60%
+    );
+  }
+
+  @include element('single-art') {
+    width: 40vw;
+    height: 40vw;
 
     background-size: contain;
     background-repeat: no-repeat;
-
-    @include tablet {
-      background-size: cover;
-    }
-
-    @include sm-desktop {
-      display: none;
-    }
-
-    @include modifier('desktop') {
-      display: none;
-
-      @include sm-desktop {
-        background-size: cover;
-        background-position: center;
-        display: block;
-      }
-    }
-  }
-
-  @include element('background-image') {
-    width: 100%;
-
-    @include sm-desktop {
-      display: none;
-    }
-
-    @include modifier('desktop') {
-      display: none;
-
-      @include sm-desktop {
-        display: block;
-      }
-    }
   }
 
   @include element('cta-links') {
