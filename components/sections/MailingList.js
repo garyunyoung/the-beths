@@ -7,7 +7,7 @@ function MailingList() {
 
   return (
     <section className="mailing-list-banner">
-      <div className="mailing-list-banner__wrapper">
+      <span>
         <div
           className='mailing-list-banner__cta-link'
           onClick={() => setisOpen(!isOpen)}
@@ -58,7 +58,7 @@ function MailingList() {
             </div>
           </form>
         </div>
-      </div>
+      </span>
       <style jsx>{scss}</style>
     </section >
   );
