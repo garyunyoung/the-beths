@@ -50,6 +50,45 @@ $font-lg-desktop: 24px;
   padding: 0 24px;
 }
 
+@mixin home-primary-link {
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: white;
+
+  border-radius: 12px;
+
+  padding: 16px 24px;
+  margin-bottom: 16px;
+
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    box-shadow: 3px 3px white;
+    color: white;
+    transition: $hover;
+    transform: $scale;
+
+    cursor: pointer;
+  }
+
+  @include sm-desktop {
+    font-size: 20px;
+    padding: 16px 56px;
+  }
+
+  @include med-desktop {
+    font-size: 26px;
+  }
+
+  @include lg-desktop {
+    font-size: 38px;
+  }
+}
+
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 375px) {
