@@ -12,11 +12,12 @@ export default function Merch({ merch }) {
   return (
     <section className="merch">
       <div className="merch__grid">
-        {merch.map(({ name, thumbnail }, index) => (
+        {merch.map(({ name, thumbnail, isHidden }, index) => (
           <MerchThumbnail
             key={index}
             name={name}
             thumbnail={thumbnail}
+            isHidden={isHidden}
           />
         ))}
       </div>
@@ -31,9 +32,9 @@ export default function Merch({ merch }) {
 }
 
 
-function MerchThumbnail({ name, thumbnail }) {
+function MerchThumbnail({ name, thumbnail, isHidden }) {
   return (
-    <div className="merch-thumbnail">
+    <div className={`merch-thumbnail ${isHidden ? 'is-hidden' : ''}`}>
       <ExternalLink href={storeLink}>
         <Image
           className="merch-thumbnail__image"

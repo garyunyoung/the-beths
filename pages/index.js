@@ -13,6 +13,7 @@ const merchQuery = `*\[_type == "merch"\] {
       url
     },
   },
+  isHidden
 }`;
 
 const contactQuery = `*\[_type == "contact"\] {

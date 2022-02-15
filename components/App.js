@@ -52,7 +52,7 @@ export default function App({ data }) {
         />
       </section>
       <MailingList />
-      <section id="watch" className="page page--watch">
+      <section id="videos" className="page page--watch">
         <Header header="latest video" />
         <span className="aspect-ratio-box-outter page__latest-video-wrapper">
           {shouldShowYoutubePoster ?

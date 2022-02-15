@@ -10,6 +10,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1.5em;
+
+    margin-bottom: 8vh;
+
+    @include sm-desktop {
+      margin-bottom: 10vh;
+    }
   }
 }
 
@@ -19,5 +25,9 @@
   @include element('text') {
     padding: 0 1em;
     margin-top: 0.5em;
+  }
+
+  @include state('hidden') {
+    display: none;
   }
 }

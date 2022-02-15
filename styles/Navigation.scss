@@ -52,6 +52,7 @@
   border-radius: 12px;
 
   padding: 16px;
+  padding-left: 80px;
 
   @include med-desktop {
     display: none;
@@ -198,7 +199,7 @@
       height: $nav-height-desktop;
       padding: 0 4.4vw;
     }
-    
+
     @include lg-desktop {
       height: $nav-height-lg-desktop;
       width: 84vw;

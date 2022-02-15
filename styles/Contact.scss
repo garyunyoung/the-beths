@@ -1,8 +1,6 @@
 @import 'styles/_mixins.scss';
 
 @include block('contact') {
-  min-height: 100vh;
-
   @include element('section') {
     display: flex;
     flex-flow: column;

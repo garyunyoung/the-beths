@@ -44,6 +44,10 @@
     padding-bottom: 2vh;
   }
 
+  @include modifier('contact') {
+    min-height: 100vh;
+  }
+
   @include element('latest-video-wrapper') {
     margin-bottom: 8vh;
 

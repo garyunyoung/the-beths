@@ -17,12 +17,12 @@
   }
 
   @include sm-desktop {
-    padding-top: calc(#{$nav-height-desktop} + 10vh);
+    padding-top: calc(#{$nav-height-desktop} + 8vh);
     margin-bottom: 8vh;
   }
 
   @include lg-desktop {
-    padding-top: calc(#{$nav-height-lg-desktop} + 10vh);
+    padding-top: calc(#{$nav-height-lg-desktop} + 8vh);
   }
 
   @include modifier('contact') {
