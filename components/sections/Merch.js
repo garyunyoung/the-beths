@@ -6,22 +6,23 @@ import ExternalLink from '../partials/Links.js';
 
 import scss from "../../styles/Merch.scss";
 
+const storeLink = 'https://found.ee/thebeths_merch'
+
 export default function Merch({ merch }) {
   return (
     <section className="merch">
       <div className="merch__grid">
-        {merch.map(({ name, thumbnail, link }, index) => (
+        {merch.map(({ name, thumbnail }, index) => (
           <MerchThumbnail
             key={index}
             name={name}
             thumbnail={thumbnail}
-            link={link}
           />
         ))}
       </div>
       <ExternalLink
         className={'link'}
-        href={"https://found.ee/thebeths_merch"}>
+        href={storeLink}>
         Visit Store
       </ExternalLink>
       <style jsx>{scss}</style>
@@ -30,10 +31,10 @@ export default function Merch({ merch }) {
 }
 
 
-function MerchThumbnail({ name, thumbnail, link }) {
+function MerchThumbnail({ name, thumbnail }) {
   return (
     <div className="merch-thumbnail">
-      <ExternalLink href={link}>
+      <ExternalLink href={storeLink}>
         <Image
           className="merch-thumbnail__image"
           src={urlFor(thumbnail).url()}
