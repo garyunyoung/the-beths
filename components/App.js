@@ -11,6 +11,7 @@ import Home from "./sections/Home";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
+import MailingList from "./sections/MailingList";
 
 import styles from '../styles/App.scss'
 
@@ -39,7 +40,6 @@ export default function App({ data }) {
   }
 
 
-
   return (
     <>
       {hasConsent ? loadFacebookPixels() : null}
@@ -51,6 +51,7 @@ export default function App({ data }) {
           allowTracking={() => loadAnalytics()}
         />
       </section>
+      <MailingList />
       <section id="watch" className="page page--watch">
         <Header header="latest video" />
         <span className="aspect-ratio-box-outter">
