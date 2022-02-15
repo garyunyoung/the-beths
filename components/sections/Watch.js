@@ -69,13 +69,13 @@ function WatchSection({ videos, name, modifier, currentSection, setCurrentSectio
         {name}
       </h2>
       <div className="watch-section__wrapper">
-        {videos.map(({ name, thumbnail, link, modifier }, index) => (
+        {videos.map(({ name, thumbnail, url, modifier }, index) => (
           <Thumbnail
             key={index}
             name={name}
             thumbnail={thumbnail}
             modifier={modifier}
-            link={link}
+            url={url}
           />
         ))}
       </div>
@@ -83,7 +83,7 @@ function WatchSection({ videos, name, modifier, currentSection, setCurrentSectio
   );
 }
 
-function Thumbnail({ name, thumbnail, link, modifier }) {
+function Thumbnail({ name, thumbnail, url, modifier }) {
   return (
     <div className="thumbnail">
       <div
@@ -92,7 +92,7 @@ function Thumbnail({ name, thumbnail, link, modifier }) {
       >
         <a
           className="thumbnail__link"
-          href={link}
+          href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
