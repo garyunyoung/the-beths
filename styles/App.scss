@@ -1,16 +1,13 @@
 @import 'styles/_mixins.scss';
 @import 'styles/_shared.scss';
 
-.page {
-  padding-top: 48px;
-  overflow: hidden;
-
+@include block('page') {
   padding: 48px $mobile-side-padding 0;
 
   @include tablet {
     max-width: $max-content-width-tablet;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 
   @include sm-desktop {
@@ -20,50 +17,44 @@
   @include lg-desktop {
     max-width: $max-content-width-lg-desktop;
   }
-}
 
-.page--home {
-  padding: 0;
+  @include modifier('home') {
+    padding: 0;
 
-  @include tablet {
-    max-width: none;
+    @include tablet {
+      max-width: none;
+    }
+
+    @include sm-desktop {
+      max-width: none;
+    }
+
+    @include lg-desktop {
+      max-width: none;
+    }
   }
 
-  @include sm-desktop {
-    max-width: none;
+  @include modifier('watch') {
+    text-align: center;
+    padding-bottom: 2vh;
   }
 
-  @include lg-desktop {
-    max-width: none;
+  @include modifier('merch') {
+    text-align: center;
+    padding-bottom: 2vh;
   }
-}
 
-.page--home,
-.page--merch,
-.page--contact {
-  min-height: 100vh;
-}
-
-.page--watch {
-  text-align: center;
-}
-
-@media (min-width: 425px) {
-  .page--home {
-    min-height: max-content;
-  }
-}
-
-@media (min-width: 768px) {
-  .page--watch {
-    min-height: 100vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .page--contact {
+  @include element('latest-video-poster') {
+    display: block;
     background-size: cover;
-    min-height: 100vh;
+
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-bottom: 4vh;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -85,16 +76,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.page__latest-video-poster {
-  display: block;
-  background-size: cover;
-
-  border-radius: 12px;
-  border: 2px solid black;
-
-  &:hover {
-    cursor: pointer;
-  }
 }

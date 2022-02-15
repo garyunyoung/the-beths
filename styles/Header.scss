@@ -1,64 +1,32 @@
 @import 'styles/_mixins.scss';
 
 @include block('header') {
+  font-size: 2em;
+  font-weight: 700;
+
   text-align: center;
   text-transform: capitalize;
 
-  padding-top: 32px;
-  margin-bottom: 40px;
+  padding-top: calc(#{$nav-height-mobile} + 2vh);
+  margin-bottom: 4vh;
 
-  font-size: 40px;
-  font-weight: 700;
+  cursor: default;
 
   @include tablet {
-    padding-top: 40px;
-    margin-bottom: 32px;
+    padding-top: calc(#{$nav-height-mobile} + 4vh);
   }
 
   @include sm-desktop {
-    padding-top: 10vh;
-    cursor: default;
-  }
-
-  @include med-desktop {
-    padding-top: 48px;
+    padding-top: calc(#{$nav-height-desktop} + 10vh);
+    margin-bottom: 8vh;
   }
 
   @include lg-desktop {
-    font-size: 60px;
-  }
-
-  @include modifier('merch') {
-    @include sm-desktop {
-      padding-bottom: 6vh;
-    }
-  }
-
-  @include modifier('store') {
-    @include med-desktop {
-      padding-bottom: 16px;
-    }
-  }
-
-  @include modifier('game') {
-    display: none;
-
-    @include state('open') {
-      display: block;
-      margin-bottom: 16px;
-    }
+    padding-top: calc(#{$nav-height-lg-desktop} + 10vh);
   }
 
   @include modifier('contact') {
     padding-top: 15vh;
-
-    @include tablet {
-      padding-top: 15vh;
-    }
-
-    @include sm-desktop {
-      padding-top: 15vh;
-    }
 
     @include med-desktop {
       padding-top: 18vh;
