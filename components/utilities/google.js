@@ -1,4 +1,4 @@
-export function tagManager() {
+function tagManager() {
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -11,7 +11,7 @@ export function tagManager() {
   })(window, document, "script", "dataLayer", "GTM-M845XR9");
 }
 
-export function ivyLeagueTagManager() {
+function ivyLeagueTagManager() {
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -24,4 +24,9 @@ export function ivyLeagueTagManager() {
   })(window, document, 'script', 'dataLayer', 'GTM-MM2W9SX')
 }
 
-export default { tagManager, ivyLeagueTagManager }
+function GoogleTagManager() {
+  tagManager()
+  ivyLeagueTagManager()
+}
+
+export default GoogleTagManager

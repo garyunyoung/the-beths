@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { docCookies } from "./utilities/cookies.js";
-import { tagManager, ivyLeagueTagManager } from "./utilities/google.js";
 import Link from 'next/link'
 
-import ConsentBanner from "./partials/ConsentBanner.js";
+import { docCookies } from "./utilities/cookies.js";
 import FacebookPixel from "./utilities/facebookPixel.js";
+import GoogleTagManager from "./utilities/google.js";
 
 import Header from "./partials/Header";
 import Home from "./sections/Home";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
+import ConsentBanner from "./partials/ConsentBanner.js";
 import MailingList from "./sections/MailingList";
 
 import styles from '../styles/App.scss'
@@ -35,8 +35,7 @@ export default function App({ data }) {
 
   function loadAnalytics() {
     FacebookPixel()
-    tagManager();
-    ivyLeagueTagManager();
+    GoogleTagManager();
   }
 
   return (
@@ -86,5 +85,4 @@ export default function App({ data }) {
       <style jsx>{styles}</style>
     </>
   );
-
 }
