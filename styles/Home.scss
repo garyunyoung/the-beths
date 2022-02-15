@@ -51,6 +51,11 @@
       $yellow 70%,
       $yellow 100%
     );
+
+    @include tablet {
+      width: 75vw;
+      height: 75vw;
+    }
   }
 
   @include element('single-art') {

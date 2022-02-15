@@ -41,7 +41,7 @@ export default function Home() {
         src={recordLabelLogos}
         alt=""
       />
-      <div className='home__cta-links '>
+      <div className='home__cta-links'>
         {callToActions.map(({ href, text }, index) => (
           <ExternalLink
             className='home__cta-link'
