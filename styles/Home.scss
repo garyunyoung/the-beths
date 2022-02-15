@@ -25,12 +25,42 @@
   justify-content: space-between;
 
   padding-top: calc(#{$nav-height-mobile} + 4vh);
-  padding-bottom: 16px;
-
-  position: relative;
+  padding-bottom: 2vh;
 
   @include tablet {
-    padding-top: calc(#{$nav-height-mobile});
+    justify-content: center;
+    padding-bottom: 4vh;
+  }
+
+  @include sm-desktop {
+    padding-top: calc(#{$nav-height-desktop});
+  }
+
+  @include lg-desktop {
+    padding-top: calc(#{$nav-height-lg-desktop});
+  }
+
+  @include element('top') {
+    @include tablet {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    @include sm-desktop {
+      flex-flow: row;
+    }
+  }
+
+  @include element('right') {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @include sm-desktop {
+      flex-basis: 50%;
+      justify-content: center;
+    }
   }
 
   @include element('single-art-wrapper') {
@@ -56,11 +86,25 @@
       width: 75vw;
       height: 75vw;
     }
+
+    @include sm-desktop {
+      width: calc(50vw - #{$nav-height-desktop});
+      height: calc(50vw - #{$nav-height-desktop});
+    }
+
+    @include lg-desktop {
+      width: calc(40vw - #{$nav-height-lg-desktop});
+      height: calc(40vw - #{$nav-height-lg-desktop});
+    }
   }
 
   @include element('single-art') {
     width: 80%;
     margin-bottom: 4vh;
+
+    @include tablet {
+      margin-bottom: 8vh;
+    }
   }
 
   @include element('text-image') {
@@ -69,6 +113,11 @@
 
     @include tablet {
       width: 60%;
+      margin-bottom: 6vh;
+    }
+
+    @include sm-desktop {
+      width: 80%;
     }
   }
 
@@ -78,6 +127,11 @@
 
     @include tablet {
       width: 20%;
+      margin-bottom: 8vh;
+    }
+
+    @include sm-desktop {
+      width: 40%;
     }
   }
 
@@ -91,10 +145,6 @@
       justify-content: center;
 
       max-width: none;
-    }
-
-    @include med-desktop {
-      bottom: 56px;
     }
   }
 
