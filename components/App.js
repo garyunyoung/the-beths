@@ -54,7 +54,7 @@ export default function App({ data }) {
       <MailingList />
       <section id="watch" className="page page--watch">
         <Header header="latest video" />
-        <span className="aspect-ratio-box-outter">
+        <span className="aspect-ratio-box-outter page__latest-video-wrapper">
           {shouldShowYoutubePoster ?
             <span
               className="aspect-ratio-box-inner page__latest-video-poster"

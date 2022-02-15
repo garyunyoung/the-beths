@@ -1,17 +1,19 @@
 @import 'styles/_mixins.scss';
 
 @include block('contact') {
-  min-height: 65.5vh;
+  min-height: 100vh;
 
   @include element('section') {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 4vh;
   }
 
-  @include element('header') {
-    font-weight: 700;
+  @include element('logos') {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
   }
 
   @include element('carpark-logo') {
