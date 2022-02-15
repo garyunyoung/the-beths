@@ -1,50 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import scss from "../../styles/ConsentBanner.scss";
 
-export default class ConsentBanner extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      wasDismissed: false
-    };
+function ConsentBanner({ consent, allowTracking }) {
+  const [wasDismissed, setWasDismissed] = useState(false)
+
+  function close() {
+    setWasDismissed(true)
   }
 
-  close() {
-    this.setState({ wasDismissed: true });
+  function accept() {
+    allowTracking();
   }
 
-  accept() {
-    this.props.allowTracking();
-  }
-
-  render() {
-    if (this.state.wasDismissed || this.props.consent) {
-      return null;
-    }
+  if (wasDismissed || consent) {
+    return null;
+  } else {
     return (
-      <>
-        <div className="sticky-consent-banner">
-          <div className="sticky-consent-banner__content">
-            <button className="sticky-consent-banner__button sticky-consent-banner__button--close" onClick={() => this.close()}>
-              x
-            </button>
-            <p className="sticky-consent-banner__text">
-              {`hey! some of the features on our site require analytics to run.
-              you can use the site without these features, but it's better with
+      <div className="consent-banner">
+        <div className="consent-banner__content">
+          <button className="consent-banner__button consent-banner__button--close"
+            onClick={() => close()}>
+            x
+          </button>
+          <p className="consent-banner__text">
+            {`Hey! Some of the features on our site require analytics to run.
+              You can use the site without these features, but it's better with
               them!`}
-            </p>
-            <div className="sticky-consent-banner__buttons">
-              <button className="sticky-consent-banner__button  sticky-consent-banner__button--decline" onClick={() => this.close()}>
-                decline
-              </button>
-              <button className="sticky-consent-banner__button  sticky-consent-banner__button--accept" onClick={() => this.accept()}>
-                accept 🍪
-              </button>
-            </div>
+          </p>
+          <div className="consent-banner__buttons">
+            <button className="consent-banner__button  consent-banner__button--decline"
+              onClick={() => close()}>
+              decline
+            </button>
+            <button className="consent-banner__button  consent-banner__button--accept"
+              onClick={() => accept()}>
+              accept 🍪
+            </button>
           </div>
-          <style jsx>{scss}</style>
         </div>
-      </>
+        <style jsx>{scss}</style>
+      </div>
     );
   }
 }
+
+export default ConsentBanner
