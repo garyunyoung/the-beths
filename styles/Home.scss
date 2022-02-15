@@ -17,16 +17,25 @@
 
 @include block('home') {
   min-height: 100vh;
+  background-color: $yellow;
 
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: space-between;
 
-  background-color: $yellow;
+  padding-top: calc(#{$nav-height-mobile} + 4vh);
+  padding-bottom: 16px;
+
+  position: relative;
+
+  @include tablet {
+    padding-top: calc(#{$nav-height-mobile});
+  }
 
   @include element('single-art-wrapper') {
-    width: 60vw;
-    height: 60vw;
+    width: 100vw;
+    height: 100vw;
 
     position: relative;
 
@@ -45,21 +54,31 @@
   }
 
   @include element('single-art') {
-    width: 70%;
+    width: 80%;
+    margin-bottom: 4vh;
+  }
+
+  @include element('text-image') {
+    width: 80%;
+    margin-bottom: 4vh;
+
+    @include tablet {
+      width: 60%;
+    }
+  }
+
+  @include element('record-label-logos') {
+    width: 40%;
+    margin-bottom: 4vh;
+
+    @include tablet {
+      width: 20%;
+    }
   }
 
   @include element('cta-links') {
     display: flex;
     flex-flow: column-reverse;
-
-    position: absolute;
-    bottom: 0;
-
-    padding: 0 16px 16px;
-
-    @include lg-mobile {
-      padding: 0 48px 16px;
-    }
 
     @include sm-desktop {
       display: flex;

@@ -3,7 +3,11 @@ import ExternalLink from '../partials/Links';
 
 import scss from '../../styles/Home.scss';
 
-const aRealThingSingleArt = 'https://res.cloudinary.com/garyou/image/upload/w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good/v1644812004/the-beths/a-real-thing/CAKD80_TheBeths_ARealThing_pnebmg.tiff'
+const cloudinaryModifiers = 'w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good'
+
+const aRealThingSingleArt = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812004/the-beths/a-real-thing/CAKD80_TheBeths_ARealThing_pnebmg.tiff`
+const aRealThingText = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812002/the-beths/a-real-thing/273789478_497108051784897_8220480832551824496_n_pjw2id.tiff`
+const recordLabelLogos = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812002/the-beths/a-real-thing/273700222_497313995097636_5507975374637040254_n_d2xt6p.tiff`
 
 const callToActions = [
   {
@@ -27,7 +31,16 @@ export default function Home() {
           alt="Pink squiggles on an yellow orb designed by Phillipa Emery"
         />
       </span>
-
+      <img
+        className='home__text-image'
+        src={aRealThingText}
+        alt="The Beths 'A Real Thing' out now via Carpark Records and Ivy League Records"
+      />
+      <img
+        className='home__record-label-logos'
+        src={recordLabelLogos}
+        alt=""
+      />
       <div className='home__cta-links '>
         {callToActions.map(({ href, text }, index) => (
           <ExternalLink
