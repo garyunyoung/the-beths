@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { docCookies } from "./utilities/cookies.js";
-import { tagManager } from "./utilities/google.js";
+import { tagManager, ivyLeagueTagManager } from "./utilities/google.js";
 import Link from 'next/link'
 
 import ConsentBanner from "./partials/ConsentBanner.js";
@@ -23,31 +23,31 @@ export default function App({ data }) {
   useEffect(() => {
     const cookie = docCookies.getItem(cookieName);
     if (cookie !== null) {
-      loadAnalytics();
+      setCookies();
     }
   })
 
-  function loadAnalytics() {
+  function setCookies() {
     docCookies.setItem(cookieName, "accepted");
     setHasConsent(true)
-    tagManager();
-    FacebookPixel();
+    loadAnalytics()
   }
 
-  function loadFacebookPixels() {
+  function loadAnalytics() {
     FacebookPixel()
+    tagManager();
+    ivyLeagueTagManager();
   }
-
 
   return (
     <>
-      {hasConsent ? loadFacebookPixels() : null}
+      {hasConsent ? loadAnalytics() : null}
       <section className="page page--home">
         <Home />
         <ConsentBanner
           consent={hasConsent}
-          loadAnalytics={() => loadAnalytics()}
-          allowTracking={() => loadAnalytics()}
+          loadAnalytics={() => setCookies()}
+          allowTracking={() => setCookies()}
         />
       </section>
       <MailingList />
@@ -76,7 +76,7 @@ export default function App({ data }) {
         <Header header="tour" />
         <Tour
           consent={hasConsent}
-          allowTracking={() => loadAnalytics()}
+          allowTracking={() => setCookies()}
         />
       </section>
       <section id="contact" className="page page--contact">
