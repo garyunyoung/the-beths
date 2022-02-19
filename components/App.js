@@ -45,7 +45,6 @@ export default function App({ data }) {
         <Home />
         <ConsentBanner
           consent={hasConsent}
-          loadAnalytics={() => setCookies()}
           allowTracking={() => setCookies()}
         />
       </section>
