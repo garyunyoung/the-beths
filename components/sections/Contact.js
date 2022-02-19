@@ -1,7 +1,7 @@
 import React from 'react';
 import ExternalLink from '../partials/Links.js';
 
-import { recordLabels } from '../../data/data.ts';
+import { contactSectionRecordLabels } from '../../data/data.ts';
 import { carparkRecordsLogoBlack } from '../utilities/cloudinary.js';
 
 import scss from '../../styles/Contact.scss';
@@ -22,7 +22,7 @@ function Contact({ contacts }) {
       </span>
       <span className='contact__section'>
         <h4 className='contact__header'>Record Label</h4>
-        {recordLabels.map(({ href, text }, index) =>
+        {contactSectionRecordLabels.map(({ href, text }, index) =>
           <ExternalLink
             key={index}
             href={href}

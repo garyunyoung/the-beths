@@ -1,25 +1,15 @@
 import React from 'react';
+
+import {
+  aRealThingSingleArt,
+  aRealThingText,
+  recordLabelLogos
+} from '../utilities/cloudinary.js'
+import { homeSectionCallToActions } from '../../data/data.ts';
+
 import ExternalLink from '../partials/Links';
 
 import scss from '../../styles/Home.scss';
-
-const cloudinaryModifiers = 'w_auto,c_scale,q_auto,dpr_auto,f_auto,q_auto:good'
-
-const aRealThingSingleArt = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812004/the-beths/a-real-thing/CAKD80_TheBeths_ARealThing_pnebmg.tiff`
-const aRealThingText = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812002/the-beths/a-real-thing/273789478_497108051784897_8220480832551824496_n_pjw2id.tiff`
-const recordLabelLogos = `https://res.cloudinary.com/garyou/image/upload/${cloudinaryModifiers}/v1644812002/the-beths/a-real-thing/273700222_497313995097636_5507975374637040254_n_d2xt6p.tiff`
-
-const callToActions = [
-  {
-    href: 'https://youtu.be/vd2Rps0cMdo',
-    text: 'WATCH VIDEO'
-  },
-  {
-
-    href: 'https://found.ee/beths_arealthing',
-    text: 'BUY / STREAM SINGLE'
-  }
-]
 
 export default function Home() {
   return (
@@ -48,7 +38,7 @@ export default function Home() {
         </span>
       </span>
       <div className='home__cta-links'>
-        {callToActions.map(({ href, text }, index) => (
+        {homeSectionCallToActions.map(({ href, text }, index) => (
           <ExternalLink
             className='home__cta-link'
             key={index}
