@@ -19,7 +19,7 @@ export default function NavigationDesktop(props) {
               <InternalNavItem text='Tour' link='/#tour' />
               <ExternalNavItem text='Blog' link='https://found.ee/thebeths_bensblog' />
               <ExternalNavItem text='Patreon' link='https://www.patreon.com/thebeths' />
-              <InternalNavItem text='Game' link='/game2048' />
+              <InternalNavItem text='Game' link='/game' />
               <InternalNavItem text='Contact' link='/#contact' />
             </ul>
             <MenuButton text={isOpen ? 'X CLOSE' : '☰ MENU'} className='desktop-navigation__menu-button' onClick={toggleMenu} />

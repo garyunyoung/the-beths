@@ -6,7 +6,7 @@ import LocalStorageManager from "../game/local_storage_manager";
 import scssA from "../../styles/Game.scss";
 import scssB from "../../styles/_gameHelpers.scss";
 
-export default class Game extends React.Component {
+export default class Game2048 extends React.Component {
   constructor(props) {
     super(props);
   }
