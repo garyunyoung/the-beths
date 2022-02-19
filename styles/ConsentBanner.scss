@@ -1,74 +1,41 @@
-.consent-banner {
+@import 'styles/_mixins.scss';
+
+@include block('consent-banner') {
   width: 100%;
+  background-color: $consent-banner;
+
+  display: flex;
+  justify-content: center;
+
   position: fixed;
   bottom: 0;
+  left: 0;
   z-index: 1;
 
-  &__content {
-    background-color: #f9dd11;
-
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
-
-    padding: 8px;
-  }
-
-  &__text {
-    font-size: 14px;
+  @include element('content') {
     text-align: right;
-    margin: 8px 0;
+    padding: 24px $mobile-side-padding;
   }
 
-  &__button {
-    font-size: 14px;
+  @include element('text') {
+    @include consent-banner-font-size;
+    margin-bottom: 16px;
+  }
+
+  @include element('button') {
+    @include consent-banner-font-size;
     color: black;
     border: 1px solid black;
     background-color: transparent;
-    padding: 4px 8px;
-  }
 
-  &__button--close {
-    border: none;
-    margin: 0;
-    padding: 0;
+    padding: 8px 16px;
 
-    display: none;
-  }
-
-  &__button--decline {
-    margin-right: 8px;
-  }
-
-  &__button--accept,
-  &__button--decline {
     &:hover {
-      cursor: pointer;
       box-shadow: 1px 1px 1px black;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .consent-banner {
-    &__content {
-      // opacity: 0.8;
-      flex-flow: row;
-      // justify-content: space-between;
-      justify-content: center;
-      align-items: flex-start;
+      cursor: pointer;
     }
 
-    &__text {
-      font-size: 16px;
-      margin: auto 24px;
-    }
-
-    &__button {
-      font-size: 16px;
-    }
-
-    &__button--decline {
+    @include modifier('decline') {
       margin-right: 16px;
     }
   }

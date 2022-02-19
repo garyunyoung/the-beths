@@ -1,3 +1,4 @@
+// Old and unused code
 
 import React from "react";
 import { urlFor } from "../../lib/sanity.js";

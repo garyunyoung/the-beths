@@ -4,6 +4,9 @@
 $yellow: #f8d500;
 $orange: #faaf42;
 $pink: #ef97b0;
+
+$consent-banner: $orange;
+
 $hover: all 0.23s ease-in-out 0s;
 $scale: scale(1.01);
 
@@ -40,15 +43,15 @@ $font-lg-desktop: 24px;
   }
 }
 
-// Call to actions
-@mixin internal-secondary-link {
-  @include body-font-size;
+@mixin consent-banner-font-size {
+  font-size: 16px;
 
-  color: black;
-  border-bottom: black;
-  padding: 0 24px;
+  @include sm-desktop {
+    font-size: 20px;
+  }
 }
 
+// Call to actions
 @mixin home-primary-link {
   text-align: center;
 
@@ -88,6 +91,14 @@ $font-lg-desktop: 24px;
   }
 }
 
+@mixin internal-secondary-link {
+  @include body-font-size;
+
+  color: black;
+  border-bottom: black;
+  padding: 0 24px;
+}
+
 // Media Queries
 @mixin lg-mobile {
   @media (min-width: 375px) {
@@ -124,12 +135,6 @@ $font-lg-desktop: 24px;
     @content;
   }
 }
-
-// // Iphone X //
-// @media only screen and (width: 375px) and (height: 635px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {}
-
-// // Pixel 2 XL /
-// @media only screen and (width: 411px) and (height: 823px) and (orientation: portrait) {}
 
 // Helpers
 @mixin set-size($height, $width) {
