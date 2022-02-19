@@ -1,8 +1,8 @@
 import React from "react";
-import GameManager from "../game/game_manager";
-import KeyboardInputManager from "../game/keyboard_input_manager";
-import HTMLActuator from "../game/html_actuator";
-import LocalStorageManager from "../game/local_storage_manager";
+import GameManager from "./engine/game_manager";
+import KeyboardInputManager from "./engine/keyboard_input_manager";
+import HTMLActuator from "./engine/html_actuator";
+import LocalStorageManager from "./engine/local_storage_manager";
 import scssA from "../../styles/Game.scss";
 import scssB from "../../styles/_gameHelpers.scss";
 
