@@ -1,23 +1,12 @@
 import React from 'react';
 import ExternalLink from '../partials/Links.js';
 
-import { cpB } from '../utilities/cloudinary.js';
+import { recordLabels } from '../../data/data.ts';
+import { carparkRecordsLogoBlack } from '../utilities/cloudinary.js';
 
 import scss from '../../styles/Contact.scss';
 
-const recordLabels = [
-  {
-    href: 'http://carparkrecords.com/',
-    text: 'Carpark Records'
-
-  },
-  {
-    href: 'https://ivyleague.com.au/',
-    text: 'Ivy League Records'
-  }
-]
-
-export default function Contact({ contacts }) {
+function Contact({ contacts }) {
   return (
     <section className='contact'>
       <span className='contact__section'>
@@ -43,9 +32,11 @@ export default function Contact({ contacts }) {
         )}
       </span>
       <span className='contact__logos'>
-        <img className='contact__carpark-logo' src={cpB} alt='carpark records logo' />
+        <img className='contact__carpark-logo' src={carparkRecordsLogoBlack} alt='' />
       </span>
       <style jsx>{scss}</style>
     </section>
   );
 }
+
+export default Contact

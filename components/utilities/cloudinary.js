@@ -63,6 +63,6 @@ export const tourTheBeths = `${cld}tour-the-beths-jump-rope-gazers.png`;
 
 // Contact //
 export const contact = `${cld}contact_SM.jpg`;
-export const cpB = `${cld}cp-bw.jpg`;
+export const carparkRecordsLogoBlack = `${cld}cp-bw.jpg`;
 
 
