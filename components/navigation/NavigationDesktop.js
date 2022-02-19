@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SocialsDesktop from '../partials/SocialsDesktop';
+import SocialsDesktop from './SocialsDesktop';
 import scss from '../../styles/Navigation.scss';
 
 export default function NavigationDesktop(props) {

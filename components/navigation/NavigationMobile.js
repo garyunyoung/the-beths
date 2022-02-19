@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SocialsMobile from '../partials/SocialsMobile';
+import SocialsMobile from '../navigation/SocialsMobile';
 import scss from '../../styles/Navigation.scss';
 
 export default function NavigationMobile() {

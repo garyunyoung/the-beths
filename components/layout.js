@@ -1,5 +1,5 @@
-import NavigationMobile from "./sections/NavigationMobile";
-import NavigationDesktop from "./sections/NavigationDesktop";
+import NavigationMobile from "./navigation/NavigationMobile";
+import NavigationDesktop from "./navigation/NavigationDesktop";
 
 import globalStyles from '../styles/global.scss'
 

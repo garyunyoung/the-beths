@@ -11,7 +11,7 @@ import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
 import ConsentBanner from "./partials/ConsentBanner.js";
-import MailingList from "./sections/MailingList";
+import MailingList from "./partials/MailingList";
 
 import styles from '../styles/App.scss'
 
