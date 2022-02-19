@@ -2,7 +2,7 @@ import React from 'react';
 import ExternalLink from '../partials/Links.js';
 
 import { contactSectionRecordLabels } from '../../data/data.ts';
-import { carparkRecordsLogoBlack } from '../utilities/cloudinary.js';
+import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';
 
 import scss from '../../styles/Contact.scss';
 

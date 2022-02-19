@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from 'next/link'
 
-import { docCookies } from "./utilities/cookies.js";
-import FacebookPixel from "./utilities/facebookPixel.js";
-import GoogleTagManager from "./utilities/google.js";
+import { docCookies } from "../utilities/cookies.js";
+import FacebookPixel from "../utilities/facebookPixel.js";
+import GoogleTagManager from "../utilities/google.js";
 
 import Header from "./partials/Header";
 import Home from "./sections/Home";

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { favicon } from "../components/utilities/cloudinary.js";
+import { favicon } from "../utilities/cloudinary.js";
 import { client } from '../lib/sanity';
 
 import App from "../components/App";

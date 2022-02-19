@@ -4,7 +4,7 @@ import {
   aRealThingSingleArt,
   aRealThingText,
   recordLabelLogos
-} from '../utilities/cloudinary.js'
+} from '../../utilities/cloudinary.js'
 import { homeSectionCallToActions } from '../../data/data.ts';
 
 import ExternalLink from '../partials/Links';

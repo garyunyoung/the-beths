@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react"
-import { tourTheBeths } from "../utilities/cloudinary.js"
+import React, { useEffect } from "react"
+import { tourTheBeths } from "../../utilities/cloudinary.js"
+
 import scss from "../../styles/Tour.scss"
 
 function Tour({ consent, allowTracking }) {
