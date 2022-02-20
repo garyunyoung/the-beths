@@ -4,11 +4,14 @@ import { ExternalLink } from '../partials/Links.js';
 import { contactSectionRecordLabels } from '../../data/data.js';
 import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';
 
+import Header from '../partials/Header.js';
+
 import scss from '../../styles/Contact.scss';
 
 export default function Contact({ contacts }) {
   return (
     <section className='contact'>
+      <Header id="contact" text="contact" />
       <span className='contact__section'>
         <h4 className='contact__header'>Management</h4>
         {contacts.map(({ email }, index) =>

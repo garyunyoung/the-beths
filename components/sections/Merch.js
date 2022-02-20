@@ -2,6 +2,7 @@ import React from "react";
 import { urlFor } from "../../lib/sanity.js";
 import Image from 'next/image'
 
+import Header from '../partials/Header.js';
 import { ExternalLink } from '../partials/Links.js';
 
 import scss from "../../styles/Merch.scss";
@@ -11,6 +12,7 @@ const storeLink = 'https://found.ee/thebeths_merch'
 export default function Merch({ merch }) {
   return (
     <section className="merch">
+      <Header id="merch" text="featured merch" />
       <div className="merch__grid">
         {merch.map(({ name, thumbnail, isHidden }, index) => (
           <MerchThumbnail
@@ -30,7 +32,6 @@ export default function Merch({ merch }) {
     </section>
   );
 }
-
 
 function MerchThumbnail({ name, thumbnail, isHidden }) {
   return (

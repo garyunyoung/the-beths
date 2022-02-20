@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { tourTheBeths } from "../../utilities/cloudinary.js"
 
+import Header from '../partials/Header.js';
 import { TourConsentBanner } from "../partials/ConsentBanners.js"
 
 import scss from "../../styles/Tour.scss"
@@ -19,15 +20,11 @@ export default function Tour({ consent, allowTracking }) {
     }
   }, [consent])
 
-  if (!consent) {
-    return <TourConsentBanner allowTracking={allowTracking} />
-  } else {
+  if (consent) {
     return (
       <section className="tour">
-        <div
-          className="tour__image"
-          style={{ backgroundImage: "url(" + tourTheBeths + ")" }}
-        ></div>
+        <Header id="tour" text="tour" />
+        <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
         <p className="tour__text">come gig!</p>
         <div id='song-kick' className="song-kick">
           <a
@@ -42,5 +39,7 @@ export default function Tour({ consent, allowTracking }) {
         <style jsx>{scss}</style>
       </section>
     )
+  } else {
+    return <TourConsentBanner allowTracking={allowTracking} />
   }
 }

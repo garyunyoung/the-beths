@@ -53,6 +53,7 @@
   }
 
   @include element('latest-video-poster') {
+    width: 100%;
     display: block;
     background-size: cover;
 
