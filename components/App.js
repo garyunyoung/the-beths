@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from 'next/link'
 
 import { docCookies } from "../utilities/cookies.js";
-import FacebookPixel from "../utilities/facebookPixel.js";
+import facebook from "../utilities/facebook.js";
 import GoogleTagManager from "../utilities/google.js";
 
 import Header from "./partials/Header";
@@ -34,7 +34,7 @@ export default function App({ data }) {
   }
 
   function loadAnalytics() {
-    FacebookPixel()
+    facebook()
     GoogleTagManager();
   }
 

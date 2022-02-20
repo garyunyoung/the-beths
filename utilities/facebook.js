@@ -1,6 +1,6 @@
 import React from "react";
 
-const FacebookPixel = () => (
+const facebook = () => (
   <>
     <script
       dangerouslySetInnerHTML={{
@@ -48,6 +48,6 @@ const FacebookPixel = () => (
   </>
 );
 
-FacebookPixel.displayName = 'FacebookPixel';
+facebook.displayName = 'facebook';
 
-export default FacebookPixel;
+export default facebook;
