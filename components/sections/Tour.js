@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import { tourTheBeths } from "../../utilities/cloudinary.js"
 
+import { TourConsentBanner } from "../partials/ConsentBanners.js"
+
 import scss from "../../styles/Tour.scss"
 
 export default function Tour({ consent, allowTracking }) {
@@ -18,19 +20,7 @@ export default function Tour({ consent, allowTracking }) {
   }, [consent])
 
   if (!consent) {
-    return (
-      <div className="tour-consent-banner">
-        <p className="tour-consent-banner__text">
-          Our Songkick widget requires analytics to run, accept our cookies
-          to see what shows we have lined up!
-        </p>
-        <button className="tour-consent-banner__accept-button"
-          onClick={() => allowTracking()}>
-          accept
-        </button>
-        <style jsx>{scss}</style>
-      </div>
-    )
+    return <TourConsentBanner allowTracking={allowTracking} />
   } else {
     return (
       <section className="tour">

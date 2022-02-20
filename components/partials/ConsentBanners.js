@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import scss from "../../styles/ConsentBanner.scss";
+import scss from "../../styles/ConsentBanners.scss";
 
-export default function ConsentBanner({ consent, allowTracking }) {
+export function ConsentBanner({ consent, allowTracking }) {
   const [wasDismissed, setWasDismissed] = useState(false)
 
   if (wasDismissed || consent) {
@@ -29,4 +29,20 @@ export default function ConsentBanner({ consent, allowTracking }) {
       </div>
     );
   }
+}
+
+export function TourConsentBanner({ allowTracking }) {
+  return (
+    <div className="tour-consent-banner">
+      <p className="tour-consent-banner__text">
+        Our Songkick widget requires analytics to run, accept our cookies
+        to see what shows we have lined up!
+      </p>
+      <button className="tour-consent-banner__accept-button"
+        onClick={() => allowTracking()}>
+        accept
+      </button>
+      <style jsx>{scss}</style>
+    </div>
+  )
 }

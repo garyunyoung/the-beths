@@ -35,36 +35,6 @@
   }
 }
 
-@include block('tour-consent-banner') {
-  text-align: center;
-  background-color: gold;
-  padding: 24px;
-
-  @include med-desktop {
-    margin-bottom: 32px;
-  }
-
-  @include element('text') {
-    font-size: 18px;
-
-    padding: 0 16px;
-    margin-bottom: 16px;
-  }
-
-  @include element('accept-button') {
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 8px 16px;
-
-    font-size: 16px;
-
-    cursor: pointer;
-    &:hover {
-      box-shadow: 1px 1px 1px black;
-    }
-  }
-}
-
 #song-kick {
   padding: 0;
   margin: -10px;
