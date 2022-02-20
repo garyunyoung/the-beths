@@ -6,7 +6,7 @@ https://thebeths.com/
 
 The backend of this project, can be found here: https://github.com/garyunyoung/the-beths-backend
 
-- There have since been ongoing maintenance and design based on requests and feeback from band and management.
+There have since been ongoing maintenance and design based on requests and feeback from band and management.
 
 ## Key features
 
@@ -20,4 +20,4 @@ The backend of this project, can be found here: https://github.com/garyunyoung/t
 - Next.js
 - SCSS
 - HTML
-- Deployed using Netlify.
+- Deployed using Netlify
