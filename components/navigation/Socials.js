@@ -2,7 +2,7 @@ import { socials } from '../../data/data.js';
 
 import getIcon from '../../utilities/icons';
 
-import { ExternalLink } from '../partials/Links';
+import { ExternalLink } from '../shared/Links';
 
 export default function Socials({ className, modifier = '' }) {
   return (

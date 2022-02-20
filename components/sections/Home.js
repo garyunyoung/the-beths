@@ -7,7 +7,7 @@ import {
 } from '../../utilities/cloudinary.js'
 import { homeSectionCallToActions } from '../../data/data.js';
 
-import { ExternalLink } from '../partials/Links';
+import { ExternalLink } from '../shared/Links';
 
 import scss from '../../styles/Home.scss';
 

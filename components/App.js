@@ -5,15 +5,15 @@ import facebook from "../utilities/facebook.js";
 import GoogleTagManager from "../utilities/google.js";
 import { docCookies } from "../utilities/cookies.js";
 
-import Header from "./partials/Header";
+import Header from "./shared/Header";
 import Home from "./sections/Home";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
-import { ConsentBanner } from "./partials/ConsentBanners.js";
-import MailingList from "./partials/MailingList";
+import { ConsentBanner } from "./shared/ConsentBanners.js";
+import MailingList from "./shared/MailingList";
 
-import { ExternalLink } from "./partials/Links.js";
+import { ExternalLink } from "./shared/Links.js";
 import { aRealThingVideoThumbnail } from "../utilities/cloudinary.js";
 
 import styles from '../styles/App.scss'

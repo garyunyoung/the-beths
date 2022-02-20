@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { tourTheBeths } from "../../utilities/cloudinary.js"
 
-import Header from '../partials/Header.js';
-import { TourConsentBanner } from "../partials/ConsentBanners.js"
+import Header from '../shared/Header.js';
+import { TourConsentBanner } from "../shared/ConsentBanners.js"
 
 import scss from "../../styles/Tour.scss"
 

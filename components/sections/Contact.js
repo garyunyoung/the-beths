@@ -1,10 +1,10 @@
 import React from 'react';
-import { ExternalLink } from '../partials/Links.js';
+import { ExternalLink } from '../shared/Links.js';
 
 import { contactSectionRecordLabels } from '../../data/data.js';
 import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';
 
-import Header from '../partials/Header.js';
+import Header from '../shared/Header.js';
 
 import scss from '../../styles/Contact.scss';
 

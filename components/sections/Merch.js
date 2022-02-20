@@ -2,8 +2,8 @@ import React from "react";
 import { urlFor } from "../../lib/sanity.js";
 import Image from 'next/image'
 
-import Header from '../partials/Header.js';
-import { ExternalLink } from '../partials/Links.js';
+import Header from '../shared/Header.js';
+import { ExternalLink } from '../shared/Links.js';
 
 import scss from "../../styles/Merch.scss";
 

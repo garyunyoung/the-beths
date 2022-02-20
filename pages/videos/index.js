@@ -1,7 +1,7 @@
 import React from 'react'
 import { client } from '../../lib/sanity';
 
-import Header from "../../components/partials/Header"
+import Header from "../../components/shared/Header"
 import Videos from "../../components/videos/Videos";
 
 const videoQuery = `*\[_type == "video"\] {
