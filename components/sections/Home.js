@@ -40,8 +40,8 @@ export default function Home() {
       <div className='home__cta-links'>
         {homeSectionCallToActions.map(({ href, text }, index) => (
           <ExternalLink
-            className='home__cta-link'
             key={index}
+            className='home__cta-link'
             href={href}
           >{text}
           </ExternalLink>

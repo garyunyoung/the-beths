@@ -28,8 +28,11 @@ export default function Navigation() {
 
         <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
           <ul className='navigation-menu__nav-items'>
-            {navigationItems.map((item) => (
-              <li className='navigation-menu__nav-item'>{getNavLink(item)}</li>
+            {navigationItems.map((item, index) => (
+              <li
+                key={index}
+                className='navigation-menu__nav-item'
+              >{getNavLink(item)}</li>
             ))}
           </ul>
           <Socials className='navigation__socials' modifier='mobile' />
