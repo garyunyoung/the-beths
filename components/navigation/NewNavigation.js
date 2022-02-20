@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { theBethsLogo } from '../../utilities/cloudinary'
+
+import Socials from './Socials';
+
 import scss from '../../styles/NewNavigation.scss';
 
 export default function Navigation() {
@@ -9,6 +12,7 @@ export default function Navigation() {
   return (
     <>
       <header className='navigation'>
+        <Socials className='navigation__socials' modifier='desktop' />
         <a className='navigation__logo-wrapper' href='#'>
           <img className='navigation__logo' src={theBethsLogo} alt='' />
         </a>
@@ -23,6 +27,7 @@ export default function Navigation() {
             <InternalNavItem text='contact' link='/#contact' />
             <InternalNavItem text='👀' link='/game' />
           </ul>
+          <Socials className='navigation__socials' modifier='mobile' />
         </nav>
       </header>
       <style jsx>{scss}</style>

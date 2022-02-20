@@ -5,7 +5,7 @@ import {
   aRealThingText,
   recordLabelLogos
 } from '../../utilities/cloudinary.js'
-import { homeSectionCallToActions } from '../../data/data.ts';
+import { homeSectionCallToActions } from '../../data/data.js';
 
 import ExternalLink from '../partials/Links';
 
