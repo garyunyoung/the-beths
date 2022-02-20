@@ -2,7 +2,7 @@ import React from 'react'
 import { client } from '../../lib/sanity';
 
 import Header from "../../components/partials/Header"
-import Watch from "../../components/sections/Watch";
+import Videos from "../../components/videos/Videos";
 
 const videoQuery = `*\[_type == "video"\] {
   name, 
@@ -34,7 +34,7 @@ export default function VideoPage({ videoData }) {
   return (
     <>
       <Header header="videos" />
-      <Watch videos={videoData} />
+      <Videos videos={videoData} />
     </>
   )
 }
