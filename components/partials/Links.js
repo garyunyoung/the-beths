@@ -1,14 +1,21 @@
-function ExternalLink({ className = '', href, children }) {
+export function ExternalLink({ className = '', href, children }) {
   return (
     <a
       className={className}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-    >
-      {children}
+    >{children}
     </a>
   )
 }
 
-export default ExternalLink
+export function InternalLink({ className = '', href, children }) {
+  return (
+    <a
+      className={className}
+      href={href}
+    >{children}
+    </a>
+  )
+}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { navigationItems } from '../../data/data';
 import { theBethsLogo } from '../../utilities/cloudinary'
 
+import { ExternalLink, InternalLink } from '../partials/Links';
 import Socials from './Socials';
 
 import scss from '../../styles/Navigation.scss';
@@ -13,19 +15,22 @@ export default function Navigation() {
     <>
       <header className='navigation'>
         <Socials className='navigation__socials' modifier='desktop' />
-        <a className='navigation__logo-wrapper' href='#'>
+
+        <InternalLink className='navigation__logo-wrapper' href='#'>
           <img className='navigation__logo' src={theBethsLogo} alt='' />
-        </a>
-        <MenuButton text={isOpen ? 'CLOSE' : 'MENU'} className='navigation__menu-button' onClick={toggleMenu} />
+        </InternalLink>
+
+        <button
+          className='navigation__menu-button'
+          onClick={() => toggleMenu()}
+        >{isOpen ? 'CLOSE' : 'MENU'}
+        </button>
+
         <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
           <ul className='navigation-menu__nav-items'>
-            <InternalNavItem text='watch' link='/#videos' />
-            <InternalNavItem text='merch' link='/#merch' />
-            <InternalNavItem text='tour' link='/#tour' />
-            <ExternalNavItem text='blog' link='https://found.ee/thebeths_bensblog' />
-            <ExternalNavItem text='patreon' link='https://www.patreon.com/thebeths' />
-            <InternalNavItem text='contact' link='/#contact' />
-            <InternalNavItem text='👀' link='/game' />
+            {navigationItems.map((item) => (
+              <li className='navigation-menu__nav-item'>{getNavLink(item)}</li>
+            ))}
           </ul>
           <Socials className='navigation__socials' modifier='mobile' />
         </nav>
@@ -35,41 +40,14 @@ export default function Navigation() {
   );
 }
 
-function ExternalNavItem({ link, text }) {
-  return (
-    <li className='navigation-menu__nav-item'>
-      <a
-        className='navigation-menu__nav-item-link'
-        href={link}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        {text}
-      </a>
-    </li>
-  );
+function getNavLink({ href, hrefType, text }) {
+  switch (hrefType) {
+    case 'external':
+      return <ExternalLink className='navigation-menu__nav-item-link' href={href}>{text}</ExternalLink>
+    case 'internal':
+      return <InternalLink className='navigation-menu__nav-item-link' href={href}>{text}</InternalLink>
+    default:
+      null
+  }
 }
 
-function InternalNavItem({ link, text }) {
-  return (
-    <li className='navigation-menu__nav-item'>
-      <a
-        className='navigation-menu__nav-item-link'
-        href={link}
-      >
-        {text}
-      </a>
-    </li>
-  );
-}
-
-function MenuButton({ className, onClick, text }) {
-  return (
-    <button
-      className={className}
-      onClick={() => onClick()}
-    >
-      {text}
-    </button>
-  );
-}

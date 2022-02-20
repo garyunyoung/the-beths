@@ -1,5 +1,5 @@
 import React from 'react';
-import ExternalLink from '../partials/Links.js';
+import { ExternalLink } from '../partials/Links.js';
 
 import { contactSectionRecordLabels } from '../../data/data.js';
 import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';

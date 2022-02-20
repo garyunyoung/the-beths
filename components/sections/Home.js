@@ -7,7 +7,7 @@ import {
 } from '../../utilities/cloudinary.js'
 import { homeSectionCallToActions } from '../../data/data.js';
 
-import ExternalLink from '../partials/Links';
+import { ExternalLink } from '../partials/Links';
 
 import scss from '../../styles/Home.scss';
 
@@ -42,8 +42,8 @@ export default function Home() {
           <ExternalLink
             className='home__cta-link'
             key={index}
-            href={href}>
-            {text}
+            href={href}
+          >{text}
           </ExternalLink>
         ))}
       </div>

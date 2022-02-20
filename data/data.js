@@ -58,3 +58,47 @@ export const socials = [
     id: 'soundcloud'
   }
 ]
+
+export const navigationItems = [
+  {
+    href: '/#videos',
+    hrefType: 'internal',
+    text: 'watch',
+  },
+
+  {
+    href: '/#merch',
+    hrefType: 'internal',
+    text: 'merch',
+  },
+
+  {
+    href: '/#tour',
+    hrefType: 'internal',
+    text: 'tour',
+  },
+
+  {
+    href: 'https://found.ee/thebeths_bensblog',
+    hrefType: 'external',
+    text: 'blog',
+  },
+
+  {
+    href: 'https://www.patreon.com/thebeths',
+    hrefType: 'external',
+    text: 'patreon',
+  },
+
+  {
+    href: '/#contact',
+    hrefType: 'internal',
+    text: 'contact',
+  },
+
+  {
+    href: '/game',
+    hrefType: 'internal',
+    text: '👀',
+  }
+]

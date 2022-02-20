@@ -2,7 +2,7 @@ import React from "react";
 import { urlFor } from "../../lib/sanity.js";
 import Image from 'next/image'
 
-import ExternalLink from '../partials/Links.js';
+import { ExternalLink } from '../partials/Links.js';
 
 import scss from "../../styles/Merch.scss";
 
@@ -23,8 +23,8 @@ export default function Merch({ merch }) {
       </div>
       <ExternalLink
         className={'link'}
-        href={storeLink}>
-        Visit Store
+        href={storeLink}
+      >Visit Store
       </ExternalLink>
       <style jsx>{scss}</style>
     </section>
