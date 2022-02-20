@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import google from "../utilities/google.js";
 import facebook from "../utilities/facebook.js";
 import docCookies from "../utilities/cookies.js";
+import { COOKIENAME } from '../data/constants'
 
 import Home from "./sections/Home";
 import Watch from "./sections/Watch.js";
@@ -14,20 +15,18 @@ import { ConsentBanner } from "./shared/ConsentBanners.js";
 
 import styles from '../styles/App.scss'
 
-const cookieName = "beths-GDPR-consent";
-
 export default function App({ data }) {
   const [hasConsent, setHasConsent] = useState(false)
 
   useEffect(() => {
-    const cookie = docCookies.getItem(cookieName);
+    const cookie = docCookies.getItem(COOKIENAME);
     if (cookie !== null) {
       setCookies();
     }
   })
 
   function setCookies() {
-    docCookies.setItem(cookieName, "accepted");
+    docCookies.setItem(COOKIENAME, "accepted");
     setHasConsent(true)
     loadAnalytics()
   }

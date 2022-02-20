@@ -1,0 +1,1 @@
+export const COOKIENAME = "beths-GDPR-consent"
