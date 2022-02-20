@@ -13,7 +13,7 @@ import scss from '../../styles/Home.scss';
 
 export default function Home() {
   return (
-    <section className='home'>
+    <section className='home page page--home'>
       <span className='home__top'>
         <span className='home__left'>
           <span className='home__single-art-wrapper'>

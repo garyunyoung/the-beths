@@ -10,7 +10,7 @@ import scss from "../../styles/Watch.scss"
 
 export default function Watch() {
   return (
-    <section id='watch' className="watch">
+    <section id='watch' className="watch page page--watch">
       <Header text="latest video" />
       <span className="aspect-ratio-box-outter watch__latest-video-wrapper">
         <ExternalLink

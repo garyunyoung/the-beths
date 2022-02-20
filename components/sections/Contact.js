@@ -10,7 +10,7 @@ import scss from '../../styles/Contact.scss';
 
 export default function Contact({ contacts }) {
   return (
-    <section id='contact' className='contact'>
+    <section id='contact' className='contact page page--contact'>
       <Header text="contact" />
       <span className='contact__section'>
         <h4 className='contact__header'>Management</h4>

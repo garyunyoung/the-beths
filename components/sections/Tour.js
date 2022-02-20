@@ -22,7 +22,7 @@ export default function Tour({ consent, allowTracking }) {
 
   if (consent) {
     return (
-      <section id='tour' className="tour">
+      <section id='tour' className="tour page page--tour">
         <Header text="tour" />
         <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
         <p className="tour__text">come gig!</p>
