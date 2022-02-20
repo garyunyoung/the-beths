@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icon } from "./Icon.js";
+import { Icon } from "./_Icon.js";
 
 import scss from "../../styles/Socials.scss";
 
