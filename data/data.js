@@ -102,3 +102,5 @@ export const navigationItems = [
     text: '👀',
   }
 ]
+
+export const storeLink = 'https://found.ee/thebeths_merch'

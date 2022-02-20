@@ -2,12 +2,13 @@ import React from "react";
 import Image from 'next/image'
 import { urlFor } from "../../lib/sanity.js";
 
+import { storeLink } from "../../data/data.js";
+
 import Header from '../shared/Header.js';
 import { ExternalLink } from '../shared/Links.js';
 
 import scss from "../../styles/Merch.scss";
 
-const storeLink = 'https://found.ee/thebeths_merch'
 
 export default function Merch({ merch }) {
   return (
