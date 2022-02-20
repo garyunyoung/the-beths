@@ -12,7 +12,8 @@ export default function Socials({ className, modifier = '' }) {
           key={index}
           className={`${className}__social`}
           href={href}
-        >{getIcon(id, 24, 24)}
+        >
+          {getIcon(id, 24, 24)}
         </ExternalLink>
       )}
     </div>

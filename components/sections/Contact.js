@@ -1,10 +1,10 @@
 import React from 'react';
-import { ExternalLink } from '../shared/Links.js';
 
 import { contactSectionRecordLabels } from '../../data/data.js';
 import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';
 
 import Header from '../shared/Header.js';
+import { ExternalLink } from '../shared/Links.js';
 
 import scss from '../../styles/Contact.scss';
 
@@ -15,12 +15,12 @@ export default function Contact({ contacts }) {
       <span className='contact__section'>
         <h4 className='contact__header'>Management</h4>
         {contacts.map(({ email }, index) =>
-          <a
+          <ExternalLink
             key={index}
             href={`mailto:${email}`}
           >
             {email}
-          </a>
+          </ExternalLink>
         )}
       </span>
       <span className='contact__section'>

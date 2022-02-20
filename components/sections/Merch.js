@@ -1,6 +1,6 @@
 import React from "react";
-import { urlFor } from "../../lib/sanity.js";
 import Image from 'next/image'
+import { urlFor } from "../../lib/sanity.js";
 
 import Header from '../shared/Header.js';
 import { ExternalLink } from '../shared/Links.js';
@@ -26,7 +26,8 @@ export default function Merch({ merch }) {
       <ExternalLink
         className={'link'}
         href={storeLink}
-      >Visit Store
+      >
+        Visit Store
       </ExternalLink>
       <style jsx>{scss}</style>
     </section>

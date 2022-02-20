@@ -14,11 +14,13 @@ export default function Watch() {
       <Header text="latest video" />
       <span className="aspect-ratio-box-outter watch__latest-video-wrapper">
         <ExternalLink
-          href='https://youtu.be/vd2Rps0cMdo'>
+          href='https://youtu.be/vd2Rps0cMdo'
+        >
           <img
             className='aspect-ratio-box-inner watch__latest-video-poster'
             src={aRealThingVideoThumbnail}
-            alt='' />
+            alt=''
+          />
         </ExternalLink>
       </span>
       <Link href="/videos">

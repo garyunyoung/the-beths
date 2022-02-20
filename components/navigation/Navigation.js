@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+
 import { navigationItems } from '../../data/data';
 import { theBethsLogo } from '../../utilities/cloudinary'
 
-import { ExternalLink, InternalLink } from '../shared/Links';
 import Socials from './Socials';
+import { ExternalLink, InternalLink } from '../shared/Links';
 
 import scss from '../../styles/Navigation.scss';
 

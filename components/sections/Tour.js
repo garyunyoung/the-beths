@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+
 import { tourTheBeths } from "../../utilities/cloudinary.js"
 
 import Header from '../shared/Header.js';

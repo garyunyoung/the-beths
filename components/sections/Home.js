@@ -43,7 +43,8 @@ export default function Home() {
             key={index}
             className='home__cta-link'
             href={href}
-          >{text}
+          >
+            {text}
           </ExternalLink>
         ))}
       </div>
