@@ -3,7 +3,7 @@ import { theBethsLogo } from '../../utilities/cloudinary'
 
 import Socials from './Socials';
 
-import scss from '../../styles/NewNavigation.scss';
+import scss from '../../styles/Navigation.scss';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(true);
