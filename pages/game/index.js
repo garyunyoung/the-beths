@@ -2,15 +2,15 @@ import dynamic from "next/dynamic";
 
 import Header from "../../components/partials/Header"
 
-const Game2048 = dynamic(import("../../components/game/Game2048"))
+const Game = dynamic(import("../../components/game/Game"))
 
-function Game() {
+function GamePage() {
   return (
     <>
       <Header header="The Beths 2048" />
-      <Game2048 />
+      <Game />
     </>
   )
 }
 
-export default Game
+export default GamePage

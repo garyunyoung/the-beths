@@ -33,7 +33,7 @@ export async function getStaticProps() {
 
 
 
-function Videos({ videoData }) {
+function VideoPage({ videoData }) {
   return (
     <>
       <Header header="videos" />
@@ -42,4 +42,4 @@ function Videos({ videoData }) {
   )
 }
 
-export default Videos
+export default VideoPage
