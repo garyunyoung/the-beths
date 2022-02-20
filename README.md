@@ -2,10 +2,11 @@
 
 This was the first project I took on early in my coding career. I noticed that a friend's band's website needed a redesign and decided it would be a good way to develop my web development skills.
 
+- There have since been ongoing maintenance and design based on requests and feeback from band and management.
+
 https://thebeths.com/
 
 The backend of this project, can be found here: https://github.com/garyunyoung/the-beths-backend
-
 
 ## Key features
 
@@ -15,9 +16,8 @@ The backend of this project, can be found here: https://github.com/garyunyoung/t
 - Added a GDPR banner that enables/disables analytics.
 
 ## Tech Stack
+
 - Next.js
-- SCSS 
-- HTML 
-- Deployed using Heroku (soon to be Netlify).
-
-
+- SCSS
+- HTML
+- Deployed using Netlify.
