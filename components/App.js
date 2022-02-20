@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+import google from "../utilities/google.js";
 import facebook from "../utilities/facebook.js";
-import GoogleTagManager from "../utilities/google.js";
-import { docCookies } from "../utilities/cookies.js";
+import docCookies from "../utilities/cookies.js";
 
 import Home from "./sections/Home";
-import MailingList from "./shared/MailingList";
 import Watch from "./sections/Watch.js";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
+import MailingList from "./shared/MailingList";
 import { ConsentBanner } from "./shared/ConsentBanners.js";
 
 import styles from '../styles/App.scss'
@@ -34,7 +34,7 @@ export default function App({ data }) {
 
   function loadAnalytics() {
     facebook()
-    GoogleTagManager();
+    google();
   }
 
   return (

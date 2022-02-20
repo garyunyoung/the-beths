@@ -23,10 +23,8 @@
 |*|
 \*/
 
-
-
-export const docCookies = {
-  getItem: function(sKey) {
+const docCookies = {
+  getItem: function (sKey) {
     if (!sKey) {
       return null;
     }
@@ -35,15 +33,15 @@ export const docCookies = {
         document.cookie.replace(
           new RegExp(
             "(?:(?:^|.*;)\\s*" +
-              encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
-              "\\s*\\=\\s*([^;]*).*$)|^.*$"
+            encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
+            "\\s*\\=\\s*([^;]*).*$)|^.*$"
           ),
           "$1"
         )
       ) || null
     );
   },
-  setItem: function(sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+  setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
     if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
       return false;
     }
@@ -83,7 +81,7 @@ export const docCookies = {
       (bSecure ? "; secure" : "");
     return true;
   },
-  removeItem: function(sKey, sPath, sDomain) {
+  removeItem: function (sKey, sPath, sDomain) {
     if (!this.hasItem(sKey)) {
       return false;
     }
@@ -94,17 +92,17 @@ export const docCookies = {
       (sPath ? "; path=" + sPath : "");
     return true;
   },
-  hasItem: function(sKey) {
+  hasItem: function (sKey) {
     if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
       return false;
     }
     return new RegExp(
       "(?:^|;\\s*)" +
-        encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
-        "\\s*\\="
+      encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
+      "\\s*\\="
     ).test(document.cookie);
   },
-  keys: function() {
+  keys: function () {
     var aKeys = document.cookie
       .replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "")
       .split(/\s*(?:\=[^;]*)?;\s*/);
@@ -114,3 +112,6 @@ export const docCookies = {
     return aKeys;
   }
 };
+
+
+export default docCookies

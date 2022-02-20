@@ -24,9 +24,7 @@ function ivyLeagueTagManager() {
   })(window, document, 'script', 'dataLayer', 'GTM-MM2W9SX')
 }
 
-function GoogleTagManager() {
+export default function google() {
   tagManager()
   ivyLeagueTagManager()
 }
-
-export default GoogleTagManager
