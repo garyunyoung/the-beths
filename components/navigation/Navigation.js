@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <>
       <header className='navigation'>
-        <Socials className='navigation__socials' modifier='desktop' />
+        <Socials className='navigation-socials' modifier='desktop' />
 
         <InternalLink className='navigation__logo-wrapper' href='#'>
           <img className='navigation__logo' src={theBethsLogo} alt='' />
@@ -36,7 +36,7 @@ export default function Navigation() {
               >{getNavLink(item)}</li>
             ))}
           </ul>
-          <Socials className='navigation__socials' modifier='mobile' />
+          <Socials className='navigation-socials' modifier='mobile' />
         </nav>
       </header>
       <style jsx>{scss}</style>
