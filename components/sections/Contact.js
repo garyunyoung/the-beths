@@ -6,7 +6,7 @@ import { carparkRecordsLogoBlack } from '../../utilities/cloudinary.js';
 
 import scss from '../../styles/Contact.scss';
 
-function Contact({ contacts }) {
+export default function Contact({ contacts }) {
   return (
     <section className='contact'>
       <span className='contact__section'>
@@ -38,5 +38,3 @@ function Contact({ contacts }) {
     </section>
   );
 }
-
-export default Contact

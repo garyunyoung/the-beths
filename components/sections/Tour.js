@@ -3,7 +3,7 @@ import { tourTheBeths } from "../../utilities/cloudinary.js"
 
 import scss from "../../styles/Tour.scss"
 
-function Tour({ consent, allowTracking }) {
+export default function Tour({ consent, allowTracking }) {
   function loadSongkick() {
     const script = document.createElement("script")
     script.src = "//widget.songkick.com/8923484/widget.js"
@@ -54,5 +54,3 @@ function Tour({ consent, allowTracking }) {
     )
   }
 }
-
-export default Tour

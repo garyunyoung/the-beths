@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import scss from "../../styles/MailingList.scss";
 
-function MailingList() {
+export default function MailingList() {
   const [emailValue, setEmailValue] = useState('')
   const [isOpen, setisOpen] = useState(false)
 
@@ -65,4 +65,3 @@ function MailingList() {
 
 }
 
-export default MailingList

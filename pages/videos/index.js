@@ -19,7 +19,6 @@ const videoQuery = `*\[_type == "video"\] {
   },
 }`;
 
-
 export async function getStaticProps() {
   const videoData = await client.fetch(videoQuery);
 
@@ -31,9 +30,7 @@ export async function getStaticProps() {
   };
 }
 
-
-
-function VideoPage({ videoData }) {
+export default function VideoPage({ videoData }) {
   return (
     <>
       <Header header="videos" />
@@ -41,5 +38,3 @@ function VideoPage({ videoData }) {
     </>
   )
 }
-
-export default VideoPage

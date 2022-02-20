@@ -1,10 +1,12 @@
 import React from "react";
+
 import GameManager from "./engine/game_manager";
 import KeyboardInputManager from "./engine/keyboard_input_manager";
 import HTMLActuator from "./engine/html_actuator";
 import LocalStorageManager from "./engine/local_storage_manager";
-import scssA from "../../styles/Game.scss";
-import scssB from "../../styles/_gameHelpers.scss";
+
+import gameStyle from "../../styles/Game.scss";
+import helpersStyle from "../../styles/_gameHelpers.scss";
 
 export default class Game extends React.Component {
   constructor(props) {
@@ -128,8 +130,8 @@ export default class Game extends React.Component {
             <div className="tile-inner" />
           </div>
         </div>
-        <style jsx>{scssA}</style>
-        <style jsx>{scssB}</style>
+        <style jsx>{gameStyle}</style>
+        <style jsx>{helpersStyle}</style>
       </section>
     );
   }

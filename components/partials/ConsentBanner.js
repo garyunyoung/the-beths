@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import scss from "../../styles/ConsentBanner.scss";
 
-function ConsentBanner({ consent, allowTracking }) {
+export default function ConsentBanner({ consent, allowTracking }) {
   const [wasDismissed, setWasDismissed] = useState(false)
 
   if (wasDismissed || consent) {
@@ -30,5 +30,3 @@ function ConsentBanner({ consent, allowTracking }) {
     );
   }
 }
-
-export default ConsentBanner
