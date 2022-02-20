@@ -10,8 +10,8 @@ import scss from '../../styles/Contact.scss';
 
 export default function Contact({ contacts }) {
   return (
-    <section className='contact'>
-      <Header id="contact" text="contact" />
+    <section id='contact' className='contact'>
+      <Header text="contact" />
       <span className='contact__section'>
         <h4 className='contact__header'>Management</h4>
         {contacts.map(({ email }, index) =>

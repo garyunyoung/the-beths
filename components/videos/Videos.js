@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { urlFor } from "../../lib/sanity.js";
 import Image from 'next/image'
 
-import scss from "../../styles/Watch.scss";
+import scss from "../../styles/Videos.scss";
 
-export default function Watch({ videos }) {
+export default function Videos({ videos }) {
   const jumpRopeGazersData = {
     isOpen: true,
     modifier: "jump-rope-gazers",
@@ -40,7 +40,7 @@ export default function Watch({ videos }) {
   return (
     <section className="watch">
       {albums.map((album, index) =>
-        <WatchSection
+        <VideosSection
           key={index}
           {...album}
           currentSection={currentSection}
@@ -51,7 +51,7 @@ export default function Watch({ videos }) {
   );
 }
 
-function WatchSection({ videos, name, modifier, currentSection, setCurrentSection }) {
+function VideosSection({ videos, name, modifier, currentSection, setCurrentSection }) {
   function toggleSection() {
     if (currentSection == modifier) {
       setCurrentSection(null);

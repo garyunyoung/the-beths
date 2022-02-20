@@ -22,8 +22,8 @@ export default function Tour({ consent, allowTracking }) {
 
   if (consent) {
     return (
-      <section className="tour">
-        <Header id="tour" text="tour" />
+      <section id='tour' className="tour">
+        <Header text="tour" />
         <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
         <p className="tour__text">come gig!</p>
         <div id='song-kick' className="song-kick">

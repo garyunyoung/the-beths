@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Link from 'next/link'
 
 import facebook from "../utilities/facebook.js";
 import GoogleTagManager from "../utilities/google.js";
 import { docCookies } from "../utilities/cookies.js";
 
-import Header from "./shared/Header";
 import Home from "./sections/Home";
+import MailingList from "./shared/MailingList";
+import Watch from "./sections/Watch.js";
 import Merch from "./sections/Merch";
 import Tour from "./sections/Tour";
 import Contact from "./sections/Contact";
 import { ConsentBanner } from "./shared/ConsentBanners.js";
-import MailingList from "./shared/MailingList";
-
-import { ExternalLink } from "./shared/Links.js";
-import { aRealThingVideoThumbnail } from "../utilities/cloudinary.js";
 
 import styles from '../styles/App.scss'
 
@@ -46,39 +42,19 @@ export default function App({ data }) {
       {hasConsent ? loadAnalytics() : null}
       <Home />
       <MailingList />
-
-      <section id="videos" className="page page--watch">
-        <Header header="latest video" />
-        <span className="aspect-ratio-box-outter page__latest-video-wrapper">
-          <ExternalLink
-            href='https://youtu.be/vd2Rps0cMdo'>
-            <img
-              className='aspect-ratio-box-inner page__latest-video-poster'
-              src={aRealThingVideoThumbnail}
-              alt='' />
-          </ExternalLink>
-        </span>
-        <Link href="/videos">
-          <a className="link">View All Videos</a>
-        </Link>
-      </section>
-
+      <Watch />
       <Merch
         consent={hasConsent}
         merch={data.merchData} />
-
       <Tour
         consent={hasConsent}
         allowTracking={() => setCookies()} />
-
       <Contact
         contacts={data.contactData} />
-
       <ConsentBanner
         consent={hasConsent}
         allowTracking={() => setCookies()}
       />
-
       <style jsx>{styles}</style>
     </main>
   );

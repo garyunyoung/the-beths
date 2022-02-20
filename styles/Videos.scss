@@ -1,0 +1,189 @@
+@import 'styles/_mixins.scss';
+
+.watch {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.watch__jump-rope-gazers-embed {
+  width: 100vw;
+  height: 56.25vw;
+}
+
+.watch-section {
+  max-width: 900px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &--future-me-hates-me {
+    margin-top: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+
+    @include lg-mobile {
+      font-size: 20px;
+    }
+
+    @include med-desktop {
+      font-size: 24px;
+    }
+
+    &:hover {
+      transform: $scale;
+      transition: $hover;
+      color: $pink;
+      cursor: pointer;
+    }
+
+    &:before,
+    &:after {
+      display: inline;
+      content: '+';
+      margin: 8px;
+    }
+
+    &--jump-rope-gazers {
+      &:before,
+      &:after {
+        content: '-';
+      }
+    }
+  }
+  &__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+    display: none;
+
+    &--jump-rope-gazers {
+      display: block;
+    }
+  }
+
+  &--is-open {
+    .watch-section__wrapper {
+      display: flex;
+    }
+
+    .watch-section__text {
+      transform: $scale;
+      transition: $hover;
+    }
+
+    .watch-section__text:before,
+    .watch-section__text:after {
+      content: '-';
+    }
+  }
+}
+
+.thumbnail {
+  top: 2vw;
+  left: 10vw;
+  padding: 16px;
+  text-align: center;
+
+  .thumbnail__text {
+    font-size: 18px;
+    max-width: 40vw;
+    margin: 0 auto;
+
+    &:hover {
+      color: $pink;
+      transition: $hover;
+    }
+
+    @include lg-mobile {
+      font-size: 20px;
+    }
+
+    @include lg-desktop {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .watch-section {
+    margin-bottom: 48px;
+  }
+  .watch__jump-rope-gazers-embed {
+    width: 755px;
+    height: 424px;
+    max-width: 100%;
+    max-height: calc((100vw - 40px) / (16 / 9));
+
+    text-align: center;
+  }
+  .thumbnail {
+    .thumbnail__image {
+      height: 120px;
+      padding: 20px;
+    }
+    .thumbnail__text {
+      &--christmas {
+        max-width: 200px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .watch-section {
+    margin-bottom: 32px;
+  }
+
+  .watch {
+    .watch__wrapper {
+      margin: 0 auto;
+      max-width: 70vw;
+    }
+
+    .watch__wrapper--xmas {
+      max-width: 30vw;
+    }
+  }
+
+  .thumbnail {
+    cursor: pointer;
+
+    .thumbnail__container {
+      margin: 16px;
+    }
+
+    .thumbnail__image {
+      height: 8vw;
+    }
+
+    .thumbnail__image--xmas {
+      height: 6.5vw;
+    }
+
+    .thumbnail__text--xmas {
+      max-width: 20vw;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .thumbnail {
+    .thumbnail__image {
+      height: 150px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .thumbnail {
+    .thumbnail__image {
+      height: 15vw;
+    }
+  }
+}

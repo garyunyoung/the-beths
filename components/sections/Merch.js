@@ -11,8 +11,8 @@ const storeLink = 'https://found.ee/thebeths_merch'
 
 export default function Merch({ merch }) {
   return (
-    <section className="merch">
-      <Header id="merch" text="featured merch" />
+    <section id='merch' lassName="merch">
+      <Header text="featured merch" />
       <div className="merch__grid">
         {merch.map(({ name, thumbnail, isHidden }, index) => (
           <MerchThumbnail

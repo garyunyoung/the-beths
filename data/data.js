@@ -61,7 +61,7 @@ export const socials = [
 
 export const navigationItems = [
   {
-    href: '/#videos',
+    href: '/#watch',
     hrefType: 'internal',
     text: 'watch',
   },
