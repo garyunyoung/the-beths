@@ -10,14 +10,14 @@ export default function Layout({
   return (
     <>
       <Navigation />
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
       <ConsentBanner
         hasConsent={hasConsent}
         allowTracking={allowTracking}
       />
-      <style jsx global>
-        {globalStyles}
-      </style>
+      <style jsx global>{globalStyles}</style>
     </>
   )
 }

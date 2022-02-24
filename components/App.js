@@ -14,7 +14,7 @@ export default function App({
   hasConsent,
   allowTracking }) {
   return (
-    <main>
+    <>
       <Home />
       <MailingList />
       <Watch />
@@ -26,6 +26,6 @@ export default function App({
       <Contact
         contacts={data.contactData} />
       <style jsx>{styles}</style>
-    </main>
+    </>
   );
 }

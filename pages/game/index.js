@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-import Header from "../../components/partials/Header"
+import Header from "../../components/shared/Header";
 
 const Game = dynamic(import("../../components/game/Game"))
 

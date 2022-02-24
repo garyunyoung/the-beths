@@ -16,8 +16,7 @@ export default function Navigation() {
     <>
       <header className='navigation'>
         <Socials className='navigation-socials' modifier='desktop' />
-
-        <InternalLink className='navigation__logo-wrapper' href='#'>
+        <InternalLink className='navigation__logo-wrapper' href='/#'>
           <img className='navigation__logo' src={theBethsLogo} alt='' />
         </InternalLink>
 
@@ -47,9 +46,19 @@ export default function Navigation() {
 function getNavLink({ href, hrefType, text }) {
   switch (hrefType) {
     case 'external':
-      return <ExternalLink className='navigation-menu__nav-item-link' href={href}>{text}</ExternalLink>
+      return <ExternalLink
+        className='navigation-menu__nav-item-link'
+        href={href}
+      >
+        {text}
+      </ExternalLink>
     case 'internal':
-      return <InternalLink className='navigation-menu__nav-item-link' href={href}>{text}</InternalLink>
+      return <InternalLink
+        className='navigation-menu__nav-item-link'
+        href={href}
+      >
+        {text}
+      </InternalLink>
     default:
       null
   }
