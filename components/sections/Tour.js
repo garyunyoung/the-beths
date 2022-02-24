@@ -26,11 +26,13 @@ export default function Tour({
   return (
     <section id='tour' className="tour page page--tour">
       <Header text="tour" />
-      <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
-      <p className="tour__text">come gig!</p>
       {
         hasConsent ?
-          <SongkickWidget /> :
+          <>
+            <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
+            <p className="tour__text">come gig!</p>
+            <SongkickWidget />
+          </> :
           <TourConsentBanner allowTracking={allowTracking} />
       }
       <style jsx>{scss}</style>

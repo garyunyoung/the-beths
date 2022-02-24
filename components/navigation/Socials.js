@@ -7,7 +7,16 @@ import { ExternalLink } from '../shared/Links';
 
 
 export function DesktopSocials({ className }) {
-  const iconSize = 18
+  function iconSize(id) {
+    switch (id) {
+      case 'youtube':
+        return 20
+      case 'patreon':
+        return 14;
+      default:
+        return 18
+    }
+  }
 
   return (
     <div className={className}>
@@ -17,7 +26,7 @@ export function DesktopSocials({ className }) {
           className={`${className}__social`}
           href={href}
         >
-          {getIcon(id, iconSize, iconSize)}
+          {getIcon(id, iconSize(id), iconSize(id))}
         </ExternalLink>
       )}
     </div>
