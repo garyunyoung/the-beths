@@ -24,7 +24,7 @@ export default function Tour({
   }, [hasConsent])
 
   return (
-    <section id='tour' className="tour page page--tour">
+    <section id='tour' className={`tour page ${!hasConsent ? 'page--tour' : ''}`}>
       <Header text="tour" />
       {
         hasConsent ?

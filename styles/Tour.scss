@@ -3,43 +3,25 @@
 @include block('tour') {
   display: flex;
   flex-flow: column;
-
-  margin: 0 auto;
+  align-items: center;
 
   @include element('image') {
-    // height: 198px;
-    // background-size: contain;
-    // background-position: center;
-    // background-repeat: no-repeat;
-
-    // margin-top: -56px;
-
-    @include sm-desktop {
-      // height: 20vh;
-      // margin: 0 15vw;
-      // background-size: contain;
-
-      width: 100%;
-    }
+    width: 70vw;
+    max-width: 400px;
   }
 
   @include element('text') {
-    margin: 16px auto 0 auto;
+    margin: 16px;
   }
 }
 
 @include block('song-kick') {
-  padding: 0 6px;
-
-  @include sm-desktop {
-    width: 100%;
-    padding: 0;
-  }
+  width: 100%;
 }
 
 #song-kick {
   padding: 0;
-  margin: -10px;
+  margin: 0 -10px;
 
   @include sm-desktop {
     margin: 0;
