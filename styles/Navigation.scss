@@ -61,7 +61,7 @@
     }
   }
 
-  @include sm-desktop {
+  @include med-desktop {
     display: none;
   }
 
@@ -104,7 +104,7 @@
 @include block('navigation-socials-desktop') {
   display: none;
 
-  @include sm-desktop {
+  @include med-desktop {
     @include navbar-style;
 
     height: $nav-height-mobile;

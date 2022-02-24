@@ -8,7 +8,7 @@ import { ExternalLink, InternalLink } from '../shared/Links';
 import scss from '../../styles/Navigation.scss';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (

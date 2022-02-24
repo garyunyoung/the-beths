@@ -34,7 +34,7 @@ export function DesktopSocials({ className }) {
 }
 
 export function MobileSocials({ className }) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const topSocials = socials.slice(0, 6)
   const bottomSocials = socials.slice(6)
