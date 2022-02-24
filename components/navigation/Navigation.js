@@ -8,7 +8,7 @@ import { ExternalLink, InternalLink } from '../shared/Links';
 import scss from '../../styles/Navigation.scss';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
@@ -17,21 +17,23 @@ export default function Navigation() {
         <MobileSocials className='navigation-socials-mobile' />
         <DesktopSocials className='navigation-socials-desktop' />
 
-        <button
-          className='navigation__menu-button'
-          onClick={() => toggleMenu()}
-        >
-          {isOpen ? 'X CLOSE' : '☰ MENU'}
-        </button>
-
         <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
-          <ul>
-            {navigationItems.map((item, index) => (
-              <li key={index}>
-                {getNavLink(item)}
-              </li>
-            ))}
-          </ul>
+          <span className='navigation-menu__content'>
+            <ul className='navigation-menu__nav-items'>
+              {navigationItems.map((item, index) => (
+                <li key={index}>
+                  {getNavLink(item)}
+                </li>
+              ))}
+            </ul>
+          </span>
+
+          <button
+            className='navigation__menu-button'
+            onClick={() => toggleMenu()}
+          >
+            {isOpen ? 'X CLOSE' : '☰ MENU'}
+          </button>
         </nav>
       </header>
       <style jsx>{scss}</style>

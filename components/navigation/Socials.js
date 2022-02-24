@@ -46,7 +46,7 @@ export function MobileSocials({ className }) {
       case 'patreon':
         return 14;
       default:
-        return 17
+        return 16
     }
   }
 

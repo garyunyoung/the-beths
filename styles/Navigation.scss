@@ -4,12 +4,10 @@
   position: fixed;
   z-index: 1;
 
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-
-  padding: $mobile-side-padding;
+  @include med-desktop {
+    top: 32px;
+    padding: 0 4.4vw;
+  }
 
   @include element('menu-button') {
     @include navbar-style;
@@ -17,26 +15,43 @@
     @include navbar-font;
 
     height: $nav-height-mobile;
-    min-width: 108px;
+    min-width: 100px;
+
+    position: fixed;
+    top: $mobile-side-padding;
+    right: $mobile-side-padding;
 
     border: none;
+
+    @include lg-mobile {
+      min-width: 108px;
+    }
   }
 }
 
 @include block('navigation-menu') {
-  display: none;
-
   @include state('open') {
-    @include navbar-style;
+    .navigation-menu__nav-items {
+      @include navbar-style;
 
-    display: flex;
+      display: block;
+      width: fit-content;
 
-    position: fixed;
-    right: $mobile-side-padding;
-    top: $nav-height-mobile + 32px;
+      position: fixed;
+      top: $nav-height-mobile + 32px;
+      right: $mobile-side-padding;
 
-    padding: 16px;
-    padding-left: 80px;
+      padding: 16px;
+      padding-left: 80px;
+    }
+  }
+
+  @include element('nav-items') {
+    display: none;
+
+    @include med-desktop {
+      display: flex;
+    }
   }
 
   @include element('nav-item') {
@@ -49,6 +64,7 @@
   }
 }
 
+// Navigation Socials
 @include block('navigation-socials-mobile') {
   @include state('open') {
     .navigation-socials-mobile__extra-socials {
@@ -74,6 +90,13 @@
     display: flex;
 
     margin-bottom: 16px;
+    padding-left: 9px;
+    padding-right: 7px;
+
+    @include lg-mobile {
+      padding-left: 12px;
+      padding-right: 11px;
+    }
   }
 
   @include element('extra-socials') {
@@ -108,6 +131,7 @@
     @include navbar-style;
 
     height: $nav-height-mobile;
+
     display: flex;
   }
 
