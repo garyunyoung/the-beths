@@ -18,8 +18,7 @@ export default function MyApp({ Component, pageProps }) {
     const hasCookie = cookie !== null
 
     if (hasCookie) {
-      setCookies();
-      loadAnalytics()
+      allowTracking()
     }
   }, [])
 
@@ -31,6 +30,11 @@ export default function MyApp({ Component, pageProps }) {
   function loadAnalytics() {
     facebook()
     google();
+  }
+
+  function allowTracking() {
+    setCookies()
+    loadAnalytics()
   }
 
   return (
@@ -106,11 +110,14 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="theme-color" content="#000000" />
       </Head>
-      <Layout>
+      <Layout
+        hasConsent={hasConsent}
+        allowTracking={allowTracking}>
         <Component
           {...pageProps}
+          allowTracking={allowTracking}
           hasConsent={hasConsent}
-          setCookies={setCookies} />
+        />
       </Layout>
     </>
   )

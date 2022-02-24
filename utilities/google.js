@@ -3,7 +3,6 @@ const google = () => (
     <script
       dangerouslySetInnerHTML={{
         __html: `function (w, d, s, l, i) {
-          console.log('one')
           w[l] = w[l] || [];
           w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
           var f = d.getElementsByTagName(s)[0],
@@ -19,7 +18,6 @@ const google = () => (
     <script
       dangerouslySetInnerHTML={{
         __html: `function (w, d, s, l, i) {
-          console.log('two')
           w[l] = w[l] || [];
           w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
           var f = d.getElementsByTagName(s)[0],

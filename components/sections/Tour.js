@@ -7,7 +7,9 @@ import { TourConsentBanner } from "../shared/ConsentBanners.js"
 
 import scss from "../../styles/Tour.scss"
 
-export default function Tour({ consent, allowTracking }) {
+export default function Tour({
+  hasConsent,
+  allowTracking }) {
   function loadSongkick() {
     const script = document.createElement("script")
     script.src = "//widget.songkick.com/8923484/widget.js"
@@ -16,31 +18,37 @@ export default function Tour({ consent, allowTracking }) {
   }
 
   useEffect(() => {
-    if (consent) {
+    if (hasConsent) {
       loadSongkick()
     }
-  }, [consent])
+  }, [hasConsent])
 
-  if (consent) {
-    return (
-      <section id='tour' className="tour page page--tour">
-        <Header text="tour" />
-        <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
-        <p className="tour__text">come gig!</p>
-        <div id='song-kick' className="song-kick">
-          <a
-            href="https://www.songkick.com/artists/8923484"
-            className="songkick-widget"
-            data-theme="light"
-            data-track-button="on"
-            data-detect-style="true"
-            data-background-color="transparent"
-          />
-        </div>
-        <style jsx>{scss}</style>
-      </section>
-    )
-  } else {
-    return <TourConsentBanner allowTracking={allowTracking} />
-  }
+  return (
+    <section id='tour' className="tour page page--tour">
+      <Header text="tour" />
+      <img className="tour__image cld-responsive" src={tourTheBeths} alt='' />
+      <p className="tour__text">come gig!</p>
+      {
+        hasConsent ?
+          <SongkickWidget /> :
+          <TourConsentBanner allowTracking={allowTracking} />
+      }
+      <style jsx>{scss}</style>
+    </section>
+  )
+}
+
+function SongkickWidget() {
+  return (
+    <div id='song-kick' className="song-kick">
+      <a
+        href="https://www.songkick.com/artists/8923484"
+        className="songkick-widget"
+        data-theme="light"
+        data-track-button="on"
+        data-detect-style="true"
+        data-background-color="transparent"
+      />
+    </div>
+  )
 }

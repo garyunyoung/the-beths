@@ -2,10 +2,12 @@ import React, { useState } from "react";
 
 import scss from "../../styles/ConsentBanners.scss";
 
-export function ConsentBanner({ consent, allowTracking }) {
+export function ConsentBanner({
+  hasConsent,
+  allowTracking }) {
   const [wasDismissed, setWasDismissed] = useState(false)
 
-  if (wasDismissed || consent) {
+  if (wasDismissed || hasConsent) {
     return null;
   } else {
     return (
@@ -39,10 +41,11 @@ export function TourConsentBanner({ allowTracking }) {
         to see what shows we have lined up!
       </p>
       <button className="tour-consent-banner__accept-button"
-        onClick={() => allowTracking()}>
+        onClick={() => allowTracking()}
+      >
         accept
       </button>
       <style jsx>{scss}</style>
-    </div>
+    </div >
   )
 }

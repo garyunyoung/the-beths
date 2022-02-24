@@ -36,13 +36,13 @@ export async function getStaticProps() {
 export default function IndexPage({
   data,
   hasConsent,
-  setCookies }) {
+  allowTracking }) {
   return (
     <div>
       <App
         data={data}
         hasConsent={hasConsent}
-        setCookies={setCookies} />
+        allowTracking={allowTracking} />
     </div>
   );
 }
