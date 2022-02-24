@@ -1,9 +1,4 @@
-import React, { useState, useEffect } from "react";
-
-import google from "../utilities/google.js";
-import facebook from "../utilities/facebook.js";
-import docCookies from "../utilities/cookies.js";
-import { COOKIENAME } from '../data/constants'
+import React from "react";
 
 import Home from "./sections/Home";
 import Watch from "./sections/Watch.js";
@@ -15,30 +10,12 @@ import { ConsentBanner } from "./shared/ConsentBanners.js";
 
 import styles from '../styles/App.scss'
 
-export default function App({ data }) {
-  const [hasConsent, setHasConsent] = useState(false)
-
-  useEffect(() => {
-    const cookie = docCookies.getItem(COOKIENAME);
-    if (cookie !== null) {
-      setCookies();
-    }
-  })
-
-  function setCookies() {
-    docCookies.setItem(COOKIENAME, "accepted");
-    setHasConsent(true)
-    loadAnalytics()
-  }
-
-  function loadAnalytics() {
-    facebook()
-    google();
-  }
-
+export default function App({
+  data,
+  hasConsent,
+  setCookies }) {
   return (
     <main>
-      {hasConsent ? loadAnalytics() : null}
       <Home />
       <MailingList />
       <Watch />
