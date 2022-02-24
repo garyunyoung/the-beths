@@ -5,9 +5,6 @@ const cloudinaryURL =
 export const favicon =
   "https://res.cloudinary.com/garyou/image/upload/the-beths/favicon-16x16.ico";
 
-// Navigation 
-export const theBethsLogo = `${cloudinaryURL}logo_SM.png`
-
 // Home
 export const aRealThingSingleArt = `${cloudinaryURL}a-real-thing/single-art-transparent.tiff`
 export const aRealThingText = `${cloudinaryURL}a-real-thing/text.tiff`

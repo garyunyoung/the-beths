@@ -19,9 +19,6 @@ $nav-height-mobile: 45px;
 $nav-height-desktop: 45px;
 $nav-height-lg-desktop: 60px;
 
-$new-nav-height-mobile: 60px;
-$new-nav-height-desktop: 65px;
-
 // Font sizes
 $font-mobile: 18px;
 $font-lg-mobile: 20px;
@@ -100,6 +97,33 @@ $font-lg-desktop: 24px;
   color: black;
   border-bottom: black;
   padding: 0 24px;
+}
+
+@mixin navbar-style {
+  background-color: white;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 15%);
+  border-radius: 12px;
+  padding: 0 16px;
+}
+
+@mixin navbar-font {
+  @include body-font-size;
+  font-weight: 700;
+}
+
+@mixin hover {
+  &:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}
+
+@mixin hover-transition {
+  &:hover {
+    color: $pink;
+    transition: $hover;
+    cursor: pointer;
+  }
 }
 
 // Media Queries

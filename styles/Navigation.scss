@@ -1,47 +1,25 @@
 @import 'styles/_mixins.scss';
 
 @include block('navigation') {
-  width: 100%;
-  height: $new-nav-height-mobile;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: white;
-  border-bottom: 1px solid lightgray;
-
   position: fixed;
-  top: 0;
   z-index: 1;
 
-  padding: 8px;
+  width: 100%;
 
-  @include sm-desktop {
-    height: $new-nav-height-desktop;
-  }
+  display: flex;
+  justify-content: space-between;
 
-  @include element('logo-wrapper') {
-    height: 100%;
-  }
-
-  @include element('logo') {
-    height: 100%;
-  }
+  padding: $mobile-side-padding;
 
   @include element('menu-button') {
-    background-color: transparent;
+    @include navbar-style;
+    @include hover-transition;
+    @include navbar-font;
+
+    height: $nav-height-mobile;
+    min-width: 108px;
+
     border: none;
-
-    @include body-font-size;
-    font-weight: 700;
-
-    position: absolute;
-    right: $mobile-side-padding;
-
-    @include sm-desktop {
-      display: none;
-    }
   }
 }
 
@@ -49,72 +27,93 @@
   display: none;
 
   @include state('open') {
+    @include navbar-style;
+
     display: flex;
 
-    position: absolute;
-    top: $new-nav-height-mobile;
+    position: fixed;
+    right: $mobile-side-padding;
+    top: $nav-height-mobile + 32px;
 
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - #{$new-nav-height-mobile});
-
-    @include sm-desktop {
-      height: $new-nav-height-desktop;
-      width: auto;
-
-      background-color: transparent;
-
-      align-items: center;
-
-      top: 0;
-      right: 0;
-    }
-  }
-
-  @include element('nav-items') {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-
-    text-align: right;
-
-    padding-top: 15vh;
-    padding-right: $mobile-side-padding;
-
-    @include sm-desktop {
-      flex-flow: row;
-      text-align: center;
-
-      padding: 0;
-    }
+    padding: 16px;
+    padding-left: 80px;
   }
 
   @include element('nav-item') {
-    padding: 8px;
+    @include hover-transition;
+    @include navbar-font;
 
-    @include sm-desktop {
-      padding: 0 8px;
-    }
-
-    @include med-desktop {
-      padding: 0 16px;
-    }
-  }
-
-  @include element('nav-item-link') {
-    font-size: 24px;
-    font-weight: 700;
-
-    @include sm-desktop {
-      font-size: 18px;
-    }
-
-    @include med-desktop {
-      font-size: 22px;
-    }
+    text-align: right;
+    padding: 4px 0;
   }
 }
 
-@include block('navigation-socials') {
+@include block('navigation-socials-mobile') {
+  @include state('open') {
+    .navigation-socials-mobile__extra-socials {
+      display: flex;
+    }
+
+    .navigation-socials-mobile__arrow {
+      transform: scaleX(-1);
+      color: $pink;
+    }
+  }
+
+  @include sm-desktop {
+    display: none;
+  }
+
+  @include element('content') {
+    @include navbar-style;
+
+    height: $nav-height-mobile;
+    width: fit-content;
+
+    display: flex;
+
+    margin-bottom: 16px;
+  }
+
+  @include element('extra-socials') {
+    display: none;
+  }
+
+  @include element('social') {
+    @include hover-transition;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 4px;
+  }
+
+  @include element('arrow') {
+    @include hover;
+    background-color: transparent;
+    border: none;
+
+    font-weight: 300;
+    font-size: 20px;
+
+    padding: 0 4px;
+  }
+}
+
+@include block('navigation-socials-desktop') {
   display: none;
+
+  @include sm-desktop {
+    @include navbar-style;
+
+    height: $nav-height-mobile;
+    display: flex;
+  }
+
+  @include element('social') {
+    display: flex;
+    align-items: center;
+
+    padding: 0 4px;
+  }
 }

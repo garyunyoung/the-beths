@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 import { navigationItems } from '../../data/data';
-import { theBethsLogo } from '../../utilities/cloudinary'
 
-import Socials from './Socials';
+import { MobileSocials, DesktopSocials } from './Socials';
 import { ExternalLink, InternalLink } from '../shared/Links';
 
 import scss from '../../styles/Navigation.scss';
@@ -15,27 +14,24 @@ export default function Navigation() {
   return (
     <>
       <header className='navigation'>
-        <Socials className='navigation-socials' modifier='desktop' />
-        <InternalLink className='navigation__logo-wrapper' href='/#'>
-          <img className='navigation__logo' src={theBethsLogo} alt='' />
-        </InternalLink>
+        <MobileSocials className='navigation-socials-mobile' />
+        <DesktopSocials className='navigation-socials-desktop' />
 
         <button
           className='navigation__menu-button'
           onClick={() => toggleMenu()}
-        >{isOpen ? 'CLOSE' : 'MENU'}
+        >
+          {isOpen ? 'X CLOSE' : '☰ MENU'}
         </button>
 
         <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
-          <ul className='navigation-menu__nav-items'>
+          <ul>
             {navigationItems.map((item, index) => (
-              <li
-                key={index}
-                className='navigation-menu__nav-item'
-              >{getNavLink(item)}</li>
+              <li key={index}>
+                {getNavLink(item)}
+              </li>
             ))}
           </ul>
-          <Socials className='navigation-socials' modifier='mobile' />
         </nav>
       </header>
       <style jsx>{scss}</style>
@@ -47,14 +43,14 @@ function getNavLink({ href, hrefType, text }) {
   switch (hrefType) {
     case 'external':
       return <ExternalLink
-        className='navigation-menu__nav-item-link'
+        className='navigation-menu__nav-item'
         href={href}
       >
         {text}
       </ExternalLink>
     case 'internal':
       return <InternalLink
-        className='navigation-menu__nav-item-link'
+        className='navigation-menu__nav-item'
         href={href}
       >
         {text}
