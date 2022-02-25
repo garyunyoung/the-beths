@@ -14,9 +14,9 @@ export function ConsentBanner({
       <div className="consent-banner">
         <div className="consent-banner__content">
           <p className="consent-banner__text">
-            Hey! Some of the features on our site require analytics to run.
+            {`Hey! Some of the features on our site require analytics to run.
             You can use the site without these features, but it's better with
-            them!
+            them!`}
           </p>
           <button className="consent-banner__button consent-banner__button--decline"
             onClick={() => setWasDismissed(true)}>
