@@ -7,6 +7,8 @@ import { ExternalLink } from '../shared/Links';
 
 
 export function DesktopSocials({ className }) {
+  const desktopSocials = socials.filter(social => social.id !== 'patreon')
+
   function iconSize(id) {
     switch (id) {
       case 'youtube':
@@ -20,7 +22,7 @@ export function DesktopSocials({ className }) {
 
   return (
     <div className={className}>
-      {socials.map(({ href, id }, index) =>
+      {desktopSocials.map(({ href, id }, index) =>
         <ExternalLink
           key={index}
           className={`${className}__social`}
