@@ -15,11 +15,23 @@
   @include element('content') {
     text-align: right;
     padding: 24px $mobile-side-padding;
+
+    @include sm-desktop {
+      display: flex;
+      align-items: center;
+
+      padding: 8px;
+    }
   }
 
   @include element('text') {
     @include consent-banner-font-size;
     margin-bottom: 16px;
+
+    @include sm-desktop {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
   }
 
   @include element('button') {
@@ -38,6 +50,10 @@
     @include modifier('decline') {
       margin-right: 16px;
     }
+
+    @include sm-desktop {
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -51,13 +67,14 @@
   }
 
   @include element('text') {
-    font-size: 18px;
+    @include consent-banner-font-size;
 
     padding: 0 16px;
     margin-bottom: 16px;
   }
 
   @include element('accept-button') {
+    @include consent-banner-font-size;
     background-color: transparent;
     border: 1px solid black;
     padding: 8px 16px;
