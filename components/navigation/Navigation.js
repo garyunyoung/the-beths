@@ -8,33 +8,34 @@ import { ExternalLink, InternalLink } from '../shared/Links';
 import scss from '../../styles/Navigation.scss';
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
     <>
       <header className='navigation'>
-        <MobileSocials className='navigation-socials-mobile' />
-        <DesktopSocials className='navigation-socials-desktop' />
+        <span className='navigation__content'>
+          <MobileSocials className='navigation-socials-mobile' />
+          <DesktopSocials className='navigation-socials-desktop' />
+          <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
+            <span className='navigation-menu__content'>
+              <ul className='navigation-menu__nav-items'>
+                {navigationItems.map((item, index) => (
+                  <li key={index}>
+                    {getNavLink(item)}
+                  </li>
+                ))}
+              </ul>
+            </span>
 
-        <nav className={`navigation-menu ${isOpen ? 'is-open' : ''}`}>
-          <span className='navigation-menu__content'>
-            <ul className='navigation-menu__nav-items'>
-              {navigationItems.map((item, index) => (
-                <li key={index}>
-                  {getNavLink(item)}
-                </li>
-              ))}
-            </ul>
-          </span>
-
-          <button
-            className='navigation__menu-button'
-            onClick={() => toggleMenu()}
-          >
-            {isOpen ? 'X CLOSE' : '☰ MENU'}
-          </button>
-        </nav>
+            <button
+              className='navigation-menu__menu-button'
+              onClick={() => toggleMenu()}
+            >
+              {isOpen ? 'X CLOSE' : '☰ MENU'}
+            </button>
+          </nav>
+        </span>
       </header>
       <style jsx>{scss}</style>
     </>

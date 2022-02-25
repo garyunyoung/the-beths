@@ -60,7 +60,11 @@ export const socials = [
 ]
 
 export const navigationItems = [
-
+  {
+    href: '/#',
+    hrefType: 'internal',
+    text: 'home',
+  },
   {
     href: '/#watch',
     hrefType: 'internal',
@@ -100,11 +104,6 @@ export const navigationItems = [
     href: '/game',
     hrefType: 'internal',
     text: '👀',
-  },
-  {
-    href: '/#',
-    hrefType: 'internal',
-    text: 'home',
   }
 ]
 

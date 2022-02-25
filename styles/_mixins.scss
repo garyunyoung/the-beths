@@ -51,6 +51,19 @@ $font-lg-desktop: 24px;
   }
 }
 
+@mixin navbar-font-size {
+  @include body-font-size;
+  font-weight: 700;
+
+  @include med-desktop {
+    font-size: 20px;
+  }
+
+  @include lg-desktop {
+    font-size: 24px;
+  }
+}
+
 // Call to actions
 @mixin home-primary-link {
   text-align: center;
@@ -104,11 +117,6 @@ $font-lg-desktop: 24px;
   box-shadow: 0 0 30px 0 rgb(0 0 0 / 15%);
   border-radius: 12px;
   padding: 0 16px;
-}
-
-@mixin navbar-font {
-  @include body-font-size;
-  font-weight: 700;
 }
 
 @mixin hover {
