@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
-import google from "../utilities/google";
-import facebook from "../utilities/facebook.js";
+import Google from "../utilities/google";
+import Facebook from "../utilities/facebook.js";
 import docCookies from "../utilities/cookies.js";
 
 import { COOKIENAME } from '../data/constants'
@@ -22,19 +22,9 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [])
 
-  function setCookies() {
+  function allowTracking() {
     docCookies.setItem(COOKIENAME, "accepted");
     setHasConsent(true)
-  }
-
-  function loadAnalytics() {
-    facebook()
-    google();
-  }
-
-  function allowTracking() {
-    setCookies()
-    loadAnalytics()
   }
 
   return (
@@ -110,6 +100,12 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="theme-color" content="#000000" />
       </Head>
+
+
+      {/* Analytics */}
+      {hasConsent ? <Facebook /> : null}
+      {hasConsent ? <Google /> : null}
+
       <Layout
         hasConsent={hasConsent}
         allowTracking={allowTracking}>
