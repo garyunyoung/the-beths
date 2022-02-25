@@ -14,22 +14,6 @@
     max-width: $max-content-width-sm-desktop;
   }
 
-  @include modifier('home') {
-    padding: 0;
-
-    @include tablet {
-      max-width: none;
-    }
-
-    @include sm-desktop {
-      max-width: none;
-    }
-
-    @include lg-desktop {
-      max-width: none;
-    }
-  }
-
   @include modifier('watch') {
     text-align: center;
     padding-bottom: 2vh;
