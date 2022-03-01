@@ -2,6 +2,9 @@ import React from "react";
 import Script from 'next/script'
 
 export default function Google() {
+  // GTM-M845XR9 | The Beths | 2019
+  // GTM-MM2W9SX | Ivy League | Feb 2022
+
   return (
     <>
       <Script
@@ -16,7 +19,7 @@ export default function Google() {
           j.async = true;
           j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
           f.parentNode.insertBefore(j, f);
-        }(window, document, "script", "dataLayer", "GTM-M845XR9");`,
+        }(window, document, "script", "dataLayer", 'GTM-M845XR9');`,
         }}
       />
 
@@ -37,7 +40,12 @@ export default function Google() {
       />
 
       <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM2W9SX"
+        <iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-M845XR9`}
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
+      </noscript>
+
+      <noscript>
+        <iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-MM2W9SX`}
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
       </noscript>
     </>

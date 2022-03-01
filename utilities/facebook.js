@@ -2,6 +2,9 @@ import React from "react";
 import Script from 'next/script'
 
 export default function Facebook() {
+  // 701632633715996 | Your Army | June 2020
+  // 386188229885916 | Monster Management | August 2021
+
   return (
     <>
       <Script
@@ -23,12 +26,12 @@ export default function Facebook() {
 
       <noscript>
         <img height="1" width="1" style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=701632633715996&ev=PageView&noscript=1" />
+          src={`https://www.facebook.com/tr?id=701632633715996&ev=PageView&noscript=1`} />
       </noscript>
 
       <noscript>
         <img height="1" width="1" style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=386188229885916&ev=PageView&noscript=1" />
+          src={`https://www.facebook.com/tr?id=386188229885916&ev=PageView&noscript=1`} />
       </noscript>
     </>
   )
