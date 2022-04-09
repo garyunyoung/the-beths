@@ -22,7 +22,7 @@ export const contactSectionRecordLabels = [
 
 export const socials = [
   {
-    href: 'https://found.ee/thebeths_ig',
+    href: 'https://instagram.com/thebeths',
     id: 'instagram'
   },
   {
@@ -30,7 +30,7 @@ export const socials = [
     id: 'facebook'
   },
   {
-    href: 'https://found.ee/thebeths_tw',
+    href: 'https://twitter.com/thebeths',
     id: 'twitter'
   },
   {
