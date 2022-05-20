@@ -34,6 +34,10 @@ export const socials = [
     id: 'twitter'
   },
   {
+    href: 'https://tiktok.com/@thebeths',
+    id: 'tiktok'
+  },
+  {
     href: 'https://found.ee/thebeths_spotify',
     id: 'spotify'
   },
