@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 1;
 
-  @include med-desktop {
+  @include sm-desktop {
     top: 32px;
 
     display: flex;
@@ -13,7 +13,7 @@
   }
 
   @include element('content') {
-    @include med-desktop {
+    @include sm-desktop {
       width: 100%;
 
       display: flex;
@@ -30,12 +30,12 @@
 }
 
 @include block('navigation-menu') {
-  @include med-desktop {
+  @include sm-desktop {
     display: flex;
   }
 
   @include state('open') {
-    @include med-desktop {
+    @include sm-desktop {
       @include navbar-style;
       padding: 0;
     }
@@ -55,7 +55,7 @@
       padding: 16px;
       padding-left: 80px;
 
-      @include med-desktop {
+      @include sm-desktop {
         height: $nav-height-mobile;
         display: flex;
         align-items: center;
@@ -75,14 +75,14 @@
     .navigation-menu__menu-button {
       color: $pink;
 
-      @include med-desktop {
+      @include sm-desktop {
         box-shadow: none;
       }
     }
   }
 
   @include element('content') {
-    @include med-desktop {
+    @include sm-desktop {
       display: flex;
     }
   }
@@ -99,7 +99,7 @@
     text-transform: capitalize;
     padding: 12px 0;
 
-    @include med-desktop {
+    @include sm-desktop {
       padding: 0 16px;
     }
   }
@@ -112,7 +112,10 @@
     height: $nav-height-mobile;
     color: $brown;
     // min-width: 100px;
-    min-width: 64px;
+    // min-width: 64px;
+
+    width: fit-content;
+    padding: 0;
 
     position: fixed;
     right: $mobile-side-padding;
@@ -120,12 +123,22 @@
 
     border: none;
 
-    @include lg-mobile {
-      // min-width: 108px;
-    }
+    background-color: transparent;
+    box-shadow: none;
 
-    @include med-desktop {
+    // @include lg-mobile {
+    // min-width: 108px;
+    // }
+
+    // @include sm-desktop {
+    //   background-color: transparent;
+    //   box-shadow: none;
+    // }
+
+    @include sm-desktop {
       position: static;
+      min-width: 64px;
+
       // min-width: 124px;
     }
 
@@ -145,6 +158,7 @@
   @include state('open') {
     .navigation-socials-mobile__extra-socials {
       display: flex;
+      margin-top: -24px;
     }
 
     .navigation-socials-mobile__arrow {
@@ -153,7 +167,7 @@
     }
   }
 
-  @include med-desktop {
+  @include sm-desktop {
     display: none;
   }
 
@@ -166,13 +180,19 @@
     display: flex;
 
     margin-bottom: 16px;
-    padding-left: 9px;
-    padding-right: 7px;
 
-    @include lg-mobile {
-      padding-left: 12px;
-      padding-right: 11px;
-    }
+    // padding-left: 9px;
+    // padding-right: 7px;
+
+    padding: 0;
+
+    background-color: transparent;
+    box-shadow: none;
+
+    // @include lg-mobile {
+    //   padding-left: 12px;
+    //   padding-right: 11px;
+    // }
 
     @include lg-desktop {
       height: $nav-height-lg-desktop;
@@ -189,7 +209,7 @@
     display: flex;
     align-items: center;
 
-    padding: 0 4px;
+    padding: 0 8px;
   }
 
   @include element('arrow') {
@@ -202,23 +222,29 @@
     font-weight: 300;
     font-size: 20px;
 
-    padding: 0 4px;
+    padding: 0 8px;
   }
 }
 
 @include block('navigation-socials-desktop') {
   display: none;
 
-  @include med-desktop {
+  @include sm-desktop {
     @include navbar-style;
     height: $nav-height-mobile;
 
     display: flex;
     width: fit-content;
 
-    @include lg-desktop {
-      height: $nav-height-lg-desktop;
-    }
+    background-color: transparent;
+    box-shadow: none;
+
+    padding: 0 !important;
+    margin-left: -10px;
+  }
+
+  @include lg-desktop {
+    height: $nav-height-lg-desktop;
   }
 
   @include element('social') {
@@ -226,6 +252,6 @@
     display: flex;
     align-items: center;
 
-    padding: 0 8px;
+    padding: 0 10px;
   }
 }
