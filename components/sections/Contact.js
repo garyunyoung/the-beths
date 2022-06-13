@@ -42,7 +42,7 @@ export default function Contact({ contacts }) {
           preserveAspectRatio="xMidYMid meet">
 
           <g transform="translate(0.000000,476.000000) scale(0.100000,-0.100000)"
-            fill="#373535" stroke="none">
+            fill="black" stroke="none">
             <path d="M8002 2413 l3 -2058 46 -3 c30 -2 50 2 57 11 9 11 11 514 10 2058
 l-3 2044 -58 3 -57 3 2 -2058z"/>
             <path d="M415 4328 c-3 -7 -4 -884 -3 -1948 l3 -1935 3160 0 3160 0 3 1948 2

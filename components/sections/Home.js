@@ -74,7 +74,7 @@ const Logo = () => {
     viewBox="0 0 2413.000000 722.000000"
     preserveAspectRatio="xMidYMid meet">
     <g transform="translate(0.000000,722.000000) scale(0.100000,-0.100000)"
-      fill="#373535" stroke="none">
+      fill="black" stroke="none">
       <path d="M17845 7180 c-5 -6 -25 -22 -44 -37 -47 -38 -179 -308 -210 -429 -46
 -181 -50 -201 -61 -274 -7 -41 -28 -129 -47 -195 -60 -205 -65 -237 -70 -447
 -3 -135 -8 -200 -16 -206 -8 -7 -30 -7 -65 0 -72 15 -176 -3 -257 -45 -61 -31
@@ -225,7 +225,7 @@ const ExpertTitle = () => {
       preserveAspectRatio="xMidYMid meet">
 
       <g transform="translate(0.000000,338.000000) scale(0.100000,-0.100000)"
-        fill="#373535" stroke="none">
+        fill="black" stroke="none">
         <path d="M6995 3349 c-63 -18 -91 -19 -275 -13 -227 7 -271 1 -321 -44 l-31
 -28 31 -49 c69 -114 97 -311 88 -625 -8 -243 -22 -327 -76 -433 l-40 -79 25
 -23 c39 -37 95 -43 255 -32 109 8 180 7 294 -2 82 -8 158 -13 168 -13 56 2
@@ -451,7 +451,7 @@ const CarparkLogo = () => {
     preserveAspectRatio="xMidYMid meet">
 
     <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
-      fill="#373535" stroke="none">
+      fill="black" stroke="none">
       <path d="M0 500 l0 -500 500 0 500 0 0 500 0 500 -500 0 -500 0 0 -500z m620
 268 c111 -48 143 -193 64 -288 -39 -46 -83 -60 -190 -60 l-93 0 -3 -102 -3
 -103 -60 0 -60 0 -3 275 c-1 151 0 281 3 289 8 19 295 11 345 -11z"/>
@@ -468,7 +468,7 @@ const MushroomLogo = () => {
       preserveAspectRatio="xMidYMid meet">
 
       <g transform="translate(0.000000,476.000000) scale(0.100000,-0.100000)"
-        fill="#373535" stroke="none">
+        fill="black" stroke="none">
         <path d="M8002 2413 l3 -2058 46 -3 c30 -2 50 2 57 11 9 11 11 514 10 2058
 l-3 2044 -58 3 -57 3 2 -2058z"/>
         <path d="M415 4328 c-3 -7 -4 -884 -3 -1948 l3 -1935 3160 0 3160 0 3 1948 2

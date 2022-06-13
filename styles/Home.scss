@@ -74,7 +74,7 @@
 
     p {
       font-family: 'Roboto', sans-serif;
-      color: #373535;
+      color: black;
 
       @include lg-desktop {
         font-size: 1.5em;
@@ -91,7 +91,7 @@
 
     a {
       font-family: 'GayaRegular';
-      color: #373535;
+      color: black;
 
       width: fit-content;
       margin: 0 auto;
@@ -145,7 +145,7 @@
 
   @include element('divider') {
     margin: 32px 0;
-    border: 0.5px solid #373535;
+    border: 0.5px solid black;
     width: 100%;
 
     @include sm-desktop {
