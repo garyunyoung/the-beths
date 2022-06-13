@@ -44,18 +44,18 @@ export default function MyApp({ Component, pageProps }) {
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
-          content="New Live Album 'Auckland, New Zealand, 2020' out now on Carpark Records. Order here at thebeths.com."
+          content="New Album 'Expert In A Dying Field' out September 16. Order here at thebeths.com."
         />
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
         <meta property="og:title" content="The Beths" />
         <meta
           property="og:description"
-          content="New Live Album 'Auckland, New Zealand, 2020' out now on Carpark Records. Order here at thebeths.com."
+          content="New Album 'Expert In A Dying Field' out September 16. Order here at thebeths.com."
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/garyou/image/upload/v1629343047/the-beths/town-hall-live-2020/facebook_820x312_out_now.jpg"
+          content="https://res.cloudinary.com/garyou/image/upload/v1655004552/the-beths/expert-in-a-dying-field/album-art.jpg"
         />
         <meta property="og:image:width" content="1064" />
         <meta property="og:image:height" content="557" />
