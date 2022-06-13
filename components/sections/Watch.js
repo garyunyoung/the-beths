@@ -25,7 +25,7 @@ export default function Watch() {
         <iframe className='aspect-ratio-box-inner watch__latest-video-poster'
           width="100%" height="100%" src="https://www.youtube.com/embed/d5ZxW1r1Zc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </span>
-      <p className="watch__song-name">The Beths - <i>'Silence Is Golden'</i></p>
+      <p className="watch__song-name">The Beths - <i>&apos;Silence Is Golden&apos;</i></p>
       <Link href="/videos">
         <a className="link">View All Videos</a>
       </Link>

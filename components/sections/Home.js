@@ -45,7 +45,7 @@ export default function Home() {
             <div className="home__divider" />
             <ul>
               <li><a href="https://found.ee/thebeths_expert">Pre-order Album</a></li>
-              <li><a href="https://youtu.be/d5ZxW1r1Zc8">Watch <i>'Silence Is Golden'</i> Single</a></li>
+              <li><a href="https://youtu.be/d5ZxW1r1Zc8">Watch <i>&apos;Silence Is Golden&apos;</i> Single</a></li>
             </ul>
 
             <div className="home__divider" />
