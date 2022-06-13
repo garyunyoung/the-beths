@@ -1,157 +1,176 @@
 @import 'styles/_mixins.scss';
 
-// Animations
-@media (prefers-reduced-motion: no-preference) {
-  .home__background-image-wrapper {
-    animation-name: fade-in-movement;
-    animation-duration: 1.3s;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .home__cta-links {
-    animation-name: ease-up-in-fast;
-    animation-duration: 2s;
-  }
-}
-
 @include block('home') {
-  min-height: 100vh;
-  background-color: $yellow;
+  background-color: $bone;
 
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
-
-  padding-top: calc(#{$nav-height-mobile} + 4vh);
-  padding-bottom: 2vh;
-
-  @include tablet {
-    justify-content: center;
-    padding-bottom: 4vh;
-  }
-
-  @include sm-desktop {
-    padding-top: calc(#{$nav-height-desktop});
-  }
-
-  @include lg-desktop {
-    padding-top: calc(#{$nav-height-lg-desktop});
-  }
-
-  @include element('top') {
-    @include tablet {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-    }
-
-    @include sm-desktop {
-      flex-flow: row;
-    }
-  }
-
-  @include element('right') {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
-    @include sm-desktop {
-      flex-basis: 50%;
-      justify-content: center;
-    }
-  }
-
-  @include element('single-art-wrapper') {
-    width: 100vw;
-    height: 100vw;
-
+  @include element('content') {
     position: relative;
 
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+
     align-items: center;
 
-    background: radial-gradient(
-      circle,
-      black 0%,
-      $orange 0%,
-      $orange 40%,
-      $yellow 70%,
-      $yellow 100%
-    );
-
-    @include tablet {
-      width: 75vw;
-      height: 75vw;
-    }
+    padding: calc(4.4vw + 80px) 4.4vw 4.4vw;
 
     @include sm-desktop {
-      width: calc(50vw - #{$nav-height-desktop});
-      height: calc(50vw - #{$nav-height-desktop});
+      flex-flow: row;
+      justify-content: space-between;
+
+      padding-top: calc(4.4vw + 56px);
     }
 
     @include lg-desktop {
-      width: calc(40vw - #{$nav-height-lg-desktop});
-      height: calc(40vw - #{$nav-height-lg-desktop});
+      width: 84vw;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
     }
   }
 
-  @include element('single-art') {
-    width: 80%;
-    margin-bottom: 4vh;
+  @include element('album-art-wrapper') {
+    background-color: $bone;
+    width: calc(100vw - (4.4vw * 2));
 
-    @include tablet {
-      margin-bottom: 8vh;
-    }
-  }
-
-  @include element('text-image') {
-    width: 80%;
-    margin-bottom: 4vh;
-
-    @include tablet {
-      width: 60%;
-      margin-bottom: 6vh;
-    }
+    margin-bottom: 32px;
+    // margin-top: 32px;
+    margin-top: 24px;
 
     @include sm-desktop {
-      width: 80%;
+      width: calc(50vw - 64px);
+      margin: 0;
+    }
+
+    @include lg-desktop {
+      width: 40vw;
     }
   }
 
-  @include element('record-label-logos') {
-    width: 40%;
-    margin-bottom: 4vh;
+  @include element('album-art') {
+    background-color: $bone;
 
-    @include tablet {
-      width: 20%;
-      margin-bottom: 8vh;
-    }
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    @include sm-desktop {
-      width: 40%;
-    }
+    box-shadow: 0px 0px 20px 0px rgb(119, 117, 117);
   }
 
-  @include element('cta-links') {
+  @include element('text-content') {
+    width: 80vw;
+
     display: flex;
-    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 
     @include sm-desktop {
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-
-      max-width: none;
+      width: 50vw;
     }
   }
 
-  @include element('cta-link') {
-    @include home-primary-link;
-    @include sm-desktop {
-      margin: 0 24px;
+  @include element('text') {
+    text-align: center;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      color: #373535;
+
+      @include lg-desktop {
+        font-size: 1.5em;
+      }
     }
+
+    li {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      font-family: 'GayaRegular';
+      color: #373535;
+
+      width: fit-content;
+      margin: 0 auto;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: $pink;
+        border-color: $pink;
+        transition: $hover;
+      }
+
+      font-size: 1.3em;
+
+      @include lg-desktop {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  @include element('album-header') {
+    font-family: 'GayaRegular';
+    letter-spacing: 1px;
+
+    font-size: 2.5em;
+
+    @include sm-desktop {
+      font-size: 1.8em;
+    }
+
+    @include lg-desktop {
+      display: block;
+      font-size: 2.5em;
+    }
+
+    @include modifier('mobile-only') {
+      display: block;
+
+      @include sm-desktop {
+        display: none;
+      }
+    }
+
+    @include modifier('desktop-only') {
+      display: none;
+
+      @include sm-desktop {
+        display: block;
+      }
+    }
+  }
+
+  @include element('divider') {
+    margin: 32px 0;
+    border: 0.5px solid #373535;
+    width: 100%;
+
+    @include sm-desktop {
+      margin: 32px 0;
+    }
+
+    @include lg-desktop {
+      margin: 64px 0;
+    }
+  }
+
+  @include element('logos') {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 32px;
+  }
+
+  @include element('carpark-logo') {
+    width: 39px;
+    margin-top: 4px;
+    margin-right: 24px;
+  }
+
+  @include element('mushroom-logo') {
+    width: 200px;
   }
 }

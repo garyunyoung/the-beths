@@ -4,8 +4,14 @@
 $yellow: #f8d500;
 $orange: #faaf42;
 $pink: #ef97b0;
+// $pink: #ffa728;
 
-$consent-banner: $orange;
+// $bone: #f1f0ea;
+$bone: #f3f1df;
+$brown: #373535;
+// $brown: black;
+
+$consent-banner: $bone;
 
 $hover: all 0.23s ease-in-out 0s;
 $scale: scale(1.01);
@@ -20,11 +26,16 @@ $nav-height-desktop: 45px;
 $nav-height-lg-desktop: 60px;
 
 // Font sizes
-$font-mobile: 18px;
-$font-lg-mobile: 20px;
-$font-tablet: 20px;
-$font-sm-desktop: 24px;
-$font-lg-desktop: 24px;
+// $font-mobile: 18px;
+$font-mobile: 16px;
+// $font-lg-mobile: 20px;
+$font-lg-mobile: 18px;
+// $font-tablet: 20px;
+$font-tablet: 18px;
+// $font-sm-desktop: 24px;
+// $font-lg-desktop: 24px;
+$font-sm-desktop: 22px;
+$font-lg-desktop: 22px;
 
 @mixin body-font-size {
   font-weight: 300;
@@ -52,15 +63,20 @@ $font-lg-desktop: 24px;
 }
 
 @mixin navbar-font-size {
-  @include body-font-size;
-  font-weight: 700;
+  // @include body-font-size;
+  // font-weight: 700;
+  font-size: 1.3em;
+
+  @include sm-desktop {
+    font-size: 1em;
+  }
 
   @include med-desktop {
-    font-size: 20px;
+    // font-size: 20px;
   }
 
   @include lg-desktop {
-    font-size: 24px;
+    // font-size: 24px;
   }
 }
 
@@ -107,8 +123,8 @@ $font-lg-desktop: 24px;
 @mixin internal-secondary-link {
   @include body-font-size;
 
-  color: black;
-  border-bottom: black;
+  color: $brown;
+  border-bottom: $brown;
   padding: 0 24px;
 }
 

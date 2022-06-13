@@ -97,7 +97,7 @@
 
     text-align: right;
     text-transform: capitalize;
-    padding: 4px 0;
+    padding: 12px 0;
 
     @include med-desktop {
       padding: 0 16px;
@@ -110,7 +110,9 @@
     @include navbar-font-size;
 
     height: $nav-height-mobile;
-    min-width: 100px;
+    color: $brown;
+    // min-width: 100px;
+    min-width: 64px;
 
     position: fixed;
     right: $mobile-side-padding;
@@ -119,17 +121,17 @@
     border: none;
 
     @include lg-mobile {
-      min-width: 108px;
+      // min-width: 108px;
     }
 
     @include med-desktop {
       position: static;
-      min-width: 124px;
+      // min-width: 124px;
     }
 
     @include lg-desktop {
       height: $nav-height-lg-desktop;
-      min-width: 140px;
+      // min-width: 140px;
     }
   }
 }
@@ -194,6 +196,8 @@
     @include hover;
     background-color: transparent;
     border: none;
+
+    color: $brown;
 
     font-weight: 300;
     font-size: 20px;

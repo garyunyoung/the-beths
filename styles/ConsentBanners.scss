@@ -12,6 +12,8 @@
   left: 0;
   z-index: 1;
 
+  box-shadow: 0px 0px 20px 0px rgb(119, 117, 117);
+
   @include element('content') {
     text-align: right;
     padding: 24px $mobile-side-padding;
@@ -36,14 +38,14 @@
 
   @include element('button') {
     @include consent-banner-font-size;
-    color: black;
-    border: 1px solid black;
+    color: $brown;
+    border: 1px solid $brown;
     background-color: transparent;
 
     padding: 8px 16px;
 
     &:hover {
-      box-shadow: 1px 1px 1px black;
+      box-shadow: 1px 1px 1px $brown;
       cursor: pointer;
     }
 
@@ -59,7 +61,7 @@
 
 @include block('tour-consent-banner') {
   text-align: center;
-  background-color: $orange;
+  background-color: $bone;
   padding: 24px;
 
   @include med-desktop {
@@ -76,14 +78,15 @@
   @include element('accept-button') {
     @include consent-banner-font-size;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid $brown;
     padding: 8px 16px;
+    color: $brown;
 
     font-size: 16px;
 
     cursor: pointer;
     &:hover {
-      box-shadow: 1px 1px 1px black;
+      box-shadow: 1px 1px 1px $brown;
     }
   }
 }

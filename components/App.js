@@ -16,7 +16,6 @@ export default function App({
   return (
     <>
       <Home />
-      <MailingList />
       <Watch />
       <Merch
         merch={data.merchData} />

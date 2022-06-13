@@ -4,6 +4,10 @@
   font-size: 2em;
   font-weight: 700;
 
+  font-family: 'GayaRegular';
+  letter-spacing: 1px;
+  color: #373535;
+
   text-align: center;
   text-transform: capitalize;
 
@@ -11,6 +15,10 @@
   margin-bottom: 4vh;
 
   cursor: default;
+
+  @include sm-desktop {
+    font-size: 2.5em;
+  }
 
   @include tablet {
     padding-top: calc(#{$nav-height-mobile} + 4vh);

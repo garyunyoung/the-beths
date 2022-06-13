@@ -13,16 +13,19 @@ export default function Watch() {
     <section id='watch' className="watch page page--watch">
       <Header text="latest video" />
       <span className="aspect-ratio-box-outter watch__latest-video-wrapper">
-        <ExternalLink
+        {/* <ExternalLink
           href='https://youtu.be/vd2Rps0cMdo'
-        >
+          >
           <img
-            className='aspect-ratio-box-inner watch__latest-video-poster'
-            src={aRealThingVideoThumbnail}
-            alt=''
+          className='aspect-ratio-box-inner watch__latest-video-poster'
+          src={aRealThingVideoThumbnail}
+          alt=''
           />
-        </ExternalLink>
+        </ExternalLink> */}
+        <iframe className='aspect-ratio-box-inner watch__latest-video-poster'
+          width="100%" height="100%" src="https://www.youtube.com/embed/d5ZxW1r1Zc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </span>
+      <p className="watch__song-name">The Beths - <i>'Silence Is Golden'</i></p>
       <Link href="/videos">
         <a className="link">View All Videos</a>
       </Link>

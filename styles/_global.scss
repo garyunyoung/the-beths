@@ -1,5 +1,10 @@
 @import 'styles/_mixins.scss';
 
+@font-face {
+  font-family: 'GayaRegular';
+  src: url('/fonts/GayaRegular.otf');
+}
+
 // Global Styling//
 *,
 *::before,
@@ -24,10 +29,9 @@ p,
 a,
 button,
 input {
-  font-family: 'Gaegu', 'Roboto', 'Segoe UI', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif, -apple-system,
-    BlinkMacSystemFont, cursive;
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, -apple-system, BlinkMacSystemFont, cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,15 +46,20 @@ code {
     'Courier New', monospace;
 }
 
+body {
+  background-color: $bone;
+}
+
 body,
 a {
   @include body-font-size;
+  color: $brown;
 }
 
 a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: $brown;
 }
 
 a:hover {

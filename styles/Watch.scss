@@ -2,11 +2,15 @@
 
 @include block('watch') {
   @include element('latest-video-wrapper') {
-    margin-bottom: 8vh;
+    // margin-bottom: 8vh;
 
     @include sm-desktop {
-      margin-bottom: 10vh;
+      // margin-bottom: 10vh;
     }
+  }
+
+  @include element('song-name') {
+    margin: 4vh 0 8vh 0;
   }
 
   @include element('latest-video-poster') {
@@ -15,7 +19,7 @@
     background-size: cover;
 
     border-radius: 12px;
-    border: 2px solid black;
+    border: 2px solid $brown;
 
     &:hover {
       cursor: pointer;
@@ -27,8 +31,9 @@
   height: 0;
   overflow: hidden;
   // 16:9 ratio
-  padding-top: calc(591.44px / 1127.34px * 100%);
-  background: white;
+  // padding-top: calc(591.44px / 1127.34px * 100%);
+  padding-top: calc(315px / 560px * 100%);
+  // background: white;
   position: relative;
   display: block;
 }

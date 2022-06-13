@@ -32,7 +32,7 @@ export default function Navigation() {
               className='navigation-menu__menu-button'
               onClick={() => toggleMenu()}
             >
-              {isOpen ? 'X CLOSE' : '☰ MENU'}
+              {isOpen ? 'X' : '☰'}
             </button>
           </nav>
         </span>

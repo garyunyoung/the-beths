@@ -2,7 +2,6 @@
 
 @include block('mailing-list-banner') {
   min-height: 80px;
-  background-color: $yellow;
 
   display: flex;
   flex-flow: column;
@@ -65,7 +64,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 
   height: 59px;
   border-radius: 12px;
-  border: 2px solid black;
+  border: 2px solid $brown;
 
   // padding: 0px 0.4em;
   padding: 16px 24px;
@@ -95,7 +94,7 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
 } /* positions button horizontally in line with input */
 
 #mc_embed_signup .button {
-  color: black;
+  color: $brown;
   font-size: 24px;
 
   border-radius: 12px;

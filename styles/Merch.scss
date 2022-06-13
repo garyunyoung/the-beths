@@ -7,11 +7,15 @@
 
   @include element('grid') {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1.5em;
 
     margin-bottom: 8vh;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     @include sm-desktop {
       margin-bottom: 10vh;
