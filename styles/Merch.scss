@@ -7,7 +7,7 @@
 
   @include element('grid') {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1.5em;
 
@@ -19,6 +19,21 @@
 
     @include sm-desktop {
       margin-bottom: 10vh;
+    }
+  }
+
+  @include element('cta-title') {
+    margin-bottom: 16px;
+  }
+
+  @include element('ctas') {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 24px;
+
+    a {
+      margin: 0 8px;
     }
   }
 }

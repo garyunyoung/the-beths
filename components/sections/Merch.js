@@ -24,12 +24,31 @@ export default function Merch({ merch }) {
           />
         ))}
       </div>
-      <ExternalLink
-        className={'link'}
-        href={storeLink}
-      >
-        Visit Store
-      </ExternalLink>
+      <p className="merch__cta-title">Pre-order Album:</p>
+      <div className="merch__ctas">
+        <ExternalLink
+          className={'link'}
+          href={storeLink}
+        >
+          Global
+        </ExternalLink>
+        <ExternalLink
+          className={'link'}
+          href="https://thebeths.lnk.to/ExpertInADyingField"
+        >
+          NZ/AUS
+        </ExternalLink>
+      </div>
+
+      <p className="merch__cta-title">Visit Store:</p>
+      <div className="merch__ctas">
+        <ExternalLink
+          className={'link'}
+          href={storeLink}
+        >
+          Global
+        </ExternalLink>
+      </div>
       <style jsx>{scss}</style>
     </section>
   );
