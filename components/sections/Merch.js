@@ -51,15 +51,15 @@ export default function Merch({ merch }) {
         </ExternalLink>
         <ExternalLink
           className={'link'}
-          href={nzStoreLink}
-        >
-          NZ/AU
-        </ExternalLink>
-        <ExternalLink
-          className={'link'}
           href={ukStoreLink}
         >
           UK
+        </ExternalLink>
+        <ExternalLink
+          className={'link'}
+          href={nzStoreLink}
+        >
+          NZ/AU
         </ExternalLink>
       </div>
       <style jsx>{scss}</style>
