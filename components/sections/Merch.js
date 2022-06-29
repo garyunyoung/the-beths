@@ -15,12 +15,13 @@ export default function Merch({ merch }) {
     <section id='merch' className="merch page page--merch">
       <Header text="featured merch" />
       <div className="merch__grid">
-        {merch.map(({ name, thumbnail, isHidden }, index) => (
+        {merch.map(({ name, thumbnail, isHidden, url = globalStoreLink }, index) => (
           <MerchThumbnail
             key={index}
             name={name}
             thumbnail={thumbnail}
             isHidden={isHidden}
+            url={url}
           />
         ))}
       </div>
@@ -66,10 +67,10 @@ export default function Merch({ merch }) {
   );
 }
 
-function MerchThumbnail({ name, thumbnail, isHidden }) {
+function MerchThumbnail({ name, thumbnail, isHidden, url }) {
   return (
     <div className={`merch-thumbnail ${isHidden ? 'is-hidden' : ''}`}>
-      <ExternalLink href={globalStoreLink}>
+      <ExternalLink href={url}>
         <Image
           className="merch-thumbnail__image"
           src={urlFor(thumbnail).url()}
