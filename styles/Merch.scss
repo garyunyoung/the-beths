@@ -44,6 +44,10 @@
   @include element('text') {
     padding: 0 1em;
     margin-top: 0.5em;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @include state('hidden') {
