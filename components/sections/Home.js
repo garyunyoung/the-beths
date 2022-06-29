@@ -15,11 +15,13 @@ import {
   expertInADyingFieldCDOutline,
   carparkRecordsLogoBlack
 } from '../../utilities/cloudinary.js'
-import { homeSectionCallToActions } from '../../data/data.js';
+import { homeSectionCallToActions, nzPreOrderLink } from '../../data/data.js';
 
 import { ExternalLink } from '../shared/Links';
 
 import scss from '../../styles/Home.scss';
+
+
 
 
 
@@ -44,8 +46,8 @@ export default function Home() {
 
             <div className="home__divider" />
             <ul>
-              <li><a href="https://found.ee/thebeths_expert">Pre-order Album</a></li>
-              <li><a href="https://youtu.be/d5ZxW1r1Zc8">Watch <i>&apos;Silence Is Golden&apos;</i> Single</a></li>
+              <li><a href={nzPreOrderLink} target="_blank" rel="noreferrer">Pre-order Album</a></li>
+              <li><a href="https://youtu.be/d5ZxW1r1Zc8" target="_blank" rel="noreferrer">Watch <i>&apos;Silence Is Golden&apos;</i> Single</a></li>
             </ul>
 
             <div className="home__divider" />

@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import { urlFor } from "../../lib/sanity.js";
 
-import { storeLink } from "../../data/data.js";
+import { globalStoreLink, nzStoreLink, ukStoreLink, northAmericaPreOrderLink, nzPreOrderLink } from "../../data/data.js";
 
 import Header from '../shared/Header.js';
 import { ExternalLink } from '../shared/Links.js';
@@ -28,13 +28,13 @@ export default function Merch({ merch }) {
       <div className="merch__ctas">
         <ExternalLink
           className={'link'}
-          href={storeLink}
+          href={northAmericaPreOrderLink}
         >
           Global
         </ExternalLink>
         <ExternalLink
           className={'link'}
-          href="https://thebeths.lnk.to/ExpertInADyingField"
+          href={nzPreOrderLink}
         >
           NZ/AUS
         </ExternalLink>
@@ -44,9 +44,21 @@ export default function Merch({ merch }) {
       <div className="merch__ctas">
         <ExternalLink
           className={'link'}
-          href={storeLink}
+          href={globalStoreLink}
         >
           Global
+        </ExternalLink>
+        <ExternalLink
+          className={'link'}
+          href={nzStoreLink}
+        >
+          NZ
+        </ExternalLink>
+        <ExternalLink
+          className={'link'}
+          href={ukStoreLink}
+        >
+          UK
         </ExternalLink>
       </div>
       <style jsx>{scss}</style>
@@ -57,7 +69,7 @@ export default function Merch({ merch }) {
 function MerchThumbnail({ name, thumbnail, isHidden }) {
   return (
     <div className={`merch-thumbnail ${isHidden ? 'is-hidden' : ''}`}>
-      <ExternalLink href={storeLink}>
+      <ExternalLink href={globalStoreLink}>
         <Image
           className="merch-thumbnail__image"
           src={urlFor(thumbnail).url()}
