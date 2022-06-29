@@ -36,7 +36,7 @@ export default function Merch({ merch }) {
           className={'link'}
           href={nzPreOrderLink}
         >
-          NZ/AUS
+          NZ/AU
         </ExternalLink>
       </div>
 
@@ -52,7 +52,7 @@ export default function Merch({ merch }) {
           className={'link'}
           href={nzStoreLink}
         >
-          NZ
+          NZ/AU
         </ExternalLink>
         <ExternalLink
           className={'link'}
