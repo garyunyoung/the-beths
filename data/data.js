@@ -111,8 +111,8 @@ export const navigationItems = [
   }
 ]
 
-export const northAmericaPreOrderLink = 'https://found.ee/thebeths_expert'
-export const nzPreOrderLink = 'https://thebeths.lnk.to/ExpertInADyingField'
+export const preorderLink = 'https://thebeths.lnk.to/ExpertInADyingField'
+export const globalStoreLink = 'https://thebeths.merchtable.com/'
 export const nzStoreLink = 'https://merchme.co.nz/collections/the-beths'
-export const ukStoreLink = 'https://thebeths.terriblemerch.com/'
-export const globalStoreLink = 'https://found.ee/thebeths_merch'
+export const auStoreLink = 'https://store.sound-merch.com.au/collections/the-beths'
+export const ukeuStoreLink = 'https://thebeths.terriblemerch.com/'
