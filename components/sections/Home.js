@@ -47,7 +47,7 @@ export default function Home() {
             <div className="home__divider" />
             <ul>
               <li><a href={preorderLink} target="_blank" rel="noreferrer">Pre-order Album</a></li>
-              <li><a href="https://youtu.be/d5ZxW1r1Zc8" target="_blank" rel="noreferrer">Watch <i>&apos;Silence Is Golden&apos;</i> Video</a></li>
+              <li><a href="https://youtu.be/d5ZxW1r1Zc8" target="_blank" rel="noreferrer">Watch <i>&apos;Silence Is Golden&apos;</i><span className="home__visible-none">-</span>Video</a></li>
             </ul>
 
             <div className="home__divider" />

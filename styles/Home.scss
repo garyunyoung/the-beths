@@ -173,4 +173,8 @@
   @include element('mushroom-logo') {
     width: 200px;
   }
+
+  @include element('visible-none') {
+    visibility: hidden;
+  }
 }
