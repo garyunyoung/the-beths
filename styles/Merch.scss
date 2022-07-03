@@ -23,17 +23,21 @@
   }
 
   @include element('cta-title') {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   @include element('ctas') {
     display: flex;
     align-items: center;
+    flex-flow: wrap;
 
-    margin-bottom: 24px;
+    justify-content: center;
+
+    margin-bottom: 16px;
 
     a {
       margin: 0 8px;
+      margin-bottom: 24px;
     }
   }
 }
