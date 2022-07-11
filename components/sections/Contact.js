@@ -29,7 +29,7 @@ export default function Contact({ contacts }) {
         )}
       </span>
       <span className='contact__section'>
-        <h4 className='contact__header'>Record Label</h4>
+        <h4 className='contact__header'>Label</h4>
         {contactSectionRecordLabels.map(({ href, text }, index) =>
           <ExternalLink
             key={index}
