@@ -5,6 +5,13 @@ import Image from 'next/image'
 import scss from "../../styles/Videos.scss";
 
 export default function Videos({ videos }) {
+  const expertInADyingField = {
+    isOpen: true,
+    modifier: "expert-in-a-dying-field",
+    name: "expert in a dying field",
+    videos: videos.filter(video => video.album.name === "Expert In A Dying Field")
+  };
+
   const jumpRopeGazersData = {
     isOpen: true,
     modifier: "jump-rope-gazers",
@@ -34,8 +41,8 @@ export default function Videos({ videos }) {
   };
 
 
-  const [currentSection, setCurrentSection] = useState(jumpRopeGazersData.modifier);
-  const albums = [jumpRopeGazersData, futureMeHatesMeData, warmBloodData, christmasData]
+  const [currentSection, setCurrentSection] = useState(expertInADyingField.modifier);
+  const albums = [expertInADyingField, jumpRopeGazersData, futureMeHatesMeData, warmBloodData, christmasData]
 
   return (
     <section className="watch">
@@ -96,15 +103,15 @@ function Thumbnail({ name, thumbnail, url, modifier }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            className={`thumbnail__image thumbnail__image--${modifier} cld-responsive`}
-            src={urlFor(thumbnail).url()}
-            alt={`${name} thumbnail`}
-
-            objectFit="contain"
-            width={120}
-            height={120}
-          />
+          <div className="thumbnail__image">
+            <Image
+              className={`thumbnail__image--${modifier} cld-responsive`}
+              src={urlFor(thumbnail).url()}
+              alt={`${name} thumbnail`}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
           <p className={`thumbnail__text thumbnail__text--${modifier}`}>
             {name}
           </p>

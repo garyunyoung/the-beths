@@ -20,10 +20,6 @@
   align-items: center;
   margin-bottom: 24px;
 
-  &--future-me-hates-me {
-    margin-top: 24px;
-  }
-
   &__text {
     font-size: 18px;
     font-weight: 300;
@@ -96,6 +92,8 @@
     max-width: 40vw;
     margin: 0 auto;
 
+    padding-top: 16px;
+
     &:hover {
       color: $pink;
       transition: $hover;
@@ -108,6 +106,11 @@
     @include lg-desktop {
       font-size: 24px;
     }
+  }
+
+  .thumbnail__image {
+    height: 80px;
+    position: relative;
   }
 }
 
@@ -128,6 +131,7 @@
       height: 120px;
       padding: 20px;
     }
+
     .thumbnail__text {
       &--christmas {
         max-width: 200px;
