@@ -12,11 +12,11 @@ export const homeSectionCallToActions = [
 export const contactSectionRecordLabels = [
   {
     href: 'http://carparkrecords.com/',
-    text: 'Carpark Records'
+    text: 'Carpark Records (ROW)'
   },
   {
     href: 'https://ivyleague.com.au/',
-    text: 'Ivy League Records'
+    text: 'Ivy League Records (ANZ)'
   }
 ]
 
