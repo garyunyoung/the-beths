@@ -1,14 +1,6 @@
 @import 'styles/_mixins.scss';
 
 @include block('watch') {
-  @include element('latest-video-wrapper') {
-    // margin-bottom: 8vh;
-
-    @include sm-desktop {
-      // margin-bottom: 10vh;
-    }
-  }
-
   @include element('song-name') {
     margin: 4vh 0 8vh 0;
   }
@@ -30,10 +22,7 @@
 .aspect-ratio-box-outter {
   height: 0;
   overflow: hidden;
-  // 16:9 ratio
-  // padding-top: calc(591.44px / 1127.34px * 100%);
-  padding-top: calc(315px / 560px * 100%);
-  // background: white;
+  padding-top: calc(480px / 960px * 100%);
   position: relative;
   display: block;
 }
