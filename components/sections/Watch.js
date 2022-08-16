@@ -22,9 +22,12 @@ export default function Watch() {
           alt=''
           />
         </ExternalLink> */}
-        <iframe className='aspect-ratio-box-inner watch__latest-video-poster' src="https://www.youtube.com/embed/-KACt6YhOyY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe className='aspect-ratio-box-inner watch__latest-video-poster'
+          src="https://www.youtube.com/embed/1XriDeVHO8w" title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </span>
-      <p className="watch__song-name">The Beths - <i>&apos;Expert In A Dying Field&apos;</i></p>
+      <p className="watch__song-name">The Beths - <i>&apos;Knees Deep&apos;</i></p>
       <Link href="/videos">
         <a className="link">View All Videos</a>
       </Link>
@@ -32,4 +35,7 @@ export default function Watch() {
     </section>
   )
 }
+
+
+
 
