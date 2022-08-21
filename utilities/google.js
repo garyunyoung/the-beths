@@ -39,6 +39,24 @@ export default function Google() {
         }}
       />
 
+      {/* AEG Pixel Snippet */}
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `!function(e,t,n,a,i,l,o,s,r){e[i]||
+            (o=e[i]=function(){o.process?
+            o.process.apply(o,arguments):o.queue.push(arguments)
+            },o.queue=[],o.t=1*new
+            Date,s=t.createElement(n),s.async=1,s.src=a+"?
+            t="+Math.ceil(new
+            Date/l)*l,r=t.getElementsByTagName(n)
+            [0],r.parentNode.insertBefore(s,r))}
+            (window,document,"script","//tracking.aegpresents.co
+            m/universalpixel/universalpixel.js","kl",864e5),kl("
+            event","pageload");`,
+        }}
+      />
+
       <noscript>
         <iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-M845XR9`}
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
