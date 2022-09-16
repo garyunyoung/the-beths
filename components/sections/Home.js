@@ -42,11 +42,11 @@ export default function Home() {
             <h2 className='home__album-header'>Expert In A Dying Field</h2>
             <div className="home__divider" />
 
-            <p>Out September 16</p>
+            <p>Out Now</p>
 
             <div className="home__divider" />
             <ul>
-              <li><a href={preorderLink} target="_blank" rel="noreferrer">Pre-order Album</a></li>
+              <li><a href={preorderLink} target="_blank" rel="noreferrer">Buy Album</a></li>
             </ul>
 
             <div className="home__divider" />

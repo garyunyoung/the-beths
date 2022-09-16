@@ -25,7 +25,7 @@ export default function Merch({ merch }) {
           />
         ))}
       </div>
-      <p className="merch__cta-title">Pre-order Album:</p>
+      <p className="merch__cta-title">Buy Album:</p>
       <div className="merch__ctas">
         <ExternalLink
           className={'link'}

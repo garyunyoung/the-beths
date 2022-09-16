@@ -37,6 +37,11 @@ export const socials = [
     href: 'https://tiktok.com/@thebeths',
     id: 'tiktok'
   },
+
+  {
+    href: 'https://found.ee/thebeths_apple',
+    id: 'apple'
+  },
   {
     href: 'https://found.ee/thebeths_spotify',
     id: 'spotify'
@@ -48,10 +53,6 @@ export const socials = [
   {
     href: 'https://www.patreon.com/thebeths',
     id: 'patreon'
-  },
-  {
-    href: 'https://found.ee/thebeths_apple',
-    id: 'apple'
   },
   {
     href: 'https://found.ee/thebeths_bc',
