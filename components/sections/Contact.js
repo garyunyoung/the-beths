@@ -39,7 +39,7 @@ export default function Contact({ contacts }) {
           </ExternalLink>
         )}
       </span>
-      <span className='contact__section'>
+      {/* <span className='contact__section'>
         <h4 className='contact__header'>Booking</h4>
         <ExternalLink
           href='https://tbaagency.com/'
@@ -61,7 +61,7 @@ export default function Contact({ contacts }) {
         >
           100% GOOD (NZ)
         </ExternalLink>
-      </span>
+      </span> */}
 
       <style jsx>{scss}</style>
     </section>
