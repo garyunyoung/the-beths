@@ -15,18 +15,78 @@ export default function Contact({ contacts }) {
       <span className='contact__section'>
         <h4 className='contact__header'>Management</h4>
         <ExternalLink
-          href='http://www.mam.land/'
+          href='https://www.lookoutkid.com/'
         >
-          Monster Artist Management (Global)
+          Look Out Kid
         </ExternalLink>
-        {contacts.map(({ email }, index) =>
+        <ExternalLink
+
+          href={`mailto:jacob@lookoutkid.com`}
+        >
+          jacob@lookoutkid.com
+        </ExternalLink>
+        {/* {contacts.map(({ email }, index) =>
           <ExternalLink
             key={index}
             href={`mailto:${email}`}
           >
             {email}
           </ExternalLink>
-        )}
+        )} */}
+      </span>
+      <span className='contact__section'>
+        <h4 className='contact__header'>Bookings</h4>
+        <ExternalLink
+          href='https://tbaagency.com/'
+        >
+          TBA Agency (US/CA)
+        </ExternalLink>
+        <ExternalLink
+
+          href={`mailto:mbetts@tbaagency.com`}
+        >
+          mbetts@tbaagency.com
+        </ExternalLink>
+
+        <br />
+        <ExternalLink
+          href='https://atc-live.com/'
+        >
+          ATC Live (UK/EU)
+        </ExternalLink>
+        <ExternalLink
+
+          href={`mailto:alex@atc-live.com`}
+        >
+          alex@atc-live.com
+        </ExternalLink>
+
+        <br />
+        <ExternalLink
+          href='https://selectmusic.com.au/'
+        >
+          Select Music (AU)
+        </ExternalLink>
+        <ExternalLink
+
+          href={`mailto:casey@selectmusic.com.au`}
+        >
+          casey@selectmusic.com.au
+        </ExternalLink>
+
+        <br />
+        <ExternalLink
+          href='https://onehundredpercent.nz/'
+        >
+          100% GOOD (NZ)
+        </ExternalLink>
+        <ExternalLink
+
+          href={`mailto:anthony@onehundredpercent.nz`}
+        >
+          anthony@onehundredpercent.nz
+        </ExternalLink>
+
       </span>
       <span className='contact__section'>
         <h4 className='contact__header'>Label</h4>
@@ -64,6 +124,6 @@ export default function Contact({ contacts }) {
       </span> */}
 
       <style jsx>{scss}</style>
-    </section>
+    </section >
   );
 }
