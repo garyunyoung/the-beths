@@ -63,14 +63,14 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://thebeths.com" />
         <meta
           property="og:image:alt"
-          content="Picture of the Beths chilling on a ledge somewhere in New Zealand. Photo: Maison Fairey"
+          content="Expert in a dying field album art"
         />
 
         {/* <!-- Twitter Metadata--> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image:alt"
-          content="Picture of the Beths chilling on a ledge somewhere in New Zealand. Photo: Maison Fairey"
+          content="Expert in a dying field album art"
         />
 
         {/* <!-- Mobile Compatibility --> */}
