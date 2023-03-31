@@ -13,8 +13,8 @@ import scss from "../../styles/Merch.scss";
 export default function Merch({ merch }) {
   return (
     <section id='merch' className="merch page page--merch">
-      <Header text="featured merch" />
-      <div className="merch__grid">
+      <Header text="merch" />
+      {/* <div className="merch__grid">
         {merch.map(({ name, thumbnail, isHidden, url = globalStoreLink }, index) => (
           <MerchThumbnail
             key={index}
@@ -24,8 +24,8 @@ export default function Merch({ merch }) {
             url={url}
           />
         ))}
-      </div>
-      <p className="merch__cta-title">Buy Album:</p>
+      </div> */}
+      <p className="merch__cta-title">Album:</p>
       <div className="merch__ctas">
         <ExternalLink
           className={'link'}
