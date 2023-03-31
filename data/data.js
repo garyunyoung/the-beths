@@ -115,5 +115,5 @@ export const navigationItems = [
 export const preorderLink = 'https://thebeths.lnk.to/ExpertInADyingField'
 export const globalStoreLink = 'https://thebeths.merchtable.com/'
 export const nzStoreLink = 'https://merchme.co.nz/collections/the-beths'
-export const auStoreLink = 'https://store.sound-merch.com.au/collections/the-beths'
+export const auStoreLink = 'https://thebeths.bandtshirts.com.au/'
 export const ukeuStoreLink = 'https://thebeths.terriblemerch.com/'
