@@ -21,9 +21,9 @@ export default function Contact({ contacts }) {
         </ExternalLink>
         <ExternalLink
 
-          href={`mailto:jacob@lookoutkid.com`}
+          href={`mailto:info@lookoutkid.com`}
         >
-          jacob@lookoutkid.com
+          info@lookoutkid.com
         </ExternalLink>
         {/* {contacts.map(({ email }, index) =>
           <ExternalLink
