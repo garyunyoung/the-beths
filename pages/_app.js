@@ -44,14 +44,14 @@ export default function MyApp({ Component, pageProps }) {
         {/* <!-- Generic Metadata + Analytics--> */}
         <meta
           name="description"
-          content="New Album 'Expert In A Dying Field' out September 16. Order here at thebeths.com."
+          content="'Expert In A Dying Field (Deluxe)' out September 15. Preorder here at thebeths.com."
         />
         {/* <!-- Facebook Metadata--> */}
         <meta property="fb:app_id" content="320561938462640" />
         <meta property="og:title" content="The Beths" />
         <meta
           property="og:description"
-          content="New Album 'Expert In A Dying Field' out September 16. Order here at thebeths.com."
+          content="'Expert In A Dying Field (Deluxe)' out September 15. Prorder here at thebeths.com."
         />
         <meta
           property="og:image"
