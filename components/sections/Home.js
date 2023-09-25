@@ -15,7 +15,7 @@ import {
 	expertInADyingFieldCDOutline,
 	carparkRecordsLogoBlack
 } from '../../utilities/cloudinary.js'
-import { homeSectionCallToActions, preorderLink } from '../../data/data.js';
+import { homeSectionCallToActions, orderLink } from '../../data/data.js';
 
 import { ExternalLink } from '../shared/Links';
 
@@ -42,11 +42,13 @@ export default function Home() {
 						<h2 className='home__album-header'>Expert In A Dying Field (Deluxe)</h2>
 						<div className="home__divider" />
 
-						<p>Out September 15</p>
+						<p>Out Now</p>
 
 						<div className="home__divider" />
 						<ul>
-							<li><a href={preorderLink} target="_blank" rel="noreferrer">Preorder Now</a></li>
+							<li><a href={orderLink} target="_blank" rel="noreferrer">
+								Buy/Stream
+							</a></li>
 						</ul>
 
 						<div className="home__divider" />

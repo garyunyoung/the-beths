@@ -112,7 +112,7 @@ export const navigationItems = [
   }
 ]
 
-export const preorderLink = 'https://lnk.to/beths_deluxe'
+export const orderLink = 'https://lnk.to/beths_deluxe'
 export const globalStoreLink = 'https://thebeths.merchtable.com/'
 export const auStoreLink = 'https://thebeths.bandtshirts.com.au/'
 export const ukeuStoreLink = 'https://thebeths.terriblemerch.com/'
