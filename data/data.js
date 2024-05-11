@@ -114,5 +114,6 @@ export const navigationItems = [
 
 export const orderLink = 'https://lnk.to/beths_deluxe'
 export const globalStoreLink = 'https://thebeths.merchtable.com/'
+export const nzStoreLink = 'https://holidayrecords.com/collections/the-beths/'
 export const auStoreLink = 'https://thebeths.bandtshirts.com.au/'
 export const ukeuStoreLink = 'https://thebeths.terriblemerch.com/'

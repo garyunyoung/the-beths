@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import { urlFor } from "../../lib/sanity.js";
 
-import { auStoreLink, ukeuStoreLink, globalStoreLink, preorderLink } from "../../data/data.js";
+import { nzStoreLink, auStoreLink, ukeuStoreLink, globalStoreLink, preorderLink } from "../../data/data.js";
 
 import Header from '../shared/Header.js';
 import { ExternalLink } from '../shared/Links.js';
@@ -54,6 +54,12 @@ export default function Merch({ merch }) {
           href={auStoreLink}
         >
           AU
+        </ExternalLink>
+        <ExternalLink
+          className={'link'}
+          href={nzStoreLink}
+        >
+          NZ
         </ExternalLink>
       </div>
       <style jsx>{scss}</style>
