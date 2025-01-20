@@ -26,7 +26,7 @@ export const socials = [
     id: 'instagram'
   },
   {
-    href: 'https://found.ee/thebeths_fb',
+    href: 'https://www.facebook.com/thebethsnz/',
     id: 'facebook'
   },
   {
@@ -39,15 +39,15 @@ export const socials = [
   },
 
   {
-    href: 'https://found.ee/thebeths_apple',
+    href: 'https://music.apple.com/gh/artist/the-beths/1110150231',
     id: 'apple'
   },
   {
-    href: 'https://found.ee/thebeths_spotify',
+    href: 'https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin?si=vddie6f2TSCHuZCFGSwkmg',
     id: 'spotify'
   },
   {
-    href: 'https://found.ee/thebeths_yt',
+    href: 'https://www.youtube.com/c/TheBeths',
     id: 'youtube'
   },
   {
@@ -55,11 +55,11 @@ export const socials = [
     id: 'patreon'
   },
   {
-    href: 'https://found.ee/thebeths_bc',
+    href: 'https://thebethsnz.bandcamp.com/',
     id: 'bandcamp'
   },
   {
-    href: 'https://found.ee/thebeths_sc',
+    href: 'https://soundcloud.com/thebethsnz',
     id: 'soundcloud'
   }
 ]

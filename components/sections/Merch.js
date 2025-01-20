@@ -25,15 +25,6 @@ export default function Merch({ merch }) {
           />
         ))}
       </div> */}
-      <p className="merch__cta-title">Album:</p>
-      <div className="merch__ctas">
-        <ExternalLink
-          className={'link'}
-          href={preorderLink}
-        >
-          GLOBAL
-        </ExternalLink>
-      </div>
 
       <p className="merch__cta-title">Visit Store:</p>
       <div className="merch__ctas">
